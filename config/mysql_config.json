@@ -1,0 +1,11 @@
+﻿{
+    "server": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "aritel",
+    "database_ariagro": "ariagro",
+    "database_usuarios": "usuarios",
+    "database_tienda": "ariges1",
+    "database_telefonia": "ariges2",
+    "database_gasolinera": "arigasol"
+}
