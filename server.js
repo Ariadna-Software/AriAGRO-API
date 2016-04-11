@@ -8,6 +8,7 @@ var cors = require('cors'); // cross origin resopurce sharing management
 
 // modulos encargados de las rutas
 var usuario_router = require('./lib/usuario/usuario_controller');
+var campos_router = require('./lib/campos/campos_controller');
 // express
 var app = express();
 
@@ -48,7 +49,8 @@ router.get('/', function (req, res){
 
 //---------- Rutas relacionadas con los usuarios
 app.use('/api/usuarios', usuario_router);
-
+//---------- Rutas relacionadas con los campos
+app.use('/api/campos', campos_router);
 
 // Registrar rutas base
 app.use('/api', router);
