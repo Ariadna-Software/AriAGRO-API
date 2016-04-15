@@ -11,6 +11,7 @@ var usuario_router = require('./lib/usuario/usuario_controller');
 var campos_router = require('./lib/campos/campos_controller');
 var anticipos_liquidaciones_router = require('./lib/anticipos-liquidaciones/anticipos_liquidaciones_controller');
 var empresas_router = require('./lib/empresas/empresas_controller');
+var campanyas_router = require('./lib/campanyas/campanyas_controller');
 // express
 var app = express();
 
@@ -57,6 +58,8 @@ app.use('/api/campos', campos_router);
 app.use('/api/anticipos-liquidaciones', anticipos_liquidaciones_router);
 //---------- Rutas relacionadas con empresas
 app.use('/api/empresas', empresas_router);
+//---------- Rutas relacionadas con campanyas
+app.use('/api/campanyas', campanyas_router);
 
 // Registrar rutas base
 app.use('/api', router);
