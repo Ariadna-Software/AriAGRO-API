@@ -5,7 +5,8 @@
     "password": "aritel",
     "database_ariagro": "ariagro",
     "database_usuarios": "usuarios",
+    "database_gessocial": "ariges",
     "database_tienda": "ariges1",
-    "database_telefonia": "ariges2",
+    "database_telefonia": "ariges3",
     "database_gasolinera": "arigasol"
 }
