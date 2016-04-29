@@ -6,7 +6,8 @@
     "database_ariagro": "ariagro",
     "database_usuarios": "usuarios",
     "database_gessocial": "ariges",
-    "database_tienda": "ariges1",
-    "database_telefonia": "ariges3",
-    "database_gasolinera": "arigasol"
+    "database_tienda": "ariges3",
+    "database_telefonia": "ariges1",
+    "database_gasolinera": "arigasol",
+    "database_push": "aripush"
 }

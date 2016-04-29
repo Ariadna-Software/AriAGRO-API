@@ -1,0 +1,88 @@
+﻿{
+    "app": {
+        "nombre": "GDESAC",
+        "dateFormat": "DD/MM/YYYY",
+        "dateInicialFinal": "La fecha final debe ser mayor que la inicial.",
+        "deleteMens": "¿Realmente desea borrar este registro?",
+        "mensaje": "Mensaje",
+        "aceptar": "Aceptar",
+        "cancelar": "Cancelar",
+        "editar": "Editar",
+        "eliminar": "Eliminar registro",
+        "evaluar": "Evaluar asignación",
+        "salir": "Salir",
+        "cerrarMenu": "Cerrar menu",
+        "pantallaCompleta":  "Pantalla completa"
+    },
+    "report": { 
+        "acConocimientosTrabajador": "Nknhlj67"
+    },
+    "general": {
+        "trabajadores": "Trabajadores",
+        "titulo": "AREAS DE CONOCIMIENTO",
+        "jtable": {
+            "processing": "Procesando...",
+            "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+            "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+            "infoPostFix": "",
+            "loadingRecords": "Cargando...",
+            "zeroRecords": "No se encontraron resultados",
+            "emptyTable": "Ningún dato disponible en esta tabla",
+            "paginate": {
+                "first": "Primero",
+                "previous": "Anterior",
+                "next": "Siguiente",
+                "last": "Último"
+            },
+            "aria": {
+                "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+                "sortDescending": ": Activar para ordenar la columna de manera descendente"
+            }
+        }
+    },
+    "menu": {
+        "MisConocimientos": "MIS CONOCIMIENTOS",
+        "RegConocimientos": "REG.CONOCIMIENTOS"
+    },
+    "cliIndex": {
+        "titulo": "Estas son sus áreas de conocimiento registradas",
+        "btnPDF": "Informe PDF",
+        "template": {
+            "conocimiento": "Conocimiento",
+            "proyecto": "Proyecto",
+            "finicio": "F.Inicial",
+            "ffinal": "F.Final",
+            "dias": "Dias",
+            "comentarios": "Comentarios",
+            "evaluador": "Evaluador"
+        }
+
+    },
+    "cliEvaPorTrabajador": {
+        "titulo": "Seleccione aquí el trabajador al que registrará conocimientos",
+        "buscar": "Buscar asignaciones por trabajador.",
+        "trabajador": "Trabajador",
+        "btnBuscar": "Buscar",
+        "nombre": "Nombre",
+        "proyecto": "Proyecto",
+        "rol": "Rol"
+    },
+    "cliEvaAsgDetalle": {
+        "titulo": "Detalles de áreas de conocimiento en esta asignación",
+        "datosAsignacion": "Datos de la asignación",
+        "datosConocimiento":  "Datos del conocimiento",
+        "asignacion": "Asignación: ",
+        "trabajador": "Trabajador: ",
+        "proyecto": "Proyecto: ",
+        "rol": "Rol: ",
+        "categoria": "Categoría: ",
+        "conocimiento": "Conocimiento: ",
+        "dfecha": "Desde fecha: ",
+        "hfecha": "Hasta fecha: ",
+        "observaciones": "Observaciones: ",
+        "btnSalir": "Salir sin guardar",
+        "btnAceptar": "Agregar registro",
+        "btnEditar":  "Editar registro"
+    }
+}

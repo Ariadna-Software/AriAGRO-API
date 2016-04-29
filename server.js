@@ -13,6 +13,13 @@ var anticipos_liquidaciones_router = require('./lib/anticipos-liquidaciones/anti
 var empresas_router = require('./lib/empresas/empresas_controller');
 var campanyas_router = require('./lib/campanyas/campanyas_controller');
 var facturas_router = require('./lib/facturas/facturas_controller');
+
+// controladores para rutas de push
+var version_router = require('./lib/version/version_controller');
+var administradores_router = require('./lib/administradores/administradores_controller');
+var usupush_router = require('./lib/usupush/usupush_controller');
+var parametros_router = require('./lib/parametros/parametros_controller');
+var mensajes_router = require('./lib/mensajes/mensajes_controller');
 // express
 var app = express();
 
@@ -30,6 +37,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
+// servidor html estático
+app.use(express.static(__dirname+"/public"));
 
 //-------------------------------------------------------------
 // RUTAS
@@ -63,6 +72,19 @@ app.use('/api/empresas', empresas_router);
 app.use('/api/campanyas', campanyas_router);
 //---------- Rutas relacionadas con facturas
 app.use('/api/facturas', facturas_router);
+
+//---------- Rutas relacionadas con version
+app.use('/api/version', version_router);
+//---------- Rutas relacionadas con administradores
+app.use('/api/administradores', administradores_router);
+//---------- Rutas relacionadas con usupush
+app.use('/api/usupush', usupush_router);
+//---------- Rutas relacionadas con parametros
+app.use('/api/parametros', parametros_router);
+//---------- Rutas relacionadas con mensajes
+app.use('/api/mensajes', mensajes_router);
+
+
 
 // Registrar rutas base
 app.use('/api', router);
