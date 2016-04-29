@@ -1,4 +1,5 @@
-INSERT INTO aripush.usuariospush(nif, nombre, login, PASSWORD, ariagroId, telefoniaId, tiendaId, gasolineraId, email)
+INSERT INTO aripush.usuariospush(nif, nombre, login, PASSWORD, ariagroId, telefoniaId, tiendaId, gasolineraId, email, direccion, 
+codPostal, poblacion, provincia, telefono1, telefono2)
 SELECT
 COALESCE(agr.nifsocio, tie.nifclien, tel.nifclien, gas.nifsocio) AS nif,
 COALESCE(agr.nomsocio, tie.nomclien, tel.nomclien, gas.nomsocio) AS nombre,
@@ -8,7 +9,13 @@ agr.codsocio AS ariagroId,
 tel.codclien AS telefoniaId,
 tie.codclien AS tiendaId,
 gas.codsocio AS gasolineraId,
-COALESCE(agr.maisocio, tie.maiclie1, tel.maiclie1, gas.maisocio) AS email
+COALESCE(agr.maisocio, tie.maiclie1, tel.maiclie1, gas.maisocio) AS email,
+COALESCE(agr.dirsocio, tie.domclien, tel.domclien, gas.domsocio) AS direccion,
+COALESCE(agr.codpostal, tie.codpobla, tel.codpobla, gas.codposta) AS codPostal,
+COALESCE(agr.pobsocio, tie.pobclien, tel.pobclien, gas.pobsocio) AS poblacion,
+COALESCE(agr.prosocio, tie.proclien, tel.proclien, gas.prosocio) AS provincia,
+COALESCE(agr.telsoci1, tie.telclie1, tel.telclie1, gas.telsocio) AS telefono1,
+COALESCE(agr.telsoci2, tie.telclie2, tel.telclie2) AS telefono2
 FROM 
 ariges.asociados AS ges
 LEFT JOIN ariagro.rsocios AS agr ON agr.codsocio = ges.codsoceuroagro
