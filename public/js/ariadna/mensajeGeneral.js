@@ -25,7 +25,7 @@ function initForm() {
     //
     $('#btnBuscar').click(buscarMensajes());
     $('#btnAlta').click(crearMensaje());
-    $('#frmBuscar').submit(function () {
+    $('#frmBuscar').submit(function() {
         return false
     });
     //$('#txtBuscar').keypress(function (e) {
@@ -39,26 +39,26 @@ function initForm() {
     if (mensajeId !== '') {
         // cargar la tabla con un único valor que es el que corresponde.
         var data = {
-            id: mensajeId
-        }
-        // hay que buscar ese elemento en concreto
+                id: mensajeId
+            }
+            // hay que buscar ese elemento en concreto
         $.ajax({
             type: "GET",
             url: myconfig.apiUrl + "/api/mensajes/" + mensajeId,
             dataType: "json",
             contentType: "application/json",
             data: JSON.stringify(data),
-            success: function (data, status) {
+            success: function(data, status) {
                 // hay que mostrarlo en la zona de datos
                 var data2 = [data];
                 loadTablaMensajes(data2);
             },
             error: errorAjax
         });
-    }else{
-       $('#txtBuscar').val('*');
-       buscarMensajes()();
-       $('#txtBuscar').val('');
+    } else {
+        $('#txtBuscar').val('*');
+        buscarMensajes()();
+        $('#txtBuscar').val('');
     }
 }
 
@@ -66,16 +66,16 @@ function initTablaMensajes() {
     tablaCarro = $('#dt_mensaje').dataTable({
         autoWidth: true,
         bSort: false,
-        preDrawCallback: function () {
+        preDrawCallback: function() {
             // Initialize the responsive datatables helper once.
             if (!responsiveHelper_dt_basic) {
                 responsiveHelper_dt_basic = new ResponsiveDatatablesHelper($('#dt_mensaje'), breakpointDefinition);
             }
         },
-        rowCallback: function (nRow) {
+        rowCallback: function(nRow) {
             responsiveHelper_dt_basic.createExpandIcon(nRow);
         },
-        drawCallback: function (oSettings) {
+        drawCallback: function(oSettings) {
             responsiveHelper_dt_basic.respond();
         },
         language: {
@@ -101,7 +101,7 @@ function initTablaMensajes() {
         data: dataMensajes,
         columns: [{
             data: "fecha",
-            render: function (data, type, row) {
+            render: function(data, type, row) {
                 var html = moment(data).format('DD/MM/YYYY HH:mm');
                 return html;
             }
@@ -110,11 +110,14 @@ function initTablaMensajes() {
         }, {
             data: "texto"
         }, {
+            data: "estado"
+        }, {
             data: "mensajeId",
-            render: function (data, type, row) {
+            render: function(data, type, row) {
                 var bt1 = "<button class='btn btn-circle btn-danger btn-lg' onclick='deleteMensaje(" + data + ");' title='Eliminar registro'> <i class='fa fa-trash-o fa-fw'></i> </button>";
                 var bt2 = "<button class='btn btn-circle btn-success btn-lg' onclick='editMensaje(" + data + ");' title='Editar registro'> <i class='fa fa-edit fa-fw'></i> </button>";
-                var html = "<div class='pull-right'>" + bt1 + " " + bt2 + "</div>";
+                var bt3 = "<button class='btn btn-circle btn-primary btn-lg' onclick='enviarMensaje(" + data + ");' title='Enviar mensaje'> <i class='fa fa-rocket fa-fw'></i> </button>";
+                var html = "<div class='pull-right'>" + bt3 + " " + bt2 + "" + bt1 + "</div>";
                 return html;
             }
         }]
@@ -134,7 +137,7 @@ function datosOK() {
             }
         },
         // Do not change code below
-        errorPlacement: function (error, element) {
+        errorPlacement: function(error, element) {
             error.insertAfter(element.parent());
         }
     });
@@ -155,7 +158,7 @@ function loadTablaMensajes(data) {
 }
 
 function buscarMensajes() {
-    var mf = function () {
+    var mf = function() {
         if (!datosOK()) {
             return;
         }
@@ -167,7 +170,7 @@ function buscarMensajes() {
             url: myconfig.apiUrl + "/api/mensajes/?nombre=" + aBuscar,
             dataType: "json",
             contentType: "application/json",
-            success: function (data, status) {
+            success: function(data, status) {
                 // hay que mostrarlo en la zona de datos
                 loadTablaMensajes(data);
             },
@@ -178,7 +181,7 @@ function buscarMensajes() {
 }
 
 function crearMensaje() {
-    var mf = function () {
+    var mf = function() {
         var url = "MensajeDetalle.html?MensajeId=0";
         window.open(url, '_self');
     };
@@ -192,7 +195,7 @@ function deleteMensaje(id) {
         title: "<i class='fa fa-info'></i> Mensaje",
         content: mens,
         buttons: '[Aceptar][Cancelar]'
-    }, function (ButtonPressed) {
+    }, function(ButtonPressed) {
         if (ButtonPressed === "Aceptar") {
             var data = {
                 mensajeId: id
@@ -203,9 +206,9 @@ function deleteMensaje(id) {
                 dataType: "json",
                 contentType: "application/json",
                 data: JSON.stringify(data),
-                success: function (data, status) {
-                    var fn = buscarMensajes();
-                    fn();
+                success: function(data, status) {
+                    $('#txtBuscar').val('*');
+                    buscarMensajes()();
                 },
                 error: errorAjax
             });
@@ -223,4 +226,30 @@ function editMensaje(id) {
     window.open(url, '_self');
 }
 
-
+function enviarMensaje(id) {
+    $.ajax({
+        type: "GET",
+        url: myconfig.apiUrl + "/api/mensajes/" + id,
+        dataType: "json",
+        contentType: "application/json",
+        success: function(data, status) {
+            var data2 = {
+                mensaje: data
+            };
+            $.ajax({
+                type: "POST",
+                url: myconfig.apiUrl + "/api/mensajes/sendnew",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(data2),
+                success: function(data, status) {
+                    // Nos volvemos al general
+                    var url = "MensajesGeneral.html?MensajeId=" + id;
+                    window.open(url, '_self');
+                },
+                error: errorAjax
+            });
+        },
+        error: errorAjax
+    });
+}

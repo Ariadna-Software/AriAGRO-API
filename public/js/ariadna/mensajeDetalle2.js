@@ -126,39 +126,20 @@ function aceptar() {
                 "telefonia": vm.telefonia()
             }
         };
-        if (mensId == 0) {
-            $.ajax({
-                type: "POST",
-                url: myconfig.apiUrl + "/api/mensajes",
-                dataType: "json",
-                contentType: "application/json",
-                data: JSON.stringify(data),
-                success: function(data, status) {
-                    // hay que mostrarlo en la zona de datos
-                    loadData(data);
-                    // Nos volvemos al general
-                    var url = "MensajesGeneral.html?MensajeId=" + vm.mensajeId();
-                    window.open(url, '_self');
-                },
-                error: errorAjax
-            });
-        } else {
-            $.ajax({
-                type: "PUT",
-                url: myconfig.apiUrl + "/api/mensajes/" + mensId,
-                dataType: "json",
-                contentType: "application/json",
-                data: JSON.stringify(data),
-                success: function(data, status) {
-                    // hay que mostrarlo en la zona de datos
-                    loadData(data);
-                    // Nos volvemos al general
-                    var url = "MensajesGeneral.html?MensajeId=" + vm.mensajeId();
-                    window.open(url, '_self');
-                },
-                error: errorAjax
-            });
-        }
+        $.ajax({
+            type: "POST",
+            url: myconfig.apiUrl + "/api/mensajes/sendnew",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify(data),
+            success: function(data, status) {
+                // Nos volvemos al general
+                var url = "MensajesGeneral.html?MensajeId=" + vm.mensajeId();
+                window.open(url, '_self');
+            },
+            error: errorAjax
+        });
+
     };
     return mf;
 }

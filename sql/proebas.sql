@@ -1,4 +1,3 @@
-SELECT m.asunto, u.nombre, mu.estado, mu.fecha AS fechalec
-FROM mensajes AS m
-LEFT JOIN mensajes_usuariospush AS mu ON (mu.mensajeId = m.mensajeId)
-LEFT JOIN usuariospush AS u ON (u.usuarioPushId = mu.usuarioPushId)
+UPDATE mensajes AS m, mensajes_usuariospush AS mu
+SET m.estado = 'PREPARADO', mu.estado = 'PREPARADO'
+WHERE m.mensajeId = 57 AND mu.mensajeId = 57;
