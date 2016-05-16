@@ -200,8 +200,8 @@
             <ol class="breadcrumb">
                 <li>Inicio</li>
                 <li>Administracion</li>
-                <li>Usuarios</li>
-                <li>Detalle usuario</li>
+                <li>Mensajes</li>
+                <li>Detalle mensaje</li>
             </ol>
             <!-- end breadcrumb -->
             <!-- You can also add more buttons to the
@@ -225,8 +225,8 @@
                     <h1 class="page-title txt-color-blueDark">
 
                             <!-- PAGE HEADER -->
-                            <i class="fa-fw fa fa-users"></i>
-                            Detalle usuario <a href="#" title="Ayuda"><i class="fa fa-question"></i></a>
+                            <i class="fa-fw fa fa-comment-o"></i>
+                            Detalle mensaje <a href="#" title="Ayuda"><i class="fa fa-question"></i></a>
                         </h1>
                 </div>
                 <!-- end col -->
@@ -279,15 +279,7 @@
                                 -->
                             <header>
                                 <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
-                                <h2>Mantenimiento usuarios </h2>
-                                <ul class="nav nav-tabs pull-right in" id="myTab">
-                                    <li class="active">
-                                        <a data-toggle="tab" href="#s1"><i class="fa fa-users"></i> <span class="hidden-mobile hidden-tablet">Datos</span></a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="tab" href="#s2"><i class="fa fa-comment-o"></i> <span class="hidden-mobile hidden-tablet">Mensajes</span></a>
-                                    </li>
-                                </ul>
+                                <h2>Mantenimiento mensajes </h2>
                             </header>
                             <!-- widget div-->
                             <div>
@@ -299,133 +291,63 @@
                                 <!-- end widget edit box -->
                                 <!-- widget content -->
                                 <div class="widget-body">
-                                    <div id="myTabContent" class="tab-content">
-                                        <div class="tab-pane fade active in padding-10 no-padding-bottom" id="s1">
-                                            <form id="frmUsuarioPush" class="smart-form">
-                                                <header>
-                                                    Datos del usuario.
-                                                </header>
-                                                <fieldset>
-                                                    <div class="row">
-                                                        <section class="col col-md-3">
-                                                            <label class="label">NIF</label>
-                                                            <label class="input">
-                                                                <input id="txtNif" name="txtNif" type="text" data-bind="value: nif" />
-                                                            </label>
-                                                        </section>
-                                                        <section class="col col-md-9">
-                                                            <label class="label">Nombre</label>
-                                                            <label class="input">
-                                                                <input id="txtNombre" name="txtNombre" type="text" data-bind="value: nombre" />
-                                                            </label>
-                                                        </section>
-                                                    </div>
-                                                    <div class="row">
-                                                        <section class="col col-md-3">
-                                                            <label class="label">Login</label>
-                                                            <label class="input">
-                                                                <input id="txtLogin" name="txtLogin" type="text" data-bind="value: login" />
-                                                            </label>
-                                                        </section>
-                                                        <section class="col col-md-3">
-                                                            <label class="label">Contraseña</label>
-                                                            <label class="input">
-                                                                <input id="txtPassword1" name="txtPassword1" type="password" />
-                                                            </label>
-                                                        </section>
-                                                        <section class="col col-md-3">
-                                                            <label class="label">Repita contraseña</label>
-                                                            <label class="input">
-                                                                <input id="txtPassword2" name="txtPassword2" type="password" />
-                                                            </label>
-                                                        </section>
-                                                        <section class="col col-md-3">
-                                                            <label class="label">Correo electrónico</label>
-                                                            <label class="input">
-                                                                <input id="txtEmail" name="txtEmail" type="email" data-bind="value: email" />
-                                                            </label>
-                                                        </section>
-                                                    </div>
-                                                    <div class="row">
-                                                        <section class="col col-md-3">
-                                                            <label class="label">COD. ARIAGRO</label>
-                                                            <label class="input">
-                                                                <input id="txtAriagroId" name="txtAriagroId" type="text" data-bind="value: ariagroId" />
-                                                            </label>
-                                                        </section>
-                                                        <section class="col col-md-3">
-                                                            <label class="label">COD. TIENDA</label>
-                                                            <label class="input">
-                                                                <input id="txtTiendaId" name="txtTiendaId" type="text" data-bind="value: tiendaId" />
-                                                            </label>
-                                                        </section>
-                                                        <section class="col col-md-3">
-                                                            <label class="label">COD. TELEFONÍA</label>
-                                                            <label class="input">
-                                                                <input id="txtTelefoniaId" name="txtTelefoniaId" type="text" data-bind="value: telefoniaId" />
-                                                            </label>
-                                                        </section>
-                                                        <section class="col col-md-3">
-                                                            <label class="label">COD. GASOLINERA</label>
-                                                            <label class="input">
-                                                                <input id="txtGasolineraId" name="txtGasolineraId" type="text" data-bind="value: gasolineraId" />
-                                                            </label>
-                                                        </section>
-                                                    </div>
-                                                    <div class="row">
-                                                        <section class="col col-md-6">
-                                                            <label class="label">PLAYER ID</label>
-                                                            <label class="input">
-                                                                <input id="txtPlayerId" name="txtPlayerId" type="text" data-bind="value: playerId" />
-                                                            </label>
-                                                        </section>
-                                                        <section class="col col-md-3">
-                                                        </section>
-                                                        <section class="col col-md-3">
-                                                        </section>
-                                                    </div>
-                                                </fieldset>
-                                                <fieldset>
-                                                    <div class="pull-right">
-                                                        <button id="btnSalir" title="Salir sin guardar" class="btn btn-warning btn-circle btn-lg">
-                                                            <i class="fa fa-lg fa-sign-out"></i>
-                                                        </button>
-                                                        <button id="btnAceptar" title="Guardar y salir" class="btn btn-success btn-circle btn-lg">
-                                                            <i class="fa fa-lg fa-check"></i>
-                                                        </button>
-                                                    </div>
-                                                </fieldset>
-                                            </form>
-                                        </div>
-                                        <!-- end s1 tab pane -->
-                                        <div class="tab-pane fade" id="s2">
-                                            <div id="tbMensaje">
-                                                <table id="dt_mensaje" class="table table-striped table-bordered table-hover" width="100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th data-hide="phone">
-                                                                Fecha mensaje
-                                                            </th>
-                                                            <th data-class="expand">
-                                                                <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i> Asunto
-                                                            </th>
-                                                            <th data-hide="phone">
-                                                                <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i>Texto
-                                                            </th>
-                                                            <th data-hide="phone">
-                                                                <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i>Estado
-                                                            </th>
-                                                            <th data-hide="phone">
-                                                                <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i>Lectura
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <!-- end s2 tab pane -->
-                                    </div>
                                     <!-- this is what the user will see -->
+                                    <form id="frmMensaje" class="smart-form">
+                                        <header>
+                                            Datos del mensaje.
+                                        </header>
+                                        <fieldset>
+                                            <div class="row">
+                                                <section class="col col-md-12">
+                                                    <label class="label">Asunto</label>
+                                                    <label class="input">
+                                                        <input id="txtNombre" name="txtAsunto" type="text" data-bind="value: asunto" />
+                                                    </label>
+                                                </section>
+                                            </div>
+                                            <div class="row">
+                                                <section class="col col-md-12">
+                                                    <label class="label">Texto</label>
+                                                    <label class="textarea textarea-resizable">
+                                                        <textarea id="txtTexto" rows="3" class="custom-scroll" data-bind="value:texto"></textarea>
+                                                    </label>
+                                                </section>
+                                            </div>
+                                            <div class="row">
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="pull-right">
+                                                <button id="btnSalir" title="Salir sin guardar" class="btn btn-warning btn-circle btn-lg">
+                                                    <i class="fa fa-lg fa-sign-out"></i>
+                                                </button>
+                                                <button id="btnAceptar" title="Guardar y salir" class="btn btn-success btn-circle btn-lg">
+                                                    <i class="fa fa-lg fa-check"></i>
+                                                </button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <div id="tbMensaje">
+                                        <header>
+                                            Usuarios relacionados
+                                        </header>
+                                        <hr/>
+                                        <table id="dt_mensaje" class="table table-striped table-bordered table-hover" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th data-hide="phone">
+                                                        Usuario
+                                                    </th>
+                                                    <th data-class="expand">
+                                                        <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i> Estado
+                                                    </th>
+                                                    <th data-hide="phone">
+                                                        <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i> Fecha lectura
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
                                 </div>
                                 <!-- end widget content -->
                             </div>
@@ -517,9 +439,10 @@
     <script src="js/knockout-3.1.0.js"></script>
     <!-- PAGE RELATED PLUGIN(S) 
         <script src="..."></script>-->
-    <script src="myconfig.js"></script>
+    <!-- MOMENT -->
     <script src="js/moment.js"></script>
-    <script src="js/ariadna/usuarioPushDetalle.js"></script>
+    <script src="myconfig.js"></script>
+    <script src="js/ariadna/mensajeDetalle2.js"></script>
     <script src="js/ariadna/comun.js"></script>
     <!-- PAGE RELATED PLUGIN(S) -->
     <script src="js/plugin/datatables/jquery.dataTables.min.js"></script>

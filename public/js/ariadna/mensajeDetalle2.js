@@ -1,8 +1,9 @@
 ﻿/*-------------------------------------------------------------------------- 
-usuarioPushDetalle.js
-Funciones js par la página UsuarioPushDetalle.html
+mensajeDetalle.js
+Funciones js par la página MensajeDetalle.html
 ---------------------------------------------------------------------------*/
-var usuPushId = 0;
+var mensId = 0;
+
 var responsiveHelper_dt_basic = undefined;
 var responsiveHelper_datatable_fixed_column = undefined;
 var responsiveHelper_datatable_col_reorder = undefined;
@@ -15,7 +16,6 @@ var breakpointDefinition = {
     phone: 480
 };
 
-
 function initForm() {
     comprobarLogin();
     // de smart admin
@@ -27,109 +27,78 @@ function initForm() {
     // asignación de eventos al clic
     $("#btnAceptar").click(aceptar());
     $("#btnSalir").click(salir());
-    $("#frmUsuarioPush").submit(function() {
+    $("#frmMensaje").submit(function() {
         return false;
     });
 
+
     initTablaMensajes();
 
-    usuPushId = gup('UsuarioPushId');
-    if (usuPushId != 0) {
+    mensId = gup('MensajeId');
+    if (mensId != 0) {
         var data = {
-                usuarioPushId: usuPushId
+                mensajeId: mensId
             }
             // hay que buscar ese elemento en concreto
         $.ajax({
             type: "GET",
-            url: myconfig.apiUrl + "/api/usupush/" + usuPushId,
+            url: myconfig.apiUrl + "/api/mensajes/" + mensId,
             dataType: "json",
             contentType: "application/json",
             data: JSON.stringify(data),
             success: function(data, status) {
                 // hay que mostrarlo en la zona de datos
                 loadData(data);
-                buscarMensajesUsuario(data.usuarioPushId);
+                buscarMensajesUsuario(data.mensajeId)
             },
             error: errorAjax
         });
     } else {
         // se trata de un alta ponemos el id a cero para indicarlo.
-        vm.usuarioPushId(0);
+        vm.mensajeId(0);
     }
 }
 
 function admData() {
     var self = this;
-    self.usuarioPushId = ko.observable();
-    self.nif = ko.observable();
-    self.nombre = ko.observable();
-    self.login = ko.observable();
-    self.password = ko.observable();
-    self.email = ko.observable();
-    self.ariagroId = ko.observable();
-    self.tiendaId = ko.observable();
-    self.gasolineraId = ko.observable();
-    self.telefoniaId = ko.observable();
-    self.playerId = ko.observable();
+    self.mensajeId = ko.observable();
+    self.asunto = ko.observable();
+    self.texto = ko.observable();
+    // soporte de combos
+    self.posiblesUsuariosPush = ko.observableArray([]);
+    self.elegidosUsuariosPush = ko.observableArray([]);
+    // valores escogidos
+    self.sUsuarioPushId = ko.observable();
+    // valores para checks
+    self.ariagro = ko.observable();
+    self.tienda = ko.observable();
+    self.gasolinera = ko.observable();
+    self.telefonia = ko.observable();
 }
 
 function loadData(data) {
-    vm.usuarioPushId(data.usuarioPushId);
-    vm.nombre(data.nombre);
-    vm.login(data.login);
-    vm.password(data.password);
-    vm.email(data.email);
-    vm.nif(data.nif);
-    vm.ariagroId(data.ariagroId);
-    vm.tiendaId(data.tiendaId);
-    vm.gasolineraId(data.gasolineraId);
-    vm.telefoniaId(data.telefoniaId);
-    vm.playerId(data.playerId);
+    vm.mensajeId(data.mensajeId);
+    vm.asunto(data.asunto);
+    vm.texto(data.texto);
 }
 
 function datosOK() {
-    // antes de la validación de form hay que verificar las password
-    if ($('#txtPassword1').val() !== "") {
-        // si ha puesto algo, debe coincidir con el otro campo
-        if ($('#txtPassword1').val() !== $('#txtPassword2').val()) {
-            mostrarMensajeSmart('Las contraseñas no coinciden');
-            return false;
-        }
-        vm.password($("#txtPassword1").val());
-    }
-    // controlamos que si es un alta debe dar una contraseña.
-    if (vm.usuarioPushId() === 0 && $('#txtPassword1').val() === "") {
-        mostrarMensajeSmart('Debe introducir una contraseña en el alta');
-        return false;
-    }
-    $('#frmUsuarioPush').validate({
+    $('#frmMensaje').validate({
         rules: {
-            txtNif: {
+            txtAsunto: {
                 required: true
             },
-            txtNombre: {
+            txtTexto: {
                 required: true
-            },
-            txtLogin: {
-                required: true
-            },
-            txtEmail: {
-                email: true
             }
         },
         // Messages for form validation
         messages: {
-            txtNif: {
-                required: 'Introduzca nif'
+            txtAsunto: {
+                required: 'Introduzca un asunto'
             },
-            txtNombre: {
-                required: 'Introduzca el nombre'
-            },
-            txtLogin: {
-                required: 'Introduzca el login'
-            },
-            txtEmail: {
-                email: 'Debe usar un correo válido'
+            txtTexto: {
+                required: 'Introduzca un texto'
             }
         },
         // Do not change code below
@@ -137,8 +106,8 @@ function datosOK() {
             error.insertAfter(element.parent());
         }
     });
-    var opciones = $("#frmUsuarioPush").validate().settings;
-    return $('#frmUsuarioPush').valid();
+    var opciones = $("#frmMensaje").validate().settings;
+    return $('#frmMensaje').valid();
 }
 
 function aceptar() {
@@ -146,23 +115,21 @@ function aceptar() {
         if (!datosOK())
             return;
         var data = {
-            usuarioPush: {
-                "usuarioPushId": vm.usuarioPushId(),
-                "login": vm.login(),
-                "email": vm.email(),
-                "nombre": vm.nombre(),
-                "password": vm.password(),
-                "nif": vm.nif(),
-                "ariagroId": vm.ariagroId(),
-                "tiendaId": vm.tiendaId(),
-                "gasolineraId": vm.gasolineraId(),
-                "telefoniaId": vm.telefoniaId()
+            mensaje: {
+                "mensajeId": vm.mensajeId(),
+                "asunto": vm.asunto(),
+                "texto": vm.texto(),
+                "usuarioPushId": vm.sUsuarioPushId(),
+                "ariagro": vm.ariagro(),
+                "tienda": vm.tienda(),
+                "gasolinera": vm.gasolinera(),
+                "telefonia": vm.telefonia()
             }
         };
-        if (usuPushId == 0) {
+        if (mensId == 0) {
             $.ajax({
                 type: "POST",
-                url: myconfig.apiUrl + "/api/usupush",
+                url: myconfig.apiUrl + "/api/mensajes",
                 dataType: "json",
                 contentType: "application/json",
                 data: JSON.stringify(data),
@@ -170,7 +137,7 @@ function aceptar() {
                     // hay que mostrarlo en la zona de datos
                     loadData(data);
                     // Nos volvemos al general
-                    var url = "UsuariosPushGeneral.html?UsuarioPushId=" + vm.usuarioPushId();
+                    var url = "MensajesGeneral.html?MensajeId=" + vm.mensajeId();
                     window.open(url, '_self');
                 },
                 error: errorAjax
@@ -178,7 +145,7 @@ function aceptar() {
         } else {
             $.ajax({
                 type: "PUT",
-                url: myconfig.apiUrl + "/api/usupush/" + usuPushId,
+                url: myconfig.apiUrl + "/api/mensajes/" + mensId,
                 dataType: "json",
                 contentType: "application/json",
                 data: JSON.stringify(data),
@@ -186,7 +153,7 @@ function aceptar() {
                     // hay que mostrarlo en la zona de datos
                     loadData(data);
                     // Nos volvemos al general
-                    var url = "UsuariosPushGeneral.html?UsuarioPushId=" + vm.usuarioPushId();
+                    var url = "MensajesGeneral.html?MensajeId=" + vm.mensajeId();
                     window.open(url, '_self');
                 },
                 error: errorAjax
@@ -198,11 +165,12 @@ function aceptar() {
 
 function salir() {
     var mf = function() {
-        var url = "UsuariosPushGeneral.html";
+        var url = "MensajesGeneral.html";
         window.open(url, '_self');
     }
     return mf;
 }
+
 
 function initTablaMensajes() {
     tablaCarro = $('#dt_mensaje').dataTable({
@@ -242,18 +210,7 @@ function initTablaMensajes() {
         },
         data: dataMensajes,
         columns: [{
-            data: "fecha",
-            render: function(data, type, row) {
-                var html = "";
-                if (moment(data).isValid()) {
-                    html = moment(data).format('DD/MM/YYYY HH:mm');
-                }
-                return html;
-            }
-        }, {
-            data: "asunto"
-        }, {
-            data: "texto"
+            data: "nombre",
         }, {
             data: "estado"
         }, {
@@ -278,11 +235,11 @@ function loadTablaMensajes(data) {
     }
 }
 
-function buscarMensajesUsuario(usuarioPushId) {
+function buscarMensajesUsuario(mensajeId) {
     // enviar la consulta por la red (AJAX)
     $.ajax({
         type: "GET",
-        url: myconfig.apiUrl + "/api/mensajes/usuario/" + usuarioPushId,
+        url: myconfig.apiUrl + "/api/mensajes/usuarios-mensaje/" + mensajeId,
         dataType: "json",
         contentType: "application/json",
         success: function(data, status) {

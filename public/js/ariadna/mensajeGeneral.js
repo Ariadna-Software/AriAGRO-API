@@ -219,7 +219,7 @@ function deleteMensaje(id) {
 function editMensaje(id) {
     // hay que abrir la página de detalle de mensaje
     // pasando en la url ese ID
-    var url = "MensajeDetalle.html?MensajeId=" + id;
+    var url = "MensajeDetalle2.html?MensajeId=" + id;
     window.open(url, '_self');
 }
 
