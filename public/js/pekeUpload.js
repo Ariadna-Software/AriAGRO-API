@@ -20,7 +20,7 @@
             bootstrap: false,
             btnText: "Browse files...",
             allowedExtensions: "",
-            invalidExtError: "Invalid File Type",
+            invalidExtError: "Tipo de fichero inválido",
             maxSize: 0,
             sizeError: "Size of the file is greather than allowed",
             showPreview: true,
@@ -32,7 +32,7 @@
             url: "upload.php",
             data: null,
             limit: 0,
-            limitError: "You have reached the limit of files that you can upload",
+            limitError: "Ha superado el límite de ficheros permitidos en la carga",
             onFileError: function(file, error) {},
             onFileSuccess: function(file, data) {}
         };

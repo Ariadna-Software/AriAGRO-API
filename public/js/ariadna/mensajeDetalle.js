@@ -23,6 +23,9 @@ function initForm() {
     // carga del desplegable.
     loadUsuariosPush();
 
+    // control de carga
+    createUpload(0);
+
     $("#cmbUsuariosPush").select2({
         allowClear: true,
         language: {
@@ -95,6 +98,8 @@ function admData() {
     self.tienda = ko.observable();
     self.gasolinera = ko.observable();
     self.telefonia = ko.observable();
+    // valores de fichero
+    self.fichero = ko.observable("");
 }
 
 function loadData(data) {
@@ -144,7 +149,8 @@ function aceptar() {
                 "ariagro": vm.ariagro(),
                 "tienda": vm.tienda(),
                 "gasolinera": vm.gasolinera(),
-                "telefonia": vm.telefonia()
+                "telefonia": vm.telefonia(),
+                "fichero": vm.fichero()
             }
         };
         if (mensId == 0) {
@@ -204,5 +210,33 @@ function loadUsuariosPush() {
             vm.posiblesUsuariosPush(usuariosPush);
         },
         error: errorAjax
+    });
+}
+
+function sucUpload(file, data) {
+    $('#txtRespuesta').html('Fichero cargado correctamente.<br/> Haga clic en el botón <i class="fa fa-check success"></i> para procesar usuarios.');
+    vm.fichero(data.FileName);
+    console.log('SucUpload');
+    console.log('file: ', fileName);
+    console.log('data: ', data);
+}
+
+function errUpload(file, data) {
+    console.log('ErrUpload');
+    console.log('file: ', file);
+    console.log('data: ', data);
+}
+
+function createUpload(id) {
+    if (!id) id = 0;
+    // montar el control de carga
+    $("#uploadImage").pekeUpload({
+        multi: false,
+        limit: 1,
+        allowedExtensions: "xlsx|xls|csv",
+        btnText: "  Cargar archivo  ",
+        url: myconfig.apiUrl + "/api/uploader",
+        onFileError: errUpload,
+        onFileSuccess: sucUpload,
     });
 }

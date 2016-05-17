@@ -1,4 +1,5 @@
 {
 	"apiPort":8021,
-	"apiHost":"localhost"
+	"apiHost":"localhost",
+	"ficheros": "C:\\ASW\\AriAgroApi\\ficheros\\"
 }

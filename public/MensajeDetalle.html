@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.min.css">
     <!-- SmartAdmin RTL Support -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css">
     <!-- We recommend you use "your_style.css" to override SmartAdmin
         specific styles this will also ensure you retrain your customization with each SmartAdmin update.
         <link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css"> -->
@@ -326,8 +328,6 @@
                                                             </label>
                                                         </section>
                                                     </div>
-                                                </section>
-                                                <section class="col col-md-6">
                                                     <div class="row">
                                                         <header>Enviar a varios usuarios</header>
                                                     </div>
@@ -361,6 +361,24 @@
                                                                 <input id="chkGasolinera" type="checkbox" name="chkGasolinera" data-bind="checked: gasolinera">
                                                                 <i></i>Clientes de la gasolinera
                                                             </label>
+                                                        </section>
+                                                    </div>
+                                                </section>
+                                                <section class="col col-md-6">
+                                                    <div class="row">
+                                                        <header>Enviar desde fichero</header>
+                                                    </div>
+                                                    <div class="row">
+                                                        <section class="col col-md-12">
+                                                            <label class="label">Seleccione el fichero a procesar</label>
+                                                            <div class="input input-file">
+                                                                <input type="file" id="uploadImage" name="uploadImage" />
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <div class="row">
+                                                        <section class="col col-md-12">
+                                                            <div id="txtRespuesta"></div>
                                                         </section>
                                                     </div>
                                                 </section>
@@ -470,6 +488,7 @@
         <script src="..."></script>-->
     <!-- MOMENT -->
     <script src="js/moment.js"></script>
+    <script src="js/pekeUpload.js"></script>
     <script src="myconfig.js"></script>
     <script src="js/ariadna/mensajeDetalle.js"></script>
     <script src="js/ariadna/comun.js"></script>

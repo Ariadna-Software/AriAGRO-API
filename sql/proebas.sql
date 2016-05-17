@@ -1,3 +1,1 @@
-UPDATE mensajes AS m, mensajes_usuariospush AS mu
-SET m.estado = 'PREPARADO', mu.estado = 'PREPARADO'
-WHERE m.mensajeId = 57 AND mu.mensajeId = 57;
+SELECT u.usuarioPushId, u.playerId FROM usuariospush AS u WHERE u.comunId IN ('11,113,114')
