@@ -66,11 +66,19 @@ function admData() {
     self.login = ko.observable();
     self.password = ko.observable();
     self.email = ko.observable();
+    self.comunId = ko.observable();
     self.ariagroId = ko.observable();
     self.tiendaId = ko.observable();
     self.gasolineraId = ko.observable();
     self.telefoniaId = ko.observable();
     self.playerId = ko.observable();
+    self.direccion = ko.observable();
+    self.codPostal = ko.observable();
+    self.poblacion = ko.observable();
+    self.provincia = ko.observable();
+    self.telefono1 = ko.observable();
+    self.telefono2 = ko.observable();
+    self.iban = ko.observable();
 }
 
 function loadData(data) {
@@ -80,11 +88,19 @@ function loadData(data) {
     vm.password(data.password);
     vm.email(data.email);
     vm.nif(data.nif);
+    vm.comunId(data.comunId);
     vm.ariagroId(data.ariagroId);
     vm.tiendaId(data.tiendaId);
     vm.gasolineraId(data.gasolineraId);
     vm.telefoniaId(data.telefoniaId);
     vm.playerId(data.playerId);
+    vm.direccion(data.direccion);
+    vm.codPostal(data.codPostal);
+    vm.poblacion(data.poblacion);
+    vm.provincia(data.provincia);
+    vm.telefono1(data.telefono1);
+    vm.telefono2(data.telefono2);
+    vm.iban(data.iban);
 }
 
 function datosOK() {
@@ -153,10 +169,18 @@ function aceptar() {
                 "nombre": vm.nombre(),
                 "password": vm.password(),
                 "nif": vm.nif(),
+                "comunId": vm.comunId(),
                 "ariagroId": vm.ariagroId(),
                 "tiendaId": vm.tiendaId(),
                 "gasolineraId": vm.gasolineraId(),
-                "telefoniaId": vm.telefoniaId()
+                "telefoniaId": vm.telefoniaId(),
+                "direccion": vm.direccion(),
+                "codPostal": vm.codPostal(),
+                "poblacion": vm.poblacion(),
+                "provincia": vm.provincia(),
+                "telefono1": vm.telefono1(),
+                "telefono2": vm.telefono2(),
+                "iban": vm.iban()
             }
         };
         if (usuPushId == 0) {

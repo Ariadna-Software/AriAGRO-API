@@ -1,6 +1,6 @@
 {
   "name": "AriAgroApi",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "API de acceso para la aplici�n AriAgro",
   "main": "server.js",
   "author": {
