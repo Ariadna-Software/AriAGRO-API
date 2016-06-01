@@ -316,39 +316,24 @@
                                                 </section>
                                             </div>
                                             <div class="row">
-                                                <section class="col col-md-6">
+                                                <section class="col col-md-8">
                                                     <div class="row">
-                                                        <header>Enviar a un usuario</header>
+                                                        <header>Enviar a grupos de usuarios</header>
                                                     </div>
                                                     <div class="row">
-                                                        <section class="col col-md-12">
-                                                            <label class="label">Usuario</label>
-                                                            <label style="width:100%;">
-                                                                <select style="width:100%;" id="cmbUsuariosPush" name="cmbUsuariosPush" data-bind="options: posiblesUsuariosPush, optionsText: 'nombre', optionsValue: 'usuarioPushId', value: sUsuarioPushId, valueAllowUnset: true, selectedOptions: elegidosUsuariosPush, selected2:{}"></select><i></i>
-                                                            </label>
-                                                        </section>
-                                                    </div>
-                                                    <div class="row">
-                                                        <header>Enviar a varios usuarios</header>
-                                                    </div>
-                                                    <div class="row">
-                                                        <section class="col col-md-12">
+                                                        <section class="col col-md-4">
                                                             <label class="checkbox">
                                                                 <input id="chkAriagro" type="checkbox" name="chkAriagro" data-bind="checked: ariagro">
                                                                 <i></i>Socios de cooperativa
                                                             </label>
                                                         </section>
-                                                    </div>
-                                                    <div class="row">
-                                                        <section class="col col-md-12">
+                                                        <section class="col col-md-4">
                                                             <label class="checkbox">
                                                                 <input id="chkTienda" type="checkbox" name="chkTienda" data-bind="checked: tienda">
                                                                 <i></i>Clientes de la tienda
                                                             </label>
                                                         </section>
-                                                    </div>
-                                                    <div class="row">
-                                                        <section class="col col-md-12">
+                                                        <section class="col col-md-4">
                                                             <label class="checkbox">
                                                                 <input id="chkTelefonia" type="checkbox" name="chkTelefonia" data-bind="checked: telefonia">
                                                                 <i></i>Clientes de telefonía
@@ -356,15 +341,34 @@
                                                         </section>
                                                     </div>
                                                     <div class="row">
-                                                        <section class="col col-md-12">
+                                                        <section class="col col-md-4">
                                                             <label class="checkbox">
                                                                 <input id="chkGasolinera" type="checkbox" name="chkGasolinera" data-bind="checked: gasolinera">
                                                                 <i></i>Clientes de la gasolinera
                                                             </label>
                                                         </section>
+                                                        <section class="col col-md-4">
+                                                            <label class="checkbox">
+                                                                <input id="chkSoloMensajes" type="checkbox" name="chkSoloMensajes" data-bind="checked: soloMensajes">
+                                                                <i></i>Usuarios solo de mensajes
+                                                            </label>
+                                                        </section>
+                                                        <section class="col col-md-4">
+                                                        </section>
+                                                    </div>
+                                                    <div class="row">
+                                                        <header>Enviar a usuarios seleccionados</header>
+                                                    </div>
+                                                    <div class="row">
+                                                        <section class="col col-md-12">
+                                                            <label class="label">Usuarios:</label>
+                                                            <label style="width:100%;">
+                                                                <select style="width:100%;" id="cmbUsuariosPush" multiple="multiple" name="cmbUsuariosPush" data-bind="options: posiblesUsuariosPush, optionsText: 'nombre', optionsValue: 'usuarioPushId', value: sUsuarioPushId, valueAllowUnset: true, selectedOptions: elegidosUsuariosPush, selected2:{}"></select><i></i>
+                                                            </label>
+                                                        </section>
                                                     </div>
                                                 </section>
-                                                <section class="col col-md-6">
+                                                <section class="col col-md-4">
                                                     <div class="row">
                                                         <header>Enviar desde fichero</header>
                                                     </div>

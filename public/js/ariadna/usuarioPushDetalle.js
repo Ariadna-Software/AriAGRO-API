@@ -79,6 +79,7 @@ function admData() {
     self.telefono1 = ko.observable();
     self.telefono2 = ko.observable();
     self.iban = ko.observable();
+    self.soloMensajes = ko.observable();
 }
 
 function loadData(data) {
@@ -101,6 +102,7 @@ function loadData(data) {
     vm.telefono1(data.telefono1);
     vm.telefono2(data.telefono2);
     vm.iban(data.iban);
+    vm.soloMensajes(data.soloMensajes);
 }
 
 function datosOK() {
@@ -180,7 +182,8 @@ function aceptar() {
                 "provincia": vm.provincia(),
                 "telefono1": vm.telefono1(),
                 "telefono2": vm.telefono2(),
-                "iban": vm.iban()
+                "iban": vm.iban(),
+                "soloMensajes": vm.soloMensajes()
             }
         };
         if (usuPushId == 0) {

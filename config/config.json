@@ -1,5 +1,15 @@
 {
-	"apiPort":8021,
-	"apiHost":"localhost",
-	"ficheros": "C:\\ASW\\AriAgroApi\\ficheros\\"
+    "apiPort": 8021,
+    "apiHost": "localhost",
+    "ficheros": "C:\\ASW\\AriAgroApi\\ficheros\\",
+    "smtpConfig": {
+        "host": "smtp.gmail.com",
+        "port": 465,
+        "secure": true, 
+        "auth": {
+            "user": "rafa@myariadna.com",
+            "pass": "aritel2011"
+        }
+    },
+    "destinatario": "rafa@myariadna.com"
 }

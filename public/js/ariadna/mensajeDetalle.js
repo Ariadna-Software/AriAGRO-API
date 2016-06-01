@@ -16,6 +16,15 @@ function initForm() {
     // asignación de eventos al clic
     $("#btnAceptar").click(aceptar());
     $("#btnSalir").click(salir());
+
+    // control de los checks
+    $('#chkAriagro').change(changeCheck());
+    $('#chkTienda').change(changeCheck());
+    $('#chkTelefonia').change(changeCheck());
+    $('#chkGasolinera').change(changeCheck());
+    $('#chkSoloMensajes').change(changeCheck());
+
+
     $("#frmMensaje").submit(function() {
         return false;
     });
@@ -98,6 +107,7 @@ function admData() {
     self.tienda = ko.observable();
     self.gasolinera = ko.observable();
     self.telefonia = ko.observable();
+    self.soloMensajes = ko.observable();
     // valores de fichero
     self.fichero = ko.observable("");
 }
@@ -145,11 +155,12 @@ function aceptar() {
                 "mensajeId": vm.mensajeId(),
                 "asunto": vm.asunto(),
                 "texto": vm.texto(),
-                "usuarioPushId": vm.sUsuarioPushId(),
+                "usuarios": vm.elegidosUsuariosPush(),
                 "ariagro": vm.ariagro(),
                 "tienda": vm.tienda(),
                 "gasolinera": vm.gasolinera(),
                 "telefonia": vm.telefonia(),
+                "soloMensajes": vm.soloMensajes(),
                 "fichero": vm.fichero()
             }
         };
@@ -206,7 +217,8 @@ function loadUsuariosPush() {
         dataType: "json",
         contentType: "application/json",
         success: function(data, status) {
-            var usuariosPush = [{ usuarioPushId: 0, nombre: "", playerId:"" }].concat(data);
+            //var usuariosPush = [{ usuarioPushId: 0, nombre: "", playerId:"" }].concat(data);
+            var usuariosPush = data;
             vm.posiblesUsuariosPush(usuariosPush);
         },
         error: errorAjax
@@ -239,4 +251,28 @@ function createUpload(id) {
         onFileError: errUpload,
         onFileSuccess: sucUpload,
     });
+}
+
+function changeCheck() {
+    var mf = function() {
+        var url = "/api/usupush/logados2?dummy=s";
+        if ($('#chkAriagro').is(':checked')) url += "&ariagro=s";
+        if ($('#chkTienda').is(':checked')) url += "&tienda=s";
+        if ($('#chkTelefonia').is(':checked')) url += "&telefonia=s";
+        if ($('#chkGasolinera').is(':checked')) url += "&gasolinera=s";
+        if ($('#chkSoloMensajes').is(':checked')) url += "&soloMensajes=s";
+        $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "json",
+            contentType: "application/json",
+            success: function(data, status) {
+                //var usuariosPush = [{ usuarioPushId: 0, nombre: "", playerId:"" }].concat(data);
+                var usuariosPush = data;
+                vm.posiblesUsuariosPush(usuariosPush);
+            },
+            error: errorAjax
+        });
+    };
+    return mf;
 }
