@@ -80,6 +80,7 @@ function admData() {
     self.telefono2 = ko.observable();
     self.iban = ko.observable();
     self.soloMensajes = ko.observable();
+    self.esTrabajador = ko.observable();
 }
 
 function loadData(data) {
@@ -103,6 +104,7 @@ function loadData(data) {
     vm.telefono2(data.telefono2);
     vm.iban(data.iban);
     vm.soloMensajes(data.soloMensajes);
+    vm.esTrabajador(data.esTrabajador);
 }
 
 function datosOK() {
@@ -183,7 +185,8 @@ function aceptar() {
                 "telefono1": vm.telefono1(),
                 "telefono2": vm.telefono2(),
                 "iban": vm.iban(),
-                "soloMensajes": vm.soloMensajes()
+                "soloMensajes": vm.soloMensajes(),
+                "esTrabajador": vm.esTrabajador()
             }
         };
         if (usuPushId == 0) {

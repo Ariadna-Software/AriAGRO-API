@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title> Ariadna Notificaciones </title>
+    <title> Ariadna Notificaciones (Mensajes)</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- #CSS Links -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css">
     <!-- Basic Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
@@ -342,6 +344,15 @@
                                                         <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i> Estado
                                                     </th>
                                                     <th data-hide="phone">
+                                                        <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i> Telefono (1)
+                                                    </th>
+                                                    <th data-hide="phone">
+                                                        <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i> Telefono (2)
+                                                    </th>
+                                                    <th data-hide="phone">
+                                                        <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i> Correo
+                                                    </th>                                                    
+                                                    <th data-hide="phone">
                                                         <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i> Última lectura
                                                     </th>
                                                 </tr>
@@ -450,6 +461,15 @@
     <script src="js/plugin/datatables/dataTables.tableTools.min.js"></script>
     <script src="js/plugin/datatables/dataTables.bootstrap.min.js"></script>
     <script src="js/plugin/datatable-responsive/datatables.responsive.min.js"></script>
+    <!-- Datatables buttons -->
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src=" https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.2.1/js/buttons.flash.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js"></script>
     <script type="text/javascript">
     (function($) {
         $(document).ready(function() {

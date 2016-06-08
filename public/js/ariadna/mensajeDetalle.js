@@ -23,6 +23,7 @@ function initForm() {
     $('#chkTelefonia').change(changeCheck());
     $('#chkGasolinera').change(changeCheck());
     $('#chkSoloMensajes').change(changeCheck());
+    $('#chkEsTrabajador').change(changeCheck());
 
 
     $("#frmMensaje").submit(function() {
@@ -108,6 +109,7 @@ function admData() {
     self.gasolinera = ko.observable();
     self.telefonia = ko.observable();
     self.soloMensajes = ko.observable();
+    self.esTrabajador = ko.observable();
     // valores de fichero
     self.fichero = ko.observable("");
 }
@@ -161,6 +163,7 @@ function aceptar() {
                 "gasolinera": vm.gasolinera(),
                 "telefonia": vm.telefonia(),
                 "soloMensajes": vm.soloMensajes(),
+                "esTrabajador": vm.esTrabajador(),
                 "fichero": vm.fichero()
             }
         };
@@ -261,6 +264,7 @@ function changeCheck() {
         if ($('#chkTelefonia').is(':checked')) url += "&telefonia=s";
         if ($('#chkGasolinera').is(':checked')) url += "&gasolinera=s";
         if ($('#chkSoloMensajes').is(':checked')) url += "&soloMensajes=s";
+        if ($('#chkEsTrabajador').is(':checked')) url += "&esTrabajador=s";
         $.ajax({
             type: "GET",
             url: url,

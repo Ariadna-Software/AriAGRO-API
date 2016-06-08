@@ -80,6 +80,9 @@ function loadData(data) {
     vm.mensajeId(data.mensajeId);
     vm.asunto(data.asunto);
     vm.texto(data.texto);
+    // cambiamos el título por si imprimen
+    document.title = "Ariadna Noticaciones (Mensaje: " + data.asunto + ")";
+
 }
 
 function datosOK() {
@@ -157,6 +160,10 @@ function initTablaMensajes() {
     tablaCarro = $('#dt_mensaje').dataTable({
         autoWidth: true,
         bSort: false,
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ],
         preDrawCallback: function() {
             // Initialize the responsive datatables helper once.
             if (!responsiveHelper_dt_basic) {
@@ -176,6 +183,7 @@ function initTablaMensajes() {
             infoFiltered: "(filtrado de un total de _MAX_ registros)",
             infoPostFix: "",
             loadingRecords: "Cargando...",
+            search: "Buscar: ",
             zeroRecords: "No se encontraron resultados",
             emptyTable: "Ningún dato disponible en esta tabla",
             paginate: {
@@ -194,6 +202,12 @@ function initTablaMensajes() {
             data: "nombre",
         }, {
             data: "estado"
+        }, {
+            data: "telefono1"
+        }, {
+            data: "telefono2"
+        }, {
+            data: "email"
         }, {
             data: "fechalec",
             render: function(data, type, row) {
