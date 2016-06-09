@@ -94,4 +94,5 @@ app.use('/api', router);
 // START SERVER
 //==========================
 app.listen(config.apiPort);
+console.log("AriAgroApi VRS: ", pjson.version)
 console.log("AriAgroApi en puerto: ", config.apiPort);

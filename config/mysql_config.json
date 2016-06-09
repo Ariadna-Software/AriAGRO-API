@@ -10,7 +10,8 @@
     "database_telefonia": "ariges1",
     "database_gasolinera": "ariagroutil",
     "database_push": "aripush",
-    "tipo_adv_tienda": ["FAS"],
+    "database_tratamientos":"ariges3",
+    "tipo_fac_adv": ["FAS"],
     "tipo_fac_telefonia": ["FAT"],
     "tipo_fac_tienda":["FAV"]
 }
