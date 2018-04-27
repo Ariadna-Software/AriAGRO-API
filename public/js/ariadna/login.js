@@ -71,7 +71,7 @@ function loginForm() {
                     var a = data;
                     // guadar el administrador en los cookies
                     setCookie("administrador", JSON.stringify(a), 1)
-                    window.open('Index.html', '_self');
+                    window.open('index.html', '_self');
                 }
             },
             error: function (xhr, textStatus, errorThrwon) {

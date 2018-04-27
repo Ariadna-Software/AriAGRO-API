@@ -109,7 +109,7 @@ function aceptar() {
                 // hay que mostrarlo en la zona de datos
                 loadData(data);
                 // Nos volvemos al general
-                var url = "Index.html";
+                var url = "index.html";
                 window.open(url, '_self');
             },
             error: errorAjax
@@ -120,7 +120,7 @@ function aceptar() {
 
 function salir() {
     var mf = function() {
-        var url = "Index.html";
+        var url = "index.html";
         window.open(url, '_self');
     }
     return mf;
