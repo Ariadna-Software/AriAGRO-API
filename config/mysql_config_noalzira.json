@@ -1,0 +1,35 @@
+﻿{
+    "server": "localhost",
+    "port": "3306",
+    "user": "root",
+    "password": "aritel",
+    "ariagro": {
+        "server": "localhost",
+        "port": 3306,
+        "user": "root",
+        "password": "aritel",
+        "database": "ariagro"
+    },
+    "usuarios": {
+        "server": "localhost",
+        "port": 3306,
+        "user": "root",
+        "password": "aritel",
+        "database": "usuarios"
+    },
+    "tienda": {
+        "server": "localhost",
+        "port": 3306,
+        "user": "root",
+        "password": "aritel",
+        "database": "ariges1",
+        "tipo_fac_tienda": ["FAV","FRT","FTI"]
+    },
+    "push": {
+        "server": "localhost",
+        "port": 3306,
+        "user": "root",
+        "password": "aritel",
+        "database": "aripush"
+    }
+}
