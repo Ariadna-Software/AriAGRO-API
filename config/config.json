@@ -7,9 +7,9 @@
         "port": 465,
         "secure": true, 
         "auth": {
-            "user": "vicent@myariadna.com",
-            "pass": "pipo123@"
+            "user": "rafa@myariadna.com",
+            "pass": "******"
         }
     },
-    "destinatario": "vicent@myariadna.com"
+    "destinatario": "rafa@myariadna.com, ragare@gmail.com"
 }
