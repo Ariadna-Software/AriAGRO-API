@@ -39,6 +39,7 @@ app.use(bodyParser.json());
 
 // servidor html estático
 app.use(express.static(__dirname+"/public"));
+app.use('/mobile', express.static(__dirname+"/www"));
 
 //-------------------------------------------------------------
 // RUTAS

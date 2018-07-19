@@ -1,4 +1,7 @@
 ﻿// Funciones de apoyo a la página login.html
+var objeto_window_referencia;
+var configuracion_ventana = "height=736,width=414,toolbar=no,scrollbars=no,resizable=yes";
+
 function initForm() {
     // de smart admin
     runAllForms();
@@ -9,6 +12,7 @@ function initForm() {
     getVersion();
     // asignación de eventos al clic
     $("#btnLogin").click(loginForm());
+    $("#btnMobile").click(goMobile);
     $("#login-form").submit(function () {
         return false;
     });
@@ -20,6 +24,10 @@ function loginData() {
     var self = this;
     self.login = ko.observable();
     self.password = ko.observable();
+}
+
+var goMobile = function () {
+    objeto_window_referencia = window.open("/mobile", "Pagina_CNN", configuracion_ventana);
 }
 
 function datosOK() {

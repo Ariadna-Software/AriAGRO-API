@@ -46,7 +46,8 @@
 <body class="animated fadeInDown">
     <header id="header">
         <div id="logo-group">
-            <span id="logo"> <img src="img/logpro.png" style="height:30px;" alt="FALCK-Sci"> </span>
+            <span id="logo">
+                <img src="img/logpro.png" style="height:30px;" alt="FALCK-Sci"> </span>
         </div>
         <span id="extr-page-header-space" class="txt-primary">(c) Ariadna Software S.L. 2016-2017 </span>
         <!--<span id="extr-page-header-space"> <span class="hidden-mobile hiddex-xs">Need an account?</span> <a href="register.html" class="btn btn-danger">Create account</a> </span>-->
@@ -57,8 +58,9 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
                     <h1 class="txt-color-white login-header-big">
-                            Ariadna Notificaciones <span id="version">VRS 1.0.1.0</span>
-                        </h1>
+                        Ariadna Notificaciones
+                        <span id="version">VRS 1.0.1.0</span>
+                    </h1>
                     <h2 class="txt-color-white">APLICACIÓN GENERAL</h2>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
@@ -73,7 +75,8 @@
                                     <label class="input">
                                         <i class="icon-append fa fa-user"></i>
                                         <input type="text" name="login" data-bind="value: login">
-                                        <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Por favor, introduzca su login</b>
+                                        <b class="tooltip tooltip-top-right">
+                                            <i class="fa fa-user txt-color-teal"></i> Por favor, introduzca su login</b>
                                     </label>
                                 </section>
                                 <section>
@@ -81,7 +84,8 @@
                                     <label class="input">
                                         <i class="icon-append fa fa-lock"></i>
                                         <input type="password" name="password" data-bind="value: password">
-                                        <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Introduzca su password</b>
+                                        <b class="tooltip tooltip-top-right">
+                                            <i class="fa fa-lock txt-color-teal"></i> Introduzca su password</b>
                                     </label>
                                     <div class="note">
                                         <a href="#">He olvidado el login o password</a>
@@ -99,6 +103,9 @@
                                 <button id="btnLogin" type="submit" class="btn btn-primary">
                                     Entrar
                                 </button>
+                                <button id="btnMobile" title="Emulador móvil" class="btn btn-primary">
+                                        <i class="fa fa-mobile fa-lng"></i>
+                                </button>
                             </footer>
                         </form>
                     </div>
@@ -112,15 +119,15 @@
     <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-    if (!window.jQuery) {
-        document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
-    }
+        if (!window.jQuery) {
+            document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
+        }
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script>
-    if (!window.jQuery.ui) {
-        document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
-    }
+        if (!window.jQuery.ui) {
+            document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+        }
     </script>
     <!-- IMPORTANT: APP CONFIG -->
     <script src="js/app.config.js"></script>
@@ -149,11 +156,11 @@
     <script src="js/ariadna/comun.js"></script>
     <script src="js/ariadna/login.js"></script>
     <script type="text/javascript">
-    (function($) {
-        $(document).ready(function() {
-            initForm();
-        });
-    })(jQuery);
+        (function ($) {
+            $(document).ready(function () {
+                initForm();
+            });
+        })(jQuery);
     </script>
 </body>
 
