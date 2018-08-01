@@ -1,0 +1,14 @@
+{
+    "apiPort": 5000,
+    "stiPort": 5001,
+    "apiHost": "localhost",
+    "reports_dir": "C:\\Proyectos\\ariagroApp\\AriagroApp\\reports",
+    "clasif_dir": "C:\\Proyectos\\ariagroApp\\AriagroApp\\temporales",
+    "report": {
+        "host": "mysql01.ariadnasw.com",
+        "user": "root",
+        "password": "aritel",
+        "database": "ariagro",
+        "port": 3306
+    }
+}
