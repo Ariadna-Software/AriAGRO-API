@@ -166,7 +166,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>2,0.4,3.8,0.6</ClientRectangle>
+              <ClientRectangle>2.8,0.4,7.8,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,14.25,Bold,Point,False,0</Font>
               <Guid>8e629e1216824173bf5b41437ef013f9</Guid>
@@ -773,10 +773,10 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/1/2018 11:10:05 AM</ReportChanged>
+  <ReportChanged>8/2/2018 12:38:06 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\ariagroApp\AriagroApp\reports\Report.mrt</ReportFile>
-  <ReportGuid>93f34eddd6d445a98babfb0e39e28e52</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
+  <ReportGuid>643b0d84ccdd4b928e99e6d1df05c00c</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
