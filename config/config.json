@@ -8,7 +8,7 @@
         "secure": true, 
         "auth": {
             "user": "nostromo741@gmail.com",
-            "pass": "meleta123@"
+            "pass": "********"
         }
     },
     "destinatario": "nostromo741@gmail.com"
