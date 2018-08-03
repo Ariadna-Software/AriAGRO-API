@@ -58,20 +58,23 @@ LEFT JOIN (SELECT codcampo, SUM(kilosnet) AS kilos FROM rhisfruta GROUP BY codca
       </cabecera_agro>
       <entrada_agro Ref="4" type="Stimulsoft.Report.Dictionary.StiMySqlSource" isKey="true">
         <Alias>entrada_agro</Alias>
-        <Columns isList="true" count="6">
+        <Columns isList="true" count="7">
           <value>numalbar,System.Int64</value>
           <value>tiporecol,System.Int16</value>
           <value>numnotac,System.Int64</value>
           <value>fechaent,System.String</value>
           <value>kilosnet,System.Int32</value>
           <value>numcajon,System.Int32</value>
+          <value>tipoentr,System.Int16</value>
         </Columns>
         <CommandTimeout>30</CommandTimeout>
         <Dictionary isRef="1" />
         <Name>entrada_agro</Name>
         <NameInSource>MySQL</NameInSource>
         <Parameters isList="true" count="0" />
-        <SqlCommand>SELECT ent.numalbar, ent.tiporecol,ent.numnotac, DATE_FORMAT(ent.fechaent,'%d/%m/%Y') AS fechaent, ent.kilosnet, ent.numcajon FROM rhisfruta_entradas AS ent</SqlCommand>
+        <SqlCommand>SELECT ent.numalbar, ent.tiporecol,ent.numnotac, DATE_FORMAT(ent.fechaent,'%d/%m/%Y') AS fechaent, ent.kilosnet, ent.numcajon, ri.tipoentr 
+	FROM rhisfruta_entradas AS ent 
+	LEFT JOIN rhisfruta AS ri ON ri.numalbar = ent.numalbar</SqlCommand>
       </entrada_agro>
       <clasific_agro Ref="5" type="Stimulsoft.Report.Dictionary.StiMySqlSource" isKey="true">
         <Alias>clasific_agro</Alias>
@@ -163,7 +166,6 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
           <ClientRectangle>0,0.4,19,7.8</ClientRectangle>
           <Components isList="true" count="13">
             <Text9 Ref="12" type="Text" isKey="true">
-              <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>2.8,0.4,7.8,0.6</ClientRectangle>
@@ -179,7 +181,6 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Type>Expression</Type>
             </Text9>
             <Text10 Ref="13" type="Text" isKey="true">
-              <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>2.8,1.2,3.8,0.6</ClientRectangle>
@@ -196,7 +197,6 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Type>Expression</Type>
             </Text10>
             <Text11 Ref="14" type="Text" isKey="true">
-              <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>2.8,1.8,3.8,0.6</ClientRectangle>
@@ -213,7 +213,6 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Type>Expression</Type>
             </Text11>
             <Text12 Ref="15" type="Text" isKey="true">
-              <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>2.8,2.4,3.8,0.6</ClientRectangle>
@@ -230,7 +229,6 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Type>Expression</Type>
             </Text12>
             <Text1 Ref="16" type="Text" isKey="true">
-              <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>1.6,3.4,3.8,0.6</ClientRectangle>
@@ -245,7 +243,6 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Type>Expression</Type>
             </Text1>
             <Text2 Ref="17" type="Text" isKey="true">
-              <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>1.6,4.4,3.6,0.8</ClientRectangle>
@@ -260,7 +257,6 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Type>Expression</Type>
             </Text2>
             <Text3 Ref="18" type="Text" isKey="true">
-              <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>1.6,5.2,4.6,0.6</ClientRectangle>
@@ -275,7 +271,6 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Type>Expression</Type>
             </Text3>
             <Text4 Ref="19" type="Text" isKey="true">
-              <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>12,4.2,4.2,0.8</ClientRectangle>
@@ -290,7 +285,6 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Type>Expression</Type>
             </Text4>
             <Text5 Ref="20" type="Text" isKey="true">
-              <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>12,4.8,4.2,0.8</ClientRectangle>
@@ -306,7 +300,6 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Type>Expression</Type>
             </Text5>
             <Text6 Ref="21" type="Text" isKey="true">
-              <AutoWidth>True</AutoWidth>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>12,5.6,4.2,0.8</ClientRectangle>
@@ -323,6 +316,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
             </Text6>
             <Text7 Ref="22" type="Text" isKey="true">
               <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
               <ClientRectangle>12,6.4,4.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
@@ -473,7 +467,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Brush>Transparent</Brush>
               <ClientRectangle>0.2,0.4,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,11.25,Bold,Point,False,0</Font>
+              <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>9ad16219ca374d5dbca51b6fdf958f2f</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -489,7 +483,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Brush>Transparent</Brush>
               <ClientRectangle>3.4,0.4,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,11.25,Bold,Point,False,0</Font>
+              <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>9e9c77040034411890ba8d8b30845362</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -505,7 +499,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Brush>Transparent</Brush>
               <ClientRectangle>6.6,0.4,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,11.25,Bold,Point,False,0</Font>
+              <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>086d9c350c0b4b3d8acdaa1e214becac</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -521,13 +515,19 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Brush>Transparent</Brush>
               <ClientRectangle>9.8,0.4,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,11.25,Bold,Point,False,0</Font>
+              <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>2a480fde173e451cadebbd34dd4d3034</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text21</Name>
               <Page isRef="8" />
               <Parent isRef="32" />
+              <Text>{ Switch(entrada_agro.tipoentr == 0,"NORMAL",
+entrada_agro.tipoentr == 1,"V.CAMPO ",
+entrada_agro.tipoentr == 2, "P.INTEGRADO",
+entrada_agro.tipoentr == 3,"IND.DIRECTO",
+entrada_agro.tipoentr == 4,"RETIRADA",
+entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
@@ -536,7 +536,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Brush>Transparent</Brush>
               <ClientRectangle>13,0.4,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,11.25,Bold,Point,False,0</Font>
+              <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>151eb7e6f74744728e373ea6fb02d3c9</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -552,7 +552,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Brush>Transparent</Brush>
               <ClientRectangle>16.2,0.4,2.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,11.25,Bold,Point,False,0</Font>
+              <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>fce1d711e95f446cb459a5a466bf6c03</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -661,7 +661,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Brush>Transparent</Brush>
               <ClientRectangle>4.6,0,3.2,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,11.25,Bold,Point,False,0</Font>
+              <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>5e69671e379147d8aadf8fa65cc91118</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -677,7 +677,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Brush>Transparent</Brush>
               <ClientRectangle>7.8,0,3.2,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,11.25,Bold,Point,False,0</Font>
+              <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>f2f23aeb4b604bc1a20fb0845c813fe6</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -693,7 +693,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Brush>Transparent</Brush>
               <ClientRectangle>11,0,3.2,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,11.25,Bold,Point,False,0</Font>
+              <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>6b48e40b2aa54ec8b772f5588fcc234d</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -724,7 +724,7 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
               <Brush>Transparent</Brush>
               <ClientRectangle>6.4,0.2,5.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,11.25,Bold,Point,False,0</Font>
+              <Font>Arial,9,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text32</Name>
               <Page isRef="8" />
@@ -773,10 +773,10 @@ where rhisfruta_clasif.kilosnet &gt; 0</SqlCommand>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/2/2018 12:38:06 PM</ReportChanged>
+  <ReportChanged>8/3/2018 12:46:08 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>643b0d84ccdd4b928e99e6d1df05c00c</ReportGuid>
+  <ReportGuid>73ebf782326c4abf8a15c20b3416c7f3</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
