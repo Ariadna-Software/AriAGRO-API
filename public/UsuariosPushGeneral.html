@@ -296,12 +296,20 @@
                                         </header>
                                         <fieldset>
                                             <div class row>
-                                                <section class="col col-md-12">
+                                                <section class="col col-md-6">
                                                     <label class="checkbox">
                                                         <input id="chkTodos" type="checkbox" name="chkTodos">
                                                         <i></i>Ver todos, incluso no ligados
                                                     </label>
                                                 </section>
+                                               
+                                                    <section class="col col-md-6">
+                                                        <label for="cmbInforme">Opciones de búsqueda</label><br>
+                                                                <span><select style="width:100%;" id="cmbInforme" name="cmbInforme" data-bind="options: optionsInforme, optionsText: 'nombreInforme', optionsValue: 'valorInforme', 
+                                                                value: sInforme, valueAllowUnset: true, selectedOptions: selectedInforme, selected2:{}">
+                                                                </select></span>
+                                                    </section>
+                                                
                                             </div>
                                             <div class="row">
                                                 <section class="col col-md-12">
@@ -429,6 +437,8 @@
     <!-- SmartChat UI : plugin -->
     <script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
     <script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
+    <!--- KNOCKOUT JS -->
+    <script src="js/knockout-3.1.0.js"></script>
     <!-- PAGE RELATED PLUGIN(S) 
         <script src="..."></script>-->
     <script src="js/ariadna/comun.js"></script>
