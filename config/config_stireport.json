@@ -2,6 +2,8 @@
     "apiPort": 5000,
     "stiPort": 5001,
     "apiHost": "localhost",
+    "reports_dir": "C:\\Proyectos\\AriAGRO-API\\public\\reports",
+    "clasif_dir": "C:\\Proyectos\\AriAGRO-API\\public\\ficheros\\temporales",
     "report": {
         "host": "mysql01.ariadnasw.com",
         "user": "root",
