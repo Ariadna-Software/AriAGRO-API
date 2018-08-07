@@ -32,7 +32,7 @@ function initForm() {
     $('#btnAlta').click(crearUsuarioPush());
     $('#chkTodos').change(changeCheck());
     $('#cmbInforme').click(opcionBuscar())
-    $('#frmBuscar').submit(function() {
+    $('#frmBuscar').submit(function () {
         return false
     });
     loadBusqueda(0);//cargamos el comnbo de busqueda con la opción todos por defecto
@@ -47,16 +47,16 @@ function initForm() {
     if (usuarioPushId !== '') {
         // cargar la tabla con un único valor que es el que corresponde.
         var data = {
-                id: usuarioPushId
-            }
-            // hay que buscar ese elemento en concreto
+            id: usuarioPushId
+        }
+        // hay que buscar ese elemento en concreto
         $.ajax({
             type: "GET",
             url: myconfig.apiUrl + "/api/usupush/" + usuarioPushId,
             dataType: "json",
             contentType: "application/json",
             data: JSON.stringify(data),
-            success: function(data, status) {
+            success: function (data, status) {
                 // hay que mostrarlo en la zona de datos
                 var data2 = [data];
                 loadTablaUsuariosPush(data2);
@@ -76,11 +76,11 @@ function admData() {
         {
             'nombreInforme': 'App descargada',
             'valorInforme': 0
-        }, 
+        },
         {
             'nombreInforme': 'App sin descargar',
             'valorInforme': 1
-        }, 
+        },
         {
             'nombreInforme': 'Todos',
             'valorInforme': 2
@@ -90,25 +90,82 @@ function admData() {
     self.sInforme = ko.observable();
 }
 
-function loadBusqueda(valor){
+function loadBusqueda(valor) {
     $("#cmbTiposVia").val([valor]).trigger('change');
 }
 
- 
+
 
 function initTablaUsuariosPush() {
+    // tablaCarro = $('#dt_usuarioPush').dataTable({
+    //     autoWidth: true,
+    //     preDrawCallback: function() {
+    //         // Initialize the responsive datatables helper once.
+    //         if (!responsiveHelper_dt_basic) {
+    //             responsiveHelper_dt_basic = new ResponsiveDatatablesHelper($('#dt_usuarioPush'), breakpointDefinition);
+    //         }
+    //     },
+    //     rowCallback: function(nRow) {
+    //         responsiveHelper_dt_basic.createExpandIcon(nRow);
+    //     },
+    //     drawCallback: function(oSettings) {
+    //         responsiveHelper_dt_basic.respond();
+    //     },
+    //     language: {
+    //         processing: "Procesando...",
+    //         info: "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+    //         infoEmpty: "Mostrando registros del 0 al 0 de un total de 0 registros",
+    //         infoFiltered: "(filtrado de un total de _MAX_ registros)",
+    //         infoPostFix: "",
+    //         loadingRecords: "Cargando...",
+    //         zeroRecords: "No se encontraron resultados",
+    //         emptyTable: "Ningún dato disponible en esta tabla",
+    //         paginate: {
+    //             first: "Primero",
+    //             previous: "Anterior",
+    //             next: "Siguiente",
+    //             last: "Último"
+    //         },
+    //         aria: {
+    //             sortAscending: ": Activar para ordenar la columna de manera ascendente",
+    //             sortDescending: ": Activar para ordenar la columna de manera descendente"
+    //         }
+    //     },
+    //     data: dataUsuariosPush,
+    //     columns: [{
+    //         data: "nombre"
+    //     }, {
+    //         data: "login"
+    //     }, {
+    //         data: "email"
+    //     }, {
+    //         data: "usuarioPushId",
+    //         render: function(data, type, row) {
+    //             var bt1 = "<button class='btn btn-circle btn-danger btn-lg' onclick='deleteUsuarioPush(" + data + ");' title='Eliminar registro'> <i class='fa fa-trash-o fa-fw'></i> </button>";
+    //             var bt2 = "<button class='btn btn-circle btn-success btn-lg' onclick='editUsuarioPush(" + data + ");' title='Editar registro'> <i class='fa fa-edit fa-fw'></i> </button>";
+    //             var html = "<div class='pull-right'>" + bt1 + " " + bt2 + "</div>";
+    //             return html;
+    //         }
+    //     }]
+    // });
+
     tablaCarro = $('#dt_usuarioPush').dataTable({
         autoWidth: true,
-        preDrawCallback: function() {
+        bSort: false,
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        preDrawCallback: function () {
             // Initialize the responsive datatables helper once.
             if (!responsiveHelper_dt_basic) {
                 responsiveHelper_dt_basic = new ResponsiveDatatablesHelper($('#dt_usuarioPush'), breakpointDefinition);
             }
         },
-        rowCallback: function(nRow) {
+        rowCallback: function (nRow) {
             responsiveHelper_dt_basic.createExpandIcon(nRow);
         },
-        drawCallback: function(oSettings) {
+        drawCallback: function (oSettings) {
             responsiveHelper_dt_basic.respond();
         },
         language: {
@@ -118,6 +175,7 @@ function initTablaUsuariosPush() {
             infoFiltered: "(filtrado de un total de _MAX_ registros)",
             infoPostFix: "",
             loadingRecords: "Cargando...",
+            search: "Buscar: ",
             zeroRecords: "No se encontraron resultados",
             emptyTable: "Ningún dato disponible en esta tabla",
             paginate: {
@@ -140,7 +198,7 @@ function initTablaUsuariosPush() {
             data: "email"
         }, {
             data: "usuarioPushId",
-            render: function(data, type, row) {
+            render: function (data, type, row) {
                 var bt1 = "<button class='btn btn-circle btn-danger btn-lg' onclick='deleteUsuarioPush(" + data + ");' title='Eliminar registro'> <i class='fa fa-trash-o fa-fw'></i> </button>";
                 var bt2 = "<button class='btn btn-circle btn-success btn-lg' onclick='editUsuarioPush(" + data + ");' title='Editar registro'> <i class='fa fa-edit fa-fw'></i> </button>";
                 var html = "<div class='pull-right'>" + bt1 + " " + bt2 + "</div>";
@@ -163,7 +221,7 @@ function datosOK() {
             }
         },
         // Do not change code below
-        errorPlacement: function(error, element) {
+        errorPlacement: function (error, element) {
             error.insertAfter(element.parent());
         }
     });
@@ -184,7 +242,7 @@ function loadTablaUsuariosPush(data) {
 }
 
 function buscarUsuariosPush() {
-    var mf = function() {
+    var mf = function () {
         if (!datosOK()) {
             return;
         }
@@ -196,7 +254,7 @@ function buscarUsuariosPush() {
             url: myconfig.apiUrl + "/api/usupush/?nombre=" + aBuscar,
             dataType: "json",
             contentType: "application/json",
-            success: function(data, status) {
+            success: function (data, status) {
                 // hay que mostrarlo en la zona de datos
                 loadTablaUsuariosPush(data);
             },
@@ -207,7 +265,7 @@ function buscarUsuariosPush() {
 }
 
 function buscarUsuariosPushLogados() {
-    var mf = function() {
+    var mf = function () {
         if (!datosOK()) {
             return;
         }
@@ -219,7 +277,7 @@ function buscarUsuariosPushLogados() {
             url: myconfig.apiUrl + "/api/usupush/logados/?nombre=" + aBuscar,
             dataType: "json",
             contentType: "application/json",
-            success: function(data, status) {
+            success: function (data, status) {
                 // hay que mostrarlo en la zona de datos
                 loadTablaUsuariosPush(data);
             },
@@ -230,14 +288,14 @@ function buscarUsuariosPushLogados() {
 }
 
 function buscarUsuariosPushSinLogar() {
-    var mf = function() {
+    var mf = function () {
         // enviar la consulta por la red (AJAX)
         $.ajax({
             type: "GET",
             url: myconfig.apiUrl + "/api/usupush/sin-logar/usuarios",
             dataType: "json",
             contentType: "application/json",
-            success: function(data, status) {
+            success: function (data, status) {
                 // hay que mostrarlo en la zona de datos
                 loadTablaUsuariosPush(data);
             },
@@ -248,7 +306,7 @@ function buscarUsuariosPushSinLogar() {
 }
 
 function crearUsuarioPush() {
-    var mf = function() {
+    var mf = function () {
         var url = "UsuarioPushDetalle.html?UsuarioPushId=0";
         window.open(url, '_self');
     };
@@ -262,7 +320,7 @@ function deleteUsuarioPush(id) {
         title: "<i class='fa fa-info'></i> Mensaje",
         content: mens,
         buttons: '[Aceptar][Cancelar]'
-    }, function(ButtonPressed) {
+    }, function (ButtonPressed) {
         if (ButtonPressed === "Aceptar") {
             var data = {
                 usuarioPushId: id
@@ -273,7 +331,7 @@ function deleteUsuarioPush(id) {
                 dataType: "json",
                 contentType: "application/json",
                 data: JSON.stringify(data),
-                success: function(data, status) {
+                success: function (data, status) {
                     var fn = buscarUsuariosPush();
                     fn();
                 },
@@ -295,7 +353,7 @@ function editUsuarioPush(id) {
 
 
 function changeCheck() {
-    var mf = function() {
+    var mf = function () {
         if ($('#chkTodos').is(':checked')) {
             $('#txtBuscar').val('*');
             buscarUsuariosPush()();
@@ -311,21 +369,21 @@ function changeCheck() {
 }
 
 function opcionBuscar() {
-    var mf = function() {
-       var opcion = vm.sInforme();
-       if(opcion == 0) {
+    var mf = function () {
+        var opcion = vm.sInforme();
+        if (opcion == 0) {
             $('#txtBuscar').val('*');
             buscarUsuariosPushLogados()();
             $('#txtBuscar').val('');
-       }
-       else if(opcion == 1) {
+        }
+        else if (opcion == 1) {
             buscarUsuariosPushSinLogar()();
-       }
-       else if(opcion == 2) {
+        }
+        else if (opcion == 2) {
             $('#txtBuscar').val('*');
             buscarUsuariosPush()();
             $('#txtBuscar').val('');
-       }
+        }
     };
     return mf;
 }
