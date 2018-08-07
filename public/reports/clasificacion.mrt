@@ -141,23 +141,6 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
         </ParentColumns>
         <ParentSource isRef="3" />
       </cabecera_clasific>
-<<<<<<< HEAD
-      <cabecera_incidencia Ref="9" type="DataRelation" isKey="true">
-        <Alias>cabecera-incidencia</Alias>
-        <ChildColumns isList="true" count="1">
-          <value>numalbar</value>
-        </ChildColumns>
-        <ChildSource isRef="6" />
-        <Dictionary isRef="1" />
-        <Name>cabecera-incidencia</Name>
-        <NameInSource>cabecera-incidencia</NameInSource>
-        <ParentColumns isList="true" count="1">
-          <value>numalbar</value>
-        </ParentColumns>
-        <ParentSource isRef="3" />
-      </cabecera_incidencia>
-=======
->>>>>>> 682ae45e9f029f50223f197ac3a5d12011ddd4e5
     </Relations>
     <Report isRef="0" />
     <Resources isList="true" count="0" />
@@ -874,17 +857,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-<<<<<<< HEAD
-  <ReportChanged>8/7/2018 10:28:06 AM</ReportChanged>
-  <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\PROYECTOS\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>3b325fb4d9e84c328c6ecc3fa7cb7f6f</ReportGuid>
-=======
   <ReportChanged>8/7/2018 10:34:23 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
   <ReportGuid>0643090192c8465f888717cdac207cf2</ReportGuid>
->>>>>>> 682ae45e9f029f50223f197ac3a5d12011ddd4e5
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
