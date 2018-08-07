@@ -54,6 +54,7 @@ LEFT JOIN (SELECT codcampo, SUM(kilosnet) AS kilos FROM rhisfruta GROUP BY codca
     LEFT JOIN rhisfruta AS h ON h.codcampo = c.codcampo
     LEFT JOIN rsocios AS so ON c.codsocio = so.codsocio
     LEFT JOIN empresas AS emp ON 1=1
+
    </SqlCommand>
       </cabecera_agro>
       <entrada_agro Ref="4" type="Stimulsoft.Report.Dictionary.StiMySqlSource" isKey="true">
@@ -140,20 +141,20 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
         </ParentColumns>
         <ParentSource isRef="3" />
       </cabecera_clasific>
-      <incidencia_cabecera Ref="9" type="DataRelation" isKey="true">
-        <Alias>incidencia-cabecera</Alias>
+      <cabecera_incidencia Ref="9" type="DataRelation" isKey="true">
+        <Alias>cabecera-incidencia</Alias>
         <ChildColumns isList="true" count="1">
           <value>numalbar</value>
         </ChildColumns>
         <ChildSource isRef="6" />
         <Dictionary isRef="1" />
-        <Name>incidencia-cabecera</Name>
-        <NameInSource>incidencia-cabecera</NameInSource>
+        <Name>cabecera-incidencia</Name>
+        <NameInSource>cabecera-incidencia</NameInSource>
         <ParentColumns isList="true" count="1">
           <value>numalbar</value>
         </ParentColumns>
         <ParentSource isRef="3" />
-      </incidencia_cabecera>
+      </cabecera_incidencia>
     </Relations>
     <Report isRef="0" />
     <Resources isList="true" count="0" />
@@ -169,7 +170,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
       <Components isList="true" count="10">
         <PageFooterBand1 Ref="11" type="PageFooterBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,32.44,19,0.8</ClientRectangle>
+          <ClientRectangle>0,26.9,19,0.8</ClientRectangle>
           <Components isList="true" count="1">
             <Text31 Ref="12" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -827,7 +828,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
             </Text33>
           </Components>
           <Conditions isList="true" count="0" />
-          <DataRelationName>incidencia-cabecera</DataRelationName>
+          <DataRelationName>cabecera-inicdencia</DataRelationName>
           <DataSourceName>incidencia_agro</DataSourceName>
           <Filters isList="true" count="0" />
           <MasterComponent isRef="13" />
@@ -870,10 +871,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/6/2018 9:50:12 AM</ReportChanged>
+  <ReportChanged>8/7/2018 10:28:06 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>8b941a45dec6436d8386f2a1874dc00a</ReportGuid>
+  <ReportFile>C:\PROYECTOS\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
+  <ReportGuid>3b325fb4d9e84c328c6ecc3fa7cb7f6f</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
