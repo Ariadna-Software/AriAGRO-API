@@ -30,7 +30,7 @@ function initForm() {
     //
     $('#btnBuscar').click(buscarUsuariosPush());
     $('#btnAlta').click(crearUsuarioPush());
-    $('#chkTodos').change(changeCheck());
+    //$('#chkTodos').change(changeCheck());
     $('#cmbInforme').click(opcionBuscar())
     $('#frmBuscar').submit(function () {
         return false
@@ -191,12 +191,16 @@ function initTablaUsuariosPush() {
         },
         data: dataUsuariosPush,
         columns: [{
+            data: "comunId"
+        }, {
             data: "nombre"
         }, {
-            data: "login"
+            data: "telefono1"
+        },  {
+            data: "telefono2"
         }, {
             data: "email"
-        }, {
+        },  {
             data: "usuarioPushId",
             render: function (data, type, row) {
                 var bt1 = "<button class='btn btn-circle btn-danger btn-lg' onclick='deleteUsuarioPush(" + data + ");' title='Eliminar registro'> <i class='fa fa-trash-o fa-fw'></i> </button>";
@@ -352,7 +356,7 @@ function editUsuarioPush(id) {
 }
 
 
-function changeCheck() {
+/*function changeCheck() {
     var mf = function () {
         if ($('#chkTodos').is(':checked')) {
             $('#txtBuscar').val('*');
@@ -366,7 +370,7 @@ function changeCheck() {
         }
     };
     return mf;
-}
+}*/
 
 function opcionBuscar() {
     var mf = function () {
