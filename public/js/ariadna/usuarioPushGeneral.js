@@ -23,13 +23,19 @@ function initForm() {
     // de smart admin
     pageSetUp();
     getVersionFooter();
+    vm = new admData();
+    ko.applyBindings(vm);
+    //
+    $('#cmbInforme').select2();
     //
     $('#btnBuscar').click(buscarUsuariosPush());
     $('#btnAlta').click(crearUsuarioPush());
     $('#chkTodos').change(changeCheck());
+    $('#cmbInforme').click(opcionBuscar())
     $('#frmBuscar').submit(function() {
         return false
     });
+    loadBusqueda(0);//cargamos el comnbo de busqueda con la opción todos por defecto
     //$('#txtBuscar').keypress(function (e) {
     //    if (e.keyCode == 13)
     //        buscarUsuariosPush();
@@ -63,6 +69,32 @@ function initForm() {
         $('#txtBuscar').val('');
     }
 }
+
+function admData() {
+    var self = this;
+    self.optionsInforme = ko.observableArray([
+        {
+            'nombreInforme': 'App descargada',
+            'valorInforme': 0
+        }, 
+        {
+            'nombreInforme': 'App sin descargar',
+            'valorInforme': 1
+        }, 
+        {
+            'nombreInforme': 'Todos',
+            'valorInforme': 2
+        }
+    ]);
+    self.selectedInforme = ko.observableArray([]);
+    self.sInforme = ko.observable();
+}
+
+function loadBusqueda(valor){
+    $("#cmbTiposVia").val([valor]).trigger('change');
+}
+
+ 
 
 function initTablaUsuariosPush() {
     tablaCarro = $('#dt_usuarioPush').dataTable({
@@ -197,6 +229,23 @@ function buscarUsuariosPushLogados() {
     return mf;
 }
 
+function buscarUsuariosPushSinLogar() {
+    var mf = function() {
+        // enviar la consulta por la red (AJAX)
+        $.ajax({
+            type: "GET",
+            url: myconfig.apiUrl + "/api/usupush/sin-logar/usuarios",
+            dataType: "json",
+            contentType: "application/json",
+            success: function(data, status) {
+                // hay que mostrarlo en la zona de datos
+                loadTablaUsuariosPush(data);
+            },
+            error: errorAjax
+        });
+    };
+    return mf;
+}
 
 function crearUsuarioPush() {
     var mf = function() {
@@ -257,6 +306,26 @@ function changeCheck() {
             $('#txtBuscar').val('');
 
         }
+    };
+    return mf;
+}
+
+function opcionBuscar() {
+    var mf = function() {
+       var opcion = vm.sInforme();
+       if(opcion == 0) {
+            $('#txtBuscar').val('*');
+            buscarUsuariosPushLogados()();
+            $('#txtBuscar').val('');
+       }
+       else if(opcion == 1) {
+            buscarUsuariosPushSinLogar()();
+       }
+       else if(opcion == 2) {
+            $('#txtBuscar').val('*');
+            buscarUsuariosPush()();
+            $('#txtBuscar').val('');
+       }
     };
     return mf;
 }
