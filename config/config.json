@@ -8,7 +8,7 @@
         "secure": true, 
         "auth": {
             "user": "vicent@myariadna.com",
-            "pass": "pipo123@"
+            "pass": "*******"
         }
     },
     "destinatario": "rafa@myariadna.com, ragare@gmail.com"
