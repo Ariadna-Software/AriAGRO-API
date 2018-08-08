@@ -90,6 +90,9 @@ function initForm() {
     } else {
         // se trata de un alta ponemos el id a cero para indicarlo.
         vm.mensajeId(0);
+
+        var user = JSON.parse(getCookie("administrador"));
+        vm.adminId(user.administradorId);
     }
 }
 
@@ -112,12 +115,15 @@ function admData() {
     self.esTrabajador = ko.observable();
     // valores de fichero
     self.fichero = ko.observable("");
+    //administrador
+    self.adminId = ko.observable();
 }
 
 function loadData(data) {
     vm.mensajeId(data.mensajeId);
     vm.asunto(data.asunto);
     vm.texto(data.texto);
+    vm.adminId(data.administradorId);
 }
 
 function datosOK() {
@@ -164,7 +170,8 @@ function aceptar() {
                 "telefonia": vm.telefonia(),
                 "soloMensajes": vm.soloMensajes(),
                 "esTrabajador": vm.esTrabajador(),
-                "fichero": vm.fichero()
+                "fichero": vm.fichero(),
+                "administradorId": vm.adminId()
             }
         };
         if (mensId == 0) {

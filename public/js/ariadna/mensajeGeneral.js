@@ -112,6 +112,8 @@ function initTablaMensajes() {
         }, {
             data: "estado"
         }, {
+            data: "responsable"
+        }, {
             data: "mensajeId",
             render: function(data, type, row) {
                 var bt1 = "<button class='btn btn-circle btn-danger btn-lg' onclick='deleteMensaje(" + data + ");' title='Eliminar registro'> <i class='fa fa-trash-o fa-fw'></i> </button>";
@@ -236,6 +238,8 @@ function enviarMensaje(id) {
             var data2 = {
                 mensaje: data
             };
+            var user = JSON.parse(getCookie("administrador"));
+            data2.mensaje.administradorId = user.administradorId;
             $.ajax({
                 type: "POST",
                 url: myconfig.apiUrl + "/api/mensajes/sendnew",

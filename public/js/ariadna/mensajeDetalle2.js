@@ -48,6 +48,8 @@ function initForm() {
             data: JSON.stringify(data),
             success: function(data, status) {
                 // hay que mostrarlo en la zona de datos
+                var user = JSON.parse(getCookie("administrador"));
+                vm.adminId(user.administradorId);
                 loadData(data);
                 buscarMensajesUsuario(data.mensajeId)
             },
@@ -74,6 +76,7 @@ function admData() {
     self.tienda = ko.observable();
     self.gasolinera = ko.observable();
     self.telefonia = ko.observable();
+    self.adminId = ko.observable();
 }
 
 function loadData(data) {
@@ -126,7 +129,8 @@ function aceptar() {
                 "ariagro": vm.ariagro(),
                 "tienda": vm.tienda(),
                 "gasolinera": vm.gasolinera(),
-                "telefonia": vm.telefonia()
+                "telefonia": vm.telefonia(),
+                "administradorId": vm.adminId()
             }
         };
         $.ajax({
