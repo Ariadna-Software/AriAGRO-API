@@ -202,7 +202,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
               <CanGrow>True</CanGrow>
               <ClientRectangle>1,1.2,3.8,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
+              <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>d5b489dc5ab84f099ab0bd2de9f0023e</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -218,7 +218,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
               <CanGrow>True</CanGrow>
               <ClientRectangle>1,1.8,3.8,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
+              <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>e4922e47d9db46d69e8f37f69a38dac0</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -234,7 +234,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
               <CanGrow>True</CanGrow>
               <ClientRectangle>1,2.4,3.8,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
+              <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>4982b32f5106485996552d7daf11272c</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -264,7 +264,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
               <CanGrow>True</CanGrow>
               <ClientRectangle>0.4,4.4,3.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
+              <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text2</Name>
               <Page isRef="9" />
@@ -278,7 +278,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
               <CanGrow>True</CanGrow>
               <ClientRectangle>0.4,5.2,4.6,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
+              <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text3</Name>
               <Page isRef="9" />
@@ -290,9 +290,9 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
             <Text4 Ref="20" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>14.6,4.2,4.2,0.8</ClientRectangle>
+              <ClientRectangle>14,4.2,4.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
+              <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text4</Name>
               <Page isRef="9" />
@@ -304,9 +304,9 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
             <Text5 Ref="21" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>14.6,4.8,4.2,0.8</ClientRectangle>
+              <ClientRectangle>14,4.8,4.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
+              <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>33ad9783324b42eb8dbbd8fafa7be921</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text5</Name>
@@ -319,9 +319,9 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
             <Text6 Ref="22" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>14.6,5.6,4.2,0.8</ClientRectangle>
+              <ClientRectangle>14,5.6,4.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
+              <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>87261bf25d5e43dbab5b85a1dbc4f2f1</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text6</Name>
@@ -334,9 +334,9 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
             <Text7 Ref="23" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>14.6,6.4,4.2,0.8</ClientRectangle>
+              <ClientRectangle>14,6.4,4.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
+              <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>85a077710f034b698fcc38b0c292f958</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text7</Name>
@@ -857,10 +857,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/9/2018 11:30:31 AM</ReportChanged>
+  <ReportChanged>8/10/2018 10:49:42 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>4cbc1f648b0c41c9811f8f77e3cbd317</ReportGuid>
+  <ReportGuid>c905d88d2d3b4553922031bec88d8f44</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
