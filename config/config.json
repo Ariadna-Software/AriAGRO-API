@@ -7,8 +7,8 @@
         "port": 465,
         "secure": true, 
         "auth": {
-            "user": "nostromo741@gmail.com",
-            "pass": "meleta123@"
+            "user": "rafa@myariadna.com",
+            "pass": "********"
         }
     },
     "destinatario": "rafa@myariadna.com, ragare@gmail.com"
