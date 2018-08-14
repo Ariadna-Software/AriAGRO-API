@@ -814,7 +814,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
             </Text33>
           </Components>
           <Conditions isList="true" count="0" />
-          <DataRelationName>cabecera-inicdencia</DataRelationName>
+          <DataRelationName>Relación2</DataRelationName>
           <DataSourceName>incidencia_agro</DataSourceName>
           <Filters isList="true" count="0" />
           <MasterComponent isRef="12" />
@@ -857,10 +857,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/10/2018 10:49:42 AM</ReportChanged>
+  <ReportChanged>8/14/2018 12:13:41 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>c905d88d2d3b4553922031bec88d8f44</ReportGuid>
+  <ReportGuid>7273867501ad484baf96143326a7f169</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
