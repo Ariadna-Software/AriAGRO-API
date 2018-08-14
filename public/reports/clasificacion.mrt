@@ -860,7 +860,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
   <ReportChanged>8/14/2018 12:13:41 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>7273867501ad484baf96143326a7f169</ReportGuid>
+  <ReportGuid>84f8816a30a04778b4a0f8aabb1baa64</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
