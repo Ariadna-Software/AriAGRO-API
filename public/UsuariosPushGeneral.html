@@ -310,7 +310,14 @@
                                         </header>
                                         <fieldset>
                                             <div class row>
-                                                <section class="col col-md-6">
+                                                <!--<section class="col col-md-6">
+                                                    <label class="checkbox">
+                                                        <input id="chkTodos" type="checkbox" name="chkTodos">
+                                                        <i></i>Ver todos, incluso no ligados
+                                                    </label>
+                                                </section>-->
+
+                                                <section class="col col-md-3">
                                                     <label for="cmbInforme">Opciones de búsqueda</label>
                                                     <br>
                                                     <span>
@@ -319,6 +326,11 @@
                                                         </select>
                                                     </span>
                                                 </section>
+                                                <section class="col col-md-9">
+                                                   
+                                                </section>
+
+
                                             </div>
                                             <div class="row">
                                                 <section class="col col-md-12">
@@ -344,11 +356,18 @@
                                         <table id="dt_usuarioPush" class="table table-striped table-bordered table-hover" width="100%">
                                             <thead>
                                                 <tr>
+                                                    <th data-hide="phone">
+                                                        Codigo socio
+                                                        
+                                                    </th>
                                                     <th data-class="expand">
                                                         Nombre
                                                     </th>
                                                     <th data-hide="phone">
-                                                        Login
+                                                        Telefono(1)
+                                                    </th>
+                                                    <th data-hide="phone">
+                                                        Telefono(2)
                                                     </th>
                                                     <th data-hide="phone">
                                                         <i class="fa fa-fw fa-mail text-muted hidden-md hidden-sm hidden-xs"></i>Correo electrónico
