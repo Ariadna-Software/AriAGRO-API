@@ -1,5 +1,5 @@
-webpackJsonp([3],Array(299).concat([
-/* 299 */
+webpackJsonp([3],Array(297).concat([
+/* 297 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7,7 +7,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FacturasPageModule", function() { return FacturasPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facturas__ = __webpack_require__(449);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facturas__ = __webpack_require__(447);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -36,6 +36,8 @@ var FacturasPageModule = /** @class */ (function () {
 //# sourceMappingURL=facturas.module.js.map
 
 /***/ }),
+/* 298 */,
+/* 299 */,
 /* 300 */,
 /* 301 */,
 /* 302 */,
@@ -16711,9 +16713,7 @@ webpackContext.id = 434;
 /* 444 */,
 /* 445 */,
 /* 446 */,
-/* 447 */,
-/* 448 */,
-/* 449 */
+/* 447 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16928,7 +16928,7 @@ var FacturasPage = /** @class */ (function () {
     };
     FacturasPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-facturas',template:/*ion-inline-start:"C:\PROYECTOS\AriagroApp\src\pages\facturas\facturas.html"*/'<ion-header>\n\n  <ion-navbar>\n\n   <ion-title>\n\n      {{version}}\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only class="myGreen" (click)="goHome()">\n\n        <ion-icon name="home"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item text-wrap no-lines class="greenHeader">\n\n      FACTURAS\n\n      <br> {{campanya.nomresum}}\n\n    </ion-item>\n\n    <ion-grid>\n\n      <ion-row>\n\n        <ion-col col-4>\n\n          <div class="psb">\n\n            <img src="assets/imgs/facturas.png">\n\n          </div>\n\n        </ion-col>\n\n        <ion-col col-8 class="justificar">\n\n          Estas son las facturas en el sistema para el año indicado. Cambie de año para ver facturas de otros periodos.\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-grid>\n\n  </ion-list>\n\n\n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-label>Año de facturación: </ion-label>\n\n      <ion-select #Y [(ngModel)]="selectedYear" okText="Aceptar" cancelText="Cancelar" (ionChange)="onYearChange(Y.value)">\n\n        <ion-option *ngFor="let year of years" value={{year}}>{{year}}</ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <ion-list>\n\n    <ion-item text-wrap (click)="goFacturasTienda()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/imgs/tienda.png">\n\n      </ion-thumbnail>\n\n      <h2 class="myGreen">TIENDA</h2>\n\n      Número de facturas:\n\n      <ion-badge color="secondary">{{numFacturasTienda}}</ion-badge>\n\n      <ion-icon name="log-in" item-end class="myGreen"></ion-icon>\n\n    </ion-item>\n\n    <ion-item text-wrap (click)="goFacturasTelefonia()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/imgs/telefonia.png">\n\n      </ion-thumbnail>\n\n      <h2 class="myGreen">TELEFONIA</h2>\n\n      Número de facturas:\n\n      <ion-badge color="secondary">{{numFacturasTelefonia}}</ion-badge>\n\n      <ion-icon name="log-in" item-end class="myGreen"></ion-icon>\n\n    </ion-item>\n\n    <ion-item text-wrap (click)="goFacturasGasolinera()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/imgs/gasolinera.png">\n\n      </ion-thumbnail>\n\n      <h2 class="myGreen">GASOLINERA</h2>\n\n      Número de facturas:\n\n      <ion-badge color="secondary">{{numFacturasGasolinera}}</ion-badge>\n\n      <ion-icon name="log-in" item-end class="myGreen"></ion-icon>\n\n    </ion-item>\n\n    <ion-item text-wrap (click)="goFacturasTratamientos()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/imgs/tratamientos.png">\n\n      </ion-thumbnail>\n\n      <h2 class="myGreen">TRATAMIENTOS</h2>\n\n      Número de facturas:\n\n      <ion-badge color="secondary">{{numFacturasTratamientos}}</ion-badge>\n\n      <ion-icon name="log-in" item-end class="myGreen"></ion-icon>\n\n    </ion-item>\n\n\n\n\n\n  </ion-list>\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n  <ion-toolbar>\n\n    <ion-title>\n\n      <span style="font-size:0.8em;">(c) Ariadna SW 2018</span>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\PROYECTOS\AriagroApp\src\pages\facturas\facturas.html"*/,
+            selector: 'page-facturas',template:/*ion-inline-start:"c:\PROYECTOS\AriagroApp\src\pages\facturas\facturas.html"*/'<ion-header>\n\n  <ion-navbar>\n\n   <ion-title>\n\n      {{version}}\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only class="myGreen" (click)="goHome()">\n\n        <ion-icon name="home"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item text-wrap no-lines class="greenHeader">\n\n      FACTURAS\n\n      <br> {{campanya.nomresum}}\n\n    </ion-item>\n\n    <ion-grid>\n\n      <ion-row>\n\n        <ion-col col-4>\n\n          <div class="psb">\n\n            <img src="assets/imgs/facturas.png">\n\n          </div>\n\n        </ion-col>\n\n        <ion-col col-8 class="justificar">\n\n          Estas son las facturas en el sistema para el año indicado. Cambie de año para ver facturas de otros periodos.\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-grid>\n\n  </ion-list>\n\n\n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-label>Año de facturación: </ion-label>\n\n      <ion-select #Y [(ngModel)]="selectedYear" okText="Aceptar" cancelText="Cancelar" (ionChange)="onYearChange(Y.value)">\n\n        <ion-option *ngFor="let year of years" value={{year}}>{{year}}</ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <ion-list>\n\n    <ion-item text-wrap (click)="goFacturasTienda()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/imgs/tienda.png">\n\n      </ion-thumbnail>\n\n      <h2 class="myGreen">TIENDA</h2>\n\n      Número de facturas:\n\n      <ion-badge color="secondary">{{numFacturasTienda}}</ion-badge>\n\n      <ion-icon name="log-in" item-end class="myGreen"></ion-icon>\n\n    </ion-item>\n\n    <ion-item text-wrap (click)="goFacturasTelefonia()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/imgs/telefonia.png">\n\n      </ion-thumbnail>\n\n      <h2 class="myGreen">TELEFONIA</h2>\n\n      Número de facturas:\n\n      <ion-badge color="secondary">{{numFacturasTelefonia}}</ion-badge>\n\n      <ion-icon name="log-in" item-end class="myGreen"></ion-icon>\n\n    </ion-item>\n\n    <ion-item text-wrap (click)="goFacturasGasolinera()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/imgs/gasolinera.png">\n\n      </ion-thumbnail>\n\n      <h2 class="myGreen">GASOLINERA</h2>\n\n      Número de facturas:\n\n      <ion-badge color="secondary">{{numFacturasGasolinera}}</ion-badge>\n\n      <ion-icon name="log-in" item-end class="myGreen"></ion-icon>\n\n    </ion-item>\n\n    <ion-item text-wrap (click)="goFacturasTratamientos()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/imgs/tratamientos.png">\n\n      </ion-thumbnail>\n\n      <h2 class="myGreen">TRATAMIENTOS</h2>\n\n      Número de facturas:\n\n      <ion-badge color="secondary">{{numFacturasTratamientos}}</ion-badge>\n\n      <ion-icon name="log-in" item-end class="myGreen"></ion-icon>\n\n    </ion-item>\n\n\n\n\n\n  </ion-list>\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n  <ion-toolbar>\n\n    <ion-title>\n\n      <span style="font-size:0.8em;">(c) Ariadna SW 2018</span>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"c:\PROYECTOS\AriagroApp\src\pages\facturas\facturas.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_app_version__["a" /* AppVersion */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* LoadingController */],

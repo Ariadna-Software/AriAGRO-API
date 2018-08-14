@@ -1,6 +1,6 @@
 webpackJsonp([20],{
 
-/***/ 289:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__datos__ = __webpack_require__(439);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__datos__ = __webpack_require__(440);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var LoginPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 439:
+/***/ 440:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -122,7 +122,7 @@ var DatosPage = /** @class */ (function () {
     };
     DatosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-datos',template:/*ion-inline-start:"C:\PROYECTOS\AriagroApp\src\pages\datos\datos.html"*/'<ion-header>\n\n  <ion-navbar>\n\n   <ion-title>\n\n      {{version}}\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only class="myGreen" (click)="goHome()">\n\n        <ion-icon name="home"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item text-wrap no-lines class="greenHeader">\n\n      DATOS\n\n    </ion-item>\n\n    <ion-grid>\n\n      <ion-row>\n\n        <ion-col col-4>\n\n          <div class="psb">\n\n            <img src="assets/imgs/datos.png">\n\n          </div>\n\n        </ion-col>\n\n        <ion-col col-8 class="justificar">\n\n          Estos son sus datos en nuestros ficheros.\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-grid>\n\n  </ion-list>\n\n  <ion-list no-lines>\n\n    <ion-item text-wrap>\n\n      <p>{{user.nombre}}</p>\n\n      <p>NIF: {{user.nif}}</p>\n\n      <p>{{user.direccion}}</p>\n\n      <p>({{user.codPostal}}) {{user.poblacion}}</p>\n\n      <p>{{user.provincia}}</p>\n\n      <p>Teléfono(1): {{user.telefono1}}</p>\n\n      <p>Teléfono(2): {{user.telefono2}}</p>\n\n      <p>Correo: {{user.email}}</p>\n\n      <p>IBAN: {{user.iban}}</p>\n\n    </ion-item>\n\n    <ion-item no-lines>\n\n      <button ion-button outline item-end round icon-left text-wrap class="myGreen"  (click)="cambioDatos()">\n\n        <ion-icon name="git-compare"></ion-icon>\n\n        Solicitar cambio de datos\n\n      </button>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar>\n\n    <ion-title>\n\n      <span style="font-size:0.8em;">(c) Ariadna SW 2018</span>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\PROYECTOS\AriagroApp\src\pages\datos\datos.html"*/,
+            selector: 'page-datos',template:/*ion-inline-start:"c:\PROYECTOS\AriagroApp\src\pages\datos\datos.html"*/'<ion-header>\n\n  <ion-navbar>\n\n   <ion-title>\n\n      {{version}}\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only class="myGreen" (click)="goHome()">\n\n        <ion-icon name="home"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item text-wrap no-lines class="greenHeader">\n\n      DATOS\n\n    </ion-item>\n\n    <ion-grid>\n\n      <ion-row>\n\n        <ion-col col-4>\n\n          <div class="psb">\n\n            <img src="assets/imgs/datos.png">\n\n          </div>\n\n        </ion-col>\n\n        <ion-col col-8 class="justificar">\n\n          Estos son sus datos en nuestros ficheros.\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-grid>\n\n  </ion-list>\n\n  <ion-list no-lines>\n\n    <ion-item text-wrap>\n\n      <p>{{user.nombre}}</p>\n\n      <p>NIF: {{user.nif}}</p>\n\n      <p>{{user.direccion}}</p>\n\n      <p>({{user.codPostal}}) {{user.poblacion}}</p>\n\n      <p>{{user.provincia}}</p>\n\n      <p>Teléfono(1): {{user.telefono1}}</p>\n\n      <p>Teléfono(2): {{user.telefono2}}</p>\n\n      <p>Correo: {{user.email}}</p>\n\n      <p>IBAN: {{user.iban}}</p>\n\n    </ion-item>\n\n    <ion-item no-lines>\n\n      <button ion-button outline item-end round icon-left text-wrap class="myGreen"  (click)="cambioDatos()">\n\n        <ion-icon name="git-compare"></ion-icon>\n\n        Solicitar cambio de datos\n\n      </button>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar>\n\n    <ion-title>\n\n      <span style="font-size:0.8em;">(c) Ariadna SW 2018</span>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"c:\PROYECTOS\AriagroApp\src\pages\datos\datos.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_app_version__["a" /* AppVersion */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* ViewController */],

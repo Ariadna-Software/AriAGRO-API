@@ -1,5 +1,5 @@
-webpackJsonp([2],Array(300).concat([
-/* 300 */
+webpackJsonp([2],Array(298).concat([
+/* 298 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7,7 +7,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePageModule", function() { return HomePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(450);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(448);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -39,6 +39,8 @@ var HomePageModule = /** @class */ (function () {
 //# sourceMappingURL=home.module.js.map
 
 /***/ }),
+/* 299 */,
+/* 300 */,
 /* 301 */,
 /* 302 */,
 /* 303 */,
@@ -16714,9 +16716,7 @@ webpackContext.id = 434;
 /* 445 */,
 /* 446 */,
 /* 447 */,
-/* 448 */,
-/* 449 */,
-/* 450 */
+/* 448 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16763,11 +16763,13 @@ var HomePage = /** @class */ (function () {
         this.mensajes = [];
         this.numNoLeidos = 0;
         this.version = "ARIAGRO APP V2";
+        this.cont = 0;
     }
     HomePage.prototype.ionViewWillEnter = function () {
         var _this = this;
         this.localData.getSettings().then(function (data) {
             if (data) {
+                _this.cont = 0;
                 _this.settings = JSON.parse(data);
                 _this.nombreCooperativa = _this.settings.parametros.nombre;
                 if (_this.settings.user) {
@@ -16800,12 +16802,9 @@ var HomePage = /** @class */ (function () {
     HomePage.prototype.cargarMensajes = function () {
         var _this = this;
         this.numNoLeidos = 0;
-        var loading = this.loadingCtrl.create({ content: 'Buscando mensajes...' });
-        loading.present();
         this.ariagroData.getMensajesUsuario(this.settings.parametros.url, this.settings.user.usuarioPushId)
             .subscribe(function (data) {
             _this.numNoLeidos = 0;
-            loading.dismiss();
             if (data.length > 0) {
                 data.forEach(function (f) {
                     f.fecha = __WEBPACK_IMPORTED_MODULE_5_moment__(f.fecha).format('DD/MM/YYYY HH:mm:ss');
@@ -16816,7 +16815,6 @@ var HomePage = /** @class */ (function () {
                 _this.mensajes = data;
             }
         }, function (error) {
-            loading.dismiss();
             _this.showAlert("ERROR", JSON.stringify(error, null, 4));
         });
     };
@@ -16826,14 +16824,11 @@ var HomePage = /** @class */ (function () {
             try {
                 // Registro OneSignal
                 _this.oneSignal.startInit(_this.settings.paramPush.appId, _this.settings.paramPush.gcm);
-                _this.oneSignal.inFocusDisplaying(_this.oneSignal.OSInFocusDisplayOption.InAppAlert);
+                _this.oneSignal.inFocusDisplaying(_this.oneSignal.OSInFocusDisplayOption.Notification);
                 _this.oneSignal.handleNotificationReceived()
                     .subscribe(function (jsonData) {
-                });
-                _this.oneSignal.handleNotificationOpened()
-                    .subscribe(function (jsonData) {
                     console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-                    _this.ariagroData.getMensajeHttp(_this.settings.parametros.url, jsonData.notification.payload.additionalData.mensajeId)
+                    _this.ariagroData.getMensajeHttp(_this.settings.parametros.url, jsonData.payload.additionalData.mensajeId)
                         .subscribe(function (data) {
                         data.fecha = __WEBPACK_IMPORTED_MODULE_5_moment__(data.fecha).format('DD/MM/YYYY HH:mm:ss');
                         _this.navCtrl.push('MensajesDetallePage', {
@@ -16842,6 +16837,22 @@ var HomePage = /** @class */ (function () {
                     }, function (error) {
                         _this.showAlert("ERROR", JSON.stringify(error, null, 4));
                     });
+                    _this.cont = 1;
+                });
+                _this.oneSignal.handleNotificationOpened()
+                    .subscribe(function (jsonData) {
+                    if (_this.cont != 1) {
+                        console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+                        _this.ariagroData.getMensajeHttp(_this.settings.parametros.url, jsonData.notification.payload.additionalData.mensajeId)
+                            .subscribe(function (data) {
+                            data.fecha = __WEBPACK_IMPORTED_MODULE_5_moment__(data.fecha).format('DD/MM/YYYY HH:mm:ss');
+                            _this.navCtrl.push('MensajesDetallePage', {
+                                mensaje: data
+                            });
+                        }, function (error) {
+                            _this.showAlert("ERROR", JSON.stringify(error, null, 4));
+                        });
+                    }
                 });
                 _this.oneSignal.getIds().then(function (ids) {
                     var myUser = _this.settings.user;
@@ -16901,7 +16912,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\PROYECTOS\AriagroApp\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      {{version}}\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <div class="home-hello">\n\n    <img src="assets/imgs/fondo.png" />\n\n    <div class="hello-title" text-wrap>\n\n      <h1>{{nombreCooperativa}}</h1>\n\n      <h4>{{nombreUsuario}}</h4>\n\n       {{nombreCampanya}}\n\n    </div>\n\n  </div>\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col col-6 (click)="goCampanyas()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/campanyas.png">\n\n          <p>CAMPAÑAS</p>\n\n        </div>\n\n      </ion-col>\n\n      <ion-col col-6 (click)="goDatos()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/datos.png">\n\n          <p>DATOS</p>\n\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col col-6 (click)="goCampos()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/campos.png">\n\n          <p>CAMPOS</p>\n\n        </div>\n\n      </ion-col>\n\n      <ion-col col-6 (click)="goAnticipos()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/anticipos.png">\n\n          <p>ANTICIPOS Y LIQUIDACIONES</p>\n\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col col-6 (click)="goFacturas()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/facturas.png">\n\n          <p>FACTURAS</p>\n\n        </div>\n\n      </ion-col>\n\n      <ion-col col-6 (click)=\'goMensajes()\'>\n\n        <div class="psb">\n\n          <img src="assets/imgs/mensajes.png">\n\n          <p>MENSAJES</p>\n\n          <div *ngIf=\'numNoLeidos > 0\'>\n\n            <ion-badge color="secondary">{{numNoLeidos}}</ion-badge>\n\n          </div>\n\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col col-6>\n\n      </ion-col>\n\n      <ion-col col-6  (click)="goLogin()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/ajustes.png">\n\n          <p>LOGIN / AJUSTES</p>\n\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n  </ion-grid>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar>\n\n    <ion-title>\n\n      <span style="font-size:0.8em;">(c) Ariadna SW 2018</span>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\PROYECTOS\AriagroApp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"c:\PROYECTOS\AriagroApp\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      {{version}}\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <div class="home-hello">\n\n    <img src="assets/imgs/fondo.png" />\n\n    <div class="hello-title" text-wrap>\n\n      <h1>{{nombreCooperativa}}</h1>\n\n      <h4>{{nombreUsuario}}</h4>\n\n       {{nombreCampanya}}\n\n    </div>\n\n  </div>\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col col-6 (click)="goCampanyas()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/campanyas.png">\n\n          <p>CAMPAÑAS</p>\n\n        </div>\n\n      </ion-col>\n\n      <ion-col col-6 (click)="goDatos()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/datos.png">\n\n          <p>DATOS</p>\n\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col col-6 (click)="goCampos()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/campos.png">\n\n          <p>CAMPOS</p>\n\n        </div>\n\n      </ion-col>\n\n      <ion-col col-6 (click)="goAnticipos()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/anticipos.png">\n\n          <p>ANTICIPOS Y LIQUIDACIONES</p>\n\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col col-6 (click)="goFacturas()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/facturas.png">\n\n          <p>FACTURAS</p>\n\n        </div>\n\n      </ion-col>\n\n      <ion-col col-6 (click)=\'goMensajes()\'>\n\n        <div class="psb">\n\n          <img src="assets/imgs/mensajes.png">\n\n          <p>MENSAJES</p>\n\n          <div *ngIf=\'numNoLeidos > 0\'>\n\n            <ion-badge color="secondary">{{numNoLeidos}}</ion-badge>\n\n          </div>\n\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col col-6>\n\n      </ion-col>\n\n      <ion-col col-6  (click)="goLogin()">\n\n        <div class="psb">\n\n          <img src="assets/imgs/ajustes.png">\n\n          <p>LOGIN / AJUSTES</p>\n\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n  </ion-grid>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar>\n\n    <ion-title>\n\n      <span style="font-size:0.8em;">(c) Ariadna SW 2018</span>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"c:\PROYECTOS\AriagroApp\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__providers_ariagro_data_ariagro_data__["a" /* AriagroDataProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_local_data_local_data__["a" /* LocalDataProvider */],

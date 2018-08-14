@@ -117,12 +117,6 @@ var CampanyasPage = /** @class */ (function () {
     };
     CampanyasPage.prototype.cargarCampanyas = function (campanyas) {
         var _this = this;
-        this.campanyas.push({
-            codempre: 0,
-            nomempre: 'Campaña actual',
-            nomresum: 'Campaña actual',
-            ariagro: 'ariagro'
-        });
         campanyas.forEach(function (c) { return _this.campanyas.push(c); });
     };
     CampanyasPage.prototype.setCampanya = function (campanya) {
@@ -132,7 +126,7 @@ var CampanyasPage = /** @class */ (function () {
     };
     CampanyasPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-campanyas',template:/*ion-inline-start:"C:\PROYECTOS\AriagroApp\src\pages\campanyas\campanyas.html"*/'<ion-header>\n\n  <ion-navbar>\n\n   <ion-title>\n\n      {{version}}\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only class="myGreen" (click)="goHome()">\n\n        <ion-icon name="home"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item text-wrap no-lines class="greenHeader">\n\n      CAMPAÑAS\n\n    </ion-item>\n\n    <ion-grid>\n\n      <ion-row>\n\n        <ion-col col-4>\n\n          <div class="psb">\n\n            <img src="assets/imgs/campanyas.png">\n\n          </div>\n\n        </ion-col>\n\n        <ion-col col-8 class="justificar">\n\n          Por favor, escoja la campaña de la que desea ver los datos.\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-grid>\n\n  </ion-list>\n\n  <ion-list>\n\n      <ion-item *ngFor="let campanya of campanyas" (click)="setCampanya(campanya)" text-wrap>\n\n        <div>\n\n          {{campanya.nomresum}}\n\n        </div>\n\n        <ion-icon name="log-in" item-end class="myGreen"></ion-icon>\n\n      </ion-item>\n\n    </ion-list>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar>\n\n    <ion-title>\n\n      <span style="font-size:0.8em;">(c) Ariadna SW 2018</span>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\PROYECTOS\AriagroApp\src\pages\campanyas\campanyas.html"*/,
+            selector: 'page-campanyas',template:/*ion-inline-start:"c:\PROYECTOS\AriagroApp\src\pages\campanyas\campanyas.html"*/'<ion-header>\n\n  <ion-navbar>\n\n   <ion-title>\n\n      {{version}}\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only class="myGreen" (click)="goHome()">\n\n        <ion-icon name="home"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item text-wrap no-lines class="greenHeader">\n\n      CAMPAÑAS\n\n    </ion-item>\n\n    <ion-grid>\n\n      <ion-row>\n\n        <ion-col col-4>\n\n          <div class="psb">\n\n            <img src="assets/imgs/campanyas.png">\n\n          </div>\n\n        </ion-col>\n\n        <ion-col col-8 class="justificar">\n\n          Por favor, escoja la campaña de la que desea ver los datos.\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-grid>\n\n  </ion-list>\n\n  <ion-list>\n\n      <ion-item *ngFor="let campanya of campanyas" (click)="setCampanya(campanya)" text-wrap>\n\n        <div>\n\n          {{campanya.nomresum}}\n\n        </div>\n\n        <ion-icon name="log-in" item-end class="myGreen"></ion-icon>\n\n      </ion-item>\n\n    </ion-list>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar>\n\n    <ion-title>\n\n      <span style="font-size:0.8em;">(c) Ariadna SW 2018</span>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"c:\PROYECTOS\AriagroApp\src\pages\campanyas\campanyas.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_app_version__["a" /* AppVersion */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* ViewController */],
