@@ -156,7 +156,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
       <Components isList="true" count="10">
         <PageFooterBand1 Ref="10" type="PageFooterBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,26.9,19,0.8</ClientRectangle>
+          <ClientRectangle>0,32.44,19,0.8</ClientRectangle>
           <Components isList="true" count="1">
             <Text31 Ref="11" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -478,11 +478,11 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
         <DataBand2 Ref="33" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,11.4,19,1.8</ClientRectangle>
+          <ClientRectangle>0,11.4,19,0.8</ClientRectangle>
           <Components isList="true" count="6">
             <Text18 Ref="34" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.2,0.4,3.2,0.8</ClientRectangle>
+              <ClientRectangle>0.2,0,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>9ad16219ca374d5dbca51b6fdf958f2f</Guid>
@@ -498,7 +498,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
             </Text18>
             <Text19 Ref="35" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>3.4,0.4,3.2,0.8</ClientRectangle>
+              <ClientRectangle>3.4,0,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>9e9c77040034411890ba8d8b30845362</Guid>
@@ -514,7 +514,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
             </Text19>
             <Text20 Ref="36" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>6.6,0.4,3.2,0.8</ClientRectangle>
+              <ClientRectangle>6.6,0,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>086d9c350c0b4b3d8acdaa1e214becac</Guid>
@@ -530,7 +530,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
             </Text20>
             <Text21 Ref="37" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>9.8,0.4,3.2,0.8</ClientRectangle>
+              <ClientRectangle>9.8,0,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>2a480fde173e451cadebbd34dd4d3034</Guid>
@@ -551,7 +551,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
             </Text21>
             <Text22 Ref="38" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>13,0.4,3.2,0.8</ClientRectangle>
+              <ClientRectangle>13,0,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>151eb7e6f74744728e373ea6fb02d3c9</Guid>
@@ -567,7 +567,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
             </Text22>
             <Text23 Ref="39" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>16.2,0.4,2.6,0.8</ClientRectangle>
+              <ClientRectangle>16.2,0,2.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>fce1d711e95f446cb459a5a466bf6c03</Guid>
@@ -594,7 +594,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
         </DataBand2>
         <HeaderBand2 Ref="40" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,14,19,1.2</ClientRectangle>
+          <ClientRectangle>0,13,19,1.2</ClientRectangle>
           <Components isList="true" count="4">
             <Text25 Ref="41" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -671,7 +671,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
         <DataBand3 Ref="45" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,16,19,0.8</ClientRectangle>
+          <ClientRectangle>0,15,19,0.8</ClientRectangle>
           <Components isList="true" count="3">
             <Text28 Ref="46" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -734,7 +734,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
         </DataBand3>
         <FooterBand1 Ref="49" type="FooterBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,17.6,19,1.4</ClientRectangle>
+          <ClientRectangle>0,16.6,19,1.4</ClientRectangle>
           <Components isList="true" count="1">
             <Text32 Ref="50" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -757,7 +757,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
         </FooterBand1>
         <HeaderBand3 Ref="51" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,19.8,19,0.6</ClientRectangle>
+          <ClientRectangle>0,18.8,19,0.6</ClientRectangle>
           <Components isList="true" count="2">
             <Text34 Ref="52" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -797,7 +797,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
         <DataBand4 Ref="54" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,21.2,19,0.8</ClientRectangle>
+          <ClientRectangle>0,20.2,19,0.8</ClientRectangle>
           <Components isList="true" count="1">
             <Text33 Ref="55" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -857,10 +857,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/7/2018 10:34:23 AM</ReportChanged>
+  <ReportChanged>8/7/2018 1:59:01 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>0643090192c8465f888717cdac207cf2</ReportGuid>
+  <ReportFile>C:\PROYECTOS\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
+  <ReportGuid>ca1d29a8767a4830a0887b3399a74890</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
