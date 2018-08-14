@@ -1,0 +1,58 @@
+{
+	"cabecera_agro": 
+	[
+		{
+			"nomempre": "ALZICOOP COOP V",
+			"domempre": "Calle Partida Materna, 17",
+			"codpobla": "46600",
+			"pobempre": "Alzira",
+			"cifempre": "F46024196",
+			"codsocio": "1141",
+			"nomsocio": "AGUILAR BULTO, JOSE LUIS",
+			"dirsocio": "CL SANT ROC 13",
+			"codpostal": "46600",
+			"pobsocio": "Alzira",
+			"prosocio": "Valencia",
+			"nifsocio": "19158045B",
+			"codcampo": "601",
+			"nomvarie": "NEW-HALL",
+			"nomparti": "GUADASUAR",
+			"poligono": "31",
+			"parcela": "27",
+			"recintos": "1",
+			"kilostot": 10725,
+			"numalbar": "868297",
+			"fecalbar": "25/01/2018",
+			"numcajon": 0,
+			"kilosnet": 10725
+
+		}
+	],
+	"entrada_agro":
+	[
+		{
+			"numalbar": "868297",
+			"tiporecol": "0",
+			"numnotac": "1665",
+			"fechaent": "25/01/2018",
+			"kilosnet": 10725,
+			"tipoentr": "5",
+			"numcajon": 0
+		}
+	],
+	"clasific_agro":
+	[
+		{
+			"numalbar": "868297",
+			"codcalid": "12",
+			"calidad": "1.C",
+			"kilos": 10725 
+		}
+	],
+	"incidencia_agro":
+	[
+		{
+			"nomincid": ""
+		}
+	]
+}
