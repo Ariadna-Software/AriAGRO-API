@@ -31201,6 +31201,112 @@ page-facturas-tratamientos-detalle .item-md ion-thumbnail img, page-facturas-tra
   margin-left: 20%;
 }
 
+page-facturas-varias ion-header {
+  text-align: center;
+}
+
+page-facturas-varias ion-toolbar {
+  text-align: center;
+}
+
+page-facturas-varias img {
+  width: 40%;
+}
+
+page-facturas-varias .psb {
+  padding: 5px;
+  border: solid;
+  border-radius: 30px;
+  border-color: teal;
+  border-width: 3px;
+  text-align: center;
+}
+
+page-facturas-varias .greenHeader {
+  background-color: teal;
+  color: white;
+}
+
+page-facturas-varias .myGreen {
+  color: teal;
+}
+
+page-facturas-varias ion-header ion-icon.back-button-icon.icon {
+  color: teal;
+}
+
+page-facturas-varias .item-md ion-thumbnail, page-facturas-varias .item-ios ion-thumbnail, page-facturas-varias .item-wp ion-thumbnail {
+  min-width: 0px;
+  min-height: 0px;
+  width: 7rem;
+}
+
+page-facturas-varias .item-md ion-thumbnail img, page-facturas-varias .item-ios ion-thumbnail img, page-facturas-varias .item-wp ion-thumbnail img {
+  width: 80%;
+  height: 80%;
+  margin-left: 20%;
+}
+
+page-facturas-varias-detalle ion-header {
+  text-align: center;
+}
+
+page-facturas-varias-detalle ion-toolbar {
+  text-align: center;
+}
+
+page-facturas-varias-detalle .item-md ion-thumbnail {
+  min-width: 0px;
+  min-height: 0px;
+  width: 5rem;
+}
+
+page-facturas-varias-detalle .item-md ion-thumbnail img {
+  width: 100%;
+}
+
+page-facturas-varias-detalle img {
+  width: 40%;
+}
+
+page-facturas-varias-detalle .psb {
+  padding: 5px;
+  border: solid;
+  border-radius: 30px;
+  border-color: teal;
+  border-width: 3px;
+  text-align: center;
+}
+
+page-facturas-varias-detalle .letra {
+  font-size: 0.9em;
+}
+
+page-facturas-varias-detalle .greenHeader {
+  background-color: teal;
+  color: white;
+}
+
+page-facturas-varias-detalle .myGreen {
+  color: teal;
+}
+
+page-facturas-varias-detalle ion-header ion-icon.back-button-icon.icon {
+  color: teal;
+}
+
+page-facturas-varias-detalle .item-md ion-thumbnail, page-facturas-varias-detalle .item-ios ion-thumbnail, page-facturas-varias-detalle .item-wp ion-thumbnail {
+  min-width: 0px;
+  min-height: 0px;
+  width: 7rem;
+}
+
+page-facturas-varias-detalle .item-md ion-thumbnail img, page-facturas-varias-detalle .item-ios ion-thumbnail img, page-facturas-varias-detalle .item-wp ion-thumbnail img {
+  width: 60%;
+  height: 60%;
+  margin-left: 20%;
+}
+
 page-home ion-col {
   text-align: center;
 }

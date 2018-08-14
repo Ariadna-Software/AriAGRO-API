@@ -1,4 +1,4 @@
-webpackJsonp([24],{
+webpackJsonp([26],{
 
 /***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -43,6 +43,9 @@ var AriagroDataProvider = /** @class */ (function () {
     AriagroDataProvider.prototype.getCampanyas = function (url) {
         return this.http.get(url + '/api/campanyas');
     };
+    AriagroDataProvider.prototype.getCampanyaActual = function (url) {
+        return this.http.get(url + '/api/campanyas/actual');
+    };
     AriagroDataProvider.prototype.getCampos = function (url, socio, campanya) {
         return this.http.get(url + '/api/campos/socio', {
             params: {
@@ -70,6 +73,9 @@ var AriagroDataProvider = /** @class */ (function () {
     };
     AriagroDataProvider.prototype.getFacturasTratamientos = function (url, codclien, year, codsocio, campanya) {
         return this.http.get(url + '/api/facturas/tratamientos/' + codclien + '/' + year + '/' + codsocio + '/' + campanya);
+    };
+    AriagroDataProvider.prototype.getFacturasVarias = function (url, campanya) {
+        return this.http.get(url + '/api/facturas/varias/' + campanya);
     };
     AriagroDataProvider.prototype.getMensajesUsuario = function (url, usuPush) {
         return this.http.get(url + '/api/mensajes/usuario/' + usuPush);
@@ -103,17 +109,20 @@ var AriagroDataProvider = /** @class */ (function () {
         };
         return this.http.post(url + '/api/mensajes/correo', data);
     };
-    AriagroDataProvider.prototype.prepararCorreoClasif = function (url, numalbar) {
+    AriagroDataProvider.prototype.prepararCorreoClasif = function (url, numalbar, campanya, informe) {
         var data = {
-            numalbar: numalbar
+            numalbar: numalbar,
+            campanya: campanya,
+            informe: informe
         };
         return this.http.post(url + '/api/mensajes/preparar-correo/clasif', data);
     };
-    AriagroDataProvider.prototype.enviarCorreoClasif = function (url, numalbar, email, ruta) {
+    AriagroDataProvider.prototype.enviarCorreoClasif = function (url, numalbar, email, ruta, coop) {
         var data = {
             numalbar: numalbar,
             email: email,
-            ruta: ruta
+            ruta: ruta,
+            coop: coop
         };
         return this.http.post(url + '/api/mensajes/enviar/correo/clasif', data);
     };
@@ -150,99 +159,107 @@ webpackEmptyAsyncContext.id = 113;
 
 var map = {
 	"../pages/anticipos-detalle/anticipos-detalle.module": [
-		308,
-		23
+		287,
+		25
 	],
 	"../pages/anticipos/anticipos.module": [
-		285,
+		293,
 		5
 	],
 	"../pages/campanyas/campanyas.module": [
-		287,
-		22
+		285,
+		24
 	],
 	"../pages/campos/campos.module": [
 		286,
-		21
+		23
 	],
 	"../pages/datos/datos.module": [
-		290,
-		20
+		298,
+		22
 	],
 	"../pages/entradas/entradas.module": [
-		288,
+		289,
 		4
 	],
 	"../pages/facturas-gasolinera-detalle/facturas-gasolinera-detalle.module": [
-		289,
-		19
+		288,
+		21
 	],
 	"../pages/facturas-gasolinera/facturas-gasolinera.module": [
 		291,
-		18
+		20
 	],
 	"../pages/facturas-telefonia-detalle/facturas-telefonia-detalle.module": [
-		293,
-		17
+		290,
+		19
 	],
 	"../pages/facturas-telefonia/facturas-telefonia.module": [
-		292,
-		16
+		294,
+		18
 	],
 	"../pages/facturas-tienda-detalle/facturas-tienda-detalle.module": [
-		306,
-		15
+		292,
+		17
 	],
 	"../pages/facturas-tienda/facturas-tienda.module": [
-		294,
-		14
+		297,
+		16
 	],
 	"../pages/facturas-tratamientos-detalle/facturas-tratamientos-detalle.module": [
-		295,
-		13
+		296,
+		15
 	],
 	"../pages/facturas-tratamientos/facturas-tratamientos.module": [
-		296,
+		295,
+		14
+	],
+	"../pages/facturas-varias-detalle/facturas-varias-detalle.module": [
+		303,
+		13
+	],
+	"../pages/facturas-varias/facturas-varias.module": [
+		301,
 		12
 	],
 	"../pages/facturas/facturas.module": [
-		297,
+		299,
 		3
 	],
 	"../pages/home/home.module": [
-		298,
+		302,
 		2
 	],
 	"../pages/login/login.module": [
-		299,
+		300,
 		11
 	],
 	"../pages/mensajes-detalle/mensajes-detalle.module": [
-		300,
+		307,
 		1
 	],
 	"../pages/mensajes-enviar/mensajes-enviar.module": [
-		301,
+		304,
 		10
 	],
 	"../pages/mensajes/mensajes.module": [
-		302,
+		305,
 		0
 	],
 	"../pages/modal-calidades-albaran/modal-calidades-albaran.module": [
-		303,
+		309,
 		9
 	],
 	"../pages/modal-calidades-campo/modal-calidades-campo.module": [
-		304,
+		306,
 		8
 	],
 	"../pages/modal-datos-cambiar/modal-datos-cambiar.module": [
-		307,
+		310,
 		7
 	],
 	"../pages/parametros/parametros.module": [
-		305,
+		308,
 		6
 	]
 };
@@ -364,30 +381,32 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/anticipos/anticipos.module#CamposPageModule', name: 'AnticiposPage', segment: 'anticipos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/campos/campos.module#CamposPageModule', name: 'CamposPage', segment: 'campos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/campanyas/campanyas.module#LoginPageModule', name: 'CampanyasPage', segment: 'campanyas', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/entradas/entradas.module#EntradasPageModule', name: 'EntradasPage', segment: 'entradas', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/campos/campos.module#CamposPageModule', name: 'CamposPage', segment: 'campos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/anticipos-detalle/anticipos-detalle.module#EntradasPageModule', name: 'AnticiposDetallePage', segment: 'anticipos-detalle', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/facturas-gasolinera-detalle/facturas-gasolinera-detalle.module#FacturasGasolineraDetallePageModule', name: 'FacturasGasolineraDetallePage', segment: 'facturas-gasolinera-detalle', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/datos/datos.module#LoginPageModule', name: 'DatosPage', segment: 'datos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/facturas-gasolinera/facturas-gasolinera.module#FacturasGasolineraPageModule', name: 'FacturasGasolineraPage', segment: 'facturas-gasolinera', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/facturas-telefonia/facturas-telefonia.module#FacturasTelefoniaPageModule', name: 'FacturasTelefoniaPage', segment: 'facturas-telefonia', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/entradas/entradas.module#EntradasPageModule', name: 'EntradasPage', segment: 'entradas', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/facturas-telefonia-detalle/facturas-telefonia-detalle.module#FacturasTelefoniaDetallePageModule', name: 'FacturasTelefoniaDetallePage', segment: 'facturas-telefonia-detalle', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/facturas-tienda/facturas-tienda.module#FacturasTiendaPageModule', name: 'FacturasTiendaPage', segment: 'facturas-tienda', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/facturas-tratamientos-detalle/facturas-tratamientos-detalle.module#FacturasTratamientosDetallePageModule', name: 'FacturasTratamientosDetallePage', segment: 'facturas-tratamientos-detalle', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/facturas-gasolinera/facturas-gasolinera.module#FacturasGasolineraPageModule', name: 'FacturasGasolineraPage', segment: 'facturas-gasolinera', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/facturas-tienda-detalle/facturas-tienda-detalle.module#FacturasTiendaDetallePageModule', name: 'FacturasTiendaDetallePage', segment: 'facturas-tienda-detalle', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/anticipos/anticipos.module#CamposPageModule', name: 'AnticiposPage', segment: 'anticipos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/facturas-telefonia/facturas-telefonia.module#FacturasTelefoniaPageModule', name: 'FacturasTelefoniaPage', segment: 'facturas-telefonia', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/facturas-tratamientos/facturas-tratamientos.module#FacturasTratamientosPageModule', name: 'FacturasTratamientosPage', segment: 'facturas-tratamientos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/facturas-tratamientos-detalle/facturas-tratamientos-detalle.module#FacturasTratamientosDetallePageModule', name: 'FacturasTratamientosDetallePage', segment: 'facturas-tratamientos-detalle', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/facturas-tienda/facturas-tienda.module#FacturasTiendaPageModule', name: 'FacturasTiendaPage', segment: 'facturas-tienda', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/datos/datos.module#LoginPageModule', name: 'DatosPage', segment: 'datos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/facturas/facturas.module#FacturasPageModule', name: 'FacturasPage', segment: 'facturas', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/mensajes-detalle/mensajes-detalle.module#MensajesDetallePageModule', name: 'MensajesDetallePage', segment: 'mensajes-detalle', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/facturas-varias/facturas-varias.module#FacturasVariasPageModule', name: 'FacturasVariasPage', segment: 'facturas-varias', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/facturas-varias-detalle/facturas-varias-detalle.module#FacturasVariasDetallePageModule', name: 'FacturasVariasDetallePage', segment: 'facturas-varias-detalle', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mensajes-enviar/mensajes-enviar.module#MensajesEnviarPageModule', name: 'MensajesEnviarPage', segment: 'mensajes-enviar', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mensajes/mensajes.module#MensajesPageModule', name: 'MensajesPage', segment: 'mensajes', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modal-calidades-albaran/modal-calidades-albaran.module#ModalCalidadesAlbaranPageModule', name: 'ModalCalidadesAlbaranPage', segment: 'modal-calidades-albaran', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-calidades-campo/modal-calidades-campo.module#ModalCalidadesCampoPageModule', name: 'ModalCalidadesCampoPage', segment: 'modal-calidades-campo', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/mensajes-detalle/mensajes-detalle.module#MensajesDetallePageModule', name: 'MensajesDetallePage', segment: 'mensajes-detalle', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/parametros/parametros.module#ParametrosPageModule', name: 'ParametrosPage', segment: 'parametros', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/facturas-tienda-detalle/facturas-tienda-detalle.module#FacturasTiendaDetallePageModule', name: 'FacturasTiendaDetallePage', segment: 'facturas-tienda-detalle', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modal-datos-cambiar/modal-datos-cambiar.module#ModalDatosCambiarPageModule', name: 'ModalDatosCambiarPage', segment: 'modal-datos-cambiar', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/anticipos-detalle/anticipos-detalle.module#EntradasPageModule', name: 'AnticiposDetallePage', segment: 'anticipos-detalle', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/modal-calidades-albaran/modal-calidades-albaran.module#ModalCalidadesAlbaranPageModule', name: 'ModalCalidadesAlbaranPage', segment: 'modal-calidades-albaran', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modal-datos-cambiar/modal-datos-cambiar.module#ModalDatosCambiarPageModule', name: 'ModalDatosCambiarPage', segment: 'modal-datos-cambiar', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["a" /* IonicStorageModule */].forRoot()
@@ -456,7 +475,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"c:\PROYECTOS\AriagroApp\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"c:\PROYECTOS\AriagroApp\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\PROYECTOS\AriagroApp\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\PROYECTOS\AriagroApp\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_5__providers_ariagro_data_ariagro_data__["a" /* AriagroDataProvider */]])
     ], MyApp);
