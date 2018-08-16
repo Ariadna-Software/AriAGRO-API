@@ -317,7 +317,7 @@
             <Text38 Ref="25" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>1.8,6.4,3.6,0.4</ClientRectangle>
+              <ClientRectangle>1.8,6.4,7,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -345,7 +345,7 @@
             <Text40 Ref="27" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>1.9,7,3.6,0.4</ClientRectangle>
+              <ClientRectangle>1.9,7,6.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Regular,Point,False,0</Font>
               <Guid>2f6bcc863b9349b39896a684c83deccb</Guid>
@@ -871,10 +871,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/16/2018 1:19:46 PM</ReportChanged>
+  <ReportChanged>8/16/2018 1:25:14 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion-json.mrt</ReportFile>
-  <ReportGuid>0c220aa48547484f80706125fb8c1f1b</ReportGuid>
+  <ReportGuid>964ea7f535cd42978a8c9b945768b407</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
