@@ -3,16 +3,34 @@
   <Dictionary Ref="1" type="Dictionary" isKey="true">
     <BusinessObjects isList="true" count="0" />
     <Databases isList="true" count="1">
-      <factura_anticipo Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
-        <Alias>factura_anticipo</Alias>
+      <factura_liquidacion Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>factura_liquidacion</Alias>
         <Key />
-        <Name>factura_anticipo</Name>
-        <PathData>C:\proyectos\AriAGRO-API\public\json\factura_anticipo.json</PathData>
-      </factura_anticipo>
+        <Name>factura_liquidacion</Name>
+        <PathData>C:\proyectos\AriAGRO-API\public\json\factura_liquidacion.json</PathData>
+      </factura_liquidacion>
     </Databases>
     <DataSources isList="true" count="4">
-      <cabecera_anticipo Ref="3" type="DataTableSource" isKey="true">
-        <Alias>cabecera_anticipo</Alias>
+      <anticipos Ref="3" type="DataTableSource" isKey="true">
+        <Alias>anticipos</Alias>
+        <Columns isList="true" count="10">
+          <value>codtipom,System.String</value>
+          <value>numfactu,System.Double</value>
+          <value>fecfactu,System.DateTime</value>
+          <value>codtipomanti,System.String</value>
+          <value>numfactuanti,System.Double</value>
+          <value>fecfactuanti,System.DateTime</value>
+          <value>codvarieanti,System.Double</value>
+          <value>codcampoanti,System.Double</value>
+          <value>baseimpo,System.Double</value>
+          <value>nomvarie,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>anticipos</Name>
+        <NameInSource>factura_liquidacion.anticipos</NameInSource>
+      </anticipos>
+      <cabecera_liquidacion Ref="4" type="DataTableSource" isKey="true">
+        <Alias>cabecera_liquidacion</Alias>
         <Columns isList="true" count="24">
           <value>nomempre,System.String</value>
           <value>domempre,System.String</value>
@@ -40,11 +58,11 @@
           <value>fecfactu,System.DateTime</value>
         </Columns>
         <Dictionary isRef="1" />
-        <Name>cabecera_anticipo</Name>
-        <NameInSource>factura_anticipo.cabecera_anticipo</NameInSource>
-      </cabecera_anticipo>
-      <lineas_anticipo Ref="4" type="DataTableSource" isKey="true">
-        <Alias>lineas_anticipo</Alias>
+        <Name>cabecera_liquidacion</Name>
+        <NameInSource>factura_liquidacion.cabecera_liquidacion</NameInSource>
+      </cabecera_liquidacion>
+      <lineas_liquidacion Ref="5" type="DataTableSource" isKey="true">
+        <Alias>lineas_liquidacion</Alias>
         <Columns isList="true" count="9">
           <value>codvarie,System.Double</value>
           <value>impovar,System.Double</value>
@@ -57,11 +75,11 @@
           <value>codparti,System.Double</value>
         </Columns>
         <Dictionary isRef="1" />
-        <Name>lineas_anticipo</Name>
-        <NameInSource>factura_anticipo.lineas_anticipo</NameInSource>
-      </lineas_anticipo>
-      <pie_anticipo Ref="5" type="DataTableSource" isKey="true">
-        <Alias>pie_anticipo</Alias>
+        <Name>lineas_liquidacion</Name>
+        <NameInSource>factura_liquidacion.lineas_liquidacion</NameInSource>
+      </lineas_liquidacion>
+      <pie_liquidacion Ref="6" type="DataTableSource" isKey="true">
+        <Alias>pie_liquidacion</Alias>
         <Columns isList="true" count="7">
           <value>baseimpo,System.Double</value>
           <value>porc_iva,System.Double</value>
@@ -72,25 +90,9 @@
           <value>totalfac,System.Double</value>
         </Columns>
         <Dictionary isRef="1" />
-        <Name>pie_anticipo</Name>
-        <NameInSource>factura_anticipo.pie_anticipo</NameInSource>
-      </pie_anticipo>
-      <varias Ref="6" type="DataTableSource" isKey="true">
-        <Alias>varias</Alias>
-        <Columns isList="true" count="8">
-          <value>codtipom,System.String</value>
-          <value>numfactu,System.Double</value>
-          <value>fecfactu,System.DateTime</value>
-          <value>codtipomfvar,System.String</value>
-          <value>numfactufvarias,System.Double</value>
-          <value>fecfactufvar,System.DateTime</value>
-          <value>codsecci,System.Double</value>
-          <value>totalfac,System.Double</value>
-        </Columns>
-        <Dictionary isRef="1" />
-        <Name>varias</Name>
-        <NameInSource>factura_anticipo.varias</NameInSource>
-      </varias>
+        <Name>pie_liquidacion</Name>
+        <NameInSource>factura_liquidacion.pie_liquidacion</NameInSource>
+      </pie_liquidacion>
     </DataSources>
     <Relations isList="true" count="0" />
     <Report isRef="0" />
@@ -935,6 +937,7 @@
         </HeaderBand3>
         <DataBand4 Ref="66" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,24.4,19,1.2</ClientRectangle>
           <Components isList="true" count="5">
             <Text50 Ref="67" type="Text" isKey="true">
@@ -1138,10 +1141,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/23/2018 12:45:15 PM</ReportChanged>
+  <ReportChanged>8/23/2018 12:56:32 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_picassent.mrt</ReportFile>
-  <ReportGuid>8c832c5c4c2947a894035a021cac9b87</ReportGuid>
+  <ReportFile />
+  <ReportGuid>4e83c6b39c014848820a9544af2103cd</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
