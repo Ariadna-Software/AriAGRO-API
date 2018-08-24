@@ -11,8 +11,8 @@
       </factura_anticipo>
     </Databases>
     <DataSources isList="true" count="4">
-      <cabecera_anticipo Ref="3" type="DataTableSource" isKey="true">
-        <Alias>cabecera_anticipo</Alias>
+      <cabecera Ref="3" type="DataTableSource" isKey="true">
+        <Alias>cabecera</Alias>
         <Columns isList="true" count="24">
           <value>nomempre,System.String</value>
           <value>domempre,System.String</value>
@@ -40,11 +40,11 @@
           <value>fecfactu,System.DateTime</value>
         </Columns>
         <Dictionary isRef="1" />
-        <Name>cabecera_anticipo</Name>
-        <NameInSource>factura_anticipo.cabecera_anticipo</NameInSource>
-      </cabecera_anticipo>
-      <lineas_anticipo Ref="4" type="DataTableSource" isKey="true">
-        <Alias>lineas_anticipo</Alias>
+        <Name>cabecera</Name>
+        <NameInSource>factura_anticipo.cabecera</NameInSource>
+      </cabecera>
+      <lineas Ref="4" type="DataTableSource" isKey="true">
+        <Alias>lineas</Alias>
         <Columns isList="true" count="9">
           <value>codvarie,System.Double</value>
           <value>impovar,System.Double</value>
@@ -57,11 +57,11 @@
           <value>codparti,System.Double</value>
         </Columns>
         <Dictionary isRef="1" />
-        <Name>lineas_anticipo</Name>
-        <NameInSource>factura_anticipo.lineas_anticipo</NameInSource>
-      </lineas_anticipo>
-      <pie_anticipo Ref="5" type="DataTableSource" isKey="true">
-        <Alias>pie_anticipo</Alias>
+        <Name>lineas</Name>
+        <NameInSource>factura_anticipo.lineas</NameInSource>
+      </lineas>
+      <pie Ref="5" type="DataTableSource" isKey="true">
+        <Alias>pie</Alias>
         <Columns isList="true" count="7">
           <value>baseimpo,System.Double</value>
           <value>porc_iva,System.Double</value>
@@ -72,9 +72,9 @@
           <value>totalfac,System.Double</value>
         </Columns>
         <Dictionary isRef="1" />
-        <Name>pie_anticipo</Name>
-        <NameInSource>factura_anticipo.pie_anticipo</NameInSource>
-      </pie_anticipo>
+        <Name>pie</Name>
+        <NameInSource>factura_anticipo.pie</NameInSource>
+      </pie>
       <varias Ref="6" type="DataTableSource" isKey="true">
         <Alias>varias</Alias>
         <Columns isList="true" count="8">
@@ -122,9 +122,9 @@
               <Name>Text9</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>{cabecera_anticipo.nomempre}</Text>
+              <Text>{cabecera.nomempre}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
             </Text9>
             <Text10 Ref="10" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -137,7 +137,7 @@
               <Name>Text10</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>Almacén y oficinas: {cabecera_anticipo.domempre}</Text>
+              <Text>Almacén y oficinas: {cabecera.domempre}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -153,7 +153,7 @@
               <Name>Text11</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>{cabecera_anticipo.codpobla}-{cabecera_anticipo.pobempre}({cabecera_anticipo.proempre})</Text>
+              <Text>{cabecera.codpobla}-{cabecera.pobempre}({cabecera.proempre})</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -169,7 +169,7 @@
               <Name>Text12</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>O.P.F.H Nro 033 CIF: {cabecera_anticipo.cifempre}</Text>
+              <Text>O.P.F.H Nro 033 CIF: {cabecera.cifempre}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -198,7 +198,7 @@
               <Name>Text2</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>{cabecera_anticipo.letraser}-{cabecera_anticipo.numfactu}</Text>
+              <Text>{cabecera.letraser}-{cabecera.numfactu}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text2>
@@ -212,7 +212,7 @@
               <Name>Text3</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>{cabecera_anticipo.fecfactu}</Text>
+              <Text>{cabecera.fecfactu}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="16" type="DateFormat" isKey="true">
                 <StringFormat>dd/MM/yyyy</StringFormat>
@@ -229,7 +229,7 @@
               <Name>Text4</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>{cabecera_anticipo.nomsocio}</Text>
+              <Text>{cabecera.nomsocio}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -245,7 +245,7 @@
               <Name>Text5</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>{cabecera_anticipo.dirsociocorreo}</Text>
+              <Text>{cabecera.dirsociocorreo}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -261,7 +261,7 @@
               <Name>Text6</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>{cabecera_anticipo.codpostalcorreo} {cabecera_anticipo.pobsociocorreo}</Text>
+              <Text>{cabecera.codpostalcorreo} {cabecera.pobsociocorreo}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text6>
@@ -287,7 +287,7 @@
               <Name>Text37</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>Codigo: {cabecera_anticipo.codsocio}</Text>
+              <Text>Codigo: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text37>
@@ -301,10 +301,10 @@
               <Name>Text38</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>{cabecera_anticipo.codsocio}</Text>
+              <Text>{cabecera.codsocio}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
             </Text38>
             <Text39 Ref="23" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -344,10 +344,10 @@
               <Name>Text42</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>{cabecera_anticipo.dirsocio}</Text>
+              <Text>{cabecera.dirsocio}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
             </Text42>
             <Text43 Ref="26" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -360,7 +360,7 @@
               <Name>Text43</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>{cabecera_anticipo.codpostal} {cabecera_anticipo.pobsocio}</Text>
+              <Text>{cabecera.codpostal} {cabecera.pobsocio}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -376,7 +376,7 @@
               <Name>Text45</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>NIF: {cabecera_anticipo.nifsocio}</Text>
+              <Text>NIF: {cabecera.nifsocio}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text45>
@@ -417,7 +417,7 @@
               <Name>Text16</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>Tlfno: {cabecera_anticipo.telempre}</Text>
+              <Text>Tlfno: {cabecera.telempre}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text16>
@@ -431,7 +431,7 @@
               <Name>Text17</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>Fax: {cabecera_anticipo.faxempre}</Text>
+              <Text>Fax: {cabecera.faxempre}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text17>
@@ -445,7 +445,7 @@
               <Name>Text22</Name>
               <Page isRef="7" />
               <Parent isRef="8" />
-              <Text>Email: {cabecera_anticipo.wwwempre}</Text>
+              <Text>Email: {cabecera.wwwempre}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text22>
@@ -465,7 +465,7 @@
             </EndPointPrimitive1>
           </Components>
           <Conditions isList="true" count="0" />
-          <DataSourceName>cabecera_anticipo</DataSourceName>
+          <DataSourceName>cabecera</DataSourceName>
           <Filters isList="true" count="0" />
           <Name>DataBand1</Name>
           <Page isRef="7" />
@@ -562,9 +562,9 @@
               <Name>Text18</Name>
               <Page isRef="7" />
               <Parent isRef="40" />
-              <Text>{lineas_anticipo.nomvarie}</Text>
+              <Text>{lineas.nomvarie}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text18>
             <Text19 Ref="42" type="Text" isKey="true">
@@ -578,7 +578,7 @@
               <Name>Text19</Name>
               <Page isRef="7" />
               <Parent isRef="40" />
-              <Text>{lineas_anticipo.impovar-lineas_anticipo.kilogrado}</Text>
+              <Text>{lineas.impovar-lineas.kilogrado}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="43" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
@@ -599,9 +599,9 @@
               <Name>Text20</Name>
               <Page isRef="7" />
               <Parent isRef="40" />
-              <Text>{lineas_anticipo.kilogrado}</Text>
+              <Text>{lineas.kilogrado}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text20>
             <Text21 Ref="45" type="Text" isKey="true">
@@ -615,15 +615,15 @@
               <Name>Text21</Name>
               <Page isRef="7" />
               <Parent isRef="40" />
-              <Text>{lineas_anticipo.impovar}</Text>
+              <Text>{lineas.impovar}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text21>
           </Components>
           <Conditions isList="true" count="0" />
           <DataRelationName>Relación</DataRelationName>
-          <DataSourceName>lineas_anticipo</DataSourceName>
+          <DataSourceName>lineas</DataSourceName>
           <Filters isList="true" count="0" />
           <Name>DataBand2</Name>
           <Page isRef="7" />
@@ -784,9 +784,9 @@
               <Name>Text28</Name>
               <Page isRef="7" />
               <Parent isRef="55" />
-              <Text>{pie_anticipo.baseimpo}</Text>
+              <Text>{pie.baseimpo}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text28>
             <Text29 Ref="57" type="Text" isKey="true">
@@ -800,9 +800,9 @@
               <Name>Text29</Name>
               <Page isRef="7" />
               <Parent isRef="55" />
-              <Text>{pie_anticipo.porc_iva}</Text>
+              <Text>{pie.porc_iva}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text29>
             <Text30 Ref="58" type="Text" isKey="true">
@@ -816,9 +816,9 @@
               <Name>Text30</Name>
               <Page isRef="7" />
               <Parent isRef="55" />
-              <Text>{pie_anticipo.imporiva}</Text>
+              <Text>{pie.imporiva}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text30>
             <Text35 Ref="59" type="Text" isKey="true">
@@ -832,9 +832,9 @@
               <Name>Text35</Name>
               <Page isRef="7" />
               <Parent isRef="55" />
-              <Text>{pie_anticipo.basereten}</Text>
+              <Text>{pie.basereten}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text35>
             <Text44 Ref="60" type="Text" isKey="true">
@@ -848,9 +848,9 @@
               <Name>Text44</Name>
               <Page isRef="7" />
               <Parent isRef="55" />
-              <Text>{pie_anticipo.porc_ret}</Text>
+              <Text>{pie.porc_ret}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text44>
             <Text46 Ref="61" type="Text" isKey="true">
@@ -864,9 +864,9 @@
               <Name>Text46</Name>
               <Page isRef="7" />
               <Parent isRef="55" />
-              <Text>{pie_anticipo.impreten}</Text>
+              <Text>{pie.impreten}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text46>
             <Text47 Ref="62" type="Text" isKey="true">
@@ -880,15 +880,15 @@
               <Name>Text47</Name>
               <Page isRef="7" />
               <Parent isRef="55" />
-              <Text>{pie_anticipo.totalfac}</Text>
+              <Text>{pie.totalfac}</Text>
               <TextBrush>Black</TextBrush>
-              <Type>DataColumn</Type>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text47>
           </Components>
           <Conditions isList="true" count="0" />
           <DataRelationName>cabecera-clasific</DataRelationName>
-          <DataSourceName>pie_anticipo</DataSourceName>
+          <DataSourceName>pie</DataSourceName>
           <Filters isList="true" count="0" />
           <Name>DataBand3</Name>
           <Page isRef="7" />
@@ -935,6 +935,7 @@
         </HeaderBand3>
         <DataBand4 Ref="66" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,24.4,19,1.2</ClientRectangle>
           <Components isList="true" count="5">
             <Text50 Ref="67" type="Text" isKey="true">
@@ -1076,7 +1077,7 @@
               <Name>Text58</Name>
               <Page isRef="7" />
               <Parent isRef="74" />
-              <Text>{pie_anticipo.totalfac-5}</Text>
+              <Text>{pie.totalfac-5}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="79" type="CurrencyFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
@@ -1138,10 +1139,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/23/2018 12:45:15 PM</ReportChanged>
+  <ReportChanged>8/24/2018 8:23:23 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_picassent.mrt</ReportFile>
-  <ReportGuid>8c832c5c4c2947a894035a021cac9b87</ReportGuid>
+  <ReportFile />
+  <ReportGuid>8c408b345f7240e7ab5cbf93bcdbcf15</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
