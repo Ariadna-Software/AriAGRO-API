@@ -218,7 +218,7 @@
             <Text1 Ref="16" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>0.2,6,5.6,0.6</ClientRectangle>
+              <ClientRectangle>0.8,6,5.6,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,11.25,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -232,7 +232,7 @@
             <Text2 Ref="17" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>1.4,9.4,3.6,0.8</ClientRectangle>
+              <ClientRectangle>2,9.4,3.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,8.25,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -246,7 +246,7 @@
             <Text3 Ref="18" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>1.4,10.2,3.6,0.6</ClientRectangle>
+              <ClientRectangle>2,10.2,3.6,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,8.25,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -263,10 +263,9 @@
             <Text4 Ref="20" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>13,6,5.6,0.8</ClientRectangle>
+              <ClientRectangle>11.6,6,5.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,11.25,Bold,Point,False,0</Font>
-              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text4</Name>
               <Page isRef="10" />
@@ -279,11 +278,10 @@
             <Text5 Ref="21" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>13,7,5.6,0.6</ClientRectangle>
+              <ClientRectangle>11.6,7,5.6,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>33ad9783324b42eb8dbbd8fafa7be921</Guid>
-              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text5</Name>
               <Page isRef="10" />
@@ -296,11 +294,10 @@
             <Text6 Ref="22" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>13,7.6,5.6,0.6</ClientRectangle>
+              <ClientRectangle>11.6,7.6,5.6,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>87261bf25d5e43dbab5b85a1dbc4f2f1</Guid>
-              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text6</Name>
               <Page isRef="10" />
@@ -311,7 +308,7 @@
             </Text6>
             <Text36 Ref="23" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.2,10.2,1,0.6</ClientRectangle>
+              <ClientRectangle>0.8,10.2,1,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,8.25,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -324,7 +321,7 @@
             </Text36>
             <Text37 Ref="24" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.2,11.4,1.2,0.6</ClientRectangle>
+              <ClientRectangle>0.8,11.4,1.2,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -338,7 +335,7 @@
             <Text38 Ref="25" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>1.6,11.4,7,0.4</ClientRectangle>
+              <ClientRectangle>2.2,11.4,7,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -352,7 +349,7 @@
             </Text38>
             <Text39 Ref="26" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.2,12,1.2,0.6</ClientRectangle>
+              <ClientRectangle>0.8,12,1.2,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Regular,Point,False,0</Font>
               <Guid>e202f1e3919743c2919f748cf6f1abbe</Guid>
@@ -380,7 +377,7 @@
             <Text42 Ref="28" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>0.2,6.8,5.6,0.6</ClientRectangle>
+              <ClientRectangle>0.8,6.8,5.6,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>3d338c4a89354c7ca76128c542f456d7</Guid>
@@ -396,7 +393,7 @@
             <Text43 Ref="29" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>0.2,7.4,5.6,0.6</ClientRectangle>
+              <ClientRectangle>0.8,7.4,5.6,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>36b0402f89d5403b96cdc1ba2a1f885e</Guid>
@@ -412,7 +409,7 @@
             <Text45 Ref="30" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>0.2,8,5.6,0.6</ClientRectangle>
+              <ClientRectangle>0.8,8,5.6,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>5a1b1988a05b40e9b55467e78b732653</Guid>
@@ -426,7 +423,7 @@
             </Text45>
             <Text7 Ref="31" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.2,9.4,1,0.6</ClientRectangle>
+              <ClientRectangle>0.8,9.4,1,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,8.25,Bold,Point,False,0</Font>
               <Guid>86cad8abc0204a51a9ee573edb4d3fc2</Guid>
@@ -440,7 +437,7 @@
             </Text7>
             <Text40 Ref="32" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>1.8,12,3.4,0.4</ClientRectangle>
+              <ClientRectangle>2.4,12,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,10</Font>
               <Guid>9f2b77529eea4d98b2bf78eb9062d1a8</Guid>
@@ -482,7 +479,7 @@
             <Text22 Ref="35" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>6.2,4.2,9.6,0.4</ClientRectangle>
+              <ClientRectangle>6.2,4.2,5,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,10</Font>
               <Margins>0,0,0,0</Margins>
@@ -496,10 +493,9 @@
             <Text63 Ref="36" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>14,1.2,4.6,0.4</ClientRectangle>
+              <ClientRectangle>11.6,1.2,4.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
-              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text63</Name>
               <Page isRef="10" />
@@ -509,14 +505,14 @@
               <Type>Expression</Type>
             </Text63>
             <StartPointPrimitive1 Ref="37" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
-              <ClientRectangle>0,9.2,0,0</ClientRectangle>
+              <ClientRectangle>0.6,9.2,0,0</ClientRectangle>
               <Name>StartPointPrimitive1</Name>
               <Page isRef="10" />
               <Parent isRef="11" />
               <ReferenceToGuid>185cb7b205bf43a18bc71691553de394</ReferenceToGuid>
             </StartPointPrimitive1>
             <EndPointPrimitive1 Ref="38" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
-              <ClientRectangle>5.2,11,0,0</ClientRectangle>
+              <ClientRectangle>5.8,11,0,0</ClientRectangle>
               <Name>EndPointPrimitive1</Name>
               <Page isRef="10" />
               <Parent isRef="11" />
@@ -640,11 +636,9 @@
               <Text>{lineas.kilosnet}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="47" type="NumberFormat" isKey="true">
-                <DecimalDigits>0</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
-                <UseLocalSetting>False</UseLocalSetting>
               </TextFormat>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
@@ -737,14 +731,14 @@
               <Name>Text31</Name>
               <Page isRef="10" />
               <Parent isRef="51" />
-              <Text>{colSumRunning(DataBand2,lineas.impovar)}</Text>
+              <Text>{SumD(lineas.impovar)}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="54" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
               </TextFormat>
-              <Type>Totals</Type>
+              <Type>Expression</Type>
             </Text31>
             <Text49 Ref="55" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -755,16 +749,15 @@
               <Name>Text49</Name>
               <Page isRef="10" />
               <Parent isRef="51" />
-              <Text>{colSumRunning(DataBand2,lineas.kilosnet)}</Text>
+              <Text>{SumD(lineas.kilosnet)}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="56" type="NumberFormat" isKey="true">
-                <DecimalDigits>0</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
-                <UseLocalSetting>False</UseLocalSetting>
+                <State>DecimalDigits, DecimalSeparator</State>
               </TextFormat>
-              <Type>Totals</Type>
+              <Type>Expression</Type>
             </Text49>
           </Components>
           <Conditions isList="true" count="0" />
@@ -1292,7 +1285,7 @@
           <Parent isRef="10" />
         </FooterBand4>
         <RectanglePrimitive1 Ref="99" type="RectanglePrimitive" isKey="true">
-          <ClientRectangle>0,9.6,5.2,1.8</ClientRectangle>
+          <ClientRectangle>0.6,9.6,5.2,1.8</ClientRectangle>
           <Color>Black</Color>
           <Guid>185cb7b205bf43a18bc71691553de394</Guid>
           <Name>RectanglePrimitive1</Name>
@@ -1325,10 +1318,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/27/2018 11:36:45 AM</ReportChanged>
+  <ReportChanged>8/27/2018 12:36:00 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile />
-  <ReportGuid>869467599aa74c1fb49f6bcb7137a022</ReportGuid>
+  <ReportGuid>d8703f14457848ffa1eb6666a553cbab</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
