@@ -200,7 +200,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
             <Text10 Ref="14" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>1,1.2,3.8,0.6</ClientRectangle>
+              <ClientRectangle>0.2,1.2,3.8,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>d5b489dc5ab84f099ab0bd2de9f0023e</Guid>
@@ -216,7 +216,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
             <Text11 Ref="15" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>1,1.8,3.8,0.6</ClientRectangle>
+              <ClientRectangle>0.2,1.8,3.8,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>e4922e47d9db46d69e8f37f69a38dac0</Guid>
@@ -232,7 +232,7 @@ LEFT JOIN rincidencia AS rin ON rin.codincid = inc.codincid</SqlCommand>
             <Text12 Ref="16" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>1,2.4,3.8,0.6</ClientRectangle>
+              <ClientRectangle>0.2,2.4,3.8,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>4982b32f5106485996552d7daf11272c</Guid>
@@ -857,10 +857,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/14/2018 2:01:27 PM</ReportChanged>
+  <ReportChanged>8/27/2018 12:01:04 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>4bd2d7fc0abd4af480bf98b273c3a20a</ReportGuid>
+  <ReportFile />
+  <ReportGuid>415f12ab85084dffa09907fde50f88fd</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
