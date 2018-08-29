@@ -463,7 +463,7 @@
         </PageHeaderBand1>
         <PageFooterBand1 Ref="34" type="PageFooterBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,34.58,19,4.2</ClientRectangle>
+          <ClientRectangle>0,29.04,19,4.2</ClientRectangle>
           <Components isList="true" count="4">
             <Text26 Ref="35" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -836,11 +836,11 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
         <DataBand5 Ref="61" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,18,19,1.2</ClientRectangle>
+          <ClientRectangle>0,18,19,0.6</ClientRectangle>
           <Components isList="true" count="4">
             <Text59 Ref="62" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>3,0.4,1.4,0.4</ClientRectangle>
+              <ClientRectangle>3,0.2,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Guid>40e7c54cbde74091a7d9bbb1c8595cd5</Guid>
@@ -854,7 +854,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
             </Text59>
             <Text60 Ref="63" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>5.2,0.4,1.6,0.4</ClientRectangle>
+              <ClientRectangle>5.2,0.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Guid>33ddd7bda3ab42ebbb3d316082aeaa3d</Guid>
@@ -871,7 +871,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
             </Text60>
             <Text61 Ref="65" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>7.6,0.4,3,0.4</ClientRectangle>
+              <ClientRectangle>7.6,0.2,3,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Guid>5198fc1b5d094d2b9267f88b9276a202</Guid>
@@ -885,7 +885,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
             </Text61>
             <Text62 Ref="66" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>10.6,0.4,1.2,0.4</ClientRectangle>
+              <ClientRectangle>10.6,0.2,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Guid>abe57aba60ab480dbc4c0ae23225a070</Guid>
@@ -910,7 +910,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
         </DataBand5>
         <HeaderBand2 Ref="67" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,20,19,1.2</ClientRectangle>
+          <ClientRectangle>0,19.4,19,1.2</ClientRectangle>
           <Components isList="true" count="7">
             <Text30 Ref="68" type="Text" isKey="true">
               <Brush>LightGray</Brush>
@@ -1033,7 +1033,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
         <DataBand4 Ref="75" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,22,19,1.2</ClientRectangle>
+          <ClientRectangle>0,21.4,19,1.2</ClientRectangle>
           <Components isList="true" count="7">
             <Text29 Ref="76" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -1233,10 +1233,10 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/28/2018 11:44:08 PM</ReportChanged>
+  <ReportChanged>8/29/2018 12:59:57 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_castelduc.mrt</ReportFile>
-  <ReportGuid>5f7048d182494b218a758c3a31f83cf7</ReportGuid>
+  <ReportFile />
+  <ReportGuid>4b730dccf05f4739a35549df57c9d6cb</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
