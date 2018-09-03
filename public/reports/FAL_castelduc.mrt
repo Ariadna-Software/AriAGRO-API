@@ -55,7 +55,7 @@
           <value>nomtipom,System.String</value>
           <value>letraser,System.Char</value>
           <value>numfactu,System.Double</value>
-          <value>fecfactu,System.String</value>
+          <value>fecfactu,System.DateTime</value>
         </Columns>
         <Dictionary isRef="1" />
         <Name>cabecera</Name>
@@ -1227,10 +1227,10 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>8/30/2018 9:05:53 AM</ReportChanged>
+  <ReportChanged>9/3/2018 9:15:57 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_castelduc.mrt</ReportFile>
-  <ReportGuid>586149157beb49078709fa2ecd4e22a6</ReportGuid>
+  <ReportGuid>bf59c1c77ca14c0ba609e426b02d9e43</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
