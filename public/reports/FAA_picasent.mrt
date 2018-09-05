@@ -37,7 +37,7 @@
           <value>nomtipom,System.String</value>
           <value>letraser,System.Char</value>
           <value>numfactu,System.Double</value>
-          <value>fecfactu,System.String</value>
+          <value>fecfactu,System.DateTime</value>
         </Columns>
         <Dictionary isRef="1" />
         <Name>cabecera</Name>
@@ -1179,7 +1179,7 @@
               <Name>Text18</Name>
               <Page isRef="10" />
               <Parent isRef="85" />
-              <Text>{pie.totalfac-SumD(varias.totalfac)}</Text>
+              <Text>{varias.totalfac == null ? "Date is empty" : "No empty"}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="89" type="CurrencyFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
@@ -1234,10 +1234,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/3/2018 9:53:46 AM</ReportChanged>
+  <ReportChanged>9/5/2018 1:35:56 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_picasent.mrt</ReportFile>
-  <ReportGuid>f2ae9b92a493405f96ad2143ccf5c6c4</ReportGuid>
+  <ReportGuid>b1662af3d61940fb8da11600043839ad</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
