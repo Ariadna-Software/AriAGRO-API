@@ -8,7 +8,7 @@
         "port": 3306,
         "user": "root",
         "password": "aritel",
-        "database": "ariagro2"
+        "database": "ariagro"
     },
     "usuarios": {
         "server": "mysql01.ariadnasw.com",
@@ -59,7 +59,7 @@
         "port": 3306,
         "user": "root",
         "password": "aritel",
-        "database": "ariagro2",
+        "database": "ariagro",
         "tipo_fac_adv": ["FAP"]
     }
 }
