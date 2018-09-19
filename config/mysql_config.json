@@ -59,7 +59,8 @@
         "port": 3306,
         "user": "root",
         "password": "aritel",
-        "database": "ariagro",
-        "tipo_fac_adv": ["FAP"]
+        "database": "ariges3",
+        "tipo_fac_adv": ["FAS"]
     }
 }
+
