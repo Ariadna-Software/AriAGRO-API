@@ -3,13 +3,13 @@
     "apiHost": "localhost",
     "ficheros": "C:\\ASW\\AriAgroApi\\ficheros\\",
     "smtpConfig": {
-        "host": "smtp.gmail.com",
+        "host": "",
         "port": 465,
         "secure": true, 
         "auth": {
-            "user": "rafa@myariadna.com",
-            "pass": "*****"
+            "user": "vicent@myariadna.com",
+            "pass": "vriberac123@"
         }
     },
-    "destinatario": "rafa@myariadna.com"
+    "destinatario": "vicent@myariadna.com"
 }
