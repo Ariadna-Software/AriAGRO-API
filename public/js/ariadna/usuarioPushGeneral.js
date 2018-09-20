@@ -245,13 +245,19 @@ function loadTablaUsuariosPush(data) {
     }
 }
 
-function buscarUsuariosPush() {
+function buscarUsuariosPush(result) {
     var mf = function () {
+        if(result) {
+            $('#txtBuscar').val('*');
+        }
         if (!datosOK()) {
             return;
         }
         // obtener el n.serie del certificado para la firma.
         var aBuscar = $('#txtBuscar').val();
+        if(result) {
+            $('#txtBuscar').val('');
+        }
         // enviar la consulta por la red (AJAX)
         $.ajax({
             type: "GET",
@@ -336,7 +342,7 @@ function deleteUsuarioPush(id) {
                 contentType: "application/json",
                 data: JSON.stringify(data),
                 success: function (data, status) {
-                    var fn = buscarUsuariosPush();
+                    var fn = buscarUsuariosPush(true);
                     fn();
                 },
                 error: errorAjax

@@ -149,13 +149,19 @@ function loadTablaAdministradores(data) {
     }
 }
 
-function buscarAdministradores() {
+function buscarAdministradores(result) {
     var mf = function () {
+        if(result) {
+            $('#txtBuscar').val('*');
+        }
         if (!datosOK()) {
             return;
         }
         // obtener el n.serie del certificado para la firma.
         var aBuscar = $('#txtBuscar').val();
+        if(result) {
+            $('#txtBuscar').val('');
+        }
         // enviar la consulta por la red (AJAX)
         $.ajax({
             type: "GET",
@@ -199,7 +205,7 @@ function deleteAdministrador(id) {
                 contentType: "application/json",
                 data: JSON.stringify(data),
                 success: function (data, status) {
-                    var fn = buscarAdministradores();
+                    var fn = buscarAdministradores(true);
                     fn();
                 },
                 error: errorAjax
