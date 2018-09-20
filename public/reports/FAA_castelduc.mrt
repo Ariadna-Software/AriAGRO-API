@@ -708,6 +708,7 @@
               <Text>{lineasBis_huertos.preciomed}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="53" type="NumberFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1071,10 +1072,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/6/2018 9:40:16 AM</ReportChanged>
+  <ReportChanged>9/20/2018 1:47:02 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_castelduc.mrt</ReportFile>
-  <ReportGuid>81f56d08561041ccafc15203c3c01b10</ReportGuid>
+  <ReportGuid>62ac1cb0b8b245c592e8342345670407</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>

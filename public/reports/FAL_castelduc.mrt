@@ -687,10 +687,11 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
               <Name>Text24</Name>
               <Page isRef="11" />
               <Parent isRef="46" />
-              <Text>  {Round (Div (lineasBis_calidades.imporcal, lineasBis_calidades.kilosnet), 2)}
+              <Text>  {Round (Div (lineasBis_calidades.imporcal, lineasBis_calidades.kilosnet), 4)}
 </Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="51" type="NumberFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1246,10 +1247,10 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/17/2018 9:02:16 AM</ReportChanged>
+  <ReportChanged>9/20/2018 1:05:08 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile />
-  <ReportGuid>bfbaac7de3484fa48280199667cc4a06</ReportGuid>
+  <ReportGuid>4571e93711b34a5eb404230d77b30123</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>

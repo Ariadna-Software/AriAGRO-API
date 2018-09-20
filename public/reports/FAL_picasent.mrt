@@ -649,10 +649,11 @@
               <Text>{lineas.preciomed}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="48" type="NumberFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
-                <State>DecimalSeparator, GroupSeparator</State>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator</State>
               </TextFormat>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
@@ -1344,10 +1345,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/6/2018 9:31:56 AM</ReportChanged>
+  <ReportChanged>9/20/2018 1:00:41 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_picasent.mrt</ReportFile>
-  <ReportGuid>be0cf782c9ee41ac9fed9c5d5f1d4a30</ReportGuid>
+  <ReportFile />
+  <ReportGuid>7728b8e267d14851ad13e187006070e3</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
