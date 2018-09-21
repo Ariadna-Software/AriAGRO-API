@@ -83,7 +83,7 @@
           <value>numfactu,System.Double</value>
           <value>fecfactu,System.DateTime</value>
           <value>codtipomfvar,System.String</value>
-          <value>numfactufvarias,System.SByte</value>
+          <value>numfactufvarias,System.String</value>
           <value>fecfactufvar,System.DateTime</value>
           <value>codsecci,System.Double</value>
           <value>totalfac,System.Double</value>
@@ -1051,7 +1051,9 @@
               <Type>Expression</Type>
             </Text49>
           </Components>
-          <Conditions isList="true" count="0" />
+          <Conditions isList="true" count="1">
+            <value>varias.totalfac,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
           <Name>cabeceraVarias</Name>
           <Page isRef="10" />
           <Parent isRef="10" />
@@ -1060,7 +1062,7 @@
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,21.8,19,0.8</ClientRectangle>
-          <Components isList="true" count="6">
+          <Components isList="true" count="5">
             <Text50 Ref="81" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0.2,2.8,0.4</ClientRectangle>
@@ -1136,21 +1138,10 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text54>
-            <Text20 Ref="88" type="Text" isKey="true">
-              <Brush>Transparent</Brush>
-              <ClientRectangle>11.4,0.2,2,0.6</ClientRectangle>
-              <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text20</Name>
-              <Page isRef="10" />
-              <Parent isRef="80" />
-              <Text>{varias.numfactufvarias}</Text>
-              <TextBrush>Black</TextBrush>
-              <Type>Expression</Type>
-            </Text20>
           </Components>
-          <Conditions isList="true" count="0" />
+          <Conditions isList="true" count="1">
+            <value>varias.totalfac,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
           <DataRelationName isNull="true" />
           <DataSourceName>varias</DataSourceName>
           <Filters isList="true" count="0" />
@@ -1159,11 +1150,11 @@
           <Parent isRef="10" />
           <Sort isList="true" count="0" />
         </datosVarias>
-        <pieVarias Ref="89" type="FooterBand" isKey="true">
+        <pieVarias Ref="88" type="FooterBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,23.4,19,0.6</ClientRectangle>
           <Components isList="true" count="2">
-            <Text55 Ref="90" type="Text" isKey="true">
+            <Text55 Ref="89" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0.2,3,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1172,12 +1163,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text55</Name>
               <Page isRef="10" />
-              <Parent isRef="89" />
+              <Parent isRef="88" />
               <Text>Total descuentos</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text55>
-            <Text56 Ref="91" type="Text" isKey="true">
+            <Text56 Ref="90" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>16,0.2,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1187,10 +1178,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text56</Name>
               <Page isRef="10" />
-              <Parent isRef="89" />
+              <Parent isRef="88" />
               <Text>{SumD(varias.totalfac)}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="92" type="NumberFormat" isKey="true">
+              <TextFormat Ref="91" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1199,17 +1190,19 @@
               <Type>Expression</Type>
             </Text56>
           </Components>
-          <Conditions isList="true" count="0" />
+          <Conditions isList="true" count="1">
+            <value>varias.totalfac,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
           <Name>pieVarias</Name>
           <Page isRef="10" />
           <Parent isRef="10" />
         </pieVarias>
-        <datosTotal Ref="93" type="DataBand" isKey="true">
+        <datosTotal Ref="92" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,24.8,19,4.6</ClientRectangle>
           <Components isList="true" count="3">
-            <Text57 Ref="94" type="Text" isKey="true">
+            <Text57 Ref="93" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>10.6,0.4,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1218,12 +1211,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text57</Name>
               <Page isRef="10" />
-              <Parent isRef="93" />
+              <Parent isRef="92" />
               <Text>Total a ingresar:</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text57>
-            <Image1 Ref="95" type="Image" isKey="true">
+            <Image1 Ref="94" type="Image" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>14.4,2.4,4.2,1.6</ClientRectangle>
@@ -1232,9 +1225,9 @@
               <Margins>0,0,0,0</Margins>
               <Name>Image1</Name>
               <Page isRef="10" />
-              <Parent isRef="93" />
+              <Parent isRef="92" />
             </Image1>
-            <Text18 Ref="96" type="Text" isKey="true">
+            <Text18 Ref="95" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>15.8,0.4,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1243,10 +1236,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text18</Name>
               <Page isRef="10" />
-              <Parent isRef="93" />
+              <Parent isRef="92" />
               <Text>{pie.totalfac-varias.totalvarias}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="97" type="CurrencyFormat" isKey="true">
+              <TextFormat Ref="96" type="CurrencyFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>8</NegativePattern>
@@ -1265,7 +1258,7 @@
           <Parent isRef="10" />
           <Sort isList="true" count="0" />
         </datosTotal>
-        <RectanglePrimitive1 Ref="98" type="RectanglePrimitive" isKey="true">
+        <RectanglePrimitive1 Ref="97" type="RectanglePrimitive" isKey="true">
           <ClientRectangle>0.2,6.8,3.4,1.2</ClientRectangle>
           <Color>Black</Color>
           <Guid>07ba96870ecb4e8c876afc120c554404</Guid>
@@ -1281,13 +1274,13 @@
       <PageHeight>29.7</PageHeight>
       <PageWidth>21</PageWidth>
       <Report isRef="0" />
-      <Watermark Ref="99" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+      <Watermark Ref="98" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
     </Page1>
   </Pages>
-  <PrinterSettings Ref="100" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="99" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -1299,10 +1292,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/21/2018 12:29:07 PM</ReportChanged>
+  <ReportChanged>9/21/2018 1:07:47 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_picasent.mrt</ReportFile>
-  <ReportGuid>8ed609a4bad642fd915f48aa29fe212a</ReportGuid>
+  <ReportGuid>31176df394d944498d95db497ae632cf</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
