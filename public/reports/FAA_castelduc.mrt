@@ -531,7 +531,6 @@
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>e8775bf5561c418598dffb0a4002670a</Guid>
-              <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text8</Name>
               <Page isRef="11" />
@@ -547,7 +546,6 @@
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>266d4efa916d422a8d20a71c90e5fb7c</Guid>
-              <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text13</Name>
               <Page isRef="11" />
@@ -687,6 +685,7 @@
               <Text>{lineasBis_huertos.kilosnet}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="51" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1072,10 +1071,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/20/2018 1:47:02 PM</ReportChanged>
+  <ReportChanged>9/21/2018 9:52:57 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_castelduc.mrt</ReportFile>
-  <ReportGuid>62ac1cb0b8b245c592e8342345670407</ReportGuid>
+  <ReportGuid>61ea28c642354bfea486f71b5af19f5e</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
