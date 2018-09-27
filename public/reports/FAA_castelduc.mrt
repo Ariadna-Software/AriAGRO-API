@@ -913,10 +913,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/27/2018 10:26:59 AM</ReportChanged>
+  <ReportChanged>9/27/2018 10:41:58 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_castelduc.mrt</ReportFile>
-  <ReportGuid>a051a096225f4a35b3611df71bbb2245</ReportGuid>
+  <ReportGuid>7dc0218ede034d948de2bb871a74a8fa</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
