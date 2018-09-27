@@ -462,17 +462,16 @@
           <Page isRef="2" />
           <Parent isRef="2" />
         </HeaderBand1>
-        <DataBand2 Ref="35" type="DataBand" isKey="true">
+        <GroupHeaderBand1 Ref="35" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,9.6,19,0.8</ClientRectangle>
+          <ClientRectangle>0,9.6,19,1</ClientRectangle>
           <Components isList="true" count="1">
             <Text18 Ref="36" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.8,0.2,3.5,0.4</ClientRectangle>
+              <ClientRectangle>0.6,0.2,3.5,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
-              <Guid>9ad16219ca374d5dbca51b6fdf958f2f</Guid>
+              <Guid>21644938055a4c18adaecd2431c61d24</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text18</Name>
               <Page isRef="2" />
@@ -483,19 +482,16 @@
               <VertAlignment>Center</VertAlignment>
             </Text18>
           </Components>
+          <Condition>{lineasBis.codvarie}</Condition>
           <Conditions isList="true" count="0" />
-          <DataRelationName>Relación</DataRelationName>
-          <DataSourceName>lineasBis</DataSourceName>
-          <Filters isList="true" count="0" />
-          <Name>DataBand2</Name>
+          <Name>GroupHeaderBand1</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
-          <Sort isList="true" count="0" />
-        </DataBand2>
+        </GroupHeaderBand1>
         <DataBand3 Ref="37" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,11.2,19,0.8</ClientRectangle>
+          <ClientRectangle>0,11.4,19,0.8</ClientRectangle>
           <Components isList="true" count="4">
             <Text20 Ref="38" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -507,8 +503,8 @@
               <Name>Text20</Name>
               <Page isRef="2" />
               <Parent isRef="37" />
-              <Text>{ Switch(lineasBis_calidades.tipcalid == 0,"Comercial",
-lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
+              <Text>{ Switch(lineasBis.tipcalid1 == 0,"Comercial",
+lineasBis.tipcalid1 == 1,"No comercial")}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -523,7 +519,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
               <Name>Text23</Name>
               <Page isRef="2" />
               <Parent isRef="37" />
-              <Text>{lineasBis_calidades.kilosnet}</Text>
+              <Text>{lineasBis.kilosnet}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="40" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
@@ -544,7 +540,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
               <Name>Text24</Name>
               <Page isRef="2" />
               <Parent isRef="37" />
-              <Text>  {Round (Div (lineasBis_calidades.imporcal, lineasBis_calidades.kilosnet), 4)}
+              <Text>  {Round (Div (lineasBis.imporcal, lineasBis.kilosnet), 4)}
 </Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="42" type="NumberFormat" isKey="true">
@@ -566,7 +562,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
               <Name>Text25</Name>
               <Page isRef="2" />
               <Parent isRef="37" />
-              <Text>{lineasBis_calidades.imporcal}</Text>
+              <Text>{lineasBis.imporcal}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="44" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
@@ -579,9 +575,8 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
           </Components>
           <Conditions isList="true" count="0" />
           <DataRelationName>linea-calidades</DataRelationName>
-          <DataSourceName>lineasBis_calidades</DataSourceName>
+          <DataSourceName>lineasBis</DataSourceName>
           <Filters isList="true" count="0" />
-          <MasterComponent isRef="35" />
           <Name>DataBand3</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
@@ -590,7 +585,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
         <HeaderBand5 Ref="45" type="HeaderBand" isKey="true">
           <Border>Bottom;Black;1;Solid;False;4;Black</Border>
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,12.8,19,3</ClientRectangle>
+          <ClientRectangle>0,13,19,3</ClientRectangle>
           <Components isList="true" count="8">
             <Text13 Ref="46" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -722,7 +717,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
         <DataBand5 Ref="55" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,16.6,19,0.6</ClientRectangle>
+          <ClientRectangle>0,16.8,19,0.6</ClientRectangle>
           <Components isList="true" count="5">
             <Text59 Ref="56" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -819,7 +814,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
         </DataBand5>
         <HeaderBand2 Ref="63" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,18,19,4</ClientRectangle>
+          <ClientRectangle>0,18.2,19,4</ClientRectangle>
           <Components isList="true" count="7">
             <Text30 Ref="64" type="Text" isKey="true">
               <Brush>LightGray</Brush>
@@ -942,7 +937,7 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
         <DataBand4 Ref="71" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,22.8,19,1.2</ClientRectangle>
+          <ClientRectangle>0,23,19,1.2</ClientRectangle>
           <Components isList="true" count="7">
             <Text29 Ref="72" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -1142,10 +1137,10 @@ lineasBis_calidades.tipcalid == 1,"No comercial")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/27/2018 9:23:25 AM</ReportChanged>
+  <ReportChanged>9/27/2018 9:42:31 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_castelduc.mrt</ReportFile>
-  <ReportGuid>0d87b8668ee047c390552552debe45e2</ReportGuid>
+  <ReportGuid>79c978a66d5b4a259e57ef3cc9e21f5a</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
