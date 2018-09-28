@@ -1264,10 +1264,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/28/2018 12:44:32 PM</ReportChanged>
+  <ReportChanged>9/28/2018 12:54:50 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_picasent.mrt</ReportFile>
-  <ReportGuid>f4a6182c12e24a87bc90a2a303beb220</ReportGuid>
+  <ReportFile />
+  <ReportGuid>01d75d17fb634a769fb394fcb276192f</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
