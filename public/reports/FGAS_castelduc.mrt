@@ -72,7 +72,7 @@
       <Components isList="true" count="8">
         <PageHeaderBand1 Ref="5" type="PageHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,0.4,19,6.2</ClientRectangle>
+          <ClientRectangle>0,0.4,19,6.8</ClientRectangle>
           <Components isList="true" count="20">
             <Text9 Ref="6" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -371,7 +371,7 @@
         </PageHeaderBand1>
         <HeaderBand1 Ref="27" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,7.4,19,1.2</ClientRectangle>
+          <ClientRectangle>0,8,19,1.2</ClientRectangle>
           <Components isList="true" count="7">
             <Text8 Ref="28" type="Text" isKey="true">
               <Brush>LightGray</Brush>
@@ -493,7 +493,7 @@
         </HeaderBand1>
         <GroupHeaderBand1 Ref="35" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,9.4,19,0</ClientRectangle>
+          <ClientRectangle>0,10,19,0</ClientRectangle>
           <Components isList="true" count="0" />
           <Condition>{gasol_fact.numlinea}</Condition>
           <Conditions isList="true" count="0" />
@@ -504,7 +504,7 @@
         <DataBand1 Ref="36" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,10.2,19,0.8</ClientRectangle>
+          <ClientRectangle>0,10.8,19,0.8</ClientRectangle>
           <Components isList="true" count="7">
             <Text20 Ref="37" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -611,7 +611,7 @@
         </DataBand1>
         <HeaderBand2 Ref="44" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,11.8,19,1.4</ClientRectangle>
+          <ClientRectangle>0,12.4,19,1.4</ClientRectangle>
           <Components isList="true" count="4">
             <Text30 Ref="45" type="Text" isKey="true">
               <Brush>LightGray</Brush>
@@ -685,7 +685,7 @@
         </HeaderBand2>
         <GroupHeaderBand2 Ref="49" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,14,19,0.8</ClientRectangle>
+          <ClientRectangle>0,14.6,19,0.8</ClientRectangle>
           <Components isList="true" count="0" />
           <Condition>{gasol_fact.numfactu}</Condition>
           <Conditions isList="true" count="0" />
@@ -696,7 +696,7 @@
         <DataBand2 Ref="50" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,15.6,19,0.8</ClientRectangle>
+          <ClientRectangle>0,16.2,19,0.8</ClientRectangle>
           <Components isList="true" count="4">
             <Text29 Ref="51" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -794,10 +794,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>10/15/2018 9:16:57 AM</ReportChanged>
+  <ReportChanged>10/15/2018 1:09:53 PM</ReportChanged>
   <ReportCreated>10/11/2018 12:02:55 PM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FGAS_castelduc.mrt</ReportFile>
-  <ReportGuid>ceca597a561e423583ab23c46738b838</ReportGuid>
+  <ReportFile />
+  <ReportGuid>c42da2d91aba467ebe0d61ea547bb2da</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
