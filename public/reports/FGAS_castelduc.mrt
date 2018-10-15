@@ -13,7 +13,7 @@
     <DataSources isList="true" count="1">
       <gasol_fact Ref="3" type="DataTableSource" isKey="true">
         <Alias>gasol_fact</Alias>
-        <Columns isList="true" count="28">
+        <Columns isList="true" count="37">
           <value>codsocio,System.Double</value>
           <value>nomsocio,System.String</value>
           <value>domsocio,System.String</value>
@@ -32,6 +32,15 @@
           <value>cifempre,System.String</value>
           <value>bases,System.Double</value>
           <value>cuotas,System.Double</value>
+          <value>baseimp1,System.Double</value>
+          <value>baseimp2,System.Double</value>
+          <value>baseimp3,System.Double</value>
+          <value>impoiva1,System.Double</value>
+          <value>impoiva2,System.Double</value>
+          <value>impoiva3,System.Double</value>
+          <value>pociva1,System.Double</value>
+          <value>porciva2,System.Double</value>
+          <value>porciva3,System.Double</value>
           <value>impuesto,System.Double</value>
           <value>totalfac,System.Double</value>
           <value>numlinea,System.Double</value>
@@ -60,7 +69,7 @@
     <Page1 Ref="4" type="Page" isKey="true">
       <Border>None;Black;2;Solid;False;4;Black</Border>
       <Brush>Transparent</Brush>
-      <Components isList="true" count="7">
+      <Components isList="true" count="8">
         <PageHeaderBand1 Ref="5" type="PageHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,0.4,19,6.2</ClientRectangle>
@@ -674,11 +683,22 @@
           <Page isRef="4" />
           <Parent isRef="4" />
         </HeaderBand2>
-        <DataBand2 Ref="49" type="DataBand" isKey="true">
+        <GroupHeaderBand2 Ref="49" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,14,19,0.8</ClientRectangle>
-          <Components isList="true" count="3">
-            <Text29 Ref="50" type="Text" isKey="true">
+          <Components isList="true" count="0" />
+          <Condition>{gasol_fact.numfactu}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupHeaderBand2>
+        <DataBand2 Ref="50" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,15.6,19,0.8</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text29 Ref="51" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4,0.2,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -686,12 +706,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text29</Name>
               <Page isRef="4" />
-              <Parent isRef="49" />
-              <Text>{gasol_fact.bases}</Text>
+              <Parent isRef="50" />
+              <Text>{gasol_fact.baseimp1}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text29>
-            <Text31 Ref="51" type="Text" isKey="true">
+            <Text31 Ref="52" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.8,0.2,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -699,12 +719,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text31</Name>
               <Page isRef="4" />
-              <Parent isRef="49" />
-              <Text>{gasol_fact.cuotas}</Text>
+              <Parent isRef="50" />
+              <Text>{gasol_fact.impoiva1}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text31>
-            <Text33 Ref="52" type="Text" isKey="true">
+            <Text33 Ref="53" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.4,0.2,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -712,11 +732,24 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text33</Name>
               <Page isRef="4" />
-              <Parent isRef="49" />
+              <Parent isRef="50" />
               <Text>{gasol_fact.totalfac}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text33>
+            <Text34 Ref="54" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.2,0.2,2.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="4" />
+              <Parent isRef="50" />
+              <Text>{gasol_fact.pociva1}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text34>
           </Components>
           <Conditions isList="true" count="0" />
           <DataRelationName isNull="true" />
@@ -727,7 +760,7 @@
           <Parent isRef="4" />
           <Sort isList="true" count="0" />
         </DataBand2>
-        <RectanglePrimitive1 Ref="53" type="RectanglePrimitive" isKey="true">
+        <RectanglePrimitive1 Ref="55" type="RectanglePrimitive" isKey="true">
           <ClientRectangle>0.4,3.8,3.8,1</ClientRectangle>
           <Color>Black</Color>
           <Guid>2f4437a8f4c345d0843aa805d2f0fe58</Guid>
@@ -743,13 +776,13 @@
       <PageHeight>29.7</PageHeight>
       <PageWidth>21</PageWidth>
       <Report isRef="0" />
-      <Watermark Ref="54" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+      <Watermark Ref="56" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
     </Page1>
   </Pages>
-  <PrinterSettings Ref="55" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="57" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -761,10 +794,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>10/11/2018 1:20:23 PM</ReportChanged>
+  <ReportChanged>10/15/2018 9:16:57 AM</ReportChanged>
   <ReportCreated>10/11/2018 12:02:55 PM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FGAS_castelduc.mrt</ReportFile>
-  <ReportGuid>1a1a7308953e4194aec15d6942b33f19</ReportGuid>
+  <ReportGuid>ceca597a561e423583ab23c46738b838</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
