@@ -69,7 +69,7 @@
     <Page1 Ref="4" type="Page" isKey="true">
       <Border>None;Black;2;Solid;False;4;Black</Border>
       <Brush>Transparent</Brush>
-      <Components isList="true" count="8">
+      <Components isList="true" count="7">
         <PageHeaderBand1 Ref="5" type="PageHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,0.4,19,6.8</ClientRectangle>
@@ -609,13 +609,13 @@
           <Parent isRef="4" />
           <Sort isList="true" count="0" />
         </DataBand1>
-        <HeaderBand2 Ref="44" type="HeaderBand" isKey="true">
+        <GroupHeaderBand2 Ref="44" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,12.4,19,1.4</ClientRectangle>
+          <ClientRectangle>0,12.4,19,0.8</ClientRectangle>
           <Components isList="true" count="4">
             <Text30 Ref="45" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>4,0.2,2.8,0.8</ClientRectangle>
+              <ClientRectangle>3.6,0,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>c11676d971314734a40edfef2be4d78a</Guid>
@@ -631,7 +631,7 @@
             </Text30>
             <Text27 Ref="46" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>6.6,0.2,2,0.8</ClientRectangle>
+              <ClientRectangle>6.2,0,2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>e80099af07444df08c0e7d63c05b36a0</Guid>
@@ -647,7 +647,7 @@
             </Text27>
             <Text32 Ref="47" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>8.6,0.2,2.8,0.8</ClientRectangle>
+              <ClientRectangle>8.2,0,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>0b79b138897e4808a060aac0956c1694</Guid>
@@ -663,7 +663,7 @@
             </Text32>
             <Text28 Ref="48" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>11.4,0.2,2.8,0.8</ClientRectangle>
+              <ClientRectangle>11,0,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>0f80f7a2e41d43eea2313f7d69095a2f</Guid>
@@ -678,27 +678,18 @@
               <VertAlignment>Center</VertAlignment>
             </Text28>
           </Components>
-          <Conditions isList="true" count="0" />
-          <Name>HeaderBand2</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-        </HeaderBand2>
-        <GroupHeaderBand2 Ref="49" type="GroupHeaderBand" isKey="true">
-          <Brush>Transparent</Brush>
-          <ClientRectangle>0,14.6,19,0.8</ClientRectangle>
-          <Components isList="true" count="0" />
           <Condition>{gasol_fact.numfactu}</Condition>
           <Conditions isList="true" count="0" />
           <Name>GroupHeaderBand2</Name>
           <Page isRef="4" />
           <Parent isRef="4" />
         </GroupHeaderBand2>
-        <DataBand2 Ref="50" type="DataBand" isKey="true">
+        <DataBand2 Ref="49" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,16.2,19,0.8</ClientRectangle>
+          <ClientRectangle>0,14,19,0.8</ClientRectangle>
           <Components isList="true" count="4">
-            <Text29 Ref="51" type="Text" isKey="true">
+            <Text29 Ref="50" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4,0.2,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -706,12 +697,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text29</Name>
               <Page isRef="4" />
-              <Parent isRef="50" />
+              <Parent isRef="49" />
               <Text>{gasol_fact.baseimp1}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text29>
-            <Text31 Ref="52" type="Text" isKey="true">
+            <Text31 Ref="51" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.8,0.2,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -719,12 +710,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text31</Name>
               <Page isRef="4" />
-              <Parent isRef="50" />
+              <Parent isRef="49" />
               <Text>{gasol_fact.impoiva1}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text31>
-            <Text33 Ref="53" type="Text" isKey="true">
+            <Text33 Ref="52" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.4,0.2,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -732,12 +723,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text33</Name>
               <Page isRef="4" />
-              <Parent isRef="50" />
+              <Parent isRef="49" />
               <Text>{gasol_fact.totalfac}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text33>
-            <Text34 Ref="54" type="Text" isKey="true">
+            <Text34 Ref="53" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.2,0.2,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -745,7 +736,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text34</Name>
               <Page isRef="4" />
-              <Parent isRef="50" />
+              <Parent isRef="49" />
               <Text>{gasol_fact.pociva1}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -753,14 +744,13 @@
           </Components>
           <Conditions isList="true" count="0" />
           <DataRelationName isNull="true" />
-          <DataSourceName>gasol_fact</DataSourceName>
           <Filters isList="true" count="0" />
           <Name>DataBand2</Name>
           <Page isRef="4" />
           <Parent isRef="4" />
           <Sort isList="true" count="0" />
         </DataBand2>
-        <RectanglePrimitive1 Ref="55" type="RectanglePrimitive" isKey="true">
+        <RectanglePrimitive1 Ref="54" type="RectanglePrimitive" isKey="true">
           <ClientRectangle>0.4,3.8,3.8,1</ClientRectangle>
           <Color>Black</Color>
           <Guid>2f4437a8f4c345d0843aa805d2f0fe58</Guid>
@@ -776,13 +766,13 @@
       <PageHeight>29.7</PageHeight>
       <PageWidth>21</PageWidth>
       <Report isRef="0" />
-      <Watermark Ref="56" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+      <Watermark Ref="55" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
     </Page1>
   </Pages>
-  <PrinterSettings Ref="57" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="56" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -794,10 +784,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>10/15/2018 1:09:53 PM</ReportChanged>
+  <ReportChanged>10/17/2018 11:56:18 AM</ReportChanged>
   <ReportCreated>10/11/2018 12:02:55 PM</ReportCreated>
-  <ReportFile />
-  <ReportGuid>c42da2d91aba467ebe0d61ea547bb2da</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FGAS_castelduc.mrt</ReportFile>
+  <ReportGuid>bc27dfc2c1c84adda5674b222e046963</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
