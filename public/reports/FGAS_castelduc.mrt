@@ -21,7 +21,7 @@
           <value>pobsocio,System.String</value>
           <value>prosocio,System.String</value>
           <value>nifsocio,System.String</value>
-          <value>letraser,System.String</value>
+          <value>letraser,System.Char</value>
           <value>numfactu,System.Double</value>
           <value>fecfactu,System.DateTime</value>
           <value>nomempre,System.String</value>
@@ -374,6 +374,7 @@
           <ClientRectangle>0,8,19,1.2</ClientRectangle>
           <Components isList="true" count="7">
             <Text8 Ref="28" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>0.6,0.2,2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -390,8 +391,9 @@
               <VertAlignment>Center</VertAlignment>
             </Text8>
             <Text13 Ref="29" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
-              <ClientRectangle>2.6,0.2,1.6,0.8</ClientRectangle>
+              <ClientRectangle>2.6,0.2,2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>db07bebd7b3b45c3877fa077693755c5</Guid>
@@ -406,6 +408,7 @@
               <VertAlignment>Center</VertAlignment>
             </Text13>
             <Text15 Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>6.4,0.2,6.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -422,6 +425,7 @@
               <VertAlignment>Center</VertAlignment>
             </Text15>
             <Text21 Ref="31" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>13.2,0.2,1.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -438,8 +442,9 @@
               <VertAlignment>Center</VertAlignment>
             </Text21>
             <Text14 Ref="32" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
-              <ClientRectangle>4.2,0.2,2.2,0.8</ClientRectangle>
+              <ClientRectangle>4.6,0.2,1.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>627000e1ac4e48439c05f5d2be2ef002</Guid>
@@ -454,6 +459,7 @@
               <VertAlignment>Center</VertAlignment>
             </Text14>
             <Text1 Ref="33" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>15,0.2,1.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -470,6 +476,7 @@
               <VertAlignment>Center</VertAlignment>
             </Text1>
             <Text18 Ref="34" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>16.8,0.2,1.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -508,7 +515,7 @@
           <Components isList="true" count="7">
             <Text20 Ref="37" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>2.8,0.2,1.2,0.4</ClientRectangle>
+              <ClientRectangle>2.8,0.2,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
@@ -517,25 +524,30 @@
               <Parent isRef="36" />
               <Text>{gasol_fact.fecalbar}</Text>
               <TextBrush>Black</TextBrush>
+              <TextFormat Ref="38" type="DateFormat" isKey="true">
+                <StringFormat>dd/MM/yyyy</StringFormat>
+              </TextFormat>
               <Type>Expression</Type>
             </Text20>
-            <Text22 Ref="38" type="Text" isKey="true">
+            <Text22 Ref="39" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>4.2,0.2,1.8,0.4</ClientRectangle>
+              <ClientRectangle>5,0.2,1,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text22</Name>
               <Page isRef="4" />
               <Parent isRef="36" />
               <Text>{gasol_fact.horalbar}</Text>
               <TextBrush>Black</TextBrush>
+              <TextFormat Ref="40" type="TimeFormat" isKey="true" />
               <Type>Expression</Type>
             </Text22>
-            <Text23 Ref="39" type="Text" isKey="true">
+            <Text23 Ref="41" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>6.4,0.2,6.8,0.4</ClientRectangle>
+              <ClientRectangle>6.6,0.2,6.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
@@ -547,50 +559,72 @@
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text23>
-            <Text24 Ref="40" type="Text" isKey="true">
+            <Text24 Ref="42" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>13.6,0.2,1.6,0.4</ClientRectangle>
+              <ClientRectangle>13.4,0.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text24</Name>
               <Page isRef="4" />
               <Parent isRef="36" />
               <Text>{gasol_fact.cantidad}</Text>
               <TextBrush>Black</TextBrush>
+              <TextFormat Ref="43" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
               <Type>Expression</Type>
             </Text24>
-            <Text25 Ref="41" type="Text" isKey="true">
+            <Text25 Ref="44" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>15.4,0.2,1.6,0.4</ClientRectangle>
+              <ClientRectangle>15.2,0.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text25</Name>
               <Page isRef="4" />
               <Parent isRef="36" />
               <Text>{gasol_fact.preciove}</Text>
               <TextBrush>Black</TextBrush>
+              <TextFormat Ref="45" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
               <Type>Expression</Type>
             </Text25>
-            <Text26 Ref="42" type="Text" isKey="true">
+            <Text26 Ref="46" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>17,0.2,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text26</Name>
               <Page isRef="4" />
               <Parent isRef="36" />
               <Text>{gasol_fact.implinea}</Text>
               <TextBrush>Black</TextBrush>
+              <TextFormat Ref="47" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
               <Type>Expression</Type>
             </Text26>
-            <Text19 Ref="43" type="Text" isKey="true">
+            <Text19 Ref="48" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.8,0.2,2,0.4</ClientRectangle>
+              <ClientRectangle>0.6,0.2,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text19</Name>
               <Page isRef="4" />
@@ -609,13 +643,14 @@
           <Parent isRef="4" />
           <Sort isList="true" count="0" />
         </DataBand1>
-        <GroupHeaderBand2 Ref="44" type="GroupHeaderBand" isKey="true">
+        <GroupHeaderBand2 Ref="49" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,12.4,19,0.8</ClientRectangle>
           <Components isList="true" count="4">
-            <Text30 Ref="45" type="Text" isKey="true">
+            <Text30 Ref="50" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
-              <ClientRectangle>3.6,0,2.8,0.8</ClientRectangle>
+              <ClientRectangle>0.6,0,4.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>c11676d971314734a40edfef2be4d78a</Guid>
@@ -623,15 +658,16 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text30</Name>
               <Page isRef="4" />
-              <Parent isRef="44" />
+              <Parent isRef="49" />
               <Text>BASE IMP.(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text30>
-            <Text27 Ref="46" type="Text" isKey="true">
+            <Text27 Ref="51" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
-              <ClientRectangle>6.2,0,2,0.8</ClientRectangle>
+              <ClientRectangle>5,0,3.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>e80099af07444df08c0e7d63c05b36a0</Guid>
@@ -639,15 +675,16 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text27</Name>
               <Page isRef="4" />
-              <Parent isRef="44" />
+              <Parent isRef="49" />
               <Text>% IVA</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text27>
-            <Text32 Ref="47" type="Text" isKey="true">
+            <Text32 Ref="52" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
-              <ClientRectangle>8.2,0,2.8,0.8</ClientRectangle>
+              <ClientRectangle>8.6,0,4.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>0b79b138897e4808a060aac0956c1694</Guid>
@@ -655,15 +692,16 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text32</Name>
               <Page isRef="4" />
-              <Parent isRef="44" />
+              <Parent isRef="49" />
               <Text>CUOTA IVA (€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text32>
-            <Text28 Ref="48" type="Text" isKey="true">
+            <Text28 Ref="53" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
-              <ClientRectangle>11,0,2.8,0.8</ClientRectangle>
+              <ClientRectangle>13.2,0,4.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>0f80f7a2e41d43eea2313f7d69095a2f</Guid>
@@ -671,7 +709,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text28</Name>
               <Page isRef="4" />
-              <Parent isRef="44" />
+              <Parent isRef="49" />
               <Text>IMP. TOTAL (€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -683,64 +721,231 @@
           <Name>GroupHeaderBand2</Name>
           <Page isRef="4" />
           <Parent isRef="4" />
+          <PrintAtBottom>True</PrintAtBottom>
         </GroupHeaderBand2>
-        <DataBand2 Ref="49" type="DataBand" isKey="true">
+        <DataBand2 Ref="54" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,14,19,0.8</ClientRectangle>
-          <Components isList="true" count="4">
-            <Text29 Ref="50" type="Text" isKey="true">
+          <ClientRectangle>0,14,19,2</ClientRectangle>
+          <Components isList="true" count="10">
+            <Text29 Ref="55" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>4,0.2,2.2,0.4</ClientRectangle>
+              <ClientRectangle>2,0.2,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text29</Name>
               <Page isRef="4" />
-              <Parent isRef="49" />
+              <Parent isRef="54" />
               <Text>{gasol_fact.baseimp1}</Text>
               <TextBrush>Black</TextBrush>
+              <TextFormat Ref="56" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
               <Type>Expression</Type>
             </Text29>
-            <Text31 Ref="51" type="Text" isKey="true">
+            <Text31 Ref="57" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>8.8,0.2,2.2,0.4</ClientRectangle>
+              <ClientRectangle>8.4,0.2,4.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text31</Name>
               <Page isRef="4" />
-              <Parent isRef="49" />
+              <Parent isRef="54" />
               <Text>{gasol_fact.impoiva1}</Text>
               <TextBrush>Black</TextBrush>
+              <TextFormat Ref="58" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
               <Type>Expression</Type>
             </Text31>
-            <Text33 Ref="52" type="Text" isKey="true">
+            <Text33 Ref="59" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>11.4,0.2,2.8,0.4</ClientRectangle>
+              <ClientRectangle>13,0.2,3.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text33</Name>
               <Page isRef="4" />
-              <Parent isRef="49" />
+              <Parent isRef="54" />
               <Text>{gasol_fact.totalfac}</Text>
               <TextBrush>Black</TextBrush>
+              <TextFormat Ref="60" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
               <Type>Expression</Type>
             </Text33>
-            <Text34 Ref="53" type="Text" isKey="true">
+            <Text34 Ref="61" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>6.2,0.2,2.4,0.4</ClientRectangle>
+              <ClientRectangle>5,0.2,3.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text34</Name>
               <Page isRef="4" />
-              <Parent isRef="49" />
+              <Parent isRef="54" />
               <Text>{gasol_fact.pociva1}</Text>
               <TextBrush>Black</TextBrush>
+              <TextFormat Ref="62" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
               <Type>Expression</Type>
             </Text34>
+            <Text35 Ref="63" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,0.8,2.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>gasol_fact.baseimp2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>e0d4f2ed72f24eaeb0daf8fd6da512f0</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="4" />
+              <Parent isRef="54" />
+              <Text>{gasol_fact.baseimp2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="64" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text35>
+            <Text41 Ref="65" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.4,0.8,4.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>gasol_fact.baseimp2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>29158eeff6554d1b95e160f769463d3d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="4" />
+              <Parent isRef="54" />
+              <Text>{gasol_fact.impoiva2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="66" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text41>
+            <Text43 Ref="67" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5,0.8,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>gasol_fact.baseimp2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>bb092eba533b42f3b0bc87a07224232c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="4" />
+              <Parent isRef="54" />
+              <Text>{gasol_fact.porciva2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="68" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text43>
+            <Text44 Ref="69" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,1.4,2.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>gasol_fact.baseimp3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>90b85de6770c4dbd8546a2213111dfcc</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="4" />
+              <Parent isRef="54" />
+              <Text>{gasol_fact.baseimp3}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="70" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text44>
+            <Text46 Ref="71" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.4,1.4,4.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>gasol_fact.baseimp3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>a54c779b7c894779accf928af71f6b29</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="4" />
+              <Parent isRef="54" />
+              <Text>{gasol_fact.impoiva3}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="72" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text46>
+            <Text48 Ref="73" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5,1.4,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>gasol_fact.baseimp3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>99c13ca252884e398f76978f6beb14f0</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="4" />
+              <Parent isRef="54" />
+              <Text>{gasol_fact.porciva3}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="74" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text48>
           </Components>
           <Conditions isList="true" count="0" />
           <DataRelationName isNull="true" />
@@ -748,9 +953,10 @@
           <Name>DataBand2</Name>
           <Page isRef="4" />
           <Parent isRef="4" />
+          <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand2>
-        <RectanglePrimitive1 Ref="54" type="RectanglePrimitive" isKey="true">
+        <RectanglePrimitive1 Ref="75" type="RectanglePrimitive" isKey="true">
           <ClientRectangle>0.4,3.8,3.8,1</ClientRectangle>
           <Color>Black</Color>
           <Guid>2f4437a8f4c345d0843aa805d2f0fe58</Guid>
@@ -766,13 +972,13 @@
       <PageHeight>29.7</PageHeight>
       <PageWidth>21</PageWidth>
       <Report isRef="0" />
-      <Watermark Ref="55" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+      <Watermark Ref="76" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
     </Page1>
   </Pages>
-  <PrinterSettings Ref="56" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="77" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -784,10 +990,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>10/17/2018 11:56:18 AM</ReportChanged>
+  <ReportChanged>10/18/2018 1:32:59 PM</ReportChanged>
   <ReportCreated>10/11/2018 12:02:55 PM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FGAS_castelduc.mrt</ReportFile>
-  <ReportGuid>bc27dfc2c1c84adda5674b222e046963</ReportGuid>
+  <ReportFile />
+  <ReportGuid>8c68f891d1b841099e3aad58528703ef</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
