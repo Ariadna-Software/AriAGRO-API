@@ -310,7 +310,7 @@
         </PageHeaderBand1>
         <PageFooterBand1 Ref="25" type="PageFooterBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,29.04,19,4.2</ClientRectangle>
+          <ClientRectangle>0,23.5,19,4.2</ClientRectangle>
           <Components isList="true" count="4">
             <Text26 Ref="26" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -600,11 +600,11 @@
         </DataBand3>
         <HeaderBand2 Ref="47" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,12.4,19,2.8</ClientRectangle>
+          <ClientRectangle>0,12.4,19,1.4</ClientRectangle>
           <Components isList="true" count="7">
             <Text30 Ref="48" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>0.4,2,2.8,0.8</ClientRectangle>
+              <ClientRectangle>0.4,0.2,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>7b7ff23356064ea386dc82434dc0ca1e</Guid>
@@ -620,7 +620,7 @@
             </Text30>
             <Text27 Ref="49" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>3,2,2,0.8</ClientRectangle>
+              <ClientRectangle>3,0.2,2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>b5c2fe3893e34cf0b55bcc99d3959f7c</Guid>
@@ -636,7 +636,7 @@
             </Text27>
             <Text32 Ref="50" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>5,2,2.8,0.8</ClientRectangle>
+              <ClientRectangle>5,0.2,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>7c28b203425040868d3af9e058e88fa0</Guid>
@@ -652,7 +652,7 @@
             </Text32>
             <Text33 Ref="51" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>7.6,2,3.2,0.8</ClientRectangle>
+              <ClientRectangle>7.6,0.2,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>a34cf0630c8a4539a14024736b0785c3</Guid>
@@ -668,7 +668,7 @@
             </Text33>
             <Text34 Ref="52" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>10.8,2,2.8,0.8</ClientRectangle>
+              <ClientRectangle>10.8,0.2,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>62ec237eeb094dc682afed9b2b28904a</Guid>
@@ -684,7 +684,7 @@
             </Text34>
             <Text35 Ref="53" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>13.4,2,2.8,0.8</ClientRectangle>
+              <ClientRectangle>13.4,0.2,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>17168ad0e5974222b7b1020458a290d5</Guid>
@@ -700,7 +700,7 @@
             </Text35>
             <Text28 Ref="54" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>16,2,2.8,0.8</ClientRectangle>
+              <ClientRectangle>16,0.2,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>f00f4ae8621044d6a7c2ee30de3b95d2</Guid>
@@ -719,11 +719,12 @@
           <Name>HeaderBand2</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
         </HeaderBand2>
         <DataBand4 Ref="55" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,16,19,1.2</ClientRectangle>
+          <ClientRectangle>0,14.6,19,1</ClientRectangle>
           <Components isList="true" count="7">
             <Text29 Ref="56" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -887,6 +888,7 @@
           <Name>DataBand4</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand4>
         <RectanglePrimitive1 Ref="70" type="RectanglePrimitive" isKey="true">
@@ -923,10 +925,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/28/2018 11:09:44 AM</ReportChanged>
+  <ReportChanged>10/19/2018 11:47:28 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_castelduc.mrt</ReportFile>
-  <ReportGuid>edc77b7fe8bc4e649b89b31f7014bb39</ReportGuid>
+  <ReportGuid>e0aef2dc9c554e5e96339faa7d76a11f</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>

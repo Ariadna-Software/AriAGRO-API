@@ -392,7 +392,7 @@
         </PageHeaderBand1>
         <PageFooterBand1 Ref="30" type="PageFooterBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,36.38,19,2.4</ClientRectangle>
+          <ClientRectangle>0,30.84,19,2.4</ClientRectangle>
           <Components isList="true" count="1">
             <Image1 Ref="31" type="Image" isKey="true">
               <Brush>Transparent</Brush>
@@ -586,12 +586,12 @@
         </DataBand2>
         <FooterBand2 Ref="45" type="FooterBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,13,19,3.6</ClientRectangle>
+          <ClientRectangle>0,13,19,1.6</ClientRectangle>
           <Components isList="true" count="4">
             <Text48 Ref="46" type="Text" isKey="true">
               <Border>Top;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.4,3,10.6,0.4</ClientRectangle>
+              <ClientRectangle>0.2,1,10.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>ed3e1e982fe64618b8bfd6de04f2e898</Guid>
@@ -606,7 +606,7 @@
             <Text31 Ref="47" type="Text" isKey="true">
               <Border>Top;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>16.6,3,1.8,0.4</ClientRectangle>
+              <ClientRectangle>16.4,1,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>8c5ff005ce264e51b52b706bf9ee8908</Guid>
@@ -628,7 +628,7 @@
             <Text49 Ref="49" type="Text" isKey="true">
               <Border>Top;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>11,3,5.6,0.4</ClientRectangle>
+              <ClientRectangle>10.8,1,5.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -649,7 +649,7 @@
             <Text25 Ref="51" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>0.4,2.2,18.2,0.6</ClientRectangle>
+              <ClientRectangle>0.2,0.2,18.2,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8.25,Bold| Italic,Point,False,0</Font>
               <Guid>985484df62e34c5fbfcea11c11f27b42</Guid>
@@ -667,10 +667,11 @@
           <Name>FooterBand2</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
         </FooterBand2>
         <HeaderBand3 Ref="52" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,17.4,19,0.6</ClientRectangle>
+          <ClientRectangle>0,15.4,19,0.6</ClientRectangle>
           <Components isList="true" count="8">
             <Text50 Ref="53" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
@@ -800,11 +801,12 @@
           <Name>HeaderBand3</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
         </HeaderBand3>
         <DataBand3 Ref="62" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,18.8,19,0.8</ClientRectangle>
+          <ClientRectangle>0,16.8,19,0.8</ClientRectangle>
           <Components isList="true" count="5">
             <Text59 Ref="63" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -891,11 +893,12 @@
           <Name>DataBand3</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand3>
         <HeaderBand4 Ref="70" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,20.4,19,1.8</ClientRectangle>
+          <ClientRectangle>0,18.4,19,1.8</ClientRectangle>
           <Components isList="true" count="7">
             <Text23 Ref="71" type="Text" isKey="true">
               <Brush>LightGray</Brush>
@@ -1014,11 +1017,12 @@
           <Name>HeaderBand4</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
         </HeaderBand4>
         <DataBand4 Ref="78" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,23,19,1.2</ClientRectangle>
+          <ClientRectangle>0,21,19,1.2</ClientRectangle>
           <Components isList="true" count="7">
             <Text28 Ref="79" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -1182,11 +1186,12 @@
           <Name>DataBand4</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand4>
         <FooterBand4 Ref="93" type="FooterBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,25,19,1.4</ClientRectangle>
+          <ClientRectangle>0,23,19,1.4</ClientRectangle>
           <Components isList="true" count="2">
             <Text57 Ref="94" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -1229,6 +1234,7 @@
           <Name>FooterBand4</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
         </FooterBand4>
         <RectanglePrimitive1 Ref="97" type="RectanglePrimitive" isKey="true">
           <ClientRectangle>0.4,6.4,3.6,1.2</ClientRectangle>
@@ -1264,10 +1270,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>10/1/2018 8:47:16 AM</ReportChanged>
+  <ReportChanged>10/19/2018 11:32:35 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_picasent.mrt</ReportFile>
-  <ReportGuid>ba9a2c4c94b5444fb00f437f10d982d1</ReportGuid>
+  <ReportGuid>2f290fa956d84081b62db91df5ba638a</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>

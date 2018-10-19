@@ -584,12 +584,12 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
         </DataBand3>
         <HeaderBand5 Ref="45" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,13,19,3</ClientRectangle>
+          <ClientRectangle>0,13,19,1</ClientRectangle>
           <Components isList="true" count="8">
             <Text13 Ref="46" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.4,2.6,2.2,0.4</ClientRectangle>
+              <ClientRectangle>0.4,0.2,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>b1f74bf96d1c47ef8bdb625a8e513610</Guid>
@@ -604,7 +604,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
             <Text51 Ref="47" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>2.6,2.6,2.4,0.4</ClientRectangle>
+              <ClientRectangle>2.6,0.2,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Guid>55c0e444c7b644528dea810c644604d3</Guid>
@@ -619,7 +619,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
             <Text52 Ref="48" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>5,2.6,2,0.4</ClientRectangle>
+              <ClientRectangle>5,0.2,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Guid>b55c611c833c4f78aa8e965baf14a304</Guid>
@@ -634,7 +634,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
             <Text53 Ref="49" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>7,2.6,2.6,0.4</ClientRectangle>
+              <ClientRectangle>7,0.2,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Guid>022e66cbf67d4ebb8e5f4da939ae2c46</Guid>
@@ -650,7 +650,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
             <Text54 Ref="50" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>12,2.6,1.4,0.4</ClientRectangle>
+              <ClientRectangle>12,0.2,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Guid>8819e3eda71b467a87f1353904a7216c</Guid>
@@ -664,7 +664,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
             </Text54>
             <Text56 Ref="51" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>13.8,2.6,3.2,0.4</ClientRectangle>
+              <ClientRectangle>13.8,0.2,3.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>1f473c1ffafb432cbde71f535d158331</Guid>
@@ -678,7 +678,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
             </Text56>
             <Text17 Ref="52" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>17.2,2.6,1.2,0.4</ClientRectangle>
+              <ClientRectangle>17.2,0.2,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <HorAlignment>Right</HorAlignment>
@@ -699,7 +699,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
             <Text2 Ref="54" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>9.6,2.6,2.4,0.4</ClientRectangle>
+              <ClientRectangle>9.6,0.2,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Guid>674b746a60f64e50bac7d47336a6f089</Guid>
@@ -718,11 +718,12 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
           <Name>HeaderBand5</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
         </HeaderBand5>
         <DataBand5 Ref="55" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,16.8,19,0.6</ClientRectangle>
+          <ClientRectangle>0,14.8,19,0.6</ClientRectangle>
           <Components isList="true" count="5">
             <Text59 Ref="56" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -815,11 +816,12 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
           <Name>DataBand5</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand5>
         <HeaderBand2 Ref="63" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,18.2,19,1.4</ClientRectangle>
+          <ClientRectangle>0,16.2,19,1.4</ClientRectangle>
           <Components isList="true" count="7">
             <Text30 Ref="64" type="Text" isKey="true">
               <Brush>LightGray</Brush>
@@ -938,11 +940,12 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
           <Name>HeaderBand2</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
         </HeaderBand2>
         <DataBand4 Ref="71" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,20.4,19,1.2</ClientRectangle>
+          <ClientRectangle>0,18.4,19,1.2</ClientRectangle>
           <Components isList="true" count="7">
             <Text29 Ref="72" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -1106,6 +1109,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
           <Name>DataBand4</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand4>
         <RectanglePrimitive2 Ref="86" type="RectanglePrimitive" isKey="true">
@@ -1142,10 +1146,10 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/28/2018 12:45:34 PM</ReportChanged>
+  <ReportChanged>10/19/2018 11:28:38 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile />
-  <ReportGuid>5196992fb1df4ba0b829b03f7478c325</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_castelduc.mrt</ReportFile>
+  <ReportGuid>1ae0918909de4cb9a6bd750ad9ddcbde</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
