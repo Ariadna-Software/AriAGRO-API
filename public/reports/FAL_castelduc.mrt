@@ -522,6 +522,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
               <Text>{lineasBis.kilosnet}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="40" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1146,10 +1147,10 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>10/19/2018 11:28:38 AM</ReportChanged>
+  <ReportChanged>10/22/2018 12:23:28 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_castelduc.mrt</ReportFile>
-  <ReportGuid>1ae0918909de4cb9a6bd750ad9ddcbde</ReportGuid>
+  <ReportFile />
+  <ReportGuid>73254b8985cc4eaf9e8ac4a6714cb0fd</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
