@@ -32,9 +32,14 @@ app.use(cors());
 var config = require('./config/config.json');
 
 // activar el procesador de los cuerpos de mensajes
+
+//app.use(bodyParser ({limit: '50mb'})); 
+//app.use (bodyParser.urlencoded ({limit: '50mb'})); 
+
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: '100mb'}));
 
 
 // servidor html estático
