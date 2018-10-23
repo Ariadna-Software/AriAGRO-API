@@ -1334,8 +1334,9 @@
             <Text59 Ref="106" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0.8,1.2,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
+              <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+                <value>tien_fact.dtoppago,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Arial,8.25,Italic,Point,False,0</Font>
               <Guid>b01ffe4fb285443b914ed65fc74f34da</Guid>
@@ -1358,8 +1359,9 @@
             <Text60 Ref="108" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,0.8,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
+              <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+                <value>tien_fact.dtoppago,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Arial,8.25,Italic,Point,False,0</Font>
               <Guid>9d9e4295becd4f569cfc2bccc0f52d01</Guid>
@@ -1382,8 +1384,9 @@
             <Text61 Ref="110" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,0.8,1.2,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
+              <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+                <value>tien_fact.dtognral,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Arial,8.25,Italic,Point,False,0</Font>
               <Guid>176cf7688814410584980b8c51c990bf</Guid>
@@ -1406,8 +1409,9 @@
             <Text62 Ref="112" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,0.8,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
+              <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+                <value>tien_fact.dtognral,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Arial,8.25,Italic,Point,False,0</Font>
               <Guid>a785b92a76ad4c2e87204d7258b0a18c</Guid>
@@ -1526,8 +1530,9 @@
             <Text67 Ref="122" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,1.4,1.2,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
-                <value>tien_fact.porciva3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              <Conditions isList="true" count="2">
+                <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+                <value>tien_fact.dtoppago,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Arial,8.25,Italic,Point,False,0</Font>
               <Guid>09b51889348b41769944113127647b01</Guid>
@@ -1550,8 +1555,9 @@
             <Text68 Ref="124" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,1.4,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
-                <value>tien_fact.porciva3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              <Conditions isList="true" count="2">
+                <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+                <value>tien_fact.dtoppago,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Arial,8.25,Italic,Point,False,0</Font>
               <Guid>f9ac8616852e436d9ba5a020f9d6b29c</Guid>
@@ -1574,8 +1580,9 @@
             <Text69 Ref="126" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,1.4,1.2,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
-                <value>tien_fact.porciva3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              <Conditions isList="true" count="2">
+                <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+                <value>tien_fact.dtognral,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Arial,8.25,Italic,Point,False,0</Font>
               <Guid>f526db80c0c64c04be4091c789cacc29</Guid>
@@ -1598,8 +1605,9 @@
             <Text70 Ref="128" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,1.4,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
-                <value>tien_fact.porciva3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              <Conditions isList="true" count="2">
+                <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+                <value>tien_fact.dtognral,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Arial,8.25,Italic,Point,False,0</Font>
               <Guid>acd249139cce4453b6b9bda3095d4bb3</Guid>
@@ -1803,10 +1811,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>10/22/2018 11:56:47 AM</ReportChanged>
+  <ReportChanged>10/23/2018 9:07:17 AM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
   <ReportFile />
-  <ReportGuid>0167642c071b4f3b92f496471c5142e1</ReportGuid>
+  <ReportGuid>01dc7c4ddbd04f38aab13b9cc3d51bd8</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
