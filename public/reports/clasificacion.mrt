@@ -147,7 +147,7 @@
             <Text5 Ref="13" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>11.6,4.2,4.8,0.4</ClientRectangle>
+              <ClientRectangle>11.6,4.2,4.8,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>33ad9783324b42eb8dbbd8fafa7be921</Guid>
@@ -163,7 +163,7 @@
             <Text6 Ref="14" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>11.6,4.6,4.8,0.4</ClientRectangle>
+              <ClientRectangle>11.6,4.8,4.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>87261bf25d5e43dbab5b85a1dbc4f2f1</Guid>
@@ -179,7 +179,7 @@
             <Text7 Ref="15" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>11.6,5,4.8,0.4</ClientRectangle>
+              <ClientRectangle>11.6,5.2,4.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Guid>85a077710f034b698fcc38b0c292f958</Guid>
@@ -806,10 +806,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>9/27/2018 1:34:23 PM</ReportChanged>
+  <ReportChanged>10/31/2018 1:03:36 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>1b9e8684bcc84b13a409cc3db4cdd891</ReportGuid>
+  <ReportFile />
+  <ReportGuid>946e5059dd49428db3e26943122a7898</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
