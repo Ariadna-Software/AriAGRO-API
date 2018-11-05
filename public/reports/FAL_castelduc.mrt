@@ -737,7 +737,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
               <Name>Text59</Name>
               <Page isRef="2" />
               <Parent isRef="55" />
-              <Text>{anticipos.numfactu}</Text>
+              <Text>{anticipos.numfactuanti}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text59>
@@ -751,7 +751,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
               <Name>Text60</Name>
               <Page isRef="2" />
               <Parent isRef="55" />
-              <Text>{anticipos.fecfactu}</Text>
+              <Text>{anticipos.fecfactuanti}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="58" type="DateFormat" isKey="true">
                 <StringFormat>dd/MM/yyyy</StringFormat>
@@ -761,7 +761,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
             <Text61 Ref="59" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>6.8,0.2,3,0.4</ClientRectangle>
+              <ClientRectangle>7.4,0.2,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <GrowToHeight>True</GrowToHeight>
@@ -772,6 +772,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
               <Parent isRef="55" />
               <Text>{anticipos.nomvarie}</Text>
               <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text61>
             <Text62 Ref="60" type="Text" isKey="true">
@@ -1147,10 +1148,10 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>10/22/2018 12:23:28 PM</ReportChanged>
+  <ReportChanged>11/5/2018 10:49:34 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile />
-  <ReportGuid>73254b8985cc4eaf9e8ac4a6714cb0fd</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_castelduc.mrt</ReportFile>
+  <ReportGuid>f91ac89e8f8243c78fc44ce82b7b2513</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
