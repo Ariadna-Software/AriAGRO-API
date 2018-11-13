@@ -239,7 +239,7 @@ function sucUpload(file, data) {
     $('#txtRespuesta').html('Fichero cargado correctamente.<br/> Haga clic en el botón <i class="fa fa-check success"></i> para procesar usuarios.');
     vm.fichero(data.FileName);
     console.log('SucUpload');
-    console.log('file: ', fileName);
+    console.log('file: ', data.fileName);
     console.log('data: ', data);
 }
 

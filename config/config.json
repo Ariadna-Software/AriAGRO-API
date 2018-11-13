@@ -1,7 +1,7 @@
 {
     "apiPort": 8021,
     "apiHost": "localhost",
-    "ficheros": "C:\\ASW\\AriAgroApi\\ficheros\\",
+    "ficheros": "C:\\proyectos\\AriAGRO-API\\ficheros\\",
     "smtpConfig": {
         "host": "smtp.gmail.com",
         "port": 465,

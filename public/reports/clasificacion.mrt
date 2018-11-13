@@ -227,7 +227,7 @@
               <Name>Text38</Name>
               <Page isRef="2" />
               <Parent isRef="3" />
-              <Text>{cabecera_agro.poligono} ({cabecera_agro.parcela}) {cabecera_agro.nomparti}</Text>
+              <Text>{cabecera_agro.codcampo} ({cabecera_agro.nrocampo}) {cabecera_agro.nomparti}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -809,10 +809,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/13/2018 9:47:09 AM</ReportChanged>
+  <ReportChanged>11/13/2018 1:45:55 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>2a317584cc3e44a0bc34db3858d78a62</ReportGuid>
+  <ReportGuid>c73f7617c27a4f03a560fd3f2bc2def8</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
