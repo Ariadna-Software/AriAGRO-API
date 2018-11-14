@@ -1,6 +1,6 @@
 {
   "name": "ariagroapi",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "API de acceso para la aplici�n AriAgro",
   "main": "server.js",
   "scripts": {
@@ -18,6 +18,7 @@
     "csv": "^0.4.6",
     "express": "^4.13.3",
     "formidable": "^1.0.17",
+    "moment": "^2.22.2",
     "mysql": "^2.16.0",
     "nodemailer": "^2.4.2",
     "request": "^2.72.0",
