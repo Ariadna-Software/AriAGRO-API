@@ -567,7 +567,7 @@
             </Text24>
             <Text25 Ref="44" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>17,0.2,1.2,0.4</ClientRectangle>
+              <ClientRectangle>16.6,0.2,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,10</Font>
               <HorAlignment>Right</HorAlignment>
@@ -922,10 +922,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/14/2018 10:22:47 AM</ReportChanged>
+  <ReportChanged>11/15/2018 9:21:53 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_castelduc.mrt</ReportFile>
-  <ReportGuid>10dca721478346b3991b5fe383c8073c</ReportGuid>
+  <ReportGuid>a334fa7df2b04ed4bad6094a6233ad05</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
