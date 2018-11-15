@@ -662,7 +662,7 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
             </Text54>
             <Text56 Ref="50" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>13.8,0.2,3.2,0.4</ClientRectangle>
+              <ClientRectangle>13.4,0.2,3.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>1f473c1ffafb432cbde71f535d158331</Guid>
@@ -676,10 +676,9 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
             </Text56>
             <Text17 Ref="51" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>17.2,0.2,1.2,0.4</ClientRectangle>
+              <ClientRectangle>16.8,0.2,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
-              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text17</Name>
               <Page isRef="2" />
@@ -1142,10 +1141,10 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/14/2018 10:21:08 AM</ReportChanged>
+  <ReportChanged>11/15/2018 9:58:57 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile />
-  <ReportGuid>2d30e14563ba411f9f918f3c29eafad9</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_castelduc.mrt</ReportFile>
+  <ReportGuid>abf7349130a74fff9dc6947c61c570ce</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
