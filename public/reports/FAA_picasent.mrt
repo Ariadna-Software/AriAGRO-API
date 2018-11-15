@@ -1118,7 +1118,7 @@
               <Name>Text18</Name>
               <Page isRef="2" />
               <Parent isRef="84" />
-              <Text>{IIF(varias.result != 0,  pie.totalfac-varias.result, pie.totalfac)}</Text>
+              <Text>{result.resultado}</Text>
               <TextBrush>Black</TextBrush>
               <TextFormat Ref="87" type="CurrencyFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
@@ -1174,10 +1174,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/14/2018 2:10:05 PM</ReportChanged>
+  <ReportChanged>11/15/2018 11:51:48 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_picasent.mrt</ReportFile>
-  <ReportGuid>33c25f7cff45431a8d3ce33281bfbdb1</ReportGuid>
+  <ReportGuid>47279d87f0804bd09a25ab63739175bc</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
