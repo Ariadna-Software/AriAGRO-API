@@ -392,7 +392,7 @@
         </PageHeaderBand1>
         <PageFooterBand1 Ref="30" type="PageFooterBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,30.84,19,2.4</ClientRectangle>
+          <ClientRectangle>0,36.38,19,2.4</ClientRectangle>
           <Components isList="true" count="1">
             <Image1 Ref="31" type="Image" isKey="true">
               <Brush>Transparent</Brush>
@@ -845,7 +845,7 @@
               <Name>Text61</Name>
               <Page isRef="2" />
               <Parent isRef="62" />
-              <Text>{anticipos.nomvarieanti}</Text>
+              <Text>{anticipos.nomvarie}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -1268,10 +1268,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/15/2018 10:00:19 AM</ReportChanged>
+  <ReportChanged>11/15/2018 12:33:57 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile />
-  <ReportGuid>08036314af9549828b9054213ccd5ea1</ReportGuid>
+  <ReportGuid>d7a38daf45b840a899c2684a80be3269</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
