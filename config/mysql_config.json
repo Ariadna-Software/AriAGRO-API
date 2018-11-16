@@ -4,7 +4,7 @@
     "user": "root",
     "password": "aritel",
     "ariagro": {
-        "server": "mysql01.ariadnasw.com",
+        "server": "localhost",
         "port": 3306,
         "user": "root",
         "password": "aritel",
@@ -48,7 +48,7 @@
         "database": "arigasol10"
     },
     "push": {
-        "server": "mysql01.ariadnasw.com",
+        "server": "localhost",
         "port": 3306,
         "user": "root",
         "password": "aritel",
