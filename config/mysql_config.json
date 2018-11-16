@@ -4,7 +4,7 @@
     "user": "root",
     "password": "aritel",
     "ariagro": {
-        "server": "localhost",
+        "server": "mysql01.ariadnasw.com",
         "port": 3306,
         "user": "root",
         "password": "aritel",
@@ -41,14 +41,14 @@
         "tipo_fac_telefonia": ["FAT"]
     },
     "gasolinera": {
-        "server": "mysql01.ariadnasw.com",
+        "server": "localhost",
         "port": 3306,
         "user": "root",
         "password": "aritel",
         "database": "arigasol10"
     },
     "push": {
-        "server": "localhost",
+        "server": "mysql01.ariadnasw.com",
         "port": 3306,
         "user": "root",
         "password": "aritel",
