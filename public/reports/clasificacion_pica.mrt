@@ -666,7 +666,7 @@
             <Text41 Ref="50" type="Text" isKey="true">
               <Border>Top;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>8.6,0.2,3.2,0.4</ClientRectangle>
+              <ClientRectangle>6.8,0.2,3.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
               <HorAlignment>Right</HorAlignment>
@@ -762,10 +762,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/16/2018 12:22:56 PM</ReportChanged>
+  <ReportChanged>11/16/2018 12:28:49 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile />
-  <ReportGuid>239cd29f33774ebcada1742f1d0ca0da</ReportGuid>
+  <ReportGuid>8fd6aad81ecd4456a70de13da1e34459</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
