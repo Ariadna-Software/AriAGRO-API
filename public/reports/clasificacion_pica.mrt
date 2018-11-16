@@ -534,7 +534,7 @@
             <Text26 Ref="40" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;[140:140:140]</Border>
               <Brush>EmptyBrush</Brush>
-              <ClientRectangle>10,1,1.6,0.8</ClientRectangle>
+              <ClientRectangle>8.2,1,1.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>cde3bb5aa1484e7eb3888aa22744311c</Guid>
@@ -551,7 +551,7 @@
             <Text27 Ref="41" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;[140:140:140]</Border>
               <Brush>EmptyBrush</Brush>
-              <ClientRectangle>12,1,1.8,0.8</ClientRectangle>
+              <ClientRectangle>10.2,1,1.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>c6908a4494b04a42bb0b969b5ea4d2d0</Guid>
@@ -606,7 +606,7 @@
             </Text28>
             <Text29 Ref="45" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>10.2,0,1.6,0.4</ClientRectangle>
+              <ClientRectangle>8.4,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>f2f23aeb4b604bc1a20fb0845c813fe6</Guid>
@@ -629,7 +629,7 @@
             </Text29>
             <Text30 Ref="47" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>12.2,0,1.8,0.4</ClientRectangle>
+              <ClientRectangle>10.4,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>6b48e40b2aa54ec8b772f5588fcc234d</Guid>
@@ -762,10 +762,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/16/2018 11:24:01 AM</ReportChanged>
+  <ReportChanged>11/16/2018 12:22:56 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion_pica.mrt</ReportFile>
-  <ReportGuid>cd4cb74633ae43f384e72c198dc2dd34</ReportGuid>
+  <ReportFile />
+  <ReportGuid>239cd29f33774ebcada1742f1d0ca0da</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
