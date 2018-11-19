@@ -96,12 +96,9 @@
               <Parent isRef="3" />
               <Text>{tien_fact.fecfactu}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="9" type="DateFormat" isKey="true">
-                <StringFormat>dd/MM/yyyy</StringFormat>
-              </TextFormat>
               <Type>Expression</Type>
             </Text3>
-            <Text4 Ref="10" type="Text" isKey="true">
+            <Text4 Ref="9" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>12.4,2.4,4.6,0.6</ClientRectangle>
@@ -117,7 +114,7 @@
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text4>
-            <Text5 Ref="11" type="Text" isKey="true">
+            <Text5 Ref="10" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>12.4,3,5.4,0.4</ClientRectangle>
@@ -133,7 +130,7 @@
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text5>
-            <Text6 Ref="12" type="Text" isKey="true">
+            <Text6 Ref="11" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>12.4,3.4,4.6,0.4</ClientRectangle>
@@ -148,7 +145,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text6>
-            <Text36 Ref="13" type="Text" isKey="true">
+            <Text36 Ref="12" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>1,3.2,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -162,7 +159,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text36>
-            <Text39 Ref="14" type="Text" isKey="true">
+            <Text39 Ref="13" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>1,4.6,0.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -176,7 +173,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text39>
-            <Text45 Ref="15" type="Text" isKey="true">
+            <Text45 Ref="14" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>1.8,4,1.6,0.4</ClientRectangle>
@@ -191,7 +188,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text45>
-            <Text7 Ref="16" type="Text" isKey="true">
+            <Text7 Ref="15" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>1,2.8,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -205,7 +202,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text7>
-            <Text40 Ref="17" type="Text" isKey="true">
+            <Text40 Ref="16" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>1.8,4.6,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -219,7 +216,7 @@
               <TextBrush>Black</TextBrush>
               <Type>SystemVariables</Type>
             </Text40>
-            <Text16 Ref="18" type="Text" isKey="true">
+            <Text16 Ref="17" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>1,4,0.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -233,7 +230,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text16>
-            <Text1 Ref="19" type="Text" isKey="true">
+            <Text1 Ref="18" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>12.4,3.8,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -246,7 +243,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text1>
-            <Text8 Ref="20" type="Text" isKey="true">
+            <Text8 Ref="19" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.6,3.8,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -259,7 +256,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text8>
-            <Text89 Ref="21" type="Text" isKey="true">
+            <Text89 Ref="20" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>0.4,1.2,7.8,0.4</ClientRectangle>
@@ -274,7 +271,7 @@
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text89>
-            <StartPointPrimitive1 Ref="22" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+            <StartPointPrimitive1 Ref="21" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
               <ClientRectangle>0.8,2.6,0,0</ClientRectangle>
               <Guid>e98b1751b15c464bafba026548784731</Guid>
               <Name>StartPointPrimitive1</Name>
@@ -282,7 +279,7 @@
               <Parent isRef="3" />
               <ReferenceToGuid>25e15828a38a4cb0a8ff7b85cd63e756</ReferenceToGuid>
             </StartPointPrimitive1>
-            <EndPointPrimitive1 Ref="23" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+            <EndPointPrimitive1 Ref="22" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
               <ClientRectangle>4.2,3.8,0,0</ClientRectangle>
               <Guid>3b41afc78af94ee1b9fdb0dfc4cc542d</Guid>
               <Name>EndPointPrimitive1</Name>
@@ -297,11 +294,11 @@
           <Page isRef="2" />
           <Parent isRef="2" />
         </PageHeaderBand1>
-        <PageFooterBand1 Ref="24" type="PageFooterBand" isKey="true">
+        <PageFooterBand1 Ref="23" type="PageFooterBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,30.64,19,2.6</ClientRectangle>
           <Components isList="true" count="3">
-            <Text83 Ref="25" type="Text" isKey="true">
+            <Text83 Ref="24" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.4,0.62,9.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -311,12 +308,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text83</Name>
               <Page isRef="2" />
-              <Parent isRef="24" />
+              <Parent isRef="23" />
               <Text>{tien_fact.nomempre}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text83>
-            <Text84 Ref="26" type="Text" isKey="true">
+            <Text84 Ref="25" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.4,1.02,11.6,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -325,12 +322,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text84</Name>
               <Page isRef="2" />
-              <Parent isRef="24" />
+              <Parent isRef="23" />
               <Text>{tien_fact.domempre} - {tien_fact.codpobla} {tien_fact.pobempre} - {tien_fact.proempre} Tel. {tien_fact.telempre} - fax</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text84>
-            <Text85 Ref="27" type="Text" isKey="true">
+            <Text85 Ref="26" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>4.2,1.42,9.6,0.4</ClientRectangle>
@@ -341,7 +338,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text85</Name>
               <Page isRef="2" />
-              <Parent isRef="24" />
+              <Parent isRef="23" />
               <Text>Internet - Email: {tien_fact.wwwempre}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -352,11 +349,11 @@
           <Page isRef="2" />
           <Parent isRef="2" />
         </PageFooterBand1>
-        <GroupHeaderBand1 Ref="28" type="GroupHeaderBand" isKey="true">
+        <GroupHeaderBand1 Ref="27" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,6.8,19,1.4</ClientRectangle>
           <Components isList="true" count="13">
-            <Text12 Ref="29" type="Text" isKey="true">
+            <Text12 Ref="28" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.6,0.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -364,12 +361,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text12</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>Albaran: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text12>
-            <Text13 Ref="30" type="Text" isKey="true">
+            <Text13 Ref="29" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0.2,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -377,12 +374,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text13</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>{tien_fact.numalbar}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text13>
-            <Text14 Ref="31" type="Text" isKey="true">
+            <Text14 Ref="30" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4,0.2,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -390,12 +387,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text14</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>de fecha</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text14>
-            <Text15 Ref="32" type="Text" isKey="true">
+            <Text15 Ref="31" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6,0.2,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -403,15 +400,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text15</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>{tien_fact.fechaalb}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="33" type="DateFormat" isKey="true">
-                <StringFormat>dd/MM/yyyy</StringFormat>
-              </TextFormat>
               <Type>Expression</Type>
             </Text15>
-            <Text17 Ref="34" type="Text" isKey="true">
+            <Text17 Ref="32" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.4,0.2,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -419,12 +413,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text17</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>realizado por:</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text17>
-            <Text18 Ref="35" type="Text" isKey="true">
+            <Text18 Ref="33" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11,0.2,4.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -432,12 +426,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text18</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>{tien_fact.nomtraba}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text18>
-            <Text71 Ref="36" type="Text" isKey="true">
+            <Text71 Ref="34" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.6,0.8,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -447,12 +441,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text71</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>Manipulador fitosanitarios: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text71>
-            <Text72 Ref="37" type="Text" isKey="true">
+            <Text72 Ref="35" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.2,0.8,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -462,27 +456,29 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text72</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>{tien_fact.manipuladorNumCarnet}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text72>
-            <Text73 Ref="38" type="Text" isKey="true">
+            <Text73 Ref="36" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>6.4,0.8,4.2,0.4</ClientRectangle>
-              <Conditions isList="true" count="0" />
+              <Conditions isList="true" count="1">
+                <value>tien_fact.manipuladorNumCarnet,EqualTo,zero,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text73</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>{tien_fact.manipuladorNombre}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text73>
-            <Text74 Ref="39" type="Text" isKey="true">
+            <Text74 Ref="37" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11,0.8,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -492,28 +488,27 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text74</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>Fecha caducidad: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text74>
-            <Text75 Ref="40" type="Text" isKey="true">
+            <Text75 Ref="38" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.4,0.8,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="0" />
+              <Conditions isList="true" count="1">
+                <value>tien_fact.manipuladorNumCarnet,EqualTo,zero,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text75</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>{tien_fact.manipuladorFecCad}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="41" type="DateFormat" isKey="true">
-                <StringFormat>dd/MM/yyyy</StringFormat>
-              </TextFormat>
               <Type>Expression</Type>
             </Text75>
-            <Text76 Ref="42" type="Text" isKey="true">
+            <Text76 Ref="39" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>15.2,0.8,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -523,12 +518,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text76</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>Tipo carnet: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text76>
-            <Text77 Ref="43" type="Text" isKey="true">
+            <Text77 Ref="40" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>17.2,0.8,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -538,7 +533,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text77</Name>
               <Page isRef="2" />
-              <Parent isRef="28" />
+              <Parent isRef="27" />
               <Text>{Switch(
 		tien_fact.tipoCarnet == 1,"Básico",
 		tien_fact.tipoCarnet == 2, "Cualificado")}</Text>
@@ -552,11 +547,11 @@
           <Page isRef="2" />
           <Parent isRef="2" />
         </GroupHeaderBand1>
-        <HeaderBand1 Ref="44" type="HeaderBand" isKey="true">
+        <HeaderBand1 Ref="41" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,9,19,1</ClientRectangle>
           <Components isList="true" count="6">
-            <Text19 Ref="45" type="Text" isKey="true">
+            <Text19 Ref="42" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>0.4,0,2.8,0.8</ClientRectangle>
@@ -567,13 +562,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text19</Name>
               <Page isRef="2" />
-              <Parent isRef="44" />
+              <Parent isRef="41" />
               <Text>Articulo</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text19>
-            <Text20 Ref="46" type="Text" isKey="true">
+            <Text20 Ref="43" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>3.2,0,6,0.8</ClientRectangle>
@@ -584,13 +579,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text20</Name>
               <Page isRef="2" />
-              <Parent isRef="44" />
+              <Parent isRef="41" />
               <Text>Descripción</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text20>
-            <Text21 Ref="47" type="Text" isKey="true">
+            <Text21 Ref="44" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>11.4,0,2.6,0.8</ClientRectangle>
@@ -601,13 +596,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text21</Name>
               <Page isRef="2" />
-              <Parent isRef="44" />
+              <Parent isRef="41" />
               <Text>Precio (€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text21>
-            <Text26 Ref="48" type="Text" isKey="true">
+            <Text26 Ref="45" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>14,0,1.8,0.8</ClientRectangle>
@@ -618,13 +613,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text26</Name>
               <Page isRef="2" />
-              <Parent isRef="44" />
+              <Parent isRef="41" />
               <Text>% Dto</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text26>
-            <Text22 Ref="49" type="Text" isKey="true">
+            <Text22 Ref="46" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>9.2,0,2.2,0.8</ClientRectangle>
@@ -635,13 +630,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text22</Name>
               <Page isRef="2" />
-              <Parent isRef="44" />
+              <Parent isRef="41" />
               <Text>Cantidad</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text22>
-            <Text23 Ref="50" type="Text" isKey="true">
+            <Text23 Ref="47" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>15.8,0,2.6,0.8</ClientRectangle>
@@ -652,7 +647,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text23</Name>
               <Page isRef="2" />
-              <Parent isRef="44" />
+              <Parent isRef="41" />
               <Text>Importe (€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -664,12 +659,12 @@
           <Page isRef="2" />
           <Parent isRef="2" />
         </HeaderBand1>
-        <DataBand1 Ref="51" type="DataBand" isKey="true">
+        <DataBand1 Ref="48" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,10.8,19,1.2</ClientRectangle>
           <Components isList="true" count="13">
-            <Text24 Ref="52" type="Text" isKey="true">
+            <Text24 Ref="49" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.6,0,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -677,12 +672,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text24</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>{tien_fact.codartic}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text24>
-            <Text25 Ref="53" type="Text" isKey="true">
+            <Text25 Ref="50" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>3.4,0,5.6,0.4</ClientRectangle>
@@ -691,13 +686,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text25</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>{tien_fact.nomartic}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text25>
-            <Text27 Ref="54" type="Text" isKey="true">
+            <Text27 Ref="51" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>9.8,0,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -706,10 +701,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text27</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>{tien_fact.cantidad}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="55" type="NumberFormat" isKey="true">
+              <TextFormat Ref="52" type="NumberFormat" isKey="true">
                 <DecimalDigits>0</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
@@ -718,7 +713,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text27>
-            <Text28 Ref="56" type="Text" isKey="true">
+            <Text28 Ref="53" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>12,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -727,10 +722,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text28</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>{tien_fact.precioar}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="57" type="NumberFormat" isKey="true">
+              <TextFormat Ref="54" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -738,7 +733,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text28>
-            <Text29 Ref="58" type="Text" isKey="true">
+            <Text29 Ref="55" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>14.2,0,1,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -748,17 +743,17 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text29</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>{tien_fact.dtoline1}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="59" type="NumberFormat" isKey="true">
+              <TextFormat Ref="56" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
               </TextFormat>
               <Type>Expression</Type>
             </Text29>
-            <Text30 Ref="60" type="Text" isKey="true">
+            <Text30 Ref="57" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>16.4,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -767,10 +762,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text30</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>{tien_fact.importel}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="61" type="NumberFormat" isKey="true">
+              <TextFormat Ref="58" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -778,7 +773,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text30>
-            <Text31 Ref="62" type="Text" isKey="true">
+            <Text31 Ref="59" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>1.4,0.6,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -788,28 +783,27 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text31</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>{tien_fact.numserie}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text31>
-            <Text32 Ref="63" type="Text" isKey="true">
+            <Text32 Ref="60" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.2,0.6,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="0" />
+              <Conditions isList="true" count="1">
+                <value>tien_fact.numserie,EqualTo,zero,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text32</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>{tien_fact.fecvigen}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="64" type="DateFormat" isKey="true">
-                <StringFormat>dd/MM/yyyy</StringFormat>
-              </TextFormat>
               <Type>Expression</Type>
             </Text32>
-            <Text33 Ref="65" type="Text" isKey="true">
+            <Text33 Ref="61" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>9.8,0.6,0.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -819,12 +813,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text33</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>Lote</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text33>
-            <Text34 Ref="66" type="Text" isKey="true">
+            <Text34 Ref="62" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>10.8,0.6,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -832,12 +826,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text34</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>{tien_fact.numlote}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text34>
-            <Text86 Ref="67" type="Text" isKey="true">
+            <Text86 Ref="63" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>15.2,0,1,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -848,17 +842,17 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text86</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>{tien_fact.dtoline2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="68" type="NumberFormat" isKey="true">
+              <TextFormat Ref="64" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
               </TextFormat>
               <Type>Expression</Type>
             </Text86>
-            <Text87 Ref="69" type="Text" isKey="true">
+            <Text87 Ref="65" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.8,0.6,0.4,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -868,12 +862,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text87</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>Nº</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text87>
-            <Text88 Ref="70" type="Text" isKey="true">
+            <Text88 Ref="66" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.4,0.6,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -883,7 +877,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text88</Name>
               <Page isRef="2" />
-              <Parent isRef="51" />
+              <Parent isRef="48" />
               <Text>F.vigencia</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -898,11 +892,11 @@
           <Parent isRef="2" />
           <Sort isList="true" count="0" />
         </DataBand1>
-        <GroupHeaderBand2 Ref="71" type="GroupHeaderBand" isKey="true">
+        <GroupHeaderBand2 Ref="67" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,12.8,19,1.4</ClientRectangle>
           <Components isList="true" count="7">
-            <Text35 Ref="72" type="Text" isKey="true">
+            <Text35 Ref="68" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>0,0.4,2.4,0.8</ClientRectangle>
@@ -913,13 +907,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text35</Name>
               <Page isRef="2" />
-              <Parent isRef="71" />
+              <Parent isRef="67" />
               <Text>BRUTO(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text35>
-            <Text37 Ref="73" type="Text" isKey="true">
+            <Text37 Ref="69" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>2.4,0.4,3.2,0.8</ClientRectangle>
@@ -930,13 +924,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text37</Name>
               <Page isRef="2" />
-              <Parent isRef="71" />
+              <Parent isRef="67" />
               <Text>% DTO PP</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text37>
-            <Text38 Ref="74" type="Text" isKey="true">
+            <Text38 Ref="70" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>5.6,0.4,3,0.8</ClientRectangle>
@@ -947,13 +941,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text38</Name>
               <Page isRef="2" />
-              <Parent isRef="71" />
+              <Parent isRef="67" />
               <Text>%DTO GRAL.</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text38>
-            <Text41 Ref="75" type="Text" isKey="true">
+            <Text41 Ref="71" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>8.6,0.4,3,0.8</ClientRectangle>
@@ -964,13 +958,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text41</Name>
               <Page isRef="2" />
-              <Parent isRef="71" />
+              <Parent isRef="67" />
               <Text>B.IMPON.(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text41>
-            <Text42 Ref="76" type="Text" isKey="true">
+            <Text42 Ref="72" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>11.6,0.4,1.8,0.8</ClientRectangle>
@@ -981,13 +975,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text42</Name>
               <Page isRef="2" />
-              <Parent isRef="71" />
+              <Parent isRef="67" />
               <Text>%IVA</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text42>
-            <Text43 Ref="77" type="Text" isKey="true">
+            <Text43 Ref="73" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>13.4,0.4,2.8,0.8</ClientRectangle>
@@ -998,13 +992,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text43</Name>
               <Page isRef="2" />
-              <Parent isRef="71" />
+              <Parent isRef="67" />
               <Text>CUOTA IVA(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text43>
-            <Text44 Ref="78" type="Text" isKey="true">
+            <Text44 Ref="74" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>16.2,0.4,2.8,0.8</ClientRectangle>
@@ -1015,7 +1009,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text44</Name>
               <Page isRef="2" />
-              <Parent isRef="71" />
+              <Parent isRef="67" />
               <Text>IMP. TOTAL(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -1029,12 +1023,12 @@
           <Parent isRef="2" />
           <PrintAtBottom>True</PrintAtBottom>
         </GroupHeaderBand2>
-        <DataBand3 Ref="79" type="DataBand" isKey="true">
+        <DataBand3 Ref="75" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,15,19,2.2</ClientRectangle>
           <Components isList="true" count="25">
-            <Text46 Ref="80" type="Text" isKey="true">
+            <Text46 Ref="76" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.4,0.2,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1044,10 +1038,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text46</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.brutofac}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="81" type="NumberFormat" isKey="true">
+              <TextFormat Ref="77" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1056,7 +1050,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text46>
-            <Text47 Ref="82" type="Text" isKey="true">
+            <Text47 Ref="78" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.6,0.2,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1065,10 +1059,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text47</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.baseimp1}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="83" type="NumberFormat" isKey="true">
+              <TextFormat Ref="79" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1077,7 +1071,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text47>
-            <Text48 Ref="84" type="Text" isKey="true">
+            <Text48 Ref="80" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.4,0.8,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1089,10 +1083,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text48</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.brutofac}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="85" type="NumberFormat" isKey="true">
+              <TextFormat Ref="81" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1101,7 +1095,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text48>
-            <Text49 Ref="86" type="Text" isKey="true">
+            <Text49 Ref="82" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.6,0.8,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1113,10 +1107,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text49</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.baseimp2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="87" type="NumberFormat" isKey="true">
+              <TextFormat Ref="83" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1125,7 +1119,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text49>
-            <Text50 Ref="88" type="Text" isKey="true">
+            <Text50 Ref="84" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0.2,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1136,10 +1130,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text50</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.dtoppago}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="89" type="NumberFormat" isKey="true">
+              <TextFormat Ref="85" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1148,7 +1142,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text50>
-            <Text51 Ref="90" type="Text" isKey="true">
+            <Text51 Ref="86" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,0.2,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1160,10 +1154,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text51</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.impdtopp}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="91" type="NumberFormat" isKey="true">
+              <TextFormat Ref="87" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1172,7 +1166,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text51>
-            <Text52 Ref="92" type="Text" isKey="true">
+            <Text52 Ref="88" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,0.2,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1184,10 +1178,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text52</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.dtognral}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="93" type="NumberFormat" isKey="true">
+              <TextFormat Ref="89" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1196,7 +1190,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text52>
-            <Text53 Ref="94" type="Text" isKey="true">
+            <Text53 Ref="90" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,0.2,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1208,10 +1202,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text53</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.impdtogr}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="95" type="NumberFormat" isKey="true">
+              <TextFormat Ref="91" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1220,7 +1214,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text53>
-            <Text54 Ref="96" type="Text" isKey="true">
+            <Text54 Ref="92" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.6,0.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1229,10 +1223,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text54</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.porciva1}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="97" type="NumberFormat" isKey="true">
+              <TextFormat Ref="93" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1241,7 +1235,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text54>
-            <Text55 Ref="98" type="Text" isKey="true">
+            <Text55 Ref="94" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.6,0.8,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1253,10 +1247,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text55</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.porciva2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="99" type="NumberFormat" isKey="true">
+              <TextFormat Ref="95" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1265,7 +1259,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text55>
-            <Text56 Ref="100" type="Text" isKey="true">
+            <Text56 Ref="96" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.2,0.2,3,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1274,10 +1268,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text56</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.imporiv1}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="101" type="NumberFormat" isKey="true">
+              <TextFormat Ref="97" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1286,7 +1280,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text56>
-            <Text57 Ref="102" type="Text" isKey="true">
+            <Text57 Ref="98" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.2,0.8,3,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1298,10 +1292,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text57</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.imporiv2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="103" type="NumberFormat" isKey="true">
+              <TextFormat Ref="99" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1310,7 +1304,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text57>
-            <Text58 Ref="104" type="Text" isKey="true">
+            <Text58 Ref="100" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>16.4,0.2,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1319,10 +1313,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text58</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.totalfac}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="105" type="NumberFormat" isKey="true">
+              <TextFormat Ref="101" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1331,7 +1325,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text58>
-            <Text59 Ref="106" type="Text" isKey="true">
+            <Text59 Ref="102" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0.8,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1344,10 +1338,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text59</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.dtoppago}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="107" type="NumberFormat" isKey="true">
+              <TextFormat Ref="103" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1356,7 +1350,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text59>
-            <Text60 Ref="108" type="Text" isKey="true">
+            <Text60 Ref="104" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,0.8,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1369,10 +1363,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text60</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.impdtopp}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="109" type="NumberFormat" isKey="true">
+              <TextFormat Ref="105" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1381,7 +1375,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text60>
-            <Text61 Ref="110" type="Text" isKey="true">
+            <Text61 Ref="106" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,0.8,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1394,10 +1388,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text61</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.dtognral}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="111" type="NumberFormat" isKey="true">
+              <TextFormat Ref="107" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1406,7 +1400,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text61>
-            <Text62 Ref="112" type="Text" isKey="true">
+            <Text62 Ref="108" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,0.8,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1419,10 +1413,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text62</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.impdtogr}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="113" type="NumberFormat" isKey="true">
+              <TextFormat Ref="109" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1431,7 +1425,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text62>
-            <Text63 Ref="114" type="Text" isKey="true">
+            <Text63 Ref="110" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.4,1.4,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1443,10 +1437,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text63</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.brutofac}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="115" type="NumberFormat" isKey="true">
+              <TextFormat Ref="111" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1455,7 +1449,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text63>
-            <Text64 Ref="116" type="Text" isKey="true">
+            <Text64 Ref="112" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.6,1.4,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1467,10 +1461,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text64</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.baseimp3}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="117" type="NumberFormat" isKey="true">
+              <TextFormat Ref="113" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1479,7 +1473,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text64>
-            <Text65 Ref="118" type="Text" isKey="true">
+            <Text65 Ref="114" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.6,1.4,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1491,10 +1485,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text65</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.porciva3}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="119" type="NumberFormat" isKey="true">
+              <TextFormat Ref="115" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1503,7 +1497,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text65>
-            <Text66 Ref="120" type="Text" isKey="true">
+            <Text66 Ref="116" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.2,1.4,3,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1515,10 +1509,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text66</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.imporiv3}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="121" type="NumberFormat" isKey="true">
+              <TextFormat Ref="117" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1527,7 +1521,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text66>
-            <Text67 Ref="122" type="Text" isKey="true">
+            <Text67 Ref="118" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,1.4,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1540,10 +1534,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text67</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.dtoppago}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="123" type="NumberFormat" isKey="true">
+              <TextFormat Ref="119" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1552,7 +1546,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text67>
-            <Text68 Ref="124" type="Text" isKey="true">
+            <Text68 Ref="120" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,1.4,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1565,10 +1559,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text68</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.impdtopp}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="125" type="NumberFormat" isKey="true">
+              <TextFormat Ref="121" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1577,7 +1571,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text68>
-            <Text69 Ref="126" type="Text" isKey="true">
+            <Text69 Ref="122" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,1.4,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1590,10 +1584,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text69</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.dtognral}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="127" type="NumberFormat" isKey="true">
+              <TextFormat Ref="123" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1602,7 +1596,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text69>
-            <Text70 Ref="128" type="Text" isKey="true">
+            <Text70 Ref="124" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,1.4,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1615,10 +1609,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text70</Name>
               <Page isRef="2" />
-              <Parent isRef="79" />
+              <Parent isRef="75" />
               <Text>{tien_fact.impdtogr}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="129" type="NumberFormat" isKey="true">
+              <TextFormat Ref="125" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1637,12 +1631,12 @@
           <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand3>
-        <GroupFooterBand1 Ref="130" type="GroupFooterBand" isKey="true">
+        <GroupFooterBand1 Ref="126" type="GroupFooterBand" isKey="true">
           <Border>All;Black;1;Solid;False;4;Black</Border>
           <Brush>Transparent</Brush>
           <ClientRectangle>0,18,19,1</ClientRectangle>
           <Components isList="true" count="3">
-            <Text78 Ref="131" type="Text" isKey="true">
+            <Text78 Ref="127" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.8,0.2,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1650,12 +1644,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text78</Name>
               <Page isRef="2" />
-              <Parent isRef="130" />
+              <Parent isRef="126" />
               <Text>FORMA DE PAGO: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text78>
-            <Text79 Ref="132" type="Text" isKey="true">
+            <Text79 Ref="128" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.2,0.2,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1664,12 +1658,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text79</Name>
               <Page isRef="2" />
-              <Parent isRef="130" />
+              <Parent isRef="126" />
               <Text>{tien_fact.nomforpa}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text79>
-            <Text90 Ref="133" type="Text" isKey="true">
+            <Text90 Ref="129" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.4,0.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1677,7 +1671,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text90</Name>
               <Page isRef="2" />
-              <Parent isRef="130" />
+              <Parent isRef="126" />
               <Text>{tien_fact.codforpa}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -1689,11 +1683,11 @@
           <Parent isRef="2" />
           <PrintAtBottom>True</PrintAtBottom>
         </GroupFooterBand1>
-        <GroupHeaderBand3 Ref="134" type="GroupHeaderBand" isKey="true">
+        <GroupHeaderBand3 Ref="130" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,19.8,19,0.6</ClientRectangle>
           <Components isList="true" count="2">
-            <Text80 Ref="135" type="Text" isKey="true">
+            <Text80 Ref="131" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.6,0.2,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1701,15 +1695,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text80</Name>
               <Page isRef="2" />
-              <Parent isRef="134" />
+              <Parent isRef="130" />
               <Text>{tien_fact.fecevenc}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="136" type="DateFormat" isKey="true">
-                <StringFormat>dd/MM/yyyy</StringFormat>
-              </TextFormat>
               <Type>Expression</Type>
             </Text80>
-            <Text82 Ref="137" type="Text" isKey="true">
+            <Text82 Ref="132" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8,0.2,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1717,10 +1708,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text82</Name>
               <Page isRef="2" />
-              <Parent isRef="134" />
+              <Parent isRef="130" />
               <Text>{tien_fact.impefect}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="138" type="CurrencyFormat" isKey="true">
+              <TextFormat Ref="133" type="CurrencyFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>8</NegativePattern>
@@ -1738,11 +1729,11 @@
           <Parent isRef="2" />
           <PrintAtBottom>True</PrintAtBottom>
         </GroupHeaderBand3>
-        <HeaderBand2 Ref="139" type="HeaderBand" isKey="true">
+        <HeaderBand2 Ref="134" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,21.2,19,0.6</ClientRectangle>
           <Components isList="true" count="1">
-            <Text81 Ref="140" type="Text" isKey="true">
+            <Text81 Ref="135" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>1,0.2,3,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1750,7 +1741,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text81</Name>
               <Page isRef="2" />
-              <Parent isRef="139" />
+              <Parent isRef="134" />
               <Text>VENCIMIENTOS:</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -1762,7 +1753,7 @@
           <Parent isRef="2" />
           <PrintAtBottom>True</PrintAtBottom>
         </HeaderBand2>
-        <DataBand2 Ref="141" type="DataBand" isKey="true">
+        <DataBand2 Ref="136" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,22.6,19,0.6</ClientRectangle>
@@ -1777,7 +1768,7 @@
           <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand2>
-        <RectanglePrimitive1 Ref="142" type="RectanglePrimitive" isKey="true">
+        <RectanglePrimitive1 Ref="137" type="RectanglePrimitive" isKey="true">
           <ClientRectangle>0.8,3,3.4,1.2</ClientRectangle>
           <Color>Black</Color>
           <Guid>25e15828a38a4cb0a8ff7b85cd63e756</Guid>
@@ -1793,13 +1784,13 @@
       <PageHeight>29.7</PageHeight>
       <PageWidth>21</PageWidth>
       <Report isRef="0" />
-      <Watermark Ref="143" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+      <Watermark Ref="138" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
     </Page1>
   </Pages>
-  <PrinterSettings Ref="144" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="139" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -1811,10 +1802,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>10/23/2018 9:07:17 AM</ReportChanged>
+  <ReportChanged>11/19/2018 10:20:15 AM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
-  <ReportFile />
-  <ReportGuid>01dc7c4ddbd04f38aab13b9cc3d51bd8</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FTIEN_castelduc.mrt</ReportFile>
+  <ReportGuid>e22cc6ec6837454196add574888fa432</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
