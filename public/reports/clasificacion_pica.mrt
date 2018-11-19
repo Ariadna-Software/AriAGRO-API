@@ -695,8 +695,8 @@
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,17.2,16.4,0.6</ClientRectangle>
-          <ColumnGaps>1</ColumnGaps>
-          <Columns>6</Columns>
+          <ColumnGaps>2</ColumnGaps>
+          <Columns>5</Columns>
           <Components isList="true" count="1">
             <Text43 Ref="53" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -762,10 +762,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/16/2018 11:24:01 AM</ReportChanged>
+  <ReportChanged>11/19/2018 12:04:57 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion_pica.mrt</ReportFile>
-  <ReportGuid>cd4cb74633ae43f384e72c198dc2dd34</ReportGuid>
+  <ReportGuid>ca15c24e8bff4c7e8e97144e7e99779e</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
