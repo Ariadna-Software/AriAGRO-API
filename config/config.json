@@ -11,7 +11,7 @@
         "secure": true, 
         "auth": {
             "user": "vicent@myariadna.com",
-            "pass": "*****************"
+            "pass": "*****^*****"
         }
     },
     "destinatario": "vicent@myariadna.com"
