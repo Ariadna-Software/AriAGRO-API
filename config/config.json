@@ -11,11 +11,7 @@
         "secure": true, 
         "auth": {
             "user": "vicent@myariadna.com",
-<<<<<<< HEAD
-            "pass": "**********"
-=======
             "pass": "*****^*****"
->>>>>>> fac_gasol_tienda
         }
     },
     "destinatario": "vicent@myariadna.com"
