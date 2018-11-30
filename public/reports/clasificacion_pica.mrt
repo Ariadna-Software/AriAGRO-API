@@ -534,7 +534,7 @@
             <Text26 Ref="40" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;[140:140:140]</Border>
               <Brush>EmptyBrush</Brush>
-              <ClientRectangle>8.2,1,1.6,0.8</ClientRectangle>
+              <ClientRectangle>10,1,1.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>cde3bb5aa1484e7eb3888aa22744311c</Guid>
@@ -551,7 +551,7 @@
             <Text27 Ref="41" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;[140:140:140]</Border>
               <Brush>EmptyBrush</Brush>
-              <ClientRectangle>10.2,1,1.8,0.8</ClientRectangle>
+              <ClientRectangle>12,1,1.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>c6908a4494b04a42bb0b969b5ea4d2d0</Guid>
@@ -606,7 +606,7 @@
             </Text28>
             <Text29 Ref="45" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>8.4,0,1.6,0.4</ClientRectangle>
+              <ClientRectangle>10.2,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>f2f23aeb4b604bc1a20fb0845c813fe6</Guid>
@@ -629,7 +629,7 @@
             </Text29>
             <Text30 Ref="47" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>10.4,0,1.8,0.4</ClientRectangle>
+              <ClientRectangle>12.2,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>6b48e40b2aa54ec8b772f5588fcc234d</Guid>
@@ -666,7 +666,7 @@
             <Text41 Ref="50" type="Text" isKey="true">
               <Border>Top;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>6.8,0.2,3.2,0.4</ClientRectangle>
+              <ClientRectangle>8.6,0.2,3.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
               <HorAlignment>Right</HorAlignment>
@@ -695,8 +695,8 @@
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,17.2,16.4,0.6</ClientRectangle>
-          <ColumnGaps>1</ColumnGaps>
-          <Columns>6</Columns>
+          <ColumnGaps>2</ColumnGaps>
+          <Columns>5</Columns>
           <Components isList="true" count="1">
             <Text43 Ref="53" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -762,10 +762,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/16/2018 12:28:49 PM</ReportChanged>
+  <ReportChanged>11/19/2018 12:04:57 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile />
-  <ReportGuid>8fd6aad81ecd4456a70de13da1e34459</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion_pica.mrt</ReportFile>
+  <ReportGuid>ca15c24e8bff4c7e8e97144e7e99779e</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>

@@ -1,14 +1,21 @@
 {
     "apiPort": 8021,
     "apiHost": "localhost",
-    "ficheros": "C:\\proyectos\\AriAGRO-API\\ficheros\\",
+    "ficheros": "C:\\ASW\\AriAgroApi\\ficheros\\",
+    "reports_dir": "C:\\proyectos\\AriAGRO-API\\public\\reports",
+    "clasif_dir": "C:\\proyectos\\AriAGRO-API\\public\\ficheros\\temporales",
+    "json_dir": "C:\\proyectos\\AriAGRO-API\\public\\json",
     "smtpConfig": {
         "host": "smtp.gmail.com",
         "port": 465,
         "secure": true, 
         "auth": {
             "user": "vicent@myariadna.com",
+<<<<<<< HEAD
             "pass": "**********"
+=======
+            "pass": "*****^*****"
+>>>>>>> fac_gasol_tienda
         }
     },
     "destinatario": "vicent@myariadna.com"

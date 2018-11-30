@@ -719,8 +719,8 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,17.2,16.4,0.6</ClientRectangle>
-          <ColumnGaps>1</ColumnGaps>
-          <Columns>6</Columns>
+          <ColumnGaps>2</ColumnGaps>
+          <Columns>5</Columns>
           <Components isList="true" count="1">
             <Text43 Ref="54" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -786,10 +786,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/16/2018 11:12:23 AM</ReportChanged>
+  <ReportChanged>11/19/2018 12:42:42 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion.mrt</ReportFile>
-  <ReportGuid>ed150f39042749c889a065c44a39226f</ReportGuid>
+  <ReportFile />
+  <ReportGuid>20c0508d98a14ac5a2477a3e4df1b3d4</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
