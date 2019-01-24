@@ -27,14 +27,22 @@ var app = express();
 app.options('*', cors()); // include before other routes
 app.use(cors());
 
+//importacion de configuracion env
+var conf = require('dotenv');
+conf.config();
 
 // leyendo la configuracion 
-var config = require('./config/config.json');
+//var config = require('./config/config.json');
 
 // activar el procesador de los cuerpos de mensajes
+
+//app.use(bodyParser ({limit: '50mb'})); 
+//app.use (bodyParser.urlencoded ({limit: '50mb'})); 
+
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: '100mb'}));
 
 
 // servidor html estático
@@ -91,6 +99,6 @@ app.use('/api', router);
 
 // START SERVER
 //==========================
-app.listen(config.apiPort);
+app.listen(process.env.API_PORT);
 console.log("AriAgroApi VRS: ", pjson.version)
-console.log("AriAgroApi en puerto: ", config.apiPort);
+console.log("AriAgroApi en puerto: ", process.env.API_PORT);

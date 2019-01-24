@@ -1,7 +1,10 @@
 {
     "apiPort": 9902,
     "apiHost": "localhost",
-    "ficheros": "C:\\Ariadna\\AriAgro-Api\\ficheros\\",
+    "ficheros": "C:\\Ariadna\\AriAGRO-API\\ficheros\\",
+    "reports_dir": "C:\\Ariadna\\AriAGRO-API\\public\\reports",
+    "clasif_dir": "C:\\Ariadna\\AriAGRO-API\\public\\ficheros\\temporales",
+    "json_dir": "C:\\Ariadna\\AriAGRO-API\\public\\json",
     "smtpConfig": {
         "host": "smtp.gmail.com",
         "port": 465,

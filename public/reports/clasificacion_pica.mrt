@@ -20,7 +20,7 @@
         <PageHeaderBand1 Ref="3" type="PageHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,0.4,16.4,6.8</ClientRectangle>
-          <Components isList="true" count="18">
+          <Components isList="true" count="19">
             <Text9 Ref="4" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
@@ -259,14 +259,27 @@
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text40>
-            <StartPointPrimitive1 Ref="20" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+            <Text15 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.2,3.6,1.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+              <Text>{cabecera_agro.codsocio}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text15>
+            <StartPointPrimitive1 Ref="21" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
               <ClientRectangle>0.2,3.8,0,0</ClientRectangle>
               <Name>StartPointPrimitive1</Name>
               <Page isRef="2" />
               <Parent isRef="3" />
               <ReferenceToGuid>185cb7b205bf43a18bc71691553de394</ReferenceToGuid>
             </StartPointPrimitive1>
-            <EndPointPrimitive1 Ref="21" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+            <EndPointPrimitive1 Ref="22" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
               <ClientRectangle>3.6,4.6,0,0</ClientRectangle>
               <Name>EndPointPrimitive1</Name>
               <Page isRef="2" />
@@ -279,11 +292,11 @@
           <Page isRef="2" />
           <Parent isRef="2" />
         </PageHeaderBand1>
-        <PageFooterBand1 Ref="22" type="PageFooterBand" isKey="true">
+        <PageFooterBand1 Ref="23" type="PageFooterBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,98,16.4,0.8</ClientRectangle>
           <Components isList="true" count="1">
-            <Text31 Ref="23" type="Text" isKey="true">
+            <Text31 Ref="24" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.2,0.3,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -291,7 +304,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text31</Name>
               <Page isRef="2" />
-              <Parent isRef="22" />
+              <Parent isRef="23" />
               <Text>Pagina {PageNumber}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -302,11 +315,11 @@
           <Page isRef="2" />
           <Parent isRef="2" />
         </PageFooterBand1>
-        <HeaderBand1 Ref="24" type="HeaderBand" isKey="true">
+        <HeaderBand1 Ref="25" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,8,16.4,1.2</ClientRectangle>
-          <Components isList="true" count="6">
-            <Text8 Ref="25" type="Text" isKey="true">
+          <Components isList="true" count="5">
+            <Text8 Ref="26" type="Text" isKey="true">
               <Border>All;Black;1;Solid;True;4;[140:140:140]</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>0.2,0.2,1.8,0.8</ClientRectangle>
@@ -317,13 +330,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text8</Name>
               <Page isRef="2" />
-              <Parent isRef="24" />
+              <Parent isRef="25" />
               <Text>NOTA</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text8>
-            <Text13 Ref="26" type="Text" isKey="true">
+            <Text13 Ref="27" type="Text" isKey="true">
               <Border>All;Black;1;Solid;True;4;[140:140:140]</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>2,0.2,2.2,0.8</ClientRectangle>
@@ -334,13 +347,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text13</Name>
               <Page isRef="2" />
-              <Parent isRef="24" />
+              <Parent isRef="25" />
               <Text>FECHA</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text13>
-            <Text14 Ref="27" type="Text" isKey="true">
+            <Text14 Ref="28" type="Text" isKey="true">
               <Border>All;Black;1;Solid;True;4;[140:140:140]</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>4.2,0.2,1.8,0.8</ClientRectangle>
@@ -351,33 +364,16 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text14</Name>
               <Page isRef="2" />
-              <Parent isRef="24" />
+              <Parent isRef="25" />
               <Text>RECOLEC.</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text14>
-            <Text15 Ref="28" type="Text" isKey="true">
-              <Border>All;Black;1;Solid;True;4;[140:140:140]</Border>
-              <Brush>LightGray</Brush>
-              <ClientRectangle>6,0.2,1.8,0.8</ClientRectangle>
-              <Conditions isList="true" count="0" />
-              <Font>Arial,9,Bold,Point,False,0</Font>
-              <Guid>bcaa77a45815481cb5d4c4b642902206</Guid>
-              <HorAlignment>Center</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text15</Name>
-              <Page isRef="2" />
-              <Parent isRef="24" />
-              <Text>TIPO</Text>
-              <TextBrush>Black</TextBrush>
-              <Type>Expression</Type>
-              <VertAlignment>Center</VertAlignment>
-            </Text15>
             <Text16 Ref="29" type="Text" isKey="true">
               <Border>All;Black;1;Solid;True;4;[140:140:140]</Border>
               <Brush>LightGray</Brush>
-              <ClientRectangle>7.8,0.2,2.2,0.8</ClientRectangle>
+              <ClientRectangle>6,0.2,2.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>220aa2bb92e34f188dc0c87ed90c3e52</Guid>
@@ -385,7 +381,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text16</Name>
               <Page isRef="2" />
-              <Parent isRef="24" />
+              <Parent isRef="25" />
               <Text>CAJONES</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -394,7 +390,7 @@
             <Text17 Ref="30" type="Text" isKey="true">
               <Border>All;Black;1;Solid;True;4;[140:140:140]</Border>
               <Brush>LightGray</Brush>
-              <ClientRectangle>10,0.2,1.6,0.8</ClientRectangle>
+              <ClientRectangle>8.2,0.2,1.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>ffc4f24ddfe14271b66a7ed2849a567e</Guid>
@@ -402,7 +398,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text17</Name>
               <Page isRef="2" />
-              <Parent isRef="24" />
+              <Parent isRef="25" />
               <Text>KILOS</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -418,7 +414,7 @@
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,10,16.4,0.4</ClientRectangle>
-          <Components isList="true" count="6">
+          <Components isList="true" count="5">
             <Text18 Ref="32" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.2,0,1.8,0.4</ClientRectangle>
@@ -464,29 +460,9 @@
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text20>
-            <Text21 Ref="35" type="Text" isKey="true">
+            <Text22 Ref="35" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>6,0,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="0" />
-              <Font>Arial,9.75,Bold,Point,False,0</Font>
-              <Guid>2a480fde173e451cadebbd34dd4d3034</Guid>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text21</Name>
-              <Page isRef="2" />
-              <Parent isRef="31" />
-              <Text>{ Switch(entrada_agro.tipoentr == 0,"NORMAL",
-entrada_agro.tipoentr == 1,"V.CAMPO ",
-entrada_agro.tipoentr == 2, "P.INTEGRADO",
-entrada_agro.tipoentr == 3,"IND.DIRECTO",
-entrada_agro.tipoentr == 4,"RETIRADA",
-entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
-              <TextBrush>Black</TextBrush>
-              <Type>Expression</Type>
-              <VertAlignment>Center</VertAlignment>
-            </Text21>
-            <Text22 Ref="36" type="Text" isKey="true">
-              <Brush>Transparent</Brush>
-              <ClientRectangle>7.8,0,2.2,0.4</ClientRectangle>
+              <ClientRectangle>6,0,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>151eb7e6f74744728e373ea6fb02d3c9</Guid>
@@ -500,9 +476,9 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text22>
-            <Text23 Ref="37" type="Text" isKey="true">
+            <Text23 Ref="36" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>10,0,1.6,0.4</ClientRectangle>
+              <ClientRectangle>8.2,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Bold,Point,False,0</Font>
               <Guid>fce1d711e95f446cb459a5a466bf6c03</Guid>
@@ -513,7 +489,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Parent isRef="31" />
               <Text>{entrada_agro.kilosnet}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="38" type="NumberFormat" isKey="true">
+              <TextFormat Ref="37" type="NumberFormat" isKey="true">
                 <DecimalDigits>0</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
@@ -533,15 +509,15 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
           <Parent isRef="2" />
           <Sort isList="true" count="0" />
         </DataBand2>
-        <HeaderBand2 Ref="39" type="HeaderBand" isKey="true">
+        <HeaderBand2 Ref="38" type="HeaderBand" isKey="true">
           <Border>None;Black;1;Dot;False;4;Black</Border>
           <Brush>Transparent</Brush>
           <ClientRectangle>0,11.2,16.4,2</ClientRectangle>
           <Components isList="true" count="4">
-            <Text24 Ref="40" type="Text" isKey="true">
+            <Text24 Ref="39" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;[140:140:140]</Border>
               <Brush>EmptyBrush</Brush>
-              <ClientRectangle>4.4,1,2.4,0.8</ClientRectangle>
+              <ClientRectangle>4,1,2.4,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>d4b693e792e14dc7b5d59e449a087b5a</Guid>
@@ -549,13 +525,13 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text24</Name>
               <Page isRef="2" />
-              <Parent isRef="39" />
+              <Parent isRef="38" />
               <Text>Categoria</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text24>
-            <Text26 Ref="41" type="Text" isKey="true">
+            <Text26 Ref="40" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;[140:140:140]</Border>
               <Brush>EmptyBrush</Brush>
               <ClientRectangle>10,1,1.6,0.8</ClientRectangle>
@@ -566,13 +542,13 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text26</Name>
               <Page isRef="2" />
-              <Parent isRef="39" />
+              <Parent isRef="38" />
               <Text>Kilos</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text26>
-            <Text27 Ref="42" type="Text" isKey="true">
+            <Text27 Ref="41" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;[140:140:140]</Border>
               <Brush>EmptyBrush</Brush>
               <ClientRectangle>12,1,1.8,0.8</ClientRectangle>
@@ -583,13 +559,13 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text27</Name>
               <Page isRef="2" />
-              <Parent isRef="39" />
+              <Parent isRef="38" />
               <Text>Porcentaje</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text27>
-            <Text25 Ref="43" type="Text" isKey="true">
+            <Text25 Ref="42" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0,1,3.4,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -597,7 +573,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text25</Name>
               <Page isRef="2" />
-              <Parent isRef="39" />
+              <Parent isRef="38" />
               <Text>CLASIFICACIÓN:</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -608,27 +584,27 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
           <Page isRef="2" />
           <Parent isRef="2" />
         </HeaderBand2>
-        <DataBand3 Ref="44" type="DataBand" isKey="true">
+        <DataBand3 Ref="43" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,14,16.4,0.6</ClientRectangle>
           <Components isList="true" count="3">
-            <Text28 Ref="45" type="Text" isKey="true">
+            <Text28 Ref="44" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>4.6,0,2.4,0.4</ClientRectangle>
+              <ClientRectangle>4.2,0,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>5e69671e379147d8aadf8fa65cc91118</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text28</Name>
               <Page isRef="2" />
-              <Parent isRef="44" />
+              <Parent isRef="43" />
               <Text>{clasific_agro.calidad}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text28>
-            <Text29 Ref="46" type="Text" isKey="true">
+            <Text29 Ref="45" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>10.2,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -638,10 +614,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text29</Name>
               <Page isRef="2" />
-              <Parent isRef="44" />
+              <Parent isRef="43" />
               <Text>{clasific_agro.kilos}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="47" type="NumberFormat" isKey="true">
+              <TextFormat Ref="46" type="NumberFormat" isKey="true">
                 <DecimalDigits>0</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
@@ -651,7 +627,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text29>
-            <Text30 Ref="48" type="Text" isKey="true">
+            <Text30 Ref="47" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>12.2,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -661,10 +637,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text30</Name>
               <Page isRef="2" />
-              <Parent isRef="44" />
+              <Parent isRef="43" />
               <Text>{Round(Div(clasific_agro.kilos * 100,SumD(clasific_agro.kilos)),2)}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="49" type="NumberFormat" isKey="true">
+              <TextFormat Ref="48" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -683,11 +659,11 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
           <Parent isRef="2" />
           <Sort isList="true" count="0" />
         </DataBand3>
-        <FooterBand1 Ref="50" type="FooterBand" isKey="true">
+        <FooterBand1 Ref="49" type="FooterBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,15.4,16.4,1</ClientRectangle>
           <Components isList="true" count="1">
-            <Text41 Ref="51" type="Text" isKey="true">
+            <Text41 Ref="50" type="Text" isKey="true">
               <Border>Top;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>8.6,0.2,3.2,0.4</ClientRectangle>
@@ -697,10 +673,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text41</Name>
               <Page isRef="2" />
-              <Parent isRef="50" />
+              <Parent isRef="49" />
               <Text>{Sum(DataBand3, clasific_agro.kilos)}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="52" type="NumberFormat" isKey="true">
+              <TextFormat Ref="51" type="NumberFormat" isKey="true">
                 <DecimalDigits>0</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
@@ -715,14 +691,14 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
           <Page isRef="2" />
           <Parent isRef="2" />
         </FooterBand1>
-        <DataBand4 Ref="53" type="DataBand" isKey="true">
+        <DataBand4 Ref="52" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,17.2,16.4,0.6</ClientRectangle>
           <ColumnGaps>2</ColumnGaps>
           <Columns>5</Columns>
           <Components isList="true" count="1">
-            <Text43 Ref="54" type="Text" isKey="true">
+            <Text43 Ref="53" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>0.2,0,10.4,0.4</ClientRectangle>
@@ -732,7 +708,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text43</Name>
               <Page isRef="2" />
-              <Parent isRef="53" />
+              <Parent isRef="52" />
               <Text>{incidencia_agro.nomincid} -- {Switch(incidencia_agro.tipincid == 0, "Leve",
 		incidencia_agro.tipincid == 1, "Grave",
 		incidencia_agro.tipincid == 2, "Muy Grave")}</Text>
@@ -750,7 +726,7 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
           <Parent isRef="2" />
           <Sort isList="true" count="0" />
         </DataBand4>
-        <RectanglePrimitive1 Ref="55" type="RectanglePrimitive" isKey="true">
+        <RectanglePrimitive1 Ref="54" type="RectanglePrimitive" isKey="true">
           <ClientRectangle>0.2,4.2,3.4,0.8</ClientRectangle>
           <Color>Black</Color>
           <Guid>185cb7b205bf43a18bc71691553de394</Guid>
@@ -768,13 +744,13 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
       <PageWidth>18.4</PageWidth>
       <PaperSize>Executive</PaperSize>
       <Report isRef="0" />
-      <Watermark Ref="56" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+      <Watermark Ref="55" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
     </Page1>
   </Pages>
-  <PrinterSettings Ref="57" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="56" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -786,10 +762,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/19/2018 12:42:42 PM</ReportChanged>
+  <ReportChanged>11/19/2018 12:04:57 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile />
-  <ReportGuid>20c0508d98a14ac5a2477a3e4df1b3d4</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\clasificacion_pica.mrt</ReportFile>
+  <ReportGuid>ca15c24e8bff4c7e8e97144e7e99779e</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
