@@ -4,3 +4,199 @@ AriAgroApi en puerto:  9902
 AriAgroApi --------
 AriAgroApi VRS:  2.0.9
 AriAgroApi en puerto:  9902
+AriAgroApi --------
+AriAgroApi VRS:  2.0.12
+AriAgroApi en puerto:  9902
+RES ONESIGNAL:  { id: '22770af8-b15f-43c8-bacc-5f8a87746023',
+  recipients: 97,
+  external_id: null,
+  errors: 
+   { invalid_player_ids: 
+      [ 'c2069538-d77f-4ba6-b0b3-b0e9c5ab747d',
+        '09d4f787-739b-4997-94c1-bdc2149568b8',
+        '92e9d8f0-cf55-4515-896d-45f2f0e02ba7',
+        '2aaca987-e7b5-4f7e-85ff-ff99ee9c3c73',
+        '942117cf-0e0d-483f-94ac-c1ff75b0fc36',
+        '02036c88-e319-4fcc-84b9-00d1d9d7c252',
+        '063d05dc-48db-4234-a133-a0947e067156',
+        '40847139-f8b3-46fa-863e-f0017124eb50',
+        '0f46dc74-fef2-4642-a422-a70ec3f38492',
+        'aac8fbf2-e80a-4904-a590-0e6bbfb931a4' ] } }
+RES ONESIGNAL:  { id: 'aff6ee29-e869-40c3-b8bc-d991b101f6f9',
+  recipients: 97,
+  external_id: null,
+  errors: 
+   { invalid_player_ids: 
+      [ 'c2069538-d77f-4ba6-b0b3-b0e9c5ab747d',
+        '09d4f787-739b-4997-94c1-bdc2149568b8',
+        '92e9d8f0-cf55-4515-896d-45f2f0e02ba7',
+        '2aaca987-e7b5-4f7e-85ff-ff99ee9c3c73',
+        '942117cf-0e0d-483f-94ac-c1ff75b0fc36',
+        '02036c88-e319-4fcc-84b9-00d1d9d7c252',
+        '063d05dc-48db-4234-a133-a0947e067156',
+        '40847139-f8b3-46fa-863e-f0017124eb50',
+        '0f46dc74-fef2-4642-a422-a70ec3f38492',
+        'aac8fbf2-e80a-4904-a590-0e6bbfb931a4' ] } }
+RES ONESIGNAL:  { id: 'bbef0f24-069d-478a-94aa-d8dfae2e6d69',
+  recipients: 93,
+  external_id: null,
+  errors: 
+   { invalid_player_ids: 
+      [ 'c2069538-d77f-4ba6-b0b3-b0e9c5ab747d',
+        '09d4f787-739b-4997-94c1-bdc2149568b8',
+        '92e9d8f0-cf55-4515-896d-45f2f0e02ba7',
+        '2aaca987-e7b5-4f7e-85ff-ff99ee9c3c73',
+        '942117cf-0e0d-483f-94ac-c1ff75b0fc36',
+        '02036c88-e319-4fcc-84b9-00d1d9d7c252',
+        '063d05dc-48db-4234-a133-a0947e067156',
+        '40847139-f8b3-46fa-863e-f0017124eb50',
+        '0f46dc74-fef2-4642-a422-a70ec3f38492',
+        'aac8fbf2-e80a-4904-a590-0e6bbfb931a4',
+        '9edf1d33-c0ca-4623-82ae-9e397aabe1c7',
+        '355e6d34-4299-436b-b9e4-74e2f43f2f3c',
+        '12f56874-2735-4a80-853c-48fda642223f' ] } }
+RES ONESIGNAL:  { id: '74ee3481-4f0a-41de-8b02-f8836b085cf2',
+  recipients: 93,
+  external_id: null,
+  errors: 
+   { invalid_player_ids: 
+      [ 'c2069538-d77f-4ba6-b0b3-b0e9c5ab747d',
+        '09d4f787-739b-4997-94c1-bdc2149568b8',
+        '92e9d8f0-cf55-4515-896d-45f2f0e02ba7',
+        '2aaca987-e7b5-4f7e-85ff-ff99ee9c3c73',
+        '942117cf-0e0d-483f-94ac-c1ff75b0fc36',
+        '02036c88-e319-4fcc-84b9-00d1d9d7c252',
+        '063d05dc-48db-4234-a133-a0947e067156',
+        '40847139-f8b3-46fa-863e-f0017124eb50',
+        '0f46dc74-fef2-4642-a422-a70ec3f38492',
+        'aac8fbf2-e80a-4904-a590-0e6bbfb931a4',
+        '9edf1d33-c0ca-4623-82ae-9e397aabe1c7',
+        '355e6d34-4299-436b-b9e4-74e2f43f2f3c',
+        '12f56874-2735-4a80-853c-48fda642223f' ] } }
+RES ONESIGNAL:  { id: '819b2acf-9d19-4b41-a890-d4533b3522c0',
+  recipients: 93,
+  external_id: null,
+  errors: 
+   { invalid_player_ids: 
+      [ 'c2069538-d77f-4ba6-b0b3-b0e9c5ab747d',
+        '09d4f787-739b-4997-94c1-bdc2149568b8',
+        '92e9d8f0-cf55-4515-896d-45f2f0e02ba7',
+        '2aaca987-e7b5-4f7e-85ff-ff99ee9c3c73',
+        '942117cf-0e0d-483f-94ac-c1ff75b0fc36',
+        '02036c88-e319-4fcc-84b9-00d1d9d7c252',
+        '063d05dc-48db-4234-a133-a0947e067156',
+        '40847139-f8b3-46fa-863e-f0017124eb50',
+        '0f46dc74-fef2-4642-a422-a70ec3f38492',
+        'aac8fbf2-e80a-4904-a590-0e6bbfb931a4',
+        '9edf1d33-c0ca-4623-82ae-9e397aabe1c7',
+        '355e6d34-4299-436b-b9e4-74e2f43f2f3c',
+        '12f56874-2735-4a80-853c-48fda642223f' ] } }
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (C:\Ariadna\AriAGRO-API\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (C:\Ariadna\AriAGRO-API\node_modules\mysql\lib\Connection.js:97:28)
+    at Socket.<anonymous> (C:\Ariadna\AriAGRO-API\node_modules\mysql\lib\Connection.js:502:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+AriAgroApi --------
+AriAgroApi VRS:  2.0.12
+AriAgroApi en puerto:  9902
+RES ONESIGNAL:  { id: 'eca158ac-64fa-411f-ae66-e00c382786ef',
+  recipients: 96,
+  external_id: null,
+  errors: 
+   { invalid_player_ids: 
+      [ 'c2069538-d77f-4ba6-b0b3-b0e9c5ab747d',
+        '09d4f787-739b-4997-94c1-bdc2149568b8',
+        '92e9d8f0-cf55-4515-896d-45f2f0e02ba7',
+        '2aaca987-e7b5-4f7e-85ff-ff99ee9c3c73',
+        '942117cf-0e0d-483f-94ac-c1ff75b0fc36',
+        '02036c88-e319-4fcc-84b9-00d1d9d7c252',
+        '063d05dc-48db-4234-a133-a0947e067156',
+        '40847139-f8b3-46fa-863e-f0017124eb50',
+        '0f46dc74-fef2-4642-a422-a70ec3f38492',
+        'aac8fbf2-e80a-4904-a590-0e6bbfb931a4',
+        '9edf1d33-c0ca-4623-82ae-9e397aabe1c7',
+        '355e6d34-4299-436b-b9e4-74e2f43f2f3c',
+        '12f56874-2735-4a80-853c-48fda642223f' ] } }
+RES ONESIGNAL:  { id: '69a2aa8e-d576-4e92-b22a-f602700c3c66',
+  recipients: 102,
+  external_id: null,
+  errors: 
+   { invalid_player_ids: 
+      [ 'c2069538-d77f-4ba6-b0b3-b0e9c5ab747d',
+        '09d4f787-739b-4997-94c1-bdc2149568b8',
+        '92e9d8f0-cf55-4515-896d-45f2f0e02ba7',
+        '2aaca987-e7b5-4f7e-85ff-ff99ee9c3c73',
+        '942117cf-0e0d-483f-94ac-c1ff75b0fc36',
+        '02036c88-e319-4fcc-84b9-00d1d9d7c252',
+        '063d05dc-48db-4234-a133-a0947e067156',
+        '40847139-f8b3-46fa-863e-f0017124eb50',
+        '0f46dc74-fef2-4642-a422-a70ec3f38492',
+        'aac8fbf2-e80a-4904-a590-0e6bbfb931a4',
+        '9edf1d33-c0ca-4623-82ae-9e397aabe1c7',
+        '12f56874-2735-4a80-853c-48fda642223f' ] } }
+RES ONESIGNAL:  { id: '06458b8b-bccd-45a3-990d-b6e617a4755d',
+  recipients: 102,
+  external_id: null,
+  errors: 
+   { invalid_player_ids: 
+      [ 'c2069538-d77f-4ba6-b0b3-b0e9c5ab747d',
+        '09d4f787-739b-4997-94c1-bdc2149568b8',
+        '92e9d8f0-cf55-4515-896d-45f2f0e02ba7',
+        '2aaca987-e7b5-4f7e-85ff-ff99ee9c3c73',
+        '942117cf-0e0d-483f-94ac-c1ff75b0fc36',
+        '02036c88-e319-4fcc-84b9-00d1d9d7c252',
+        '063d05dc-48db-4234-a133-a0947e067156',
+        '40847139-f8b3-46fa-863e-f0017124eb50',
+        '0f46dc74-fef2-4642-a422-a70ec3f38492',
+        'aac8fbf2-e80a-4904-a590-0e6bbfb931a4',
+        '9edf1d33-c0ca-4623-82ae-9e397aabe1c7',
+        '12f56874-2735-4a80-853c-48fda642223f',
+        'd3a7fe00-97c0-49c2-8459-5e8b018d096c' ] } }
+AriAgroApi --------
+AriAgroApi VRS:  2.0.12
+AriAgroApi en puerto:  9902
+RES ONESIGNAL:  { id: '276d8ef6-27c2-49d9-8e46-28be9b41c555',
+  recipients: 104,
+  external_id: null,
+  errors: 
+   { invalid_player_ids: 
+      [ 'c2069538-d77f-4ba6-b0b3-b0e9c5ab747d',
+        '09d4f787-739b-4997-94c1-bdc2149568b8',
+        '92e9d8f0-cf55-4515-896d-45f2f0e02ba7',
+        '2aaca987-e7b5-4f7e-85ff-ff99ee9c3c73',
+        '942117cf-0e0d-483f-94ac-c1ff75b0fc36',
+        '02036c88-e319-4fcc-84b9-00d1d9d7c252',
+        '224df7ee-d895-4e08-bd49-c4cc910c34d3',
+        '063d05dc-48db-4234-a133-a0947e067156',
+        '40847139-f8b3-46fa-863e-f0017124eb50',
+        '0f46dc74-fef2-4642-a422-a70ec3f38492',
+        'aac8fbf2-e80a-4904-a590-0e6bbfb931a4',
+        '12f56874-2735-4a80-853c-48fda642223f',
+        'd3a7fe00-97c0-49c2-8459-5e8b018d096c' ] } }
+RES ONESIGNAL:  { id: '9a0cd805-fbe2-40f1-9069-5d99d7c49f2c',
+  recipients: 103,
+  external_id: null,
+  errors: 
+   { invalid_player_ids: 
+      [ 'c2069538-d77f-4ba6-b0b3-b0e9c5ab747d',
+        '09d4f787-739b-4997-94c1-bdc2149568b8',
+        '92e9d8f0-cf55-4515-896d-45f2f0e02ba7',
+        '2aaca987-e7b5-4f7e-85ff-ff99ee9c3c73',
+        '942117cf-0e0d-483f-94ac-c1ff75b0fc36',
+        '02036c88-e319-4fcc-84b9-00d1d9d7c252',
+        '224df7ee-d895-4e08-bd49-c4cc910c34d3',
+        '063d05dc-48db-4234-a133-a0947e067156',
+        '40847139-f8b3-46fa-863e-f0017124eb50',
+        '0f46dc74-fef2-4642-a422-a70ec3f38492',
+        'aac8fbf2-e80a-4904-a590-0e6bbfb931a4',
+        '12f56874-2735-4a80-853c-48fda642223f',
+        'd3a7fe00-97c0-49c2-8459-5e8b018d096c',
+        'ba2768f3-d5b7-4909-922a-9d3234499674' ] } }
