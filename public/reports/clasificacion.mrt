@@ -163,6 +163,7 @@
               <ClientRectangle>10,4.8,5.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
+              <GrowToHeight>True</GrowToHeight>
               <Guid>87261bf25d5e43dbab5b85a1dbc4f2f1</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text6</Name>
@@ -786,10 +787,10 @@ entrada_agro.tipoentr == 5,"VENTA COMERCIO")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/19/2018 12:42:42 PM</ReportChanged>
+  <ReportChanged>1/25/2019 10:32:42 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile />
-  <ReportGuid>20c0508d98a14ac5a2477a3e4df1b3d4</ReportGuid>
+  <ReportGuid>0d5c143663be4ea7b4c68117e04af6a0</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
