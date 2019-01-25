@@ -115,9 +115,10 @@
             <Text4 Ref="10" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>12.4,3.8,4.6,0.6</ClientRectangle>
+              <ClientRectangle>12.4,3.8,5.4,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,9.75,Regular,Point,False,0</Font>
+              <GrowToHeight>True</GrowToHeight>
               <Margins>0,0,0,0</Margins>
               <Name>Text4</Name>
               <Page isRef="2" />
@@ -130,9 +131,10 @@
             <Text5 Ref="11" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>12.4,4.2,5.4,0.4</ClientRectangle>
+              <ClientRectangle>12.4,4.4,5.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,9.75,Regular,Point,False,0</Font>
+              <GrowToHeight>True</GrowToHeight>
               <Guid>33ad9783324b42eb8dbbd8fafa7be921</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text5</Name>
@@ -146,9 +148,10 @@
             <Text6 Ref="12" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>12.4,4.6,4.6,0.4</ClientRectangle>
+              <ClientRectangle>12.4,5,5.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,9.75,Regular,Point,False,0</Font>
+              <GrowToHeight>True</GrowToHeight>
               <Guid>87261bf25d5e43dbab5b85a1dbc4f2f1</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text6</Name>
@@ -187,7 +190,7 @@
             <Text38 Ref="15" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>13.6,3.4,1.2,0.4</ClientRectangle>
+              <ClientRectangle>13.6,3.4,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,9.75,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -922,10 +925,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/15/2018 9:21:53 AM</ReportChanged>
+  <ReportChanged>1/25/2019 10:42:34 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_castelduc.mrt</ReportFile>
-  <ReportGuid>a334fa7df2b04ed4bad6094a6233ad05</ReportGuid>
+  <ReportFile />
+  <ReportGuid>f91d775049894af7a3f2effe625bff3e</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
