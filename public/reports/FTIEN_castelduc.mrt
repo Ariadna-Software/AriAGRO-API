@@ -144,6 +144,7 @@
               <Parent isRef="3" />
               <Text>{tien_fact.codpobla}  {tien_fact.pobclien} ({tien_fact.proclien})</Text>
               <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text6>
             <Text36 Ref="12" type="Text" isKey="true">
@@ -1803,10 +1804,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>1/25/2019 11:05:04 AM</ReportChanged>
+  <ReportChanged>1/25/2019 11:06:44 AM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
-  <ReportFile />
-  <ReportGuid>7d96f6a950054732b33e154f8acc19f6</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FTIEN_castelduc.mrt</ReportFile>
+  <ReportGuid>d07975c511144735badef858357e640d</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
