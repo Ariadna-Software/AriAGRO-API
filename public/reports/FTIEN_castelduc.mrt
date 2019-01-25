@@ -101,7 +101,7 @@
             <Text4 Ref="9" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>12.4,2.4,4.6,0.6</ClientRectangle>
+              <ClientRectangle>12.4,2.4,5.4,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,9.75,Regular,Point,False,0</Font>
               <Guid>f63affe97dba4ec696f73dce89a82c71</Guid>
@@ -133,9 +133,10 @@
             <Text6 Ref="11" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>12.4,3.4,4.6,0.4</ClientRectangle>
+              <ClientRectangle>12.4,3.4,5.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,9.75,Regular,Point,False,0</Font>
+              <GrowToHeight>True</GrowToHeight>
               <Guid>ed11d36727b343439a8718770abd450b</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text6</Name>
@@ -232,7 +233,7 @@
             </Text16>
             <Text1 Ref="18" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>12.4,3.8,1.2,0.4</ClientRectangle>
+              <ClientRectangle>12.4,4,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -245,7 +246,7 @@
             </Text1>
             <Text8 Ref="19" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>13.6,3.8,1.6,0.4</ClientRectangle>
+              <ClientRectangle>13.6,4,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9.75,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -1802,10 +1803,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/19/2018 10:20:15 AM</ReportChanged>
+  <ReportChanged>1/25/2019 11:05:04 AM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
-  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FTIEN_castelduc.mrt</ReportFile>
-  <ReportGuid>e22cc6ec6837454196add574888fa432</ReportGuid>
+  <ReportFile />
+  <ReportGuid>7d96f6a950054732b33e154f8acc19f6</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
