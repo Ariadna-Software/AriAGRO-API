@@ -117,7 +117,7 @@
             <Text58 Ref="10" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>12.4,3.8,4.6,0.6</ClientRectangle>
+              <ClientRectangle>12.4,3.8,5.4,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,9.75,Regular,Point,False,0</Font>
               <Guid>dd5dd62f86a14a47b4dbb02b57bc5211</Guid>
@@ -133,9 +133,10 @@
             <Text64 Ref="11" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>12.4,4.2,5.4,0.4</ClientRectangle>
+              <ClientRectangle>12.4,4.4,5.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,9.75,Regular,Point,False,0</Font>
+              <GrowToHeight>True</GrowToHeight>
               <Guid>d7e491906ca74e818f968e2310ac5e48</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text64</Name>
@@ -149,7 +150,7 @@
             <Text65 Ref="12" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>12.4,4.6,4.6,0.4</ClientRectangle>
+              <ClientRectangle>12.4,5,5.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,9.75,Regular,Point,False,0</Font>
               <Guid>c559b480998f48419806d8cfa2d3d57d</Guid>
@@ -192,7 +193,7 @@
             <Text68 Ref="15" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>13.6,3.4,1.2,0.4</ClientRectangle>
+              <ClientRectangle>13.6,3.4,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,9.75,Regular,Point,False,0</Font>
               <Guid>434131c0ca1a4b8d856f2f6e34f0b5c4</Guid>
@@ -1141,10 +1142,10 @@ lineasBis.tipcalid1 == 1,"No comercial")}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>12/20/2018 9:37:26 AM</ReportChanged>
+  <ReportChanged>1/25/2019 10:48:05 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_castelduc.mrt</ReportFile>
-  <ReportGuid>04ca5f1d051a435b8a68b1de3e0a4196</ReportGuid>
+  <ReportGuid>d34602cc2c3648c2acb8d65f3c2871ef</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
