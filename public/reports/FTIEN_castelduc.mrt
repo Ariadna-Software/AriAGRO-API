@@ -353,6 +353,7 @@
         </PageFooterBand1>
         <GroupHeaderBand1 Ref="27" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
+          <CanShrink>True</CanShrink>
           <ClientRectangle>0,6.8,19,1.4</ClientRectangle>
           <Components isList="true" count="13">
             <Text12 Ref="28" type="Text" isKey="true">
@@ -664,6 +665,7 @@
         <DataBand1 Ref="48" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
+          <CanShrink>True</CanShrink>
           <ClientRectangle>0,10.8,19,1.2</ClientRectangle>
           <Components isList="true" count="13">
             <Text24 Ref="49" type="Text" isKey="true">
@@ -793,9 +795,8 @@
             <Text32 Ref="60" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.2,0.6,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="2">
+              <Conditions isList="true" count="1">
                 <value>tien_fact.numserie,EqualTo,zero,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
-                <value>tien_fact.fecvigen,EqualTo,zero,,String,Transparent,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
@@ -1805,10 +1806,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>2/7/2019 10:57:53 AM</ReportChanged>
+  <ReportChanged>2/7/2019 11:22:00 AM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FTIEN_castelduc.mrt</ReportFile>
-  <ReportGuid>f18b2da5ad7d4d63838352c6f9669772</ReportGuid>
+  <ReportGuid>acf86ddb1448451abe763e883510e587</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
