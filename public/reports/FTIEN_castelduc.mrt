@@ -1805,10 +1805,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>2/7/2019 10:38:14 AM</ReportChanged>
+  <ReportChanged>2/7/2019 10:42:21 AM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FTIEN_castelduc.mrt</ReportFile>
-  <ReportGuid>589edd42fa5d44419d55014a0a063870</ReportGuid>
+  <ReportGuid>52b7b17268374a56b768c7c48aa1fd3a</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
