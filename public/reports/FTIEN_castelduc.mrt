@@ -795,7 +795,7 @@
               <ClientRectangle>6.2,0.6,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
                 <value>tien_fact.numserie,EqualTo,zero,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
-                <value>tien_fact.fecvigen,EqualTo,zero,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+                <value>tien_fact.fecvigen,EqualTo,zero,,String,Transparent,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
@@ -1805,10 +1805,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>2/7/2019 10:29:56 AM</ReportChanged>
+  <ReportChanged>2/7/2019 10:38:14 AM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FTIEN_castelduc.mrt</ReportFile>
-  <ReportGuid>da6b9a106c38420f96f16a961374d08a</ReportGuid>
+  <ReportGuid>589edd42fa5d44419d55014a0a063870</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
