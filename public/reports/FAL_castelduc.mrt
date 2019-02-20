@@ -16,7 +16,7 @@
     <Page1 Ref="2" type="Page" isKey="true">
       <Border>None;Black;2;Solid;False;4;Black</Border>
       <Brush>Transparent</Brush>
-      <Components isList="true" count="10">
+      <Components isList="true" count="11">
         <PageHeaderBand1 Ref="3" type="PageHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,0.4,19,6.4</ClientRectangle>
@@ -666,7 +666,7 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
             </Text54>
             <Text56 Ref="50" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>13.4,0.2,3.2,0.4</ClientRectangle>
+              <ClientRectangle>13.6,0.2,3.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>1f473c1ffafb432cbde71f535d158331</Guid>
@@ -680,9 +680,10 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
             </Text56>
             <Text17 Ref="51" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>16.8,0.2,2,0.4</ClientRectangle>
+              <ClientRectangle>16.4,0.2,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text17</Name>
               <Page isRef="2" />
@@ -818,13 +819,62 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
           <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand5>
-        <HeaderBand2 Ref="61" type="HeaderBand" isKey="true">
+        <DataBand1 Ref="61" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,16.2,19,2</ClientRectangle>
-          <Components isList="true" count="8">
-            <Text30 Ref="62" type="Text" isKey="true">
+          <ClientRectangle>0,16.2,19,1</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text4 Ref="62" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.2,0.4,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9.75,Regular,Point,False,0</Font>
+              <Guid>1c31df02063d42359b353e8133a71793</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="2" />
+              <Parent isRef="61" />
+              <Text>{gastos.gasto}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="63" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, GroupSize</State>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text4>
+            <Text5 Ref="64" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.6,0.4,2.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="2" />
+              <Parent isRef="61" />
+              <Text>TOTAL GASTOS:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text5>
+          </Components>
+          <Conditions isList="true" count="1">
+            <value>gastos.gasto,EqualTo,_x0030_,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="2" />
+          <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <HeaderBand2 Ref="65" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,18,19,1.2</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text30 Ref="66" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>0.2,0.8,2.8,0.8</ClientRectangle>
+              <ClientRectangle>0.2,0.2,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>7b7ff23356064ea386dc82434dc0ca1e</Guid>
@@ -832,15 +882,15 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text30</Name>
               <Page isRef="2" />
-              <Parent isRef="61" />
+              <Parent isRef="65" />
               <Text>BASE IMP.(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text30>
-            <Text27 Ref="63" type="Text" isKey="true">
+            <Text27 Ref="67" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>2.8,0.8,2,0.8</ClientRectangle>
+              <ClientRectangle>2.8,0.2,2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>b5c2fe3893e34cf0b55bcc99d3959f7c</Guid>
@@ -848,15 +898,15 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text27</Name>
               <Page isRef="2" />
-              <Parent isRef="61" />
+              <Parent isRef="65" />
               <Text>% IVA</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text27>
-            <Text32 Ref="64" type="Text" isKey="true">
+            <Text32 Ref="68" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>4.8,0.8,2.8,0.8</ClientRectangle>
+              <ClientRectangle>4.8,0.2,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>7c28b203425040868d3af9e058e88fa0</Guid>
@@ -864,15 +914,15 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text32</Name>
               <Page isRef="2" />
-              <Parent isRef="61" />
+              <Parent isRef="65" />
               <Text>CUOTA IVA (€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text32>
-            <Text33 Ref="65" type="Text" isKey="true">
+            <Text33 Ref="69" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>7.4,0.8,3.2,0.8</ClientRectangle>
+              <ClientRectangle>7.4,0.2,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>a34cf0630c8a4539a14024736b0785c3</Guid>
@@ -880,15 +930,15 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text33</Name>
               <Page isRef="2" />
-              <Parent isRef="61" />
+              <Parent isRef="65" />
               <Text>BASE RETENCIÓN</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text33>
-            <Text34 Ref="66" type="Text" isKey="true">
+            <Text34 Ref="70" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>10.6,0.8,2.8,0.8</ClientRectangle>
+              <ClientRectangle>10.6,0.2,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>62ec237eeb094dc682afed9b2b28904a</Guid>
@@ -896,15 +946,15 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text34</Name>
               <Page isRef="2" />
-              <Parent isRef="61" />
+              <Parent isRef="65" />
               <Text>% RET</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text34>
-            <Text35 Ref="67" type="Text" isKey="true">
+            <Text35 Ref="71" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>13.2,0.8,2.8,0.8</ClientRectangle>
+              <ClientRectangle>13.2,0.2,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>17168ad0e5974222b7b1020458a290d5</Guid>
@@ -912,15 +962,15 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text35</Name>
               <Page isRef="2" />
-              <Parent isRef="61" />
+              <Parent isRef="65" />
               <Text>RETENCIÓN</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text35>
-            <Text28 Ref="68" type="Text" isKey="true">
+            <Text28 Ref="72" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>15.8,0.8,2.8,0.8</ClientRectangle>
+              <ClientRectangle>15.8,0.2,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>f00f4ae8621044d6a7c2ee30de3b95d2</Guid>
@@ -928,25 +978,12 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text28</Name>
               <Page isRef="2" />
-              <Parent isRef="61" />
+              <Parent isRef="65" />
               <Text>IMP. TOTAL (€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text28>
-            <Text4 Ref="69" type="Text" isKey="true">
-              <Brush>Transparent</Brush>
-              <ClientRectangle>0.8,0.2,2.4,0.4</ClientRectangle>
-              <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text4</Name>
-              <Page isRef="2" />
-              <Parent isRef="61" />
-              <Text>{gastos.gasto}</Text>
-              <TextBrush>Black</TextBrush>
-              <Type>Expression</Type>
-            </Text4>
           </Components>
           <Conditions isList="true" count="0" />
           <Name>HeaderBand2</Name>
@@ -954,12 +991,12 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
           <Parent isRef="2" />
           <PrintAtBottom>True</PrintAtBottom>
         </HeaderBand2>
-        <DataBand4 Ref="70" type="DataBand" isKey="true">
+        <DataBand4 Ref="73" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,19,19,1.2</ClientRectangle>
+          <ClientRectangle>0,20,19,1.2</ClientRectangle>
           <Components isList="true" count="7">
-            <Text29 Ref="71" type="Text" isKey="true">
+            <Text29 Ref="74" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.2,0,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -969,10 +1006,10 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text29</Name>
               <Page isRef="2" />
-              <Parent isRef="70" />
+              <Parent isRef="73" />
               <Text>{pie.baseimpo}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="72" type="NumberFormat" isKey="true">
+              <TextFormat Ref="75" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -981,7 +1018,7 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text29>
-            <Text48 Ref="73" type="Text" isKey="true">
+            <Text48 Ref="76" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.8,0,2.1,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -991,10 +1028,10 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text48</Name>
               <Page isRef="2" />
-              <Parent isRef="70" />
+              <Parent isRef="73" />
               <Text>{pie.porc_iva}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="74" type="NumberFormat" isKey="true">
+              <TextFormat Ref="77" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1003,7 +1040,7 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text48>
-            <Text49 Ref="75" type="Text" isKey="true">
+            <Text49 Ref="78" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.8,0,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1013,10 +1050,10 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text49</Name>
               <Page isRef="2" />
-              <Parent isRef="70" />
+              <Parent isRef="73" />
               <Text>{pie.imporiva}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="76" type="NumberFormat" isKey="true">
+              <TextFormat Ref="79" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1025,7 +1062,7 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text49>
-            <Text50 Ref="77" type="Text" isKey="true">
+            <Text50 Ref="80" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>7.4,0,3.5,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1035,10 +1072,10 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text50</Name>
               <Page isRef="2" />
-              <Parent isRef="70" />
+              <Parent isRef="73" />
               <Text>{pie.basereten}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="78" type="NumberFormat" isKey="true">
+              <TextFormat Ref="81" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1047,7 +1084,7 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text50>
-            <Text44 Ref="79" type="Text" isKey="true">
+            <Text44 Ref="82" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>10.8,0,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1057,10 +1094,10 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text44</Name>
               <Page isRef="2" />
-              <Parent isRef="70" />
+              <Parent isRef="73" />
               <Text>{pie.porc_ret}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="80" type="NumberFormat" isKey="true">
+              <TextFormat Ref="83" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1069,7 +1106,7 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text44>
-            <Text46 Ref="81" type="Text" isKey="true">
+            <Text46 Ref="84" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.4,0,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1079,10 +1116,10 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text46</Name>
               <Page isRef="2" />
-              <Parent isRef="70" />
+              <Parent isRef="73" />
               <Text>{pie.impreten}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="82" type="NumberFormat" isKey="true">
+              <TextFormat Ref="85" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1091,7 +1128,7 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text46>
-            <Text47 Ref="83" type="Text" isKey="true">
+            <Text47 Ref="86" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>16,0,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1101,10 +1138,10 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text47</Name>
               <Page isRef="2" />
-              <Parent isRef="70" />
+              <Parent isRef="73" />
               <Text>{pie.totalfac}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="84" type="NumberFormat" isKey="true">
+              <TextFormat Ref="87" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1124,7 +1161,7 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
           <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand4>
-        <RectanglePrimitive2 Ref="85" type="RectanglePrimitive" isKey="true">
+        <RectanglePrimitive2 Ref="88" type="RectanglePrimitive" isKey="true">
           <ClientRectangle>0.4,3.8,3.2,1.2</ClientRectangle>
           <Color>Black</Color>
           <Guid>af9c556917eb41519dcab940e781d12b</Guid>
@@ -1140,13 +1177,13 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
       <PageHeight>29.7</PageHeight>
       <PageWidth>21</PageWidth>
       <Report isRef="0" />
-      <Watermark Ref="86" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+      <Watermark Ref="89" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
     </Page1>
   </Pages>
-  <PrinterSettings Ref="87" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="90" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -1158,10 +1195,10 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>2/19/2019 1:34:47 PM</ReportChanged>
+  <ReportChanged>2/20/2019 10:01:23 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_castelduc.mrt</ReportFile>
-  <ReportGuid>a9251b1bfabd4a6591588a2cd9118aa6</ReportGuid>
+  <ReportGuid>f39435340ebb4f89ac95ea0fafd31003</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
