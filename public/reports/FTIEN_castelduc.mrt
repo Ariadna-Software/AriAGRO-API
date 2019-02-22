@@ -26,7 +26,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>0.4,0.6,7.8,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Tahoma,9,Bold,Point,False,0</Font>
+              <Font>Tahoma,11.25,Bold,Point,False,0</Font>
               <Guid>28e86f30adf044f5aef326d2227af85d</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text9</Name>
@@ -608,7 +608,7 @@ FECHA: {tien_fact.fecfactu}</Text>
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <CanShrink>True</CanShrink>
-          <ClientRectangle>0,9.4,19,1.4</ClientRectangle>
+          <ClientRectangle>0,9.4,19,1.6</ClientRectangle>
           <Components isList="true" count="13">
             <Text24 Ref="44" type="Text" isKey="true">
               <Brush>Transparent</Brush>
@@ -845,152 +845,153 @@ FECHA: {tien_fact.fecfactu}</Text>
           <Parent isRef="2" />
           <Sort isList="true" count="0" />
         </DataBand1>
-        <GroupHeaderBand2 Ref="62" type="GroupHeaderBand" isKey="true">
+        <GroupHeaderBand3 Ref="62" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,11.6,19,1.4</ClientRectangle>
+          <ClientRectangle>0,11.8,19,1.6</ClientRectangle>
           <Components isList="true" count="7">
-            <Text35 Ref="63" type="Text" isKey="true">
+            <Text3 Ref="63" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>0,0.4,2.4,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Tahoma,9.75,Bold,Point,False,0</Font>
-              <Guid>b47c827d92e44084bfb3c7cf1d9ace6f</Guid>
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>13f7483806534e9092821572fc97ca65</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text35</Name>
+              <Name>Text3</Name>
               <Page isRef="2" />
               <Parent isRef="62" />
               <Text>BRUTO(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
-            </Text35>
-            <Text37 Ref="64" type="Text" isKey="true">
+            </Text3>
+            <Text7 Ref="64" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>2.4,0.4,3.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Tahoma,9.75,Bold,Point,False,0</Font>
-              <Guid>95e8db7bd79d45e8a74be9465c7a5a42</Guid>
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>2ef1b0e5eae14d198feccbd984cb25e1</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text37</Name>
+              <Name>Text7</Name>
               <Page isRef="2" />
               <Parent isRef="62" />
               <Text>% DTO PP</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
-            </Text37>
-            <Text38 Ref="65" type="Text" isKey="true">
+            </Text7>
+            <Text36 Ref="65" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>5.6,0.4,3,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Tahoma,9.75,Bold,Point,False,0</Font>
-              <Guid>78a303475c3d40658ecaf17d5b76abaa</Guid>
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>663f81f9d0b045489e5964fd860a2d08</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text38</Name>
+              <Name>Text36</Name>
               <Page isRef="2" />
               <Parent isRef="62" />
               <Text>%DTO GRAL.</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
-            </Text38>
-            <Text41 Ref="66" type="Text" isKey="true">
+            </Text36>
+            <Text82 Ref="66" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>8.6,0.4,3,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Tahoma,9.75,Bold,Point,False,0</Font>
-              <Guid>5f4640acc7a3480a8084efcf26080c9d</Guid>
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>d4b9d7da5d75489facabb04c1b6bbd40</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text41</Name>
+              <Name>Text82</Name>
               <Page isRef="2" />
               <Parent isRef="62" />
               <Text>B.IMPON.(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
-            </Text41>
-            <Text42 Ref="67" type="Text" isKey="true">
+            </Text82>
+            <Text92 Ref="67" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>11.6,0.4,1.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Tahoma,9.75,Bold,Point,False,0</Font>
-              <Guid>836a853c00ce41c4b965a72b14740629</Guid>
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>cbd6229edf0043c094c443a89c44e9e6</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text42</Name>
+              <Name>Text92</Name>
               <Page isRef="2" />
               <Parent isRef="62" />
               <Text>%IVA</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
-            </Text42>
-            <Text43 Ref="68" type="Text" isKey="true">
+            </Text92>
+            <Text93 Ref="68" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>13.4,0.4,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Tahoma,9.75,Bold,Point,False,0</Font>
-              <Guid>920faaa2453b47bb951dbf1de93d8698</Guid>
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>e0df2b9b573042a4842843ed3c19e676</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text43</Name>
+              <Name>Text93</Name>
               <Page isRef="2" />
               <Parent isRef="62" />
               <Text>CUOTA IVA(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
-            </Text43>
-            <Text44 Ref="69" type="Text" isKey="true">
+            </Text93>
+            <Text94 Ref="69" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>16.2,0.4,2.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Tahoma,9.75,Bold,Point,False,0</Font>
-              <Guid>ecbbc638123b4df5800220dc23d56083</Guid>
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>760744b5ae9e4b59910f20ed24a540f6</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text44</Name>
+              <Name>Text94</Name>
               <Page isRef="2" />
               <Parent isRef="62" />
               <Text>IMP. TOTAL(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
-            </Text44>
+            </Text94>
           </Components>
           <Condition>{tien_fact.brutofac}</Condition>
           <Conditions isList="true" count="0" />
-          <Name>GroupHeaderBand2</Name>
+          <Guid>26eccf999175425db3623fb8076dc2e1</Guid>
+          <Name>GroupHeaderBand3</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
           <PrintAtBottom>True</PrintAtBottom>
-        </GroupHeaderBand2>
-        <DataBand3 Ref="70" type="DataBand" isKey="true">
+        </GroupHeaderBand3>
+        <DataBand4 Ref="70" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <CanShrink>True</CanShrink>
-          <ClientRectangle>0,13.8,19,1.4</ClientRectangle>
+          <ClientRectangle>0,14.2,19,2.2</ClientRectangle>
           <Components isList="true" count="25">
-            <Text46 Ref="71" type="Text" isKey="true">
+            <Text95 Ref="71" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.4,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>b28897cf6b9d4e97831662b4c7dc7b30</Guid>
+              <Guid>4e2bca30fdb844a1905898067c0e3543</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text46</Name>
+              <Name>Text95</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.brutofac}</Text>
@@ -1003,15 +1004,16 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text46>
-            <Text47 Ref="73" type="Text" isKey="true">
+            </Text95>
+            <Text96 Ref="73" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.6,0,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>1c700ace48cb49e98b12d0559f200691</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text47</Name>
+              <Name>Text96</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.baseimp1}</Text>
@@ -1024,18 +1026,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text47>
-            <Text48 Ref="75" type="Text" isKey="true">
+            </Text96>
+            <Text97 Ref="75" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.4,0.4,1.8,0.4</ClientRectangle>
+              <ClientRectangle>0.4,0.6,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>439dd9492c9047fb9f8186325d7032a0</Guid>
+              <Guid>2e76cc71a66b442ea75a84518df53d2f</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text48</Name>
+              <Name>Text97</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.brutofac}</Text>
@@ -1048,18 +1050,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text48>
-            <Text49 Ref="77" type="Text" isKey="true">
+            </Text97>
+            <Text98 Ref="77" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>8.6,0.4,2.8,0.4</ClientRectangle>
+              <ClientRectangle>8.6,0.6,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>15a6d1ca26d847d49b79386e547d9d7c</Guid>
+              <Guid>65bf12a187d64607b655bc5b8d5e3fc0</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text49</Name>
+              <Name>Text98</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.baseimp2}</Text>
@@ -1072,17 +1074,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text49>
-            <Text50 Ref="79" type="Text" isKey="true">
+            </Text98>
+            <Text99 Ref="79" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.dtoppago,EqualTo,_x0030_,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>822b3a59fc6849318bdb6b09841600b1</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text50</Name>
+              <Name>Text99</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.dtoppago}</Text>
@@ -1095,18 +1098,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text50>
-            <Text51 Ref="81" type="Text" isKey="true">
+            </Text99>
+            <Text100 Ref="81" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.dtoppago,EqualTo,_x0030_,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>2df8079b20d444eabb51829353488e95</Guid>
+              <Guid>d3d58fc301e941d1b47c9111e3cfef1a</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text51</Name>
+              <Name>Text100</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.impdtopp}</Text>
@@ -1119,18 +1122,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text51>
-            <Text52 Ref="83" type="Text" isKey="true">
+            </Text100>
+            <Text101 Ref="83" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,0,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.dtognral,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>839b5f5ea12a4d31a76deeda0aae1961</Guid>
+              <Guid>3fb801da96d244648916974eda24d3e9</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text52</Name>
+              <Name>Text101</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.dtognral}</Text>
@@ -1143,18 +1146,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text52>
-            <Text53 Ref="85" type="Text" isKey="true">
+            </Text101>
+            <Text102 Ref="85" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.dtognral,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>4b3d55ec21984ccd8fd97d1fc89c52e9</Guid>
+              <Guid>927f13aa6d9c42059ef83c51037ccee2</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text53</Name>
+              <Name>Text102</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.impdtogr}</Text>
@@ -1167,15 +1170,16 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text53>
-            <Text54 Ref="87" type="Text" isKey="true">
+            </Text102>
+            <Text103 Ref="87" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.6,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>8870841796ff43c8b2e6284f8a7d4a85</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text54</Name>
+              <Name>Text103</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.porciva1}</Text>
@@ -1188,18 +1192,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text54>
-            <Text55 Ref="89" type="Text" isKey="true">
+            </Text103>
+            <Text104 Ref="89" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>11.6,0.4,1.6,0.4</ClientRectangle>
+              <ClientRectangle>11.6,0.6,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>c826ca19ac3344e0b0f38e145a2dbf69</Guid>
+              <Guid>c2dd2d65b70048eb86bc3b25e4ae8d20</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text55</Name>
+              <Name>Text104</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.porciva2}</Text>
@@ -1212,15 +1216,16 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text55>
-            <Text56 Ref="91" type="Text" isKey="true">
+            </Text104>
+            <Text105 Ref="91" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.2,0,3,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>9a914e9cea0c4273bfd4986430c2233e</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text56</Name>
+              <Name>Text105</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.imporiv1}</Text>
@@ -1233,18 +1238,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text56>
-            <Text57 Ref="93" type="Text" isKey="true">
+            </Text105>
+            <Text106 Ref="93" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>13.2,0.4,3,0.4</ClientRectangle>
+              <ClientRectangle>13.2,0.6,3,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>08fbc762cb52425287a433dbeeb9d70f</Guid>
+              <Guid>156b165738804cafbc77338a3690c12e</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text57</Name>
+              <Name>Text106</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.imporiv2}</Text>
@@ -1257,15 +1262,16 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text57>
-            <Text58 Ref="95" type="Text" isKey="true">
+            </Text106>
+            <Text107 Ref="95" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>16.4,0,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>c72537888ddf4e2ba9f6a8a7485fbbaa</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text58</Name>
+              <Name>Text107</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.totalfac}</Text>
@@ -1278,19 +1284,19 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text58>
-            <Text59 Ref="97" type="Text" isKey="true">
+            </Text107>
+            <Text108 Ref="97" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>2.4,0.4,1.2,0.4</ClientRectangle>
+              <ClientRectangle>2.4,0.6,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
                 <value>tien_fact.dtoppago,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>b01ffe4fb285443b914ed65fc74f34da</Guid>
+              <Guid>0342a9a818524575aec8004bed7c5042</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text59</Name>
+              <Name>Text108</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.dtoppago}</Text>
@@ -1303,19 +1309,19 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text59>
-            <Text60 Ref="99" type="Text" isKey="true">
+            </Text108>
+            <Text109 Ref="99" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>3.6,0.4,1.8,0.4</ClientRectangle>
+              <ClientRectangle>3.6,0.6,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
                 <value>tien_fact.dtoppago,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>9d9e4295becd4f569cfc2bccc0f52d01</Guid>
+              <Guid>94623381de0e416997889b8b0939858f</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text60</Name>
+              <Name>Text109</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.impdtopp}</Text>
@@ -1328,19 +1334,19 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text60>
-            <Text61 Ref="101" type="Text" isKey="true">
+            </Text109>
+            <Text110 Ref="101" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>5.6,0.4,1.2,0.4</ClientRectangle>
+              <ClientRectangle>5.6,0.6,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
                 <value>tien_fact.dtognral,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>176cf7688814410584980b8c51c990bf</Guid>
+              <Guid>2a75a723ccc84baeb79709169ec8f352</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text61</Name>
+              <Name>Text110</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.dtognral}</Text>
@@ -1353,19 +1359,19 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text61>
-            <Text62 Ref="103" type="Text" isKey="true">
+            </Text110>
+            <Text111 Ref="103" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>6.8,0.4,1.8,0.4</ClientRectangle>
+              <ClientRectangle>6.8,0.6,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
                 <value>tien_fact.dtognral,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>a785b92a76ad4c2e87204d7258b0a18c</Guid>
+              <Guid>af32cdb89ebb4febb11ad2c44a78fec9</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text62</Name>
+              <Name>Text111</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.impdtogr}</Text>
@@ -1378,18 +1384,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text62>
-            <Text63 Ref="105" type="Text" isKey="true">
+            </Text111>
+            <Text112 Ref="105" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.4,0.8,1.8,0.4</ClientRectangle>
+              <ClientRectangle>0.4,1.2,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.porciva3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>0fef061288154f688471be332b95adf9</Guid>
+              <Guid>8e95e8cdd74f44149c5dae346318f098</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text63</Name>
+              <Name>Text112</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.brutofac}</Text>
@@ -1402,18 +1408,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text63>
-            <Text64 Ref="107" type="Text" isKey="true">
+            </Text112>
+            <Text113 Ref="107" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>8.6,0.8,2.8,0.4</ClientRectangle>
+              <ClientRectangle>8.6,1.2,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.porciva3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>d08d87c9e447464d84d2ba7dcf368bea</Guid>
+              <Guid>eea7cabbfc32488cb7af257b8485afab</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text64</Name>
+              <Name>Text113</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.baseimp3}</Text>
@@ -1426,18 +1432,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text64>
-            <Text65 Ref="109" type="Text" isKey="true">
+            </Text113>
+            <Text114 Ref="109" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>11.6,0.8,1.6,0.4</ClientRectangle>
+              <ClientRectangle>11.6,1.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.porciva3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>3c2ceb93468649af950145425752a537</Guid>
+              <Guid>287be925c117407d8146927c4f5cc18e</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text65</Name>
+              <Name>Text114</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.porciva3}</Text>
@@ -1450,18 +1456,18 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text65>
-            <Text66 Ref="111" type="Text" isKey="true">
+            </Text114>
+            <Text115 Ref="111" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>13.2,0.8,3,0.4</ClientRectangle>
+              <ClientRectangle>13.2,1.2,3,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
                 <value>tien_fact.porciva3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>630511d678fe43949817f6c0a839ade3</Guid>
+              <Guid>db9044e711ec46ae86cc9a43dda08e7d</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text66</Name>
+              <Name>Text115</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.imporiv3}</Text>
@@ -1474,19 +1480,19 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text66>
-            <Text67 Ref="113" type="Text" isKey="true">
+            </Text115>
+            <Text116 Ref="113" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>2.4,0.8,1.2,0.4</ClientRectangle>
+              <ClientRectangle>2.4,1.2,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
                 <value>tien_fact.dtoppago,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>09b51889348b41769944113127647b01</Guid>
+              <Guid>dcd69866685341e9a999028e670a5596</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text67</Name>
+              <Name>Text116</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.dtoppago}</Text>
@@ -1499,19 +1505,19 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text67>
-            <Text68 Ref="115" type="Text" isKey="true">
+            </Text116>
+            <Text117 Ref="115" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>3.6,0.8,1.8,0.4</ClientRectangle>
+              <ClientRectangle>3.6,1.2,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
                 <value>tien_fact.dtoppago,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>f9ac8616852e436d9ba5a020f9d6b29c</Guid>
+              <Guid>9b17ec5a713d4c24a677afff794334fb</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text68</Name>
+              <Name>Text117</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.impdtopp}</Text>
@@ -1524,19 +1530,19 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text68>
-            <Text69 Ref="117" type="Text" isKey="true">
+            </Text117>
+            <Text118 Ref="117" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>5.6,0.8,1.2,0.4</ClientRectangle>
+              <ClientRectangle>5.6,1.2,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
                 <value>tien_fact.dtognral,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>f526db80c0c64c04be4091c789cacc29</Guid>
+              <Guid>8cf424006734440cbfbc522d1c568af4</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text69</Name>
+              <Name>Text118</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.dtognral}</Text>
@@ -1549,19 +1555,19 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text69>
-            <Text70 Ref="119" type="Text" isKey="true">
+            </Text118>
+            <Text119 Ref="119" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>6.8,0.8,1.8,0.4</ClientRectangle>
+              <ClientRectangle>6.8,1.2,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
                 <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
                 <value>tien_fact.dtognral,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
               </Conditions>
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>acd249139cce4453b6b9bda3095d4bb3</Guid>
+              <Guid>09d74ef6d05044f3ae61927211e0d6a4</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
-              <Name>Text70</Name>
+              <Name>Text119</Name>
               <Page isRef="2" />
               <Parent isRef="70" />
               <Text>{tien_fact.impdtogr}</Text>
@@ -1574,127 +1580,137 @@ FECHA: {tien_fact.fecfactu}</Text>
                 <UseGroupSeparator>False</UseGroupSeparator>
               </TextFormat>
               <Type>Expression</Type>
-            </Text70>
+            </Text119>
           </Components>
           <Conditions isList="true" count="0" />
           <DataRelationName isNull="true" />
           <Filters isList="true" count="0" />
-          <Name>DataBand3</Name>
+          <Guid>ede481a176254f0199e7ac5de96b7c76</Guid>
+          <Name>DataBand4</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
           <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
-        </DataBand3>
-        <GroupFooterBand1 Ref="121" type="GroupFooterBand" isKey="true">
+        </DataBand4>
+        <GroupFooterBand2 Ref="121" type="GroupFooterBand" isKey="true">
           <Border>All;Black;1;Solid;False;4;Black</Border>
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,16,19,0.8</ClientRectangle>
+          <ClientRectangle>0,17.2,19,0.8</ClientRectangle>
           <Components isList="true" count="3">
-            <Text78 Ref="122" type="Text" isKey="true">
+            <Text120 Ref="122" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.8,0.2,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>db952b9ed315436eaa7b9f51f02bb082</Guid>
               <Margins>0,0,0,0</Margins>
-              <Name>Text78</Name>
+              <Name>Text120</Name>
               <Page isRef="2" />
               <Parent isRef="121" />
               <Text>FORMA DE PAGO: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
-            </Text78>
-            <Text79 Ref="123" type="Text" isKey="true">
+            </Text120>
+            <Text121 Ref="123" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.2,0.2,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>d7ec40d1833c4a2d8bcb319396927159</Guid>
+              <Guid>ba025a8527174e8f806fc602bc803c55</Guid>
               <Margins>0,0,0,0</Margins>
-              <Name>Text79</Name>
+              <Name>Text121</Name>
               <Page isRef="2" />
               <Parent isRef="121" />
               <Text>{tien_fact.nomforpa}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
-            </Text79>
-            <Text90 Ref="124" type="Text" isKey="true">
+            </Text121>
+            <Text122 Ref="124" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.4,0.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>7f53699e48e241fcb894960cf526bf78</Guid>
               <Margins>0,0,0,0</Margins>
-              <Name>Text90</Name>
+              <Name>Text122</Name>
               <Page isRef="2" />
               <Parent isRef="121" />
               <Text>{tien_fact.codforpa}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
-            </Text90>
+            </Text122>
           </Components>
           <Conditions isList="true" count="0" />
-          <Name>GroupFooterBand1</Name>
+          <Guid>933f7dda834c4d30b2d98fd9932d374f</Guid>
+          <Name>GroupFooterBand2</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
-        </GroupFooterBand1>
-        <HeaderBand2 Ref="125" type="HeaderBand" isKey="true">
+          <PrintAtBottom>True</PrintAtBottom>
+        </GroupFooterBand2>
+        <HeaderBand3 Ref="125" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,17.6,19,0.4</ClientRectangle>
+          <ClientRectangle>0,18.8,19,0.6</ClientRectangle>
           <Components isList="true" count="1">
-            <Text81 Ref="126" type="Text" isKey="true">
+            <Text124 Ref="126" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>1,0,3,0.4</ClientRectangle>
+              <ClientRectangle>1,0.2,3,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>7d7e333b91ed4c2f89628cd38f8a2650</Guid>
               <Margins>0,0,0,0</Margins>
-              <Name>Text81</Name>
+              <Name>Text124</Name>
               <Page isRef="2" />
               <Parent isRef="125" />
               <Text>VENCIMIENTOS:</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
-            </Text81>
+            </Text124>
           </Components>
           <Conditions isList="true" count="0" />
-          <Name>HeaderBand2</Name>
+          <Guid>19c4fb188ea241368fa683805d5effaf</Guid>
+          <Name>HeaderBand3</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
-        </HeaderBand2>
-        <DataBand2 Ref="127" type="DataBand" isKey="true">
+          <PrintAtBottom>True</PrintAtBottom>
+        </HeaderBand3>
+        <DataBand5 Ref="127" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,18.8,19,0.6</ClientRectangle>
-          <ColumnGaps>2</ColumnGaps>
-          <Columns>5</Columns>
+          <ClientRectangle>0,20.2,19,0.6</ClientRectangle>
           <Components isList="true" count="2">
-            <Text80 Ref="128" type="Text" isKey="true">
+            <Text123 Ref="128" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>3.4,0,1.6,0.4</ClientRectangle>
+              <ClientRectangle>4.2,0,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>9fc9081f3ae440c496deb5afb071e77b</Guid>
               <Margins>0,0,0,0</Margins>
-              <Name>Text80</Name>
+              <Name>Text123</Name>
               <Page isRef="2" />
               <Parent isRef="127" />
               <Text>{venci.fecevenc}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
-            </Text80>
+            </Text123>
             <Text2 Ref="129" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>5.4,0,2.8,0.4</ClientRectangle>
+              <ClientRectangle>7.6,0,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>Arial,8</Font>
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>2d822276ccf54c779b03723b64d118f4</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text2</Name>
               <Page isRef="2" />
               <Parent isRef="127" />
               <Text>{venci.impefect}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="130" type="NumberFormat" isKey="true">
+              <TextFormat Ref="130" type="CurrencyFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
-                <NegativePattern>1</NegativePattern>
-                <State>DecimalDigits, DecimalSeparator, GroupSeparator, GroupSize, NegativePattern</State>
+                <NegativePattern>8</NegativePattern>
+                <PositivePattern>3</PositivePattern>
+                <State>DecimalDigits, DecimalSeparator, GroupSeparator, PositivePattern, NegativePattern, CurrencySymbol</State>
+                <Symbol>€</Symbol>
               </TextFormat>
               <Type>Expression</Type>
             </Text2>
@@ -1703,11 +1719,13 @@ FECHA: {tien_fact.fecfactu}</Text>
           <DataRelationName isNull="true" />
           <DataSourceName>venci</DataSourceName>
           <Filters isList="true" count="0" />
-          <Name>DataBand2</Name>
+          <Guid>f6f77e3414c34a7cb06a5612683f40bb</Guid>
+          <Name>DataBand5</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
+          <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
-        </DataBand2>
+        </DataBand5>
       </Components>
       <Conditions isList="true" count="0" />
       <Guid>1a00bf0cde334717b4cf4269dfcb0acb</Guid>
@@ -1734,10 +1752,10 @@ FECHA: {tien_fact.fecfactu}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>2/21/2019 1:38:35 PM</ReportChanged>
+  <ReportChanged>2/22/2019 10:29:54 AM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FTIEN_castelduc.mrt</ReportFile>
-  <ReportGuid>3d0c76ace25f4da384e5169bcf1baa00</ReportGuid>
+  <ReportGuid>4d47592121b94e6f9deac9cb58104f16</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
