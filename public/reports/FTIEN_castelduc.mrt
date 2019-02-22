@@ -626,9 +626,10 @@ FECHA: {tien_fact.fecfactu}</Text>
             <Text25 Ref="45" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>3.4,0.2,5.6,0.4</ClientRectangle>
+              <ClientRectangle>3.4,0.2,6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <GrowToHeight>True</GrowToHeight>
               <Margins>0,0,0,0</Margins>
               <Name>Text25</Name>
               <Page isRef="2" />
@@ -1752,10 +1753,10 @@ FECHA: {tien_fact.fecfactu}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>2/22/2019 10:29:54 AM</ReportChanged>
+  <ReportChanged>2/22/2019 10:36:59 AM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FTIEN_castelduc.mrt</ReportFile>
-  <ReportGuid>4d47592121b94e6f9deac9cb58104f16</ReportGuid>
+  <ReportGuid>7ab0e2c95edd405ba85287cd225fbda3</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
