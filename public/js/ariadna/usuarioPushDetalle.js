@@ -56,6 +56,19 @@ function initForm() {
         // se trata de un alta ponemos el id a cero para indicarlo.
         vm.usuarioPushId(0);
     }
+
+    // autosalto en IBAN
+    $(function () {
+        $(".ibans").keyup(function () {
+            if (this.value.length == this.maxLength) {
+                var r = $(this).attr('id').substr(0, 7);
+                var n = $(this).attr('id').substr(7);
+                var n1 = n * 1 + 1;
+                var r2 = r + n1;
+                $("#" + r2).focus();
+            }
+        });
+    });
 }
 
 function admData() {
@@ -79,6 +92,12 @@ function admData() {
     self.telefono1 = ko.observable();
     self.telefono2 = ko.observable();
     self.iban = ko.observable();
+    self.iban1 = ko.observable();
+    self.iban2 = ko.observable();
+    self.iban3 = ko.observable();
+    self.iban4 = ko.observable();
+    self.iban5 = ko.observable();
+    self.iban6 = ko.observable();
     self.soloMensajes = ko.observable();
     self.esTrabajador = ko.observable();
     self.tratamientosId = ko.observable();
@@ -107,6 +126,16 @@ function loadData(data) {
     vm.soloMensajes(data.soloMensajes);
     vm.esTrabajador(data.esTrabajador);
     vm.tratamientosId(data.tratamientosId);
+
+    // split iban
+    if (vm.iban()) {
+        var ibanl = vm.iban().match(/.{1,4}/g);
+        var i = 0;
+        ibanl.forEach(function (ibn) {
+            i++;
+            vm['iban' + i](ibn);
+        });
+    }
 }
 
 function datosOK() {
@@ -159,6 +188,34 @@ function datosOK() {
             error.insertAfter(element.parent());
         }
     });
+     // mas controles
+    // iban
+    if(vm.iban1() == undefined) {
+        vm.iban1("");
+    }
+    if(vm.iban2() == undefined) {
+        vm.iban2("");
+    }
+    if(vm.iban3() == undefined) {
+        vm.iban3("");
+    }
+    if(vm.iban4() == undefined) {
+        vm.iban4("");
+    }
+    if(vm.iban5() == undefined) {
+        vm.iban5("");
+    }
+    if(vm.iban6() == undefined) {
+        vm.iban6("");
+    }
+    vm.iban(vm.iban1() + vm.iban2() + vm.iban3() + vm.iban4() + vm.iban5() + vm.iban6());
+    if (vm.iban() && vm.iban() != "") {
+        var IBAN = vm.iban();
+        if (IBAN.length < 24) {
+            mostrarMensajeSmart("IBAN incorrecto");
+            return false;
+        }
+    }
     var opciones = $("#frmUsuarioPush").validate().settings;
     return $('#frmUsuarioPush').valid();
 }
