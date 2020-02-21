@@ -74,6 +74,11 @@ function initForm() {
             // Leemos los parámetros para inicializar AWS
             var parametro = data[0];
             bucket = parametro.bucket;
+            if (!bucket) {
+                alert('El servicio de recursos no está disponible. Póngase en contacto con Ariadna Software si desea activarlo');
+                var url = "index.html";
+                window.open(url, '_self');                
+            }            
             bucket_folder = parametro.bucket_folder;
             identity_pool = parametro.identity_pool;
             AWS.config.update({
