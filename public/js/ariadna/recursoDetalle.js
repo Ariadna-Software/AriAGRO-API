@@ -91,6 +91,9 @@ function datosOK() {
         rules: {
             txtNombre: {
                 required: true
+            },
+            txtUrl: {
+                required: true
             }
         },
         // Messages for form validation
@@ -166,7 +169,6 @@ function salir() {
 
 function subir() {
     var mf = function() {
-        debugger;
         var files = document.getElementById("fileupload").files;
         if (!files.length) {
             alert('Debe escoger seleccionar un archivo para subirlo al repositorio');
