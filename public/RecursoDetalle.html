@@ -204,7 +204,7 @@
             <!-- breadcrumb -->
             <ol class="breadcrumb">
                 <li>Inicio</li>
-                <li>Administracion</li>
+                <li>Gestión</li>
                 <li>Recursos</li>
                 <li>Detalle recurso</li>
             </ol>
@@ -230,7 +230,7 @@
                     <h1 class="page-title txt-color-blueDark">
 
                             <!-- PAGE HEADER -->
-                            <i class="fa-fw fa fa-mortar-board"></i>
+                            <i class="fa-fw fa fa-cloud"></i>
                             Detalle recurso <a href="#" title="Ayuda"><i class="fa fa-question"></i></a>
                         </h1>
                 </div>
@@ -297,48 +297,26 @@
                                 <!-- widget content -->
                                 <div class="widget-body">
                                     <!-- this is what the user will see -->
-                                    <form id="frmAdministrador" class="smart-form">
+                                    <form id="frmRecurso" class="smart-form">
                                         <header>
                                             Datos del recurso.
                                         </header>
                                         <fieldset>
                                             <div class="row">
-                                                <section class="col col-md-6">
+                                                <section class="col col-md-12">
                                                     <label class="label">Nombre</label>
                                                     <label class="input">
                                                         <input id="txtNombre" name="txtNombre" type="text" data-bind="value: nombre" />
                                                     </label>
                                                 </section>
-                                                <section class="col col-md-6">
-                                                    <label class="label">Login</label>
-                                                    <label class="input">
-                                                        <input id="txtLogin" name="txtLogin" type="text" data-bind="value: login" />
-                                                    </label>
-                                                </section>
                                             </div>
                                             <div class="row">
-                                                <section class="col col-md-6">
-                                                    <label class="label">Contraseña</label>
+                                                <section class="col col-md-12">
+                                                    <label class="label">Url</label>
                                                     <label class="input">
-                                                        <input id="txtPassword1" name="txtPassword1" type="password" />
+                                                        <input id="txtUrl" name="txtUrl" type="text" data-bind="value: url" />
                                                     </label>
-                                                </section>
-                                                <section class="col col-md-6">
-                                                    <label class="label">Repita contraseña</label>
-                                                    <label class="input">
-                                                        <input id="txtPassword2" name="txtPassword2" type="password" />
-                                                    </label>
-                                                </section>
-                                            </div>
-                                            <div class="row">
-                                                <section class="col col-md-6">
-                                                    <label class="label">Correo electrónico</label>
-                                                    <label class="input">
-                                                        <input id="txtEmail" name="txtEmail" type="email" data-bind="value: email" />
-                                                    </label>
-                                                </section>
-                                                <section class="col col-md-6">
-                                                </section>
+                                                </section>                                                
                                             </div>
                                         </fieldset>
                                         <fieldset>
@@ -444,7 +422,7 @@
     <!-- PAGE RELATED PLUGIN(S) 
         <script src="..."></script>-->
     <script src="myconfig.js"></script>
-    <script src="js/ariadna/administradorDetalle.js"></script>
+    <script src="js/ariadna/recursoDetalle.js"></script>
     <script src="js/ariadna/comun.js"></script>
     <!-- PAGE RELATED PLUGIN(S) -->
     <script src="js/plugin/datatables/jquery.dataTables.min.js"></script>

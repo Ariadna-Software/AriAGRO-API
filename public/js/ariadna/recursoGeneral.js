@@ -1,5 +1,5 @@
 ﻿/*-------------------------------------------------------------------------- 
-administradorGeneral.js
+recursoGeneral.js
 Funciones js par la página AdministradorGeneral.html
 
 ---------------------------------------------------------------------------*/
@@ -8,8 +8,8 @@ var responsiveHelper_datatable_fixed_column = undefined;
 var responsiveHelper_datatable_col_reorder = undefined;
 var responsiveHelper_datatable_tabletools = undefined;
 
-var dataAdministradores;
-var administradorId;
+var dataRecursos;
+var recursoId;
 
 var breakpointDefinition = {
     tablet: 1024,
@@ -23,52 +23,52 @@ function initForm() {
     pageSetUp();
     getVersionFooter();
     //
-    $('#btnBuscar').click(buscarAdministradores());
-    $('#btnAlta').click(crearAdministrador());
+    $('#btnBuscar').click(buscarRecursos());
+    $('#btnAlta').click(crearRecurso());
     $('#frmBuscar').submit(function () {
         return false
     });
     //$('#txtBuscar').keypress(function (e) {
     //    if (e.keyCode == 13)
-    //        buscarAdministradores();
+    //        buscarRecursos();
     //});
     //
-    initTablaAdministradores();
+    initTablaRecursos();
     // comprobamos parámetros
-    administradorId = gup('AdministradorId');
-    if (administradorId !== '') {
+    recursoId = gup('RecursoId');
+    if (recursoId !== '') {
         // cargar la tabla con un único valor que es el que corresponde.
         var data = {
-            id: administradorId
+            id: recursoId
         }
         // hay que buscar ese elemento en concreto
         $.ajax({
             type: "GET",
-            url: myconfig.apiUrl + "/api/administradores/" + administradorId,
+            url: myconfig.apiUrl + "/api/recursos/" + recursoId,
             dataType: "json",
             contentType: "application/json",
             data: JSON.stringify(data),
             success: function (data, status) {
                 // hay que mostrarlo en la zona de datos
                 var data2 = [data];
-                loadTablaAdministradores(data2);
+                loadTablaRecursos(data2);
             },
             error: errorAjax
         });
     }else{
        $('#txtBuscar').val('*');
-       buscarAdministradores()();
+       buscarRecursos()();
        $('#txtBuscar').val('');
     }
 }
 
-function initTablaAdministradores() {
-    tablaCarro = $('#dt_administrador').dataTable({
+function initTablaRecursos() {
+    tablaCarro = $('#dt_recurso').dataTable({
         autoWidth: true,
         preDrawCallback: function () {
             // Initialize the responsive datatables helper once.
             if (!responsiveHelper_dt_basic) {
-                responsiveHelper_dt_basic = new ResponsiveDatatablesHelper($('#dt_administrador'), breakpointDefinition);
+                responsiveHelper_dt_basic = new ResponsiveDatatablesHelper($('#dt_recurso'), breakpointDefinition);
             }
         },
         rowCallback: function (nRow) {
@@ -97,18 +97,16 @@ function initTablaAdministradores() {
                 sortDescending: ": Activar para ordenar la columna de manera descendente"
             }
         },
-        data: dataAdministradores,
+        data: dataRecursos,
         columns: [{
             data: "nombre"
+        },{
+            data: "url"
         }, {
-            data: "login"
-        }, {
-            data: "email"
-        }, {
-            data: "administradorId",
+            data: "recursoId",
             render: function (data, type, row) {
-                var bt1 = "<button class='btn btn-circle btn-danger btn-lg' onclick='deleteAdministrador(" + data + ");' title='Eliminar registro'> <i class='fa fa-trash-o fa-fw'></i> </button>";
-                var bt2 = "<button class='btn btn-circle btn-success btn-lg' onclick='editAdministrador(" + data + ");' title='Editar registro'> <i class='fa fa-edit fa-fw'></i> </button>";
+                var bt1 = "<button class='btn btn-circle btn-danger btn-lg' onclick='deleteRecurso(" + data + ");' title='Eliminar registro'> <i class='fa fa-trash-o fa-fw'></i> </button>";
+                var bt2 = "<button class='btn btn-circle btn-success btn-lg' onclick='editRecurso(" + data + ");' title='Editar registro'> <i class='fa fa-edit fa-fw'></i> </button>";
                 var html = "<div class='pull-right'>" + bt1 + " " + bt2 + "</div>";
                 return html;
             }
@@ -136,20 +134,20 @@ function datosOK() {
     return $('#frmBuscar').valid();
 }
 
-function loadTablaAdministradores(data) {
-    var dt = $('#dt_administrador').dataTable();
+function loadTablaRecursos(data) {
+    var dt = $('#dt_recurso').dataTable();
     if (data !== null && data.length === 0) {
         mostrarMensajeSmart('No se han encontrado registros');
-        $("#tbAdministrador").hide();
+        $("#tbRecurso").hide();
     } else {
         dt.fnClearTable();
         dt.fnAddData(data);
         dt.fnDraw();
-        $("#tbAdministrador").show();
+        $("#tbRecurso").show();
     }
 }
 
-function buscarAdministradores(result) {
+function buscarRecursos(result) {
     var mf = function () {
         if(result) {
             $('#txtBuscar').val('*');
@@ -165,12 +163,12 @@ function buscarAdministradores(result) {
         // enviar la consulta por la red (AJAX)
         $.ajax({
             type: "GET",
-            url: myconfig.apiUrl + "/api/administradores/?nombre=" + aBuscar,
+            url: myconfig.apiUrl + "/api/recursos/?nombre=" + aBuscar,
             dataType: "json",
             contentType: "application/json",
             success: function (data, status) {
                 // hay que mostrarlo en la zona de datos
-                loadTablaAdministradores(data);
+                loadTablaRecursos(data);
             },
             error: errorAjax
         });
@@ -178,15 +176,15 @@ function buscarAdministradores(result) {
     return mf;
 }
 
-function crearAdministrador() {
+function crearRecurso() {
     var mf = function () {
-        var url = "AdministradorDetalle.html?AdministradorId=0";
+        var url = "RecursoDetalle.html?RecursoId=0";
         window.open(url, '_self');
     };
     return mf;
 }
 
-function deleteAdministrador(id) {
+function deleteRecurso(id) {
     // mensaje de confirmación
     var mens = "¿Realmente desea borrar este registro?";
     $.SmartMessageBox({
@@ -196,16 +194,16 @@ function deleteAdministrador(id) {
     }, function (ButtonPressed) {
         if (ButtonPressed === "Aceptar") {
             var data = {
-                administradorId: id
+                recursoId: id
             };
             $.ajax({
                 type: "DELETE",
-                url: myconfig.apiUrl + "/api/administradores/" + id,
+                url: myconfig.apiUrl + "/api/recursos/" + id,
                 dataType: "json",
                 contentType: "application/json",
                 data: JSON.stringify(data),
                 success: function (data, status) {
-                    var fn = buscarAdministradores(true);
+                    var fn = buscarRecursos(true);
                     fn();
                 },
                 error: errorAjax
@@ -217,10 +215,10 @@ function deleteAdministrador(id) {
     });
 }
 
-function editAdministrador(id) {
-    // hay que abrir la página de detalle de administrador
+function editRecurso(id) {
+    // hay que abrir la página de detalle de recurso
     // pasando en la url ese ID
-    var url = "AdministradorDetalle.html?AdministradorId=" + id;
+    var url = "RecursoDetalle.html?RecursoId=" + id;
     window.open(url, '_self');
 }
 
