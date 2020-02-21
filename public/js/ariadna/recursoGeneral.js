@@ -16,6 +16,9 @@ var breakpointDefinition = {
     phone: 480
 };
 
+var s3 = undefined;
+var bucket, bucket_folder, identity_pool;
+
 
 function initForm() {
     comprobarLogin();
@@ -60,6 +63,33 @@ function initForm() {
        buscarRecursos()();
        $('#txtBuscar').val('');
     }
+
+    $.ajax({
+        type: "GET",
+        url: myconfig.apiUrl + "/api/parametros",
+        dataType: "json",
+        contentType: "application/json",
+        data: JSON.stringify(data),
+        success: function(data, status) {
+            // Leemos los parámetros para inicializar AWS
+            var parametro = data[0];
+            bucket = parametro.bucket;
+            bucket_folder = parametro.bucket_folder;
+            identity_pool = parametro.identity_pool;
+            AWS.config.update({
+                region: parametro.bucket_region,
+                credentials: new AWS.CognitoIdentityCredentials({
+                    IdentityPoolId: parametro.identity_pool
+                })
+            });
+            
+            s3 = new AWS.S3({
+                apiVersion: "2006-03-01",
+                params: { Bucket: parametro.bucket }
+            });
+        },
+        error: errorAjax
+    });    
 }
 
 function initTablaRecursos() {
@@ -203,8 +233,12 @@ function deleteRecurso(id) {
                 contentType: "application/json",
                 data: JSON.stringify(data),
                 success: function (data, status) {
-                    var fn = buscarRecursos(true);
-                    fn();
+                    var datos = data.url.split(bucket_folder);
+                    var key = bucket_folder + datos[1];
+                    s3.deleteObject({ Key: key }, function(err, data) {
+                        var fn = buscarRecursos(true);
+                        fn();
+                      });
                 },
                 error: errorAjax
             });
