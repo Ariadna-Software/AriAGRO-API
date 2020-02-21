@@ -3,7 +3,8 @@ recursoDetalle.js
 Funciones js par la página AdministradorDetalle.html
 ---------------------------------------------------------------------------*/
 var recursoId = 0;
-
+var s3 = undefined;
+var bucket, bucket_folder, identity_pool;
 
 function initForm() {
     comprobarLogin();
@@ -16,6 +17,7 @@ function initForm() {
     // asignación de eventos al clic
     $("#btnAceptar").click(aceptar());
     $("#btnSalir").click(salir());
+    $("#btnSubir").click(subir());
     $("#frmRecurso").submit(function() {
         return false;
     });
@@ -42,6 +44,33 @@ function initForm() {
         // se trata de un alta ponemos el id a cero para indicarlo.
         vm.recursoId(0);
     }
+
+    $.ajax({
+        type: "GET",
+        url: myconfig.apiUrl + "/api/parametros",
+        dataType: "json",
+        contentType: "application/json",
+        data: JSON.stringify(data),
+        success: function(data, status) {
+            // Leemos los parámetros para inicializar AWS
+            var parametro = data[0];
+            bucket = parametro.bucket;
+            bucket_folder = parametro.bucket_folder;
+            identity_pool = parametro.identity_pool;
+            AWS.config.update({
+                region: parametro.bucket_region,
+                credentials: new AWS.CognitoIdentityCredentials({
+                    IdentityPoolId: parametro.identity_pool
+                })
+            });
+            
+            s3 = new AWS.S3({
+                apiVersion: "2006-03-01",
+                params: { Bucket: parametro.bucket }
+            });
+        },
+        error: errorAjax
+    });
 }
 
 function admData() {
@@ -131,6 +160,41 @@ function salir() {
     var mf = function() {
         var url = "RecursosGeneral.html";
         window.open(url, '_self');
+    }
+    return mf;
+}
+
+function subir() {
+    var mf = function() {
+        debugger;
+        var files = document.getElementById("fileupload").files;
+        if (!files.length) {
+            alert('Debe escoger seleccionar un archivo para subirlo al repositorio');
+            return;
+        }
+        var file = files[0];
+        var fileKey = bucket_folder + "/" + file.name;
+        var params = {
+            Bucket: bucket,
+            Key: fileKey,
+            IdentityPoolId: identity_pool,
+            Body: file,
+            ACL: "public-read"
+        }
+        // Use S3 ManagedUpload class as it supports multipart uploads
+        var upload = new AWS.S3.ManagedUpload({
+            params: params
+        });
+        var promise = upload.promise();
+        promise.
+        then (
+            data => {
+                vm.url(data.Location);
+            },
+            err =>{
+                messageApi.errorMessage(err.message);
+            }
+        ); 
     }
     return mf;
 }
