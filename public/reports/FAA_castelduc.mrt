@@ -439,7 +439,7 @@
               <Name>Text21</Name>
               <Page isRef="2" />
               <Parent isRef="29" />
-              <Text>Pr.NETO(€)</Text>
+              <Text>Imp.NETO(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
@@ -925,10 +925,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>1/25/2019 10:42:34 AM</ReportChanged>
+  <ReportChanged>3/3/2020 8:55:21 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile />
-  <ReportGuid>f91d775049894af7a3f2effe625bff3e</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAA_castelduc.mrt</ReportFile>
+  <ReportGuid>60c40ab1d0564f44a13c9fa2d8ba00d9</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
