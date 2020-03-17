@@ -31,6 +31,11 @@ function initForm() {
         return false;
     });
 
+    // NUEVO EDITOR msghtml
+    console.log('Nuevo editor');
+    CKEDITOR.replace('msghtml', {
+        language: 'es'
+    });
 
     initTablaMensajes();
 
@@ -83,6 +88,7 @@ function loadData(data) {
     vm.mensajeId(data.mensajeId);
     vm.asunto(data.asunto);
     vm.texto(data.texto);
+    CKEDITOR.instances.txtTexto.setData(vm.texto());
     // cambiamos el título por si imprimen
     document.title = "Ariadna Noticaciones (Mensaje: " + data.asunto + ")";
 
@@ -124,7 +130,7 @@ function aceptar() {
             mensaje: {
                 "mensajeId": vm.mensajeId(),
                 "asunto": vm.asunto(),
-                "texto": vm.texto(),
+                "texto": CKEDITOR.instances.txtTexto.getData(),
                 "usuarioPushId": vm.sUsuarioPushId(),
                 "ariagro": vm.ariagro(),
                 "tienda": vm.tienda(),

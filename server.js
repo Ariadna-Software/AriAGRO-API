@@ -20,6 +20,8 @@ var usupush_router = require('./lib/usupush/usupush_controller');
 var parametros_router = require('./lib/parametros/parametros_controller');
 var mensajes_router = require('./lib/mensajes/mensajes_controller');
 var uploader_router = require('./lib/uploader/uploader_controller');
+var recursos_router = require('./lib/recursos/recursos_controller');
+var enlaces_router = require('./lib/enlaces/enlaces_controller');
 // express
 var app = express();
 
@@ -92,6 +94,10 @@ app.use('/api/parametros', parametros_router);
 app.use('/api/mensajes', mensajes_router);
 //---------- Rutas relacionadas con el cargador.
 app.use('/api/uploader', uploader_router);
+//---------- Rutas relacionadas con recursos
+app.use('/api/recursos', recursos_router);
+//---------- Rutas relacionadas con enlaces
+app.use('/api/enlaces', enlaces_router);
 
 
 // Registrar rutas base

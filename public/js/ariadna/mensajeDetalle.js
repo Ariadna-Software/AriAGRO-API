@@ -25,6 +25,12 @@ function initForm() {
     $('#chkSoloMensajes').change(changeCheck());
     $('#chkEsTrabajador').change(changeCheck());
 
+    // NUEVO EDITOR msghtml
+    console.log('Nuevo editor');
+    CKEDITOR.replace('msghtml', {
+        language: 'es'
+    });
+
 
     $("#frmMensaje").submit(function() {
         return false;
@@ -123,6 +129,7 @@ function loadData(data) {
     vm.mensajeId(data.mensajeId);
     vm.asunto(data.asunto);
     vm.texto(data.texto);
+    CKEDITOR.instances.txtTexto.setData(vm.texto());
     vm.adminId(data.administradorId);
 }
 
@@ -162,7 +169,7 @@ function aceptar() {
             mensaje: {
                 "mensajeId": vm.mensajeId(),
                 "asunto": vm.asunto(),
-                "texto": vm.texto(),
+                "texto": CKEDITOR.instances.txtTexto.getData(),
                 "usuarios": vm.elegidosUsuariosPush(),
                 "ariagro": vm.ariagro(),
                 "tienda": vm.tienda(),

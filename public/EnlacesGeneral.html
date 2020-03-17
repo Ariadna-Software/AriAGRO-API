@@ -122,7 +122,7 @@
             <!-- fullscreen button -->
             <div id="fullscreen" class="btn-header transparent pull-right">
                 <span>
-                        <a href="javascript:void(0);" data-action="launchFullscreen" title="Pantalla completa">
+                        <a href="javascript:void(0);" data-action="launchFullscreen" title="Full Screen">
                             <i class="fa fa-arrows-alt"></i>
                         </a>
                     </span>
@@ -145,7 +145,6 @@
             </a>
             </span>
         </div>
-        <!-- NAVIGATION : This navigation is also responsive-->
         <nav>
             <ul>
                 <li id="inicio">
@@ -209,8 +208,7 @@
             <ol class="breadcrumb">
                 <li>Inicio</li>
                 <li>Administracion</li>
-                <li>Parametros</li>
-                <li>Detalle parametro</li>
+                <li>Enlaces</li>
             </ol>
             <!-- end breadcrumb -->
             <!-- You can also add more buttons to the
@@ -234,8 +232,8 @@
                     <h1 class="page-title txt-color-blueDark">
 
                             <!-- PAGE HEADER -->
-                            <i class="fa-fw fa fa-mortar-board"></i>
-                            Detalle parametro <a href="#" title="Ayuda"><i class="fa fa-question"></i></a>
+                            <i class="fa-fw fa fa-link"></i>
+                            Enlaces <a href="#" title="Ayuda"><i class="fa fa-question"></i></a>
                         </h1>
                 </div>
                 <!-- end col -->
@@ -288,7 +286,7 @@
                                 -->
                             <header>
                                 <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
-                                <h2>Mantenimiento parametros </h2>
+                                <h2>Mantenimiento Enlaces </h2>
                             </header>
                             <!-- widget div-->
                             <div>
@@ -301,55 +299,47 @@
                                 <!-- widget content -->
                                 <div class="widget-body">
                                     <!-- this is what the user will see -->
-                                    <form id="frmParametro" class="smart-form">
+                                    <form id="frmBuscar" class="smart-form">
                                         <header>
-                                            Datos del parametro.
+                                            Buscar Enlaces por nombre.
                                         </header>
                                         <fieldset>
                                             <div class="row">
                                                 <section class="col col-md-12">
-                                                    <label class="label">Título para notificaciones</label>
+                                                    <label class="label">Introduzca el texto a buscar (* = Ver todos)</label>
                                                     <label class="input">
-                                                        <input id="txtTituloPush" name="txtTituloPush" type="text" data-bind="value: tituloPush" />
+                                                        <input id="txtBuscar" name="txtBuscar" type="text" />
                                                     </label>
                                                 </section>
                                             </div>
-                                            <div class="row">
-                                                <section class="col col-md-12">
-                                                    <label class="label">Clave de la app (appId)</label>
-                                                    <label class="input">
-                                                        <input id="txtAppId" name="txtAppId" type="text" data-bind="value: appId" />
-                                                    </label>
-                                                </section>
-                                            </div>
-                                            <div class="row">
-                                                <section class="col col-md-12">
-                                                    <label class="label">Clave rest (restApi)</label>
-                                                    <label class="input">
-                                                        <input id="txtRestApi" name="txtRestApi" type="text" data-bind="value: restApi" />
-                                                    </label>
-                                                </section>
-                                            </div>
-                                            <div class="row">
-                                                <section class="col col-md-12">
-                                                    <label class="label">Google Project Number (gcm)</label>
-                                                    <label class="input">
-                                                        <input id="txtGcm" name="txtGcm" type="text" data-bind="value: gcm" />
-                                                    </label>
-                                                </section>
-                                            </div>                                            
                                         </fieldset>
                                         <fieldset>
                                             <div class="pull-right">
-                                                <button id="btnSalir" title="Salir sin guardar" class="btn btn-warning btn-circle btn-lg">
-                                                    <i class="fa fa-lg fa-sign-out"></i>
+                                                <button id="btnBuscar" title="Buscar" class="btn btn-primary btn-circle btn-lg">
+                                                    <i class="fa fa-lg fa-search"></i>
                                                 </button>
-                                                <button id="btnAceptar" title="Guardar y salir" class="btn btn-success btn-circle btn-lg">
-                                                    <i class="fa fa-lg fa-check"></i>
+                                                <button id="btnAlta" title="Crear nuevo registro" class="btn btn-success btn-circle btn-lg">
+                                                    <i class="fa fa-lg fa-plus"></i>
                                                 </button>
                                             </div>
                                         </fieldset>
                                     </form>
+                                    <div id="tbEnlace" style="display:none;">
+                                        <table id="dt_enlace" class="table table-striped table-bordered table-hover" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th data-class="expand">
+                                                        <i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i> Nombre
+                                                    </th>
+                                                    <th data-hide="phone">
+                                                        Url
+                                                    </th>
+                                                    <th>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
                                 </div>
                                 <!-- end widget content -->
                             </div>
@@ -370,7 +360,7 @@
     <div class="page-footer">
         <div class="row">
             <div class="col-xs-12 col-sm-6">
-                <span class="txt-color-white">Ariadna Notificaciones <span id="versionFooter">1.0</span> <span class="hidden-xs"> - Aplicación general</span> © Ariadna Software S.L. 2016-2017</span>
+                <span class="txt-color-white">Ariadna Notificaciones <span id="versionFooter">NO VERSION</span> <span class="hidden-xs"> - Aplicación general</span> © Ariadna Software S.L. 2016-2017</span>
             </div>
             <div class="col-xs-6 col-sm-6 text-right hidden-xs">
                 <div class="txt-color-white inline-block">
@@ -422,6 +412,8 @@
     <script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
     <!-- FastClick: For mobile devices -->
     <script src="js/plugin/fastclick/fastclick.min.js"></script>
+    <!-- Amazon SDK -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>    
     <!--[if IE 8]>
 
         <h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
@@ -437,13 +429,11 @@
     <!-- SmartChat UI : plugin -->
     <script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
     <script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
-    <!--- KNOCKOUT JS -->
-    <script src="js/knockout-3.1.0.js"></script>
     <!-- PAGE RELATED PLUGIN(S) 
         <script src="..."></script>-->
-    <script src="myconfig.js"></script>
-    <script src="js/ariadna/parametroDetalle.js"></script>
     <script src="js/ariadna/comun.js"></script>
+    <script src="myconfig.js"></script>
+    <script src="js/ariadna/EnlaceGeneral.js"></script>
     <!-- PAGE RELATED PLUGIN(S) -->
     <script src="js/plugin/datatables/jquery.dataTables.min.js"></script>
     <script src="js/plugin/datatables/dataTables.colVis.min.js"></script>

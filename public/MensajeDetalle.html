@@ -175,13 +175,22 @@
                                 <i class="fa fa-users"></i> Usuarios
                             </a>
                         </li>
-                    </ul>
+                        <li id="enlaces">
+                            <a href="EnlacesGeneral.html">
+                                <i class="fa fa-link"></i> Enlaces de interés
+                            </a>
+                        </li>                     </ul>
                 </li>
                 <li id="mensajes1">
                     <a href="#" title="Mensajes">
                         <i class="fa fa-lg fa-fw fa-rocket"></i> <span class="menu-item-parent">Mensajes</span>
                     </a>
                     <ul>
+                        <li id="recursos">
+                            <a href="RecursosGeneral.html">
+                                <i class="fa fa-cloud"></i> Recursos
+                            </a>
+                        </li>                        
                         <li id="mensajes">
                             <a href="MensajesGeneral.html">
                                 <i class="fa fa-comment-o"></i> Gestión mensajes
@@ -311,7 +320,7 @@
                                                 <section class="col col-md-12">
                                                     <label class="label">Texto</label>
                                                     <label class="textarea textarea-resizable">
-                                                        <textarea id="txtTexto" rows="3" class="custom-scroll" data-bind="value:texto"></textarea>
+                                                        <textarea id="txtTexto" name="msghtml" rows="3" class="custom-scroll" data-bind="value:texto"></textarea>
                                                     </label>
                                                 </section>
                                             </div>
@@ -494,6 +503,8 @@
     <script src="js/knockout-3.1.0.js"></script>
     <!-- PAGE RELATED PLUGIN(S) 
         <script src="..."></script>-->
+    <!-- CK EDITOR -->
+    <script src="//cdn.ckeditor.com/4.9.2/full/ckeditor.js"></script>   
     <!-- MOMENT -->
     <script src="js/moment.js"></script>
     <script src="js/pekeUpload.js"></script>
