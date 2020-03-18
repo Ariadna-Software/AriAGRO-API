@@ -40,7 +40,7 @@
             <Text5 Ref="5" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>10.4,4.4,7.4,0.4</ClientRectangle>
+              <ClientRectangle>10.4,4.6,7.4,0.2</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial Narrow,9.75,Regular,Point,False,0</Font>
               <GrowToHeight>True</GrowToHeight>
@@ -72,7 +72,7 @@
             </Text6>
             <Text37 Ref="7" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.6,5,0.8,0.3</ClientRectangle>
+              <ClientRectangle>0.6,4.8,0.8,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -86,7 +86,7 @@
             <Text38 Ref="8" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>2,5,2.2,0.3</ClientRectangle>
+              <ClientRectangle>2,4.8,2.2,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Microsoft Sans Serif,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
@@ -100,7 +100,7 @@
             </Text38>
             <Text39 Ref="9" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.6,5.4,0.8,0.4</ClientRectangle>
+              <ClientRectangle>0.6,5.2,0.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8.25,Regular,Point,False,0</Font>
               <Guid>e202f1e3919743c2919f748cf6f1abbe</Guid>
@@ -114,7 +114,7 @@
             </Text39>
             <Text40 Ref="10" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>2,5.4,2.2,0.4</ClientRectangle>
+              <ClientRectangle>2,5.2,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8.25,Regular,Point,False,0</Font>
               <Guid>9f2b77529eea4d98b2bf78eb9062d1a8</Guid>
@@ -129,7 +129,7 @@
             <Text17 Ref="11" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>11.8,2.6,6.6,0.6</ClientRectangle>
+              <ClientRectangle>11.2,2.6,7.2,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,12,Bold,Point,False,0</Font>
               <HorAlignment>Right</HorAlignment>
@@ -137,7 +137,7 @@
               <Name>Text17</Name>
               <Page isRef="2" />
               <Parent isRef="3" />
-              <Text>FACTURA ANTICIPO BOLBAITE</Text>
+              <Text>FACTURA LIQUIDACION BOLBAITE</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text17>
@@ -1028,10 +1028,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>3/16/2020 6:27:01 PM</ReportChanged>
+  <ReportChanged>3/16/2020 11:49:18 AM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_bolbaite .mrt</ReportFile>
-  <ReportGuid>ed58edc5235d47fcb645e8150fcb39d3</ReportGuid>
+  <ReportGuid>1ac2e8fd986f48c4a08a3e01cc7c99e0</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
