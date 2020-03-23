@@ -1195,10 +1195,10 @@ lineasBis.tipcalid1 == 1,lineasBis.imporcalnocomer)}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>2/20/2019 10:01:23 AM</ReportChanged>
+  <ReportChanged>3/23/2020 8:17:21 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_castelduc.mrt</ReportFile>
-  <ReportGuid>f39435340ebb4f89ac95ea0fafd31003</ReportGuid>
+  <ReportGuid>faba48032ec64c5ba01f64d70a09efcf</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>

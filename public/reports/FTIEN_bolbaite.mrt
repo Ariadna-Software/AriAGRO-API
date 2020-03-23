@@ -2,8 +2,91 @@
 <StiSerializer version="1.02" type="Net" application="StiReport">
   <Dictionary Ref="1" type="Dictionary" isKey="true">
     <BusinessObjects isList="true" count="0" />
-    <Databases isList="true" count="0" />
-    <DataSources isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <FTIE_castelduc Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>FTIE_castelduc</Alias>
+        <Key />
+        <Name>FTIE_castelduc</Name>
+        <PathData>C:\proyectos\AriAGRO-API\public\json\FTIE_castelduc.json</PathData>
+      </FTIE_castelduc>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <tien_fact Ref="3" type="DataTableSource" isKey="true">
+        <Alias>tien_fact</Alias>
+        <Columns isList="true" count="57">
+          <value>nomempre,System.String</value>
+          <value>domempre,System.String</value>
+          <value>codpobla,System.Double</value>
+          <value>pobempre,System.String</value>
+          <value>proempre,System.String</value>
+          <value>cifempre,System.String</value>
+          <value>wwwempre,System.String</value>
+          <value>telempre,System.Double</value>
+          <value>codtipom,System.String</value>
+          <value>numfactu,System.Double</value>
+          <value>fecfactu,System.DateTime</value>
+          <value>codclien,System.Double</value>
+          <value>nomclien,System.String</value>
+          <value>domclien,System.String</value>
+          <value>pobclien,System.String</value>
+          <value>proclien,System.String</value>
+          <value>nifclien,System.String</value>
+          <value>letraser,System.Char</value>
+          <value>bases,System.Double</value>
+          <value>cuotas,System.Double</value>
+          <value>totalfac,System.Double</value>
+          <value>codtipoa,System.String</value>
+          <value>numalbar,System.Double</value>
+          <value>fechaalb,System.DateTime</value>
+          <value>codtraba,System.Double</value>
+          <value>nomtraba,System.String</value>
+          <value>manipuladorNumCarnet,System.String</value>
+          <value>manipuladorFecCad,System.String</value>
+          <value>manipuladorNombre,System.String</value>
+          <value>tipoCarnet,System.Int32</value>
+          <value>numlinea,System.Double</value>
+          <value>codartic,System.Double</value>
+          <value>nomartic,System.String</value>
+          <value>numserie,System.String</value>
+          <value>fecvigen,System.String</value>
+          <value>precioar,System.Double</value>
+          <value>cantidad,System.Double</value>
+          <value>dtoline1,System.Double</value>
+          <value>dtoline2,System.Double</value>
+          <value>importel,System.Double</value>
+          <value>numlote,System.String</value>
+          <value>nomforpa,System.String</value>
+          <value>codforpa,System.Double</value>
+          <value>brutofac,System.Double</value>
+          <value>dtoppago,System.Double</value>
+          <value>impdtopp,System.Double</value>
+          <value>dtognral,System.Double</value>
+          <value>impdtogr,System.Double</value>
+          <value>baseimp1,System.Double</value>
+          <value>baseimp2,System.Double</value>
+          <value>baseimp3,System.Double</value>
+          <value>porciva1,System.Double</value>
+          <value>porciva2,System.Double</value>
+          <value>porciva3,System.Double</value>
+          <value>imporiv1,System.Double</value>
+          <value>imporiv2,System.Double</value>
+          <value>imporiv3,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>tien_fact</Name>
+        <NameInSource>FTIE_castelduc.tien_fact</NameInSource>
+      </tien_fact>
+      <venci Ref="4" type="DataTableSource" isKey="true">
+        <Alias>venci</Alias>
+        <Columns isList="true" count="2">
+          <value>fecevenc,System.DateTime</value>
+          <value>impefect,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>venci</Name>
+        <NameInSource>FTIE_castelduc.venci</NameInSource>
+      </venci>
+    </DataSources>
     <Relations isList="true" count="0" />
     <Report isRef="0" />
     <Resources isList="true" count="0" />
@@ -13,15 +96,15 @@
   <GlobalizationStrings isList="true" count="0" />
   <MetaTags isList="true" count="0" />
   <Pages isList="true" count="1">
-    <Page1 Ref="2" type="Page" isKey="true">
+    <Page1 Ref="5" type="Page" isKey="true">
       <Border>None;Black;2;Solid;False;4;Black</Border>
       <Brush>Transparent</Brush>
       <Components isList="true" count="10">
-        <PageHeaderBand1 Ref="3" type="PageHeaderBand" isKey="true">
+        <PageHeaderBand1 Ref="6" type="PageHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,0.4,19,4.6</ClientRectangle>
           <Components isList="true" count="13">
-            <Text6 Ref="4" type="Text" isKey="true">
+            <Text6 Ref="7" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>12.4,3.4,5.4,0.4</ClientRectangle>
@@ -31,14 +114,14 @@
               <Guid>ed11d36727b343439a8718770abd450b</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text6</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>{tien_fact.codpobla}  {tien_fact.pobclien} ({tien_fact.proclien})</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text6>
-            <Text39 Ref="5" type="Text" isKey="true">
+            <Text39 Ref="8" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.4,3.8,0.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -46,13 +129,13 @@
               <Guid>f0ed3dd15e224247868cd2ae1fc12387</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text39</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>Hoja:</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text39>
-            <Text45 Ref="6" type="Text" isKey="true">
+            <Text45 Ref="9" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>1.2,3.4,2,0.4</ClientRectangle>
@@ -61,13 +144,13 @@
               <Guid>3b65181b8ee64221bb6fb8519c83cbab</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text45</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>{tien_fact.nifclien}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text45>
-            <Text40 Ref="7" type="Text" isKey="true">
+            <Text40 Ref="10" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>1.2,3.8,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -75,13 +158,13 @@
               <Guid>7b9d21332e0c4e679d74ff88d89f6a3f</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text40</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>{PageNofM}</Text>
               <TextBrush>Black</TextBrush>
               <Type>SystemVariables</Type>
             </Text40>
-            <Text16 Ref="8" type="Text" isKey="true">
+            <Text16 Ref="11" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.4,3.4,0.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -89,39 +172,39 @@
               <Guid>671477321b1c4205be2a064bb8cdb886</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text16</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>NIF:</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text16>
-            <Text1 Ref="9" type="Text" isKey="true">
+            <Text1 Ref="12" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>12.4,3.8,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial Narrow,9,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text1</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>Cliente: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text1>
-            <Text8 Ref="10" type="Text" isKey="true">
+            <Text8 Ref="13" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.6,3.8,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial Narrow,9,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text8</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>{tien_fact.codclien}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text8>
-            <Text91 Ref="11" type="Text" isKey="true">
+            <Text91 Ref="14" type="Text" isKey="true">
               <Border>All;Black;1;Solid;True;4;Black</Border>
               <Brush>Gainsboro</Brush>
               <ClientRectangle>0.4,2.4,5,0.8</ClientRectangle>
@@ -129,12 +212,12 @@
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text91</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text91>
-            <Text9 Ref="12" type="Text" isKey="true">
+            <Text9 Ref="15" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>12.4,2.4,5.4,0.6</ClientRectangle>
@@ -143,14 +226,14 @@
               <Guid>8957eca2aa7542b599f05e3efdeeb804</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text9</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>{tien_fact.nomclien}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text9>
-            <Text10 Ref="13" type="Text" isKey="true">
+            <Text10 Ref="16" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>12.4,3,5.4,0.4</ClientRectangle>
@@ -159,14 +242,14 @@
               <Guid>bd0e2571cb25462b81db7ebbde9c9e9d</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text10</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>{tien_fact.domclien}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text10>
-            <Image1 Ref="14" type="Image" isKey="true">
+            <Image1 Ref="17" type="Image" isKey="true">
               <Brush>Transparent</Brush>
               <CanShrink>True</CanShrink>
               <ClientRectangle>0.4,0.2,14.6,1.8</ClientRectangle>
@@ -175,12 +258,12 @@
               <Image>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VaRezI3B/LNawIYAg5B6Vx4L2Xh7VNHnYs9sdsbEfeVjx+tdXaqyWkKv94IoP1xTTuaQldkvWiiiqNQooooAKKKKACilooAKSiigAooooAKKKKACiiigApaSigBaSiigApaSigAooooAKWiigAooooAKSlpO1ABRQOlFAgopO9FAC0lLQKAEoopaYDaWig0ALRR2opAFFFFABRS0UDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAopKWgAooooAKKKKACkopaACkpaSgAoopaACiiigAooooAKSlpKAFooooASlopKAFooooAKKKKACiiigBKKWigBKWkpaAEphhiMolMaeYBjfjnH1qSkoAiktLaWQSSQRu69GZQSKdLBFOm2WJJF9GUEU+igVkRC0txD5IgjEfXZsGPyposLMHItIQf+uYqeigLIgNjaE5NrDk8/6sVLHFHEu2JFRfRRgU6gUBZAyhlKsAQeoPeoRZWini2hB9oxU1FAWQYGMAcVEtpbJJ5i28Sv8A3ggBqWigLDJIYpceZEj46blBxTVtbdDuS3jU+oQA1IKUUBZEIs7YHi3iH/ABT2hicrujRtv3cqDj6U/vRQFkIyK6lXUMp6gjINMWCFWDLCileAQoyKkoNADWjRmDMisV6EjOKHjjlAEiK4HZhmndqB0oAjFtApyIYwR6KKkoooAqahYi9ijw/lyxSCSN8Z2kVZKK2NygkcjI6GnUUBZXuJtXfu2jdjGcc0FVYYZQR7il70GgBhghY5MSEnuVFBhiIA8pMDoNoqSkoCyGLDEpysaA+oUCnhQowoAA7CgdKKAECqucKBnrgU0QxCTzBEm/+9tGakpKAAqCeQDigAAYAwPaiigZVvbBb14d7YjjcOygffI6ZPpmrVFLQKyQlFFFAxaSlooAKKKKAEpaSloAKKKKACiikoAWkpaKAEopaKACkoooAKWkooAWiiigAooooASloooAKKKKAP/Z</Image>
               <Margins>0,0,0,0</Margins>
               <Name>Image1</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Printable>False</Printable>
               <Stretch>True</Stretch>
             </Image1>
-            <Text37 Ref="15" type="Text" isKey="true">
+            <Text37 Ref="18" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.6,2.4,4.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -188,22 +271,22 @@
               <Guid>ac66ab80a7f948a082e71d983c5f7ebb</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text37</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>FACTURA: {tien_fact.letraser}-{tien_fact.numfactu}
 </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text37>
-            <Text38 Ref="16" type="Text" isKey="true">
+            <Text38 Ref="19" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.6,2.8,2.5,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text38</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>FECHA: {tien_fact.fecfactu}</Text>
               <TextBrush>Black</TextBrush>
             </Text38>
@@ -211,14 +294,14 @@
           <Conditions isList="true" count="0" />
           <Guid>fe900bef4d104fcaa42fb5c56229d8d1</Guid>
           <Name>PageHeaderBand1</Name>
-          <Page isRef="2" />
-          <Parent isRef="2" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
         </PageHeaderBand1>
-        <PageFooterBand1 Ref="17" type="PageFooterBand" isKey="true">
+        <PageFooterBand1 Ref="20" type="PageFooterBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,28.24,19,5</ClientRectangle>
           <Components isList="true" count="3">
-            <Text4 Ref="18" type="Text" isKey="true">
+            <Text4 Ref="21" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>0.2,0.66,18.2,0.8</ClientRectangle>
@@ -228,14 +311,14 @@
               <HorAlignment>Width</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text4</Name>
-              <Page isRef="2" />
-              <Parent isRef="17" />
+              <Page isRef="5" />
+              <Parent isRef="20" />
               <Text>Sus datos serán incorporados al sistema de tratamiento titularidad de la coop.Agricola de Bolbaite con las finalidades de atender su solicitud de información sobre nuestros productos o servicios y su facturación.</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text4>
-            <Text5 Ref="19" type="Text" isKey="true">
+            <Text5 Ref="22" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>0.2,1.5,18.2,1.8</ClientRectangle>
@@ -245,14 +328,14 @@
               <HorAlignment>Width</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text5</Name>
-              <Page isRef="2" />
-              <Parent isRef="17" />
+              <Page isRef="5" />
+              <Parent isRef="20" />
               <Text>Conservaremos sus datos mientras se mantenga la finalidad para la que han sido recabados. Mientras no nos comunique lo contrario, entenderemos que sus datos no han sido modificados, que se compromete a notificarnos cualquier variación y que tenemos su consentimiento para utilizarlos para las finalidades mencionadas. Procederemos a tratar los datos de manera lícita, leal, transparente, adecuada, pertinente, limitada, exacta y actualizada. Es por ello por lo que nos comprometemos a adoptar todas las medidas razonables para que estos se supriman o rectifiquen sin dilación cuandosean inexactos.</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text5>
-            <Text11 Ref="20" type="Text" isKey="true">
+            <Text11 Ref="23" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>0.2,3.3,18.2,1.6</ClientRectangle>
@@ -262,8 +345,8 @@
               <HorAlignment>Width</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text11</Name>
-              <Page isRef="2" />
-              <Parent isRef="17" />
+              <Page isRef="5" />
+              <Parent isRef="20" />
               <Text>De acuerdo con los derechos que le confiere la normativa vigente podrá ejercer los derechos de acceso, rectificación, supresión, revocación, portabilidad, oposición y limitación de tratamiento, recogidos en el RGDP (UE) 2016/679 y en la ley orgánica de protección de datos y garantía de los derechos digitales de fecha 03/2018, de 5 de Diciembre, mediante correo electrónico o correo ordinario a nuestro domicilio social o por cualquier otro medio que permita reconocer la identidad del cliente o usuario que ejercirte cualquiera de los anteriores derechos </Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
@@ -273,96 +356,96 @@
           <Conditions isList="true" count="0" />
           <Guid>18c069193a654cc89489155de17c8148</Guid>
           <Name>PageFooterBand1</Name>
-          <Page isRef="2" />
-          <Parent isRef="2" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
         </PageFooterBand1>
-        <GroupHeaderBand1 Ref="21" type="GroupHeaderBand" isKey="true">
+        <GroupHeaderBand1 Ref="24" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <CanShrink>True</CanShrink>
           <ClientRectangle>0,5.8,19,1.4</ClientRectangle>
           <Components isList="true" count="13">
-            <Text12 Ref="22" type="Text" isKey="true">
+            <Text12 Ref="25" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.6,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text12</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>Albaran: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text12>
-            <Text13 Ref="23" type="Text" isKey="true">
+            <Text13 Ref="26" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text13</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>{tien_fact.numalbar}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text13>
-            <Text14 Ref="24" type="Text" isKey="true">
+            <Text14 Ref="27" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text14</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>de fecha</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text14>
-            <Text15 Ref="25" type="Text" isKey="true">
+            <Text15 Ref="28" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6,0,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text15</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>{tien_fact.fechaalb}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="26" type="DateFormat" isKey="true">
+              <TextFormat Ref="29" type="DateFormat" isKey="true">
                 <StringFormat>dd/MM/yyyy</StringFormat>
               </TextFormat>
               <Type>Expression</Type>
             </Text15>
-            <Text17 Ref="27" type="Text" isKey="true">
+            <Text17 Ref="30" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.4,0,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text17</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>realizado por:</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text17>
-            <Text18 Ref="28" type="Text" isKey="true">
+            <Text18 Ref="31" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11,0,4.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text18</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>{tien_fact.nomtraba}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text18>
-            <Text71 Ref="29" type="Text" isKey="true">
+            <Text71 Ref="32" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.6,0.4,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -371,13 +454,13 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text71</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>Manipulador fitosanitarios: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text71>
-            <Text72 Ref="30" type="Text" isKey="true">
+            <Text72 Ref="33" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.4,0.4,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -386,13 +469,13 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text72</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>{tien_fact.manipuladorNumCarnet}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text72>
-            <Text73 Ref="31" type="Text" isKey="true">
+            <Text73 Ref="34" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>5,0.4,4.2,0.4</ClientRectangle>
@@ -403,14 +486,14 @@
               <GrowToHeight>True</GrowToHeight>
               <Margins>0,0,0,0</Margins>
               <Name>Text73</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>{tien_fact.manipuladorNombre}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text73>
-            <Text74 Ref="32" type="Text" isKey="true">
+            <Text74 Ref="35" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11,0.4,2,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -419,13 +502,13 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text74</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>Fecha caducidad: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text74>
-            <Text75 Ref="33" type="Text" isKey="true">
+            <Text75 Ref="36" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13,0.4,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -434,13 +517,13 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text75</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>{tien_fact.manipuladorFecCad}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text75>
-            <Text76 Ref="34" type="Text" isKey="true">
+            <Text76 Ref="37" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>15,0.4,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -449,13 +532,13 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text76</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>Tipo carnet: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text76>
-            <Text77 Ref="35" type="Text" isKey="true">
+            <Text77 Ref="38" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>16.4,0.4,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -464,8 +547,8 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text77</Name>
-              <Page isRef="2" />
-              <Parent isRef="21" />
+              <Page isRef="5" />
+              <Parent isRef="24" />
               <Text>{Switch(
 		tien_fact.tipoCarnet == 1,"Básico",
 		tien_fact.tipoCarnet == 2, "Cualificado")}</Text>
@@ -476,14 +559,14 @@
           <Condition>{tien_fact.numalbar}</Condition>
           <Conditions isList="true" count="0" />
           <Name>GroupHeaderBand1</Name>
-          <Page isRef="2" />
-          <Parent isRef="2" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
         </GroupHeaderBand1>
-        <HeaderBand1 Ref="36" type="HeaderBand" isKey="true">
+        <HeaderBand1 Ref="39" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,8,19,0.6</ClientRectangle>
           <Components isList="true" count="6">
-            <Text19 Ref="37" type="Text" isKey="true">
+            <Text19 Ref="40" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>0.4,0,2.8,0.4</ClientRectangle>
@@ -493,14 +576,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text19</Name>
-              <Page isRef="2" />
-              <Parent isRef="36" />
+              <Page isRef="5" />
+              <Parent isRef="39" />
               <Text>Articulo</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text19>
-            <Text20 Ref="38" type="Text" isKey="true">
+            <Text20 Ref="41" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>3.2,0,6,0.4</ClientRectangle>
@@ -510,14 +593,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text20</Name>
-              <Page isRef="2" />
-              <Parent isRef="36" />
+              <Page isRef="5" />
+              <Parent isRef="39" />
               <Text>Descripción</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text20>
-            <Text21 Ref="39" type="Text" isKey="true">
+            <Text21 Ref="42" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>11.4,0,2.6,0.4</ClientRectangle>
@@ -527,14 +610,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text21</Name>
-              <Page isRef="2" />
-              <Parent isRef="36" />
+              <Page isRef="5" />
+              <Parent isRef="39" />
               <Text>Precio (€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text21>
-            <Text26 Ref="40" type="Text" isKey="true">
+            <Text26 Ref="43" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>14,0,1.8,0.4</ClientRectangle>
@@ -544,14 +627,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text26</Name>
-              <Page isRef="2" />
-              <Parent isRef="36" />
+              <Page isRef="5" />
+              <Parent isRef="39" />
               <Text>% Dto</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text26>
-            <Text22 Ref="41" type="Text" isKey="true">
+            <Text22 Ref="44" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>9.2,0,2.2,0.4</ClientRectangle>
@@ -561,14 +644,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text22</Name>
-              <Page isRef="2" />
-              <Parent isRef="36" />
+              <Page isRef="5" />
+              <Parent isRef="39" />
               <Text>Cantidad</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text22>
-            <Text23 Ref="42" type="Text" isKey="true">
+            <Text23 Ref="45" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>15.8,0,2.6,0.4</ClientRectangle>
@@ -578,8 +661,8 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text23</Name>
-              <Page isRef="2" />
-              <Parent isRef="36" />
+              <Page isRef="5" />
+              <Parent isRef="39" />
               <Text>Importe (€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -588,29 +671,29 @@
           </Components>
           <Conditions isList="true" count="0" />
           <Name>HeaderBand1</Name>
-          <Page isRef="2" />
-          <Parent isRef="2" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
         </HeaderBand1>
-        <DataBand1 Ref="43" type="DataBand" isKey="true">
+        <DataBand1 Ref="46" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <CanShrink>True</CanShrink>
           <ClientRectangle>0,9.4,19,1.6</ClientRectangle>
           <Components isList="true" count="13">
-            <Text24 Ref="44" type="Text" isKey="true">
+            <Text24 Ref="47" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.6,0,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text24</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>{tien_fact.codartic}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text24>
-            <Text25 Ref="45" type="Text" isKey="true">
+            <Text25 Ref="48" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>3.4,0,6,0.4</ClientRectangle>
@@ -619,14 +702,14 @@
               <GrowToHeight>True</GrowToHeight>
               <Margins>0,0,0,0</Margins>
               <Name>Text25</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>{tien_fact.nomartic}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
             </Text25>
-            <Text27 Ref="46" type="Text" isKey="true">
+            <Text27 Ref="49" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>9.8,0,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -634,11 +717,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text27</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>{tien_fact.cantidad}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="47" type="NumberFormat" isKey="true">
+              <TextFormat Ref="50" type="NumberFormat" isKey="true">
                 <DecimalDigits>0</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
@@ -647,7 +730,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text27>
-            <Text28 Ref="48" type="Text" isKey="true">
+            <Text28 Ref="51" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>12,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -655,11 +738,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text28</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>{tien_fact.precioar}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="49" type="NumberFormat" isKey="true">
+              <TextFormat Ref="52" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -667,7 +750,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text28>
-            <Text29 Ref="50" type="Text" isKey="true">
+            <Text29 Ref="53" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>14.2,0,1,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -676,18 +759,18 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text29</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>{tien_fact.dtoline1}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="51" type="NumberFormat" isKey="true">
+              <TextFormat Ref="54" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
               </TextFormat>
               <Type>Expression</Type>
             </Text29>
-            <Text30 Ref="52" type="Text" isKey="true">
+            <Text30 Ref="55" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>16.4,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -695,11 +778,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text30</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>{tien_fact.importel}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="53" type="NumberFormat" isKey="true">
+              <TextFormat Ref="56" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -707,7 +790,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text30>
-            <Text31 Ref="54" type="Text" isKey="true">
+            <Text31 Ref="57" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanShrink>True</CanShrink>
               <ClientRectangle>1.4,0.6,1.6,0.4</ClientRectangle>
@@ -717,13 +800,13 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text31</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>{tien_fact.numserie}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text31>
-            <Text32 Ref="55" type="Text" isKey="true">
+            <Text32 Ref="58" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanShrink>True</CanShrink>
               <ClientRectangle>6.2,0.6,1.8,0.4</ClientRectangle>
@@ -734,13 +817,13 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text32</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>{tien_fact.fecvigen}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text32>
-            <Text33 Ref="56" type="Text" isKey="true">
+            <Text33 Ref="59" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanShrink>True</CanShrink>
               <ClientRectangle>9.8,0.6,0.8,0.4</ClientRectangle>
@@ -750,13 +833,13 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text33</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>Lote</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text33>
-            <Text34 Ref="57" type="Text" isKey="true">
+            <Text34 Ref="60" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanShrink>True</CanShrink>
               <ClientRectangle>10.8,0.6,1.6,0.4</ClientRectangle>
@@ -764,13 +847,13 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text34</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>{tien_fact.numlote}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text34>
-            <Text86 Ref="58" type="Text" isKey="true">
+            <Text86 Ref="61" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>15.2,0,1,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -780,18 +863,18 @@
               <Guid>b001533775cd4b019d7a9892f7a82873</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text86</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>{tien_fact.dtoline2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="59" type="NumberFormat" isKey="true">
+              <TextFormat Ref="62" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
               </TextFormat>
               <Type>Expression</Type>
             </Text86>
-            <Text87 Ref="60" type="Text" isKey="true">
+            <Text87 Ref="63" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanShrink>True</CanShrink>
               <ClientRectangle>0.8,0.6,0.4,0.4</ClientRectangle>
@@ -801,13 +884,13 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text87</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>Nº</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text87>
-            <Text88 Ref="61" type="Text" isKey="true">
+            <Text88 Ref="64" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanShrink>True</CanShrink>
               <ClientRectangle>4.4,0.6,1.6,0.4</ClientRectangle>
@@ -817,8 +900,8 @@
               <Font>Arial Narrow,8.25,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text88</Name>
-              <Page isRef="2" />
-              <Parent isRef="43" />
+              <Page isRef="5" />
+              <Parent isRef="46" />
               <Text>F.vigencia</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -829,15 +912,15 @@
           <DataSourceName>tien_fact</DataSourceName>
           <Filters isList="true" count="0" />
           <Name>DataBand1</Name>
-          <Page isRef="2" />
-          <Parent isRef="2" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <Sort isList="true" count="0" />
         </DataBand1>
-        <GroupHeaderBand3 Ref="62" type="GroupHeaderBand" isKey="true">
+        <GroupHeaderBand3 Ref="65" type="GroupHeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,11.8,19,1</ClientRectangle>
           <Components isList="true" count="7">
-            <Text3 Ref="63" type="Text" isKey="true">
+            <Text3 Ref="66" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>0,0.4,2.4,0.4</ClientRectangle>
@@ -847,14 +930,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text3</Name>
-              <Page isRef="2" />
-              <Parent isRef="62" />
+              <Page isRef="5" />
+              <Parent isRef="65" />
               <Text>BRUTO(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text3>
-            <Text7 Ref="64" type="Text" isKey="true">
+            <Text7 Ref="67" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>2.4,0.4,3.2,0.4</ClientRectangle>
@@ -864,14 +947,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text7</Name>
-              <Page isRef="2" />
-              <Parent isRef="62" />
+              <Page isRef="5" />
+              <Parent isRef="65" />
               <Text>% DTO PP</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text7>
-            <Text36 Ref="65" type="Text" isKey="true">
+            <Text36 Ref="68" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>5.6,0.4,3,0.4</ClientRectangle>
@@ -881,14 +964,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text36</Name>
-              <Page isRef="2" />
-              <Parent isRef="62" />
+              <Page isRef="5" />
+              <Parent isRef="65" />
               <Text>%DTO GRAL.</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text36>
-            <Text82 Ref="66" type="Text" isKey="true">
+            <Text82 Ref="69" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>8.6,0.4,3,0.4</ClientRectangle>
@@ -898,14 +981,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text82</Name>
-              <Page isRef="2" />
-              <Parent isRef="62" />
+              <Page isRef="5" />
+              <Parent isRef="65" />
               <Text>B.IMPON.(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text82>
-            <Text92 Ref="67" type="Text" isKey="true">
+            <Text92 Ref="70" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>11.6,0.4,1.8,0.4</ClientRectangle>
@@ -915,14 +998,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text92</Name>
-              <Page isRef="2" />
-              <Parent isRef="62" />
+              <Page isRef="5" />
+              <Parent isRef="65" />
               <Text>%IVA</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text92>
-            <Text93 Ref="68" type="Text" isKey="true">
+            <Text93 Ref="71" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>13.4,0.4,2.8,0.4</ClientRectangle>
@@ -932,14 +1015,14 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text93</Name>
-              <Page isRef="2" />
-              <Parent isRef="62" />
+              <Page isRef="5" />
+              <Parent isRef="65" />
               <Text>CUOTA IVA(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text93>
-            <Text94 Ref="69" type="Text" isKey="true">
+            <Text94 Ref="72" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>16.2,0.4,2.8,0.4</ClientRectangle>
@@ -949,8 +1032,8 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text94</Name>
-              <Page isRef="2" />
-              <Parent isRef="62" />
+              <Page isRef="5" />
+              <Parent isRef="65" />
               <Text>IMP. TOTAL(€)</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -961,17 +1044,17 @@
           <Conditions isList="true" count="0" />
           <Guid>26eccf999175425db3623fb8076dc2e1</Guid>
           <Name>GroupHeaderBand3</Name>
-          <Page isRef="2" />
-          <Parent isRef="2" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <PrintAtBottom>True</PrintAtBottom>
         </GroupHeaderBand3>
-        <DataBand4 Ref="70" type="DataBand" isKey="true">
+        <DataBand4 Ref="73" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <CanShrink>True</CanShrink>
           <ClientRectangle>0,13.6,19,2.2</ClientRectangle>
-          <Components isList="true" count="25">
-            <Text95 Ref="71" type="Text" isKey="true">
+          <Components isList="true" count="23">
+            <Text95 Ref="74" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.4,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -980,11 +1063,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text95</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.brutofac}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="72" type="NumberFormat" isKey="true">
+              <TextFormat Ref="75" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -993,7 +1076,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text95>
-            <Text96 Ref="73" type="Text" isKey="true">
+            <Text96 Ref="76" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.6,0,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1002,11 +1085,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text96</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.baseimp1}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="74" type="NumberFormat" isKey="true">
+              <TextFormat Ref="77" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1015,7 +1098,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text96>
-            <Text98 Ref="75" type="Text" isKey="true">
+            <Text98 Ref="78" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.6,0.4,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1026,11 +1109,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text98</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.baseimp2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="76" type="NumberFormat" isKey="true">
+              <TextFormat Ref="79" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1039,7 +1122,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text98>
-            <Text99 Ref="77" type="Text" isKey="true">
+            <Text99 Ref="80" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1050,11 +1133,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text99</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.dtoppago}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="78" type="NumberFormat" isKey="true">
+              <TextFormat Ref="81" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1063,7 +1146,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text99>
-            <Text100 Ref="79" type="Text" isKey="true">
+            <Text100 Ref="82" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1074,11 +1157,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text100</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.impdtopp}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="80" type="NumberFormat" isKey="true">
+              <TextFormat Ref="83" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1087,7 +1170,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text100>
-            <Text101 Ref="81" type="Text" isKey="true">
+            <Text101 Ref="84" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,0,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1098,11 +1181,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text101</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.dtognral}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="82" type="NumberFormat" isKey="true">
+              <TextFormat Ref="85" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1111,7 +1194,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text101>
-            <Text102 Ref="83" type="Text" isKey="true">
+            <Text102 Ref="86" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1122,11 +1205,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text102</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.impdtogr}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="84" type="NumberFormat" isKey="true">
+              <TextFormat Ref="87" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1135,7 +1218,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text102>
-            <Text103 Ref="85" type="Text" isKey="true">
+            <Text103 Ref="88" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.6,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1144,11 +1227,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text103</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.porciva1}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="86" type="NumberFormat" isKey="true">
+              <TextFormat Ref="89" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1157,7 +1240,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text103>
-            <Text104 Ref="87" type="Text" isKey="true">
+            <Text104 Ref="90" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.6,0.4,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1168,11 +1251,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text104</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.porciva2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="88" type="NumberFormat" isKey="true">
+              <TextFormat Ref="91" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1181,7 +1264,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text104>
-            <Text105 Ref="89" type="Text" isKey="true">
+            <Text105 Ref="92" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.2,0,3,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1190,11 +1273,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text105</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.imporiv1}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="90" type="NumberFormat" isKey="true">
+              <TextFormat Ref="93" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1203,7 +1286,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text105>
-            <Text106 Ref="91" type="Text" isKey="true">
+            <Text106 Ref="94" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.2,0.4,3,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1214,11 +1297,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text106</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.imporiv2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="92" type="NumberFormat" isKey="true">
+              <TextFormat Ref="95" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1227,7 +1310,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text106>
-            <Text107 Ref="93" type="Text" isKey="true">
+            <Text107 Ref="96" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>16.4,0,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1236,11 +1319,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text107</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.totalfac}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="94" type="NumberFormat" isKey="true">
+              <TextFormat Ref="97" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1249,7 +1332,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text107>
-            <Text108 Ref="95" type="Text" isKey="true">
+            <Text108 Ref="98" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0.4,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1261,11 +1344,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text108</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.dtoppago}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="96" type="NumberFormat" isKey="true">
+              <TextFormat Ref="99" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1274,7 +1357,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text108>
-            <Text109 Ref="97" type="Text" isKey="true">
+            <Text109 Ref="100" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,0.4,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1286,11 +1369,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text109</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.impdtopp}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="98" type="NumberFormat" isKey="true">
+              <TextFormat Ref="101" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1299,7 +1382,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text109>
-            <Text110 Ref="99" type="Text" isKey="true">
+            <Text110 Ref="102" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,0.4,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1311,11 +1394,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text110</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.dtognral}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="100" type="NumberFormat" isKey="true">
+              <TextFormat Ref="103" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1324,7 +1407,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text110>
-            <Text111 Ref="101" type="Text" isKey="true">
+            <Text111 Ref="104" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,0.4,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1336,11 +1419,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text111</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.impdtogr}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="102" type="NumberFormat" isKey="true">
+              <TextFormat Ref="105" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1349,7 +1432,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text111>
-            <Text113 Ref="103" type="Text" isKey="true">
+            <Text113 Ref="106" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.6,0.8,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1360,11 +1443,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text113</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.baseimp3}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="104" type="NumberFormat" isKey="true">
+              <TextFormat Ref="107" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1373,7 +1456,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text113>
-            <Text114 Ref="105" type="Text" isKey="true">
+            <Text114 Ref="108" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.6,0.8,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1384,11 +1467,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text114</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.porciva3}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="106" type="NumberFormat" isKey="true">
+              <TextFormat Ref="109" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1397,7 +1480,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text114>
-            <Text115 Ref="107" type="Text" isKey="true">
+            <Text115 Ref="110" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.2,0.8,3,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1408,11 +1491,11 @@
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text115</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.imporiv3}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="108" type="NumberFormat" isKey="true">
+              <TextFormat Ref="111" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1421,7 +1504,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text115>
-            <Text116 Ref="109" type="Text" isKey="true">
+            <Text116 Ref="112" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0.8,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1433,11 +1516,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text116</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.dtoppago}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="110" type="NumberFormat" isKey="true">
+              <TextFormat Ref="113" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1446,7 +1529,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text116>
-            <Text117 Ref="111" type="Text" isKey="true">
+            <Text117 Ref="114" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,0.8,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1458,11 +1541,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text117</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.impdtopp}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="112" type="NumberFormat" isKey="true">
+              <TextFormat Ref="115" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1471,7 +1554,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text117>
-            <Text118 Ref="113" type="Text" isKey="true">
+            <Text118 Ref="116" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,0.8,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1483,11 +1566,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text118</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.dtognral}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="114" type="NumberFormat" isKey="true">
+              <TextFormat Ref="117" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1496,7 +1579,7 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text118>
-            <Text119 Ref="115" type="Text" isKey="true">
+            <Text119 Ref="118" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,0.8,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1508,11 +1591,11 @@
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text119</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
+              <Page isRef="5" />
+              <Parent isRef="73" />
               <Text>{tien_fact.impdtogr}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="116" type="NumberFormat" isKey="true">
+              <TextFormat Ref="119" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1521,71 +1604,23 @@
               </TextFormat>
               <Type>Expression</Type>
             </Text119>
-            <Text97 Ref="117" type="Text" isKey="true">
-              <Brush>Transparent</Brush>
-              <ClientRectangle>0.4,0.4,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
-                <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
-              </Conditions>
-              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>d4d0c1c3cc364a8eb59ddf4e3de8c03f</Guid>
-              <HorAlignment>Right</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text97</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
-              <Text>{tien_fact.brutofac}</Text>
-              <TextBrush>Black</TextBrush>
-              <TextFormat Ref="118" type="NumberFormat" isKey="true">
-                <DecimalSeparator>,</DecimalSeparator>
-                <GroupSeparator>.</GroupSeparator>
-                <NegativePattern>1</NegativePattern>
-                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
-                <UseGroupSeparator>False</UseGroupSeparator>
-              </TextFormat>
-              <Type>Expression</Type>
-            </Text97>
-            <Text112 Ref="119" type="Text" isKey="true">
-              <Brush>Transparent</Brush>
-              <ClientRectangle>0.4,0.8,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
-                <value>tien_fact.porciva3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
-              </Conditions>
-              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>4998a99c00254fec893ddd641a1dc659</Guid>
-              <HorAlignment>Right</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text112</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
-              <Text>{tien_fact.brutofac}</Text>
-              <TextBrush>Black</TextBrush>
-              <TextFormat Ref="120" type="NumberFormat" isKey="true">
-                <DecimalSeparator>,</DecimalSeparator>
-                <GroupSeparator>.</GroupSeparator>
-                <NegativePattern>1</NegativePattern>
-                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
-                <UseGroupSeparator>False</UseGroupSeparator>
-              </TextFormat>
-              <Type>Expression</Type>
-            </Text112>
           </Components>
           <Conditions isList="true" count="0" />
           <DataRelationName isNull="true" />
           <Filters isList="true" count="0" />
           <Guid>ede481a176254f0199e7ac5de96b7c76</Guid>
           <Name>DataBand4</Name>
-          <Page isRef="2" />
-          <Parent isRef="2" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand4>
-        <GroupFooterBand2 Ref="121" type="GroupFooterBand" isKey="true">
+        <GroupFooterBand2 Ref="120" type="GroupFooterBand" isKey="true">
           <Border>All;Black;1;Solid;False;4;Black</Border>
           <Brush>Transparent</Brush>
           <ClientRectangle>0,16.6,19,0.8</ClientRectangle>
           <Components isList="true" count="3">
-            <Text120 Ref="122" type="Text" isKey="true">
+            <Text120 Ref="121" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.8,0.2,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1593,13 +1628,13 @@
               <Guid>db952b9ed315436eaa7b9f51f02bb082</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text120</Name>
-              <Page isRef="2" />
-              <Parent isRef="121" />
+              <Page isRef="5" />
+              <Parent isRef="120" />
               <Text>FORMA DE PAGO: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text120>
-            <Text121 Ref="123" type="Text" isKey="true">
+            <Text121 Ref="122" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.2,0.2,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1607,13 +1642,13 @@
               <Guid>ba025a8527174e8f806fc602bc803c55</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text121</Name>
-              <Page isRef="2" />
-              <Parent isRef="121" />
+              <Page isRef="5" />
+              <Parent isRef="120" />
               <Text>{tien_fact.nomforpa}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text121>
-            <Text122 Ref="124" type="Text" isKey="true">
+            <Text122 Ref="123" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.4,0.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1621,8 +1656,8 @@
               <Guid>7f53699e48e241fcb894960cf526bf78</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text122</Name>
-              <Page isRef="2" />
-              <Parent isRef="121" />
+              <Page isRef="5" />
+              <Parent isRef="120" />
               <Text>{tien_fact.codforpa}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -1631,15 +1666,15 @@
           <Conditions isList="true" count="0" />
           <Guid>933f7dda834c4d30b2d98fd9932d374f</Guid>
           <Name>GroupFooterBand2</Name>
-          <Page isRef="2" />
-          <Parent isRef="2" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <PrintAtBottom>True</PrintAtBottom>
         </GroupFooterBand2>
-        <HeaderBand3 Ref="125" type="HeaderBand" isKey="true">
+        <HeaderBand3 Ref="124" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,18.2,19,0.6</ClientRectangle>
           <Components isList="true" count="1">
-            <Text124 Ref="126" type="Text" isKey="true">
+            <Text124 Ref="125" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>1,0.2,3,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1647,8 +1682,8 @@
               <Guid>7d7e333b91ed4c2f89628cd38f8a2650</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text124</Name>
-              <Page isRef="2" />
-              <Parent isRef="125" />
+              <Page isRef="5" />
+              <Parent isRef="124" />
               <Text>VENCIMIENTOS:</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -1657,16 +1692,16 @@
           <Conditions isList="true" count="0" />
           <Guid>19c4fb188ea241368fa683805d5effaf</Guid>
           <Name>HeaderBand3</Name>
-          <Page isRef="2" />
-          <Parent isRef="2" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <PrintAtBottom>True</PrintAtBottom>
         </HeaderBand3>
-        <DataBand5 Ref="127" type="DataBand" isKey="true">
+        <DataBand5 Ref="126" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,19.6,19,0.6</ClientRectangle>
           <Components isList="true" count="2">
-            <Text123 Ref="128" type="Text" isKey="true">
+            <Text123 Ref="127" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.2,0,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1674,13 +1709,13 @@
               <Guid>9fc9081f3ae440c496deb5afb071e77b</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text123</Name>
-              <Page isRef="2" />
-              <Parent isRef="127" />
+              <Page isRef="5" />
+              <Parent isRef="126" />
               <Text>{venci.fecevenc}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text123>
-            <Text2 Ref="129" type="Text" isKey="true">
+            <Text2 Ref="128" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>7.6,0,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1688,11 +1723,11 @@
               <Guid>2d822276ccf54c779b03723b64d118f4</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text2</Name>
-              <Page isRef="2" />
-              <Parent isRef="127" />
+              <Page isRef="5" />
+              <Parent isRef="126" />
               <Text>{venci.impefect}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="130" type="CurrencyFormat" isKey="true">
+              <TextFormat Ref="129" type="CurrencyFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>8</NegativePattern>
@@ -1709,8 +1744,8 @@
           <Filters isList="true" count="0" />
           <Guid>f6f77e3414c34a7cb06a5612683f40bb</Guid>
           <Name>DataBand5</Name>
-          <Page isRef="2" />
-          <Parent isRef="2" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand5>
@@ -1722,13 +1757,13 @@
       <PageHeight>29.7</PageHeight>
       <PageWidth>21</PageWidth>
       <Report isRef="0" />
-      <Watermark Ref="131" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+      <Watermark Ref="130" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
     </Page1>
   </Pages>
-  <PrinterSettings Ref="132" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="131" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -1740,10 +1775,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>3/18/2020 11:42:50 AM</ReportChanged>
+  <ReportChanged>3/23/2020 8:30:55 PM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FTIEN_bolbaite.mrt</ReportFile>
-  <ReportGuid>f1435b15610a4a2a81d46afb3fa007a6</ReportGuid>
+  <ReportGuid>0f7baf2e38824f5981d3d3989d6f98ba</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
@@ -1773,7 +1808,7 @@ namespace Reports
 </Script>
   <ScriptLanguage>CSharp</ScriptLanguage>
   <Styles isList="true" count="1">
-    <Estilo1 Ref="133" type="Stimulsoft.Report.StiStyle" isKey="true">
+    <Estilo1 Ref="132" type="Stimulsoft.Report.StiStyle" isKey="true">
       <Brush>GradientBrush,White,Black,0</Brush>
       <Conditions isList="true" count="0" />
       <Font>Arial,8</Font>
