@@ -418,7 +418,7 @@
           <Components isList="true" count="4">
             <Text8 Ref="33" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>0.2,0.4,10.3,0.8</ClientRectangle>
+              <ClientRectangle>0.2,0.4,10.3,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>e8775bf5561c418598dffb0a4002670a</Guid>
@@ -434,7 +434,7 @@
             </Text8>
             <Text13 Ref="34" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>10.4,0.4,2.9,0.8</ClientRectangle>
+              <ClientRectangle>10.4,0.4,2.9,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>266d4efa916d422a8d20a71c90e5fb7c</Guid>
@@ -450,7 +450,7 @@
             </Text13>
             <Text14 Ref="35" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>13.2,0.4,2.9,0.8</ClientRectangle>
+              <ClientRectangle>13.2,0.4,2.9,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>aa35774ff62642148e66c4a7238cadc1</Guid>
@@ -466,7 +466,7 @@
             </Text14>
             <Text15 Ref="36" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>16,0.4,2.7,0.8</ClientRectangle>
+              <ClientRectangle>16,0.4,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>bcaa77a45815481cb5d4c4b642902206</Guid>
@@ -900,7 +900,7 @@
           <Components isList="true" count="7">
             <Text23 Ref="70" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>0.4,1,2.7,0.8</ClientRectangle>
+              <ClientRectangle>0.4,1,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>bc48f2b364ab4c1a8a1386e2f3f5b625</Guid>
@@ -916,7 +916,7 @@
             </Text23>
             <Text24 Ref="71" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>3,1,2.1,0.8</ClientRectangle>
+              <ClientRectangle>3,1,2.1,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>bebe3a8695df4423b708231363bbad9c</Guid>
@@ -932,7 +932,7 @@
             </Text24>
             <Text26 Ref="72" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>5,1,2.7,0.8</ClientRectangle>
+              <ClientRectangle>5,1,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>1eaf55c659c64adaa5445c6b007c4760</Guid>
@@ -948,7 +948,7 @@
             </Text26>
             <Text27 Ref="73" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>7.6,1,3.3,0.8</ClientRectangle>
+              <ClientRectangle>7.6,1,3.3,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>658f5c8e6184473c9978f3d0509aa084</Guid>
@@ -964,7 +964,7 @@
             </Text27>
             <Text32 Ref="74" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>10.8,1,2.7,0.8</ClientRectangle>
+              <ClientRectangle>10.8,1,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>93c7b26c62ab40a59975ce907d4fb110</Guid>
@@ -980,7 +980,7 @@
             </Text32>
             <Text33 Ref="75" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>13.4,1,2.7,0.8</ClientRectangle>
+              <ClientRectangle>13.4,1,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>f83ee1f8a8f04eee914dd0bcfa84958c</Guid>
@@ -996,7 +996,7 @@
             </Text33>
             <Text34 Ref="76" type="Text" isKey="true">
               <Brush>LightGray</Brush>
-              <ClientRectangle>16,1,2.7,0.8</ClientRectangle>
+              <ClientRectangle>16,1,2.7,0.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,9,Bold,Point,False,0</Font>
               <Guid>627c7dd5175d4fb98e0a4f99d781e250</Guid>
@@ -1268,10 +1268,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>12/20/2018 10:11:35 AM</ReportChanged>
+  <ReportChanged>3/23/2020 9:17:34 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
-  <ReportFile />
-  <ReportGuid>e5950e5197d9451ebf6ad61ed64023e8</ReportGuid>
+  <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_picasent.mrt</ReportFile>
+  <ReportGuid>f438b7e74e35448f925274004bdbd89c</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
