@@ -983,7 +983,7 @@ FECHA: {tien_fact.fecfactu}</Text>
           <BusinessObjectGuid isNull="true" />
           <CanShrink>True</CanShrink>
           <ClientRectangle>0,14.2,19,2.2</ClientRectangle>
-          <Components isList="true" count="25">
+          <Components isList="true" count="23">
             <Text95 Ref="71" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.4,0,1.8,0.4</ClientRectangle>
@@ -1028,31 +1028,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text96>
-            <Text97 Ref="75" type="Text" isKey="true">
-              <Brush>Transparent</Brush>
-              <ClientRectangle>0.4,0.6,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
-                <value>tien_fact.porciva2,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
-              </Conditions>
-              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>2e76cc71a66b442ea75a84518df53d2f</Guid>
-              <HorAlignment>Right</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text97</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
-              <Text>{tien_fact.brutofac}</Text>
-              <TextBrush>Black</TextBrush>
-              <TextFormat Ref="76" type="NumberFormat" isKey="true">
-                <DecimalSeparator>,</DecimalSeparator>
-                <GroupSeparator>.</GroupSeparator>
-                <NegativePattern>1</NegativePattern>
-                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
-                <UseGroupSeparator>False</UseGroupSeparator>
-              </TextFormat>
-              <Type>Expression</Type>
-            </Text97>
-            <Text98 Ref="77" type="Text" isKey="true">
+            <Text98 Ref="75" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.6,0.6,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1067,7 +1043,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.baseimp2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="78" type="NumberFormat" isKey="true">
+              <TextFormat Ref="76" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1076,7 +1052,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text98>
-            <Text99 Ref="79" type="Text" isKey="true">
+            <Text99 Ref="77" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1091,7 +1067,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.dtoppago}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="80" type="NumberFormat" isKey="true">
+              <TextFormat Ref="78" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1100,7 +1076,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text99>
-            <Text100 Ref="81" type="Text" isKey="true">
+            <Text100 Ref="79" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1115,7 +1091,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.impdtopp}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="82" type="NumberFormat" isKey="true">
+              <TextFormat Ref="80" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1124,7 +1100,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text100>
-            <Text101 Ref="83" type="Text" isKey="true">
+            <Text101 Ref="81" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,0,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1139,7 +1115,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.dtognral}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="84" type="NumberFormat" isKey="true">
+              <TextFormat Ref="82" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1148,7 +1124,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text101>
-            <Text102 Ref="85" type="Text" isKey="true">
+            <Text102 Ref="83" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1163,7 +1139,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.impdtogr}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="86" type="NumberFormat" isKey="true">
+              <TextFormat Ref="84" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1172,7 +1148,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text102>
-            <Text103 Ref="87" type="Text" isKey="true">
+            <Text103 Ref="85" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.6,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1185,7 +1161,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.porciva1}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="88" type="NumberFormat" isKey="true">
+              <TextFormat Ref="86" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1194,7 +1170,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text103>
-            <Text104 Ref="89" type="Text" isKey="true">
+            <Text104 Ref="87" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.6,0.6,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1209,7 +1185,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.porciva2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="90" type="NumberFormat" isKey="true">
+              <TextFormat Ref="88" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1218,7 +1194,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text104>
-            <Text105 Ref="91" type="Text" isKey="true">
+            <Text105 Ref="89" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.2,0,3,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1231,7 +1207,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.imporiv1}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="92" type="NumberFormat" isKey="true">
+              <TextFormat Ref="90" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1240,7 +1216,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text105>
-            <Text106 Ref="93" type="Text" isKey="true">
+            <Text106 Ref="91" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.2,0.6,3,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1255,7 +1231,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.imporiv2}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="94" type="NumberFormat" isKey="true">
+              <TextFormat Ref="92" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1264,7 +1240,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text106>
-            <Text107 Ref="95" type="Text" isKey="true">
+            <Text107 Ref="93" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>16.4,0,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1277,7 +1253,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.totalfac}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="96" type="NumberFormat" isKey="true">
+              <TextFormat Ref="94" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1286,7 +1262,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text107>
-            <Text108 Ref="97" type="Text" isKey="true">
+            <Text108 Ref="95" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,0.6,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1302,7 +1278,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.dtoppago}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="98" type="NumberFormat" isKey="true">
+              <TextFormat Ref="96" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1311,7 +1287,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text108>
-            <Text109 Ref="99" type="Text" isKey="true">
+            <Text109 Ref="97" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,0.6,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1327,7 +1303,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.impdtopp}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="100" type="NumberFormat" isKey="true">
+              <TextFormat Ref="98" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1336,7 +1312,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text109>
-            <Text110 Ref="101" type="Text" isKey="true">
+            <Text110 Ref="99" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,0.6,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1352,7 +1328,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.dtognral}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="102" type="NumberFormat" isKey="true">
+              <TextFormat Ref="100" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1361,7 +1337,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text110>
-            <Text111 Ref="103" type="Text" isKey="true">
+            <Text111 Ref="101" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,0.6,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1377,7 +1353,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.impdtogr}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="104" type="NumberFormat" isKey="true">
+              <TextFormat Ref="102" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1386,31 +1362,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text111>
-            <Text112 Ref="105" type="Text" isKey="true">
-              <Brush>Transparent</Brush>
-              <ClientRectangle>0.4,1.2,1.8,0.4</ClientRectangle>
-              <Conditions isList="true" count="1">
-                <value>tien_fact.porciva3,EqualTo,_x0030_,,Numeric,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
-              </Conditions>
-              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
-              <Guid>8e95e8cdd74f44149c5dae346318f098</Guid>
-              <HorAlignment>Right</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text112</Name>
-              <Page isRef="2" />
-              <Parent isRef="70" />
-              <Text>{tien_fact.brutofac}</Text>
-              <TextBrush>Black</TextBrush>
-              <TextFormat Ref="106" type="NumberFormat" isKey="true">
-                <DecimalSeparator>,</DecimalSeparator>
-                <GroupSeparator>.</GroupSeparator>
-                <NegativePattern>1</NegativePattern>
-                <State>DecimalDigits, DecimalSeparator, GroupSeparator, NegativePattern</State>
-                <UseGroupSeparator>False</UseGroupSeparator>
-              </TextFormat>
-              <Type>Expression</Type>
-            </Text112>
-            <Text113 Ref="107" type="Text" isKey="true">
+            <Text113 Ref="103" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>8.6,1.2,2.8,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1425,7 +1377,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.baseimp3}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="108" type="NumberFormat" isKey="true">
+              <TextFormat Ref="104" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1434,7 +1386,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text113>
-            <Text114 Ref="109" type="Text" isKey="true">
+            <Text114 Ref="105" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>11.6,1.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1449,7 +1401,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.porciva3}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="110" type="NumberFormat" isKey="true">
+              <TextFormat Ref="106" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1458,7 +1410,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text114>
-            <Text115 Ref="111" type="Text" isKey="true">
+            <Text115 Ref="107" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>13.2,1.2,3,0.4</ClientRectangle>
               <Conditions isList="true" count="1">
@@ -1473,7 +1425,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.imporiv3}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="112" type="NumberFormat" isKey="true">
+              <TextFormat Ref="108" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1482,7 +1434,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text115>
-            <Text116 Ref="113" type="Text" isKey="true">
+            <Text116 Ref="109" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>2.4,1.2,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1498,7 +1450,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.dtoppago}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="114" type="NumberFormat" isKey="true">
+              <TextFormat Ref="110" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1507,7 +1459,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text116>
-            <Text117 Ref="115" type="Text" isKey="true">
+            <Text117 Ref="111" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>3.6,1.2,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1523,7 +1475,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.impdtopp}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="116" type="NumberFormat" isKey="true">
+              <TextFormat Ref="112" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1532,7 +1484,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text117>
-            <Text118 Ref="117" type="Text" isKey="true">
+            <Text118 Ref="113" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>5.6,1.2,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1548,7 +1500,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.dtognral}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="118" type="NumberFormat" isKey="true">
+              <TextFormat Ref="114" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1557,7 +1509,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               </TextFormat>
               <Type>Expression</Type>
             </Text118>
-            <Text119 Ref="119" type="Text" isKey="true">
+            <Text119 Ref="115" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,1.2,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="2">
@@ -1573,7 +1525,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Parent isRef="70" />
               <Text>{tien_fact.impdtogr}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="120" type="NumberFormat" isKey="true">
+              <TextFormat Ref="116" type="NumberFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -1593,12 +1545,12 @@ FECHA: {tien_fact.fecfactu}</Text>
           <PrintAtBottom>True</PrintAtBottom>
           <Sort isList="true" count="0" />
         </DataBand4>
-        <GroupFooterBand2 Ref="121" type="GroupFooterBand" isKey="true">
+        <GroupFooterBand2 Ref="117" type="GroupFooterBand" isKey="true">
           <Border>All;Black;1;Solid;False;4;Black</Border>
           <Brush>Transparent</Brush>
           <ClientRectangle>0,17.2,19,0.8</ClientRectangle>
           <Components isList="true" count="3">
-            <Text120 Ref="122" type="Text" isKey="true">
+            <Text120 Ref="118" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.8,0.2,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1607,12 +1559,12 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text120</Name>
               <Page isRef="2" />
-              <Parent isRef="121" />
+              <Parent isRef="117" />
               <Text>FORMA DE PAGO: </Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text120>
-            <Text121 Ref="123" type="Text" isKey="true">
+            <Text121 Ref="119" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>6.2,0.2,3.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1621,12 +1573,12 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text121</Name>
               <Page isRef="2" />
-              <Parent isRef="121" />
+              <Parent isRef="117" />
               <Text>{tien_fact.nomforpa}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text121>
-            <Text122 Ref="124" type="Text" isKey="true">
+            <Text122 Ref="120" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.4,0.2,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1635,7 +1587,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text122</Name>
               <Page isRef="2" />
-              <Parent isRef="121" />
+              <Parent isRef="117" />
               <Text>{tien_fact.codforpa}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -1648,11 +1600,11 @@ FECHA: {tien_fact.fecfactu}</Text>
           <Parent isRef="2" />
           <PrintAtBottom>True</PrintAtBottom>
         </GroupFooterBand2>
-        <HeaderBand3 Ref="125" type="HeaderBand" isKey="true">
+        <HeaderBand3 Ref="121" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,18.8,19,0.6</ClientRectangle>
           <Components isList="true" count="1">
-            <Text124 Ref="126" type="Text" isKey="true">
+            <Text124 Ref="122" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>1,0.2,3,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1661,7 +1613,7 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text124</Name>
               <Page isRef="2" />
-              <Parent isRef="125" />
+              <Parent isRef="121" />
               <Text>VENCIMIENTOS:</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
@@ -1674,12 +1626,12 @@ FECHA: {tien_fact.fecfactu}</Text>
           <Parent isRef="2" />
           <PrintAtBottom>True</PrintAtBottom>
         </HeaderBand3>
-        <DataBand5 Ref="127" type="DataBand" isKey="true">
+        <DataBand5 Ref="123" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,20.2,19,0.6</ClientRectangle>
           <Components isList="true" count="2">
-            <Text123 Ref="128" type="Text" isKey="true">
+            <Text123 Ref="124" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>4.2,0,2.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1688,12 +1640,12 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text123</Name>
               <Page isRef="2" />
-              <Parent isRef="127" />
+              <Parent isRef="123" />
               <Text>{venci.fecevenc}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text123>
-            <Text2 Ref="129" type="Text" isKey="true">
+            <Text2 Ref="125" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>7.6,0,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -1702,10 +1654,10 @@ FECHA: {tien_fact.fecfactu}</Text>
               <Margins>0,0,0,0</Margins>
               <Name>Text2</Name>
               <Page isRef="2" />
-              <Parent isRef="127" />
+              <Parent isRef="123" />
               <Text>{venci.impefect}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="130" type="CurrencyFormat" isKey="true">
+              <TextFormat Ref="126" type="CurrencyFormat" isKey="true">
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator>.</GroupSeparator>
                 <NegativePattern>8</NegativePattern>
@@ -1735,13 +1687,13 @@ FECHA: {tien_fact.fecfactu}</Text>
       <PageHeight>29.7</PageHeight>
       <PageWidth>21</PageWidth>
       <Report isRef="0" />
-      <Watermark Ref="131" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+      <Watermark Ref="127" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
     </Page1>
   </Pages>
-  <PrinterSettings Ref="132" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="128" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -1753,10 +1705,10 @@ FECHA: {tien_fact.fecfactu}</Text>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>2/22/2019 10:36:59 AM</ReportChanged>
+  <ReportChanged>3/23/2020 7:21:39 PM</ReportChanged>
   <ReportCreated>10/15/2018 1:10:18 PM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FTIEN_castelduc.mrt</ReportFile>
-  <ReportGuid>7ab0e2c95edd405ba85287cd225fbda3</ReportGuid>
+  <ReportGuid>a7b0fcc69bfa4647bcfdca357b5a5d74</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
@@ -1786,7 +1738,7 @@ namespace Reports
 </Script>
   <ScriptLanguage>CSharp</ScriptLanguage>
   <Styles isList="true" count="1">
-    <Estilo1 Ref="133" type="Stimulsoft.Report.StiStyle" isKey="true">
+    <Estilo1 Ref="129" type="Stimulsoft.Report.StiStyle" isKey="true">
       <Brush>GradientBrush,White,Black,0</Brush>
       <Conditions isList="true" count="0" />
       <Font>Arial,8</Font>
