@@ -126,22 +126,7 @@
               <TextBrush>Black</TextBrush>
               <Type>SystemVariables</Type>
             </Text40>
-            <Text17 Ref="11" type="Text" isKey="true">
-              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <ClientRectangle>11.8,2.6,6.6,0.6</ClientRectangle>
-              <Conditions isList="true" count="0" />
-              <Font>Arial,12,Bold,Point,False,0</Font>
-              <HorAlignment>Right</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text17</Name>
-              <Page isRef="2" />
-              <Parent isRef="3" />
-              <Text>FACTURA LIQUIDACION BOLBAITE</Text>
-              <TextBrush>Black</TextBrush>
-              <Type>Expression</Type>
-            </Text17>
-            <Text31 Ref="12" type="Text" isKey="true">
+            <Text31 Ref="11" type="Text" isKey="true">
               <Border>All;Black;1;Solid;True;4;Black</Border>
               <Brush>LightGray</Brush>
               <ClientRectangle>0.4,4,3.7,0.8</ClientRectangle>
@@ -156,7 +141,7 @@
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text31>
-            <Text36 Ref="13" type="Text" isKey="true">
+            <Text36 Ref="12" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.6,4.4,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -170,7 +155,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text36>
-            <Text7 Ref="14" type="Text" isKey="true">
+            <Text7 Ref="13" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <ClientRectangle>0.6,4,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
@@ -184,7 +169,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text7>
-            <Text16 Ref="15" type="Text" isKey="true">
+            <Text16 Ref="14" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>2,4,2,0.4</ClientRectangle>
@@ -199,7 +184,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text16>
-            <Text42 Ref="16" type="Text" isKey="true">
+            <Text42 Ref="15" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>2,4.4,2,0.4</ClientRectangle>
@@ -214,7 +199,7 @@
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
             </Text42>
-            <Image1 Ref="17" type="Image" isKey="true">
+            <Image1 Ref="16" type="Image" isKey="true">
               <Brush>Transparent</Brush>
               <CanShrink>True</CanShrink>
               <ClientRectangle>0.4,0.2,13.4,1.8</ClientRectangle>
@@ -228,6 +213,22 @@
               <Printable>False</Printable>
               <Stretch>True</Stretch>
             </Image1>
+            <Text17 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.2,2.4,12.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold,Point,False,0</Font>
+              <Guid>8d718f355d5644c6accf8c84f66d3df5</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+              <Text>FACTURA DE {cabecera.nomtipom}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text17>
           </Components>
           <Conditions isList="true" count="0" />
           <Name>PageHeaderBand1</Name>
@@ -241,7 +242,7 @@
             <Text26 Ref="19" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>0.2,0.66,18.2,0.8</ClientRectangle>
+              <ClientRectangle>0.4,0.66,18.2,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8.25,Bold,Point,False,0</Font>
               <Guid>913de6e862904cefb28184f6e818b140</Guid>
@@ -258,7 +259,7 @@
             <Text1 Ref="20" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>0.2,1.5,18.2,1.8</ClientRectangle>
+              <ClientRectangle>0.4,1.5,18.2,1.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8.25,Bold,Point,False,0</Font>
               <Guid>11608513f09d442181b212c8a1616991</Guid>
@@ -275,7 +276,7 @@
             <Text2 Ref="21" type="Text" isKey="true">
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
-              <ClientRectangle>0.2,3.3,18.2,1.6</ClientRectangle>
+              <ClientRectangle>0.4,3.3,18.2,1.6</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>Arial,8.25,Bold,Point,False,0</Font>
               <Guid>a5df7d781ed4475886067c2765631814</Guid>
@@ -1043,10 +1044,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>3/23/2020 8:18:13 PM</ReportChanged>
+  <ReportChanged>4/3/2020 12:02:01 PM</ReportChanged>
   <ReportCreated>7/31/2018 10:01:06 AM</ReportCreated>
   <ReportFile>C:\proyectos\AriAGRO-API\public\reports\FAL_bolbaite.mrt</ReportFile>
-  <ReportGuid>71011f3505ac42f696825f9c6a067825</ReportGuid>
+  <ReportGuid>b6a4581237a140c49144b740d5edae19</ReportGuid>
   <ReportImage isNull="true" />
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
