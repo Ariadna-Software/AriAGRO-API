@@ -2,4 +2,4 @@
 "lineas":[{"codvarie":1201,"impovar":990.85,"kilogrado":0,"kilosnet":0,"preciomed":0,"codcampo":101384,"nomvarie":"NAVELINAS","nomparti":"TODAS","codparti":9999},
 {"codvarie":1302,"impovar":960.85,"kilogrado":12.12,"kilosnet":67.23,"preciomed":12,"codcampo":101384,"nomvarie":"NAVELINAS","nomparti":"TODAS","codparti":9989}],
 "lineasBis":[{"codvarie":1201,"imporvar":990.85,"kilogrado":0,"kilosnet":0,"preciomed":0,"codcampo":101384,"nomvarie":"NAVELINAS","nomparti":"TODAS","codparti":9999}],
-"pie":[{"baseimpo":990.85,"porc_iva":12,"imporiva":118.9,"basereten":1109.75,"porc_ret":2,"impreten":22.2,"totalfac":1087.55}],"varias":[{"totalfac":0,"totalvarias":0,"result":0}],"result":[{"resultado":1087.55}]}
+"pie":[{"baseimpo":990.85,"porc_iva":12,"imporiva":118.9,"basereten":1109.75,"porc_ret":2,"impreten":22.2,"totalfac":1087.55}],"varias":[{"totalfac":0,"totalvarias":0,"result":0, "codtipomfvar": "", "numfactufvarias": 0, "fecfactufvar": null}],"result":[{"resultado":1087.55}]}
