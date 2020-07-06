@@ -22,6 +22,7 @@ var mensajes_router = require('./lib/mensajes/mensajes_controller');
 var uploader_router = require('./lib/uploader/uploader_controller');
 var recursos_router = require('./lib/recursos/recursos_controller');
 var enlaces_router = require('./lib/enlaces/enlaces_controller');
+var s2_router = require('./lib/s2/s2_controller');
 // express
 var app = express();
 
@@ -98,6 +99,9 @@ app.use('/api/uploader', uploader_router);
 app.use('/api/recursos', recursos_router);
 //---------- Rutas relacionadas con enlaces
 app.use('/api/enlaces', enlaces_router);
+
+//---------- Rutas relacionadas con solicitud de documentos
+app.use('/api/s2', s2_router);
 
 
 // Registrar rutas base
