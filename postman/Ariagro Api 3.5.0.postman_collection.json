@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "21028a57-661b-47ed-ba77-e19fe7129927",
+		"name": "Ariagro Api 3.5.0",
+		"description": "Este servicio es utilizado por las aplicaciones móviles de Ariagro App para obtener la información.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Facturas de aceite",
+			"item": [
+				{
+					"name": "GET Facturas Aceite",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{port}}/api/facturas/aceite/359/2015",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"facturas",
+								"aceite",
+								"359",
+								"2015"
+							]
+						},
+						"description": "En la propia url se envía el código de cliente y el año del que se quieren obtener las facturas.\n\nLa api devuelve todas las facturas que coinciden con los criterios pasados."
+					},
+					"response": [
+						{
+							"name": "GET Facturas Aceite",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}:{{port}}/api/facturas/aceite/359/2015",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"facturas",
+										"aceite",
+										"359",
+										"2015"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "569"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"239-mJQog47Iu+tsJyOAkAARvUtJmZo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 28 Apr 2022 10:06:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"codtipom\": \"FZA\",\n        \"numfactu\": \"FZA-913\",\n        \"numfactuSin\": 913,\n        \"fecfactu\": \"2015-03-30T22:00:00.000Z\",\n        \"bases\": 193.7,\n        \"cuotas\": 19.37,\n        \"totalfac\": 213.07,\n        \"lineas\": [\n            {\n                \"numalbar\": 415,\n                \"numlinea\": 1,\n                \"codvarie\": 6001,\n                \"nomvarie\": \"BLAN,MANZ,MILLA\",\n                \"precioar\": 3.1264,\n                \"cantidad\": 60,\n                \"dtolinea\": 0,\n                \"importel\": 187.58\n            },\n            {\n                \"numalbar\": 415,\n                \"numlinea\": 2,\n                \"codvarie\": 6001,\n                \"nomvarie\": \"BLAN,MANZ,MILLA\",\n                \"precioar\": 3.1264,\n                \"cantidad\": -12,\n                \"dtolinea\": 0,\n                \"importel\": -37.52\n            },\n            {\n                \"numalbar\": 415,\n                \"numlinea\": 4,\n                \"codvarie\": 6001,\n                \"nomvarie\": \"BLAN,MANZ,MILLA\",\n                \"precioar\": 3.6363,\n                \"cantidad\": 12,\n                \"dtolinea\": 0,\n                \"importel\": 43.64\n            }\n        ]\n    }\n]"
+						}
+					]
+				}
+			],
+			"description": "Mensajes que manejan las consultas sobre las facturas de aceite de la base de datos."
+		},
+		{
+			"name": "GET Versión",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}:{{port}}/api/version",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"version"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
