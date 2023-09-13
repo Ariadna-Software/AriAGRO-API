@@ -1,0 +1,5 @@
+docker buildx build -t ariadnasw/ariagro_api:latest -t ariadnasw/reservtaxi:0.0.8 --platform linux/amd64 -f Dockerfile . 
+
+docker build -t ariadnasw/ariagro_api:latest -t ariadnasw/ariagro_api:3.5.6 .
+docker push ariadnasw/ariagro_api:latest
+docker push ariadnasw/ariagro_api:3.5.6
