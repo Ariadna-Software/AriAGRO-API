@@ -12,7 +12,7 @@
     "email": "rafa@myariadna.com"
   },
   "dependencies": {
-    "async": "^1.5.0",
+    "async": "^2.6.4",
     "body-parser": "^1.13.3",
     "cors": "^2.7.1",
     "csv": "^0.4.6",
